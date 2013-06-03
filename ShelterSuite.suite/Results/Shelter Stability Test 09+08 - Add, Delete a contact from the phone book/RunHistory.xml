@@ -36,4 +36,16 @@
   <ReturnValue></ReturnValue>
   <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "(TEXT:"Delete")"</ErrorMessage>
  </run>
+ <run>
+  <RunDate>2013-06-03 15:14:58.772 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>27.480000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130603_151458.772/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "Device/System/AppsIcon"</ErrorMessage>
+ </run>
 </runHistory>

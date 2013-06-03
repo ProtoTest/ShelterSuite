@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<runHistory script="Run_Shelter_Stability_Suite">
+ <run>
+  <RunDate>2013-06-03 14:32:50.809 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.027000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130603_143250.809/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>SenseTalk Compiler Exception -- in run_shelter_stability_suite:
+Syntax Error at line 1: Syntax Error - can't understand "Test" at or near character 22</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-03 14:33:09.383 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>67.969000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130603_143309.383/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "Device/Apps/People/AddContact"</ErrorMessage>
+ </run>
+</runHistory>

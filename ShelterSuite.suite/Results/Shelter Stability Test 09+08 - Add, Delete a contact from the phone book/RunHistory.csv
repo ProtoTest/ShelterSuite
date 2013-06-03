@@ -2,3 +2,4 @@ Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return V
 2013-05-22 16:19:07.747 -0600,"Failure",0:00:51,2,0,1,"20130522_161907.747/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""OK"")""",0
 2013-05-22 16:37:14.106 -0600,"Failure",0:00:35,1,0,1,"20130522_163714.106/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/System/AppsIcon""",0
 2013-05-22 16:44:36.272 -0600,"Failure",0:01:13,1,0,1,"20130522_164436.272/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""Delete"")""",0
+2013-06-03 15:14:58.772 -0600,"Failure",0:00:27,1,0,1,"20130603_151458.772/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/System/AppsIcon""",0

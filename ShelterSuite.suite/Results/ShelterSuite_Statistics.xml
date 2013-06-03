@@ -8,6 +8,22 @@
   <LastRun>2013-05-30 16:24:04 -0600</LastRun>
   <TotalTimeOnSuccess>125.222000</TotalTimeOnSuccess>
  </script>
+ <script name="Shelter Stability Test 38+40 - Set, Delete an Alarm">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2013-06-03 15:23:48 -0600</FirstRun>
+  <LastRun>2013-06-03 15:23:48 -0600</LastRun>
+  <TotalTimeOnSuccess>63.660000</TotalTimeOnSuccess>
+ </script>
+ <script name="Shelter Stability Test 09+08 - Add, Delete a contact from the phone book">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2013-06-03 15:14:58 -0600</FirstRun>
+  <LastRun>2013-06-03 15:14:58 -0600</LastRun>
+  <TotalTimeOnSuccess>nan</TotalTimeOnSuccess>
+ </script>
  <script name="Shelter Stability Test 64 - Menu Navigation">
   <LastStatus>Success</LastStatus>
   <NumberOfRuns>4</NumberOfRuns>
@@ -15,5 +31,13 @@
   <FirstRun>2013-05-30 17:01:18 -0600</FirstRun>
   <LastRun>2013-05-30 17:07:12 -0600</LastRun>
   <TotalTimeOnSuccess>188.535000</TotalTimeOnSuccess>
+ </script>
+ <script name="Run_Shelter_Stability_Suite">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2013-06-03 14:32:50 -0600</FirstRun>
+  <LastRun>2013-06-03 14:33:09 -0600</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
  </script>
 </statistics>

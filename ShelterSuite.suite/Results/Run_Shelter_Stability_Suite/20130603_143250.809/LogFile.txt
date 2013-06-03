@@ -1,0 +1,3 @@
+2013-06-03 14:32:50.824 -0600	START		Running Run_Shelter_Stability_Suite.script
+2013-06-03 14:32:50.848 -0600	EndTestCase		(Duration:"0.005", Errors:"1", Exceptions:"0", StartTime:"2013-06-03 14:32:50 -0600", Successes:"0", TestCase:"Run_Shelter_Stability_Suite.script", Warnings:"0")
+2013-06-03 14:32:52.601 -0600	FAILURE	Screen_Error.png	SenseTalk Compiler Exception in run_shelter_stability_suite:\nSyntax Error at line 1: Syntax Error - can't understand "Test" at or near character 22\nExecution Time 0:00:00 Run_Shelter_Stability_Suite.script

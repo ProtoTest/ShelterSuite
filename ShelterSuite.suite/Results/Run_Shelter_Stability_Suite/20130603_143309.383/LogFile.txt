@@ -1,0 +1,8 @@
+2013-06-03 14:33:09.395 -0600	START		Running Run_Shelter_Stability_Suite.script
+2013-06-03 14:33:21.980 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-03 14:33:23.306 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-03 14:33:42.380 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	found at (64, 748)	3	on_openapp	ClassNavigate.script
+2013-06-03 14:33:48.636 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	at (64, 748)	6	on_openapp	ClassNavigate.script
+2013-06-03 14:34:17.205 -0600	Exception	Device/Apps/People/AddContact	No Image Found On Screen: "Device/Apps/People/AddContact"	11	on_shelter_stability_test_09_08___add__delete_a_contact_from_the_phone_book	Shelter Stability Test 09+08 - Add, Delete a contact from the phone book.script
+2013-06-03 14:34:17.358 -0600	EndTestCase		(Duration:"67.953", Errors:"1", Exceptions:"1", StartTime:"2013-06-03 14:33:09 -0600", Successes:"0", TestCase:"Run_Shelter_Stability_Suite.script", Warnings:"0")
+2013-06-03 14:34:17.745 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "Device/Apps/People/AddContact"\nExecution Time 0:01:08 Run_Shelter_Stability_Suite.script
