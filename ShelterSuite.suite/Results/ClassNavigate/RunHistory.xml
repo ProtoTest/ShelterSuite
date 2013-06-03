@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<runHistory script="ClassNavigate">
+ <run>
+  <RunDate>2013-05-17 10:46:24.451 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>0.006000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130517_104624.451/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-17 10:47:21.203 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>0.005000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130517_104721.203/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:33:57.467 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>0.147000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130520_133357.467/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

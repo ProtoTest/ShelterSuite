@@ -1,0 +1,21 @@
+//Handlers from the settings app
+
+to SetWifi value
+	if(ImageFound("Device/Apps/Settings/WiFiOn"))
+		if value="Off"
+			Click("Device/Apps/Settings/WiFiOn")
+		end if
+	end if
+	if(ImageFound("Device/Apps/Settings/WiFiOff"))
+		if value="On"
+			Click("Device/Apps/Settings/WiFiOff")
+		end if	
+	end if
+end SetWifi
+
+to OpenMenu name
+	repeat until ImageFound(Text:name) is "true"
+		run ClassNavigate.SwipeDown
+	end repeat
+	Click (Text:name)
+end OpenMenu

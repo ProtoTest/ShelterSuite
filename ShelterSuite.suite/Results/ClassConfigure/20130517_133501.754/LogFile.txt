@@ -1,0 +1,12 @@
+2013-05-17 13:35:01.757 -0600	START		Running Configure.script
+2013-05-17 13:35:05.262 -0600	click	Device/AppsIcon	at (241, 755)	2	on_openapp	Navigate.script
+2013-05-17 13:35:34.697 -0600	imagefound		Unable to Find Image (TEXT:"Settings")	3	on_openapp	Navigate.script
+2013-05-17 13:35:34.760 -0600	drag		at (430, 125)	2	on_swipeleft	Navigate.script
+2013-05-17 13:35:36.084 -0600	drop		at (100, 125)	3	on_swipeleft	Navigate.script
+2013-05-17 13:35:37.367 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (63, 220)	5	on_openapp	Navigate.script
+2013-05-17 13:35:38.022 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (63, 220)	6	on_openapp	Navigate.script
+2013-05-17 13:35:44.967 -0600	imagefound		Unable to Find Image Device/Apps/Settings/WiFiOn	2	on_setwifi	Settings.script
+2013-05-17 13:35:45.828 -0600	imagefound	Device/Apps/Settings/WiFiOff	found at (315, 192)	7	on_setwifi	Settings.script
+2013-05-17 13:35:46.822 -0600	click	Device/Apps/Settings/WiFiOff	at (315, 192)	9	on_setwifi	Settings.script
+2013-05-17 13:35:46.879 -0600	EndTestCase		(Duration:"45.119", Errors:"0", Exceptions:"0", StartTime:"2013-05-17 13:35:01 -0600", Successes:"1", TestCase:"Configure.script", Warnings:"0")
+2013-05-17 13:35:46.979 -0600	SUCCESS		Execution Time 0:00:45 Configure.script

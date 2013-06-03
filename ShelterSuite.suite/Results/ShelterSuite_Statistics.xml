@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<statistics>
+ <script name="Shelter Stability Test 57 - Open and Set a Theme">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2013-05-30 16:24:04 -0600</FirstRun>
+  <LastRun>2013-05-30 16:24:04 -0600</LastRun>
+  <TotalTimeOnSuccess>125.222000</TotalTimeOnSuccess>
+ </script>
+ <script name="Shelter Stability Test 64 - Menu Navigation">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>4</NumberOfRuns>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2013-05-30 17:01:18 -0600</FirstRun>
+  <LastRun>2013-05-30 17:07:12 -0600</LastRun>
+  <TotalTimeOnSuccess>188.535000</TotalTimeOnSuccess>
+ </script>
+</statistics>

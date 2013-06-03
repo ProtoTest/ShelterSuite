@@ -1,0 +1,74 @@
+//Generic device-level navigation methods
+
+to UnlockDevice
+	if(ImageFound("Device/System/LockIcon"))
+		Drag "Device/System/LockIcon"
+		wait 1 second
+		Drop (460,635)
+		//Drop "Device/System/Unlockicon" [mechanism unstable]
+		wait 1 second
+	end if
+end UnlockDevice
+
+to OpenTaskBar
+	Drag (240,25)
+	Drop (240,424)
+end OpenTaskBar
+
+to CloseTaskBar
+	Drag (240,790)
+	Drop (240,424)
+end CloseTaskBar
+
+to SwipeLeft
+	Drag (460,125)
+	Drop (260,125)
+end SwipeLeft
+
+to SwipeRight
+	Drag (100,125)
+	Drop (300,125)
+end SwipeRight
+
+to SwipeUp
+	Drag (465,500)
+	Drop (465,325)
+end SwipeUp
+
+to SwipeDown
+	Drag (465,325)
+	Drop (465,500)
+end SwipeDown
+
+to OpenApp name
+	Click "Device/System/AppsIcon"
+	repeat until ImageFound(Text:name) is "true"
+		run ClassNavigate.SwipeLeft
+	end repeat
+	Click (Text:name)
+end OpenApp
+
+(*to OpenApp name
+	Click "Device/System/AppsIcon"
+	repeat until (ClassUtilities.FastImageFound(Text:name)) is "true"
+run ClassNavigate.SwipeLeft
+	end repeat
+	Click (Text:name)
+end OpenApp*)
+
+to SettingsOption name
+	repeat until ImageFound(Text:name) is "true"
+		run ClassNavigate.SwipeUp
+	end repeat
+	Click (Text:name)
+end SettingsOption
+
+
+to GoHome
+	if(ImageFound("Device/System/AppsIcon")) is not "false"
+		Click "Device/System/HomeButton"
+	end if
+end GoHome
+
+to GoBack
+end GoBack

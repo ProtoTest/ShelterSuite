@@ -1,0 +1,5 @@
+2013-05-17 13:34:07.199 -0600	START		Running Configure.script
+2013-05-17 13:34:08.239 -0600	click	Device/AppsIcon	at (241, 755)	2	on_openapp	Navigate.script
+2013-05-17 13:34:36.782 -0600	imagefound		Unable to Find Image (TEXT:"Settings")	3	on_openapp	Navigate.script
+2013-05-17 13:34:36.829 -0600	EndTestCase		(Duration:"29.627", Errors:"1", Exceptions:"0", StartTime:"2013-05-17 13:34:07 -0600", Successes:"0", TestCase:"Configure.script", Warnings:"0")
+2013-05-17 13:34:37.035 -0600	FAILURE	Screen_Error.png	SRUN_BadValue Bad value for Object expression.  Looking for an object or script identifier, got 'SwipeLeft'.\nExecution Time 0:00:29 Configure.script

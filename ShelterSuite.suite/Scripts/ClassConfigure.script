@@ -1,0 +1,80 @@
+//These handlers will set the system into one state or another.  They should always start from the unlocked home screen.
+
+to SetWifi value
+	run ClassNavigate.OpenApp "Settings"
+	run ClassSettings.SetWifi value
+end SetWifi
+
+to MuteMedia value
+	run ClassNavigate.OpenApp(Settings)
+	Click (Text:"Sound")
+	Click (Text:"Volumes")
+	wait 1 second
+	Drag (420,300)
+	Drop (125,300)
+	Click (Text:"OK")
+	wait 1 second
+	Click "Device/System/HomeButton"
+end MuteMedia
+
+to UnMuteMedia value
+	run ClassNavigate.OpenApp(Settings)
+	Click (Text:"Sound")
+	Click (Text:"Volumes")
+	wait 1 second
+	Drag (125,300)
+	Drop (420,300)
+	Click (Text:"OK")
+	wait 1 second
+	Click "Device/System/HomeButton"
+end UnMuteMedia
+
+to MuteNotifications value
+	run ClassNavigate.OpenApp(Settings)
+	Click (Text:"Sound")
+	Click (Text:"Volumes")
+	wait 1 second
+	Drag (420,450)
+	Drop (125,450)
+	Click (Text:"OK")
+	wait 1 second
+	Click "Device/System/HomeButton"
+end MuteNotifications
+
+to UnMuteNotifications value
+	run ClassNavigate.OpenApp(Settings)
+	Click (Text:"Sound")
+	Click (Text:"Volumes")
+	wait 1 second
+	Drag (125,450)
+	Drop (420,450)
+	Click (Text:"OK")
+	wait 1 second
+	Click "Device/System/HomeButton"
+end UnMuteNotifications
+
+to SetBrowserHomepageToDefault
+	Click "Device/System/MenuButton"
+	Click (Text:"Settings")
+	Click (Text:"General")
+	Click (Text:"Set homepage")
+	Click (Text:"Default")
+	run ClassUtilities.ConfirmTextOnScreen("google.com") //google is default
+	Click "Device/System/HomeButton"
+	Click "Device/Apps/Browser/BrowserIcon"
+end SetBrowserHomepageToDefault
+
+to CloseAllBrowserTabs
+	wait 2 seconds
+	Click "Device/System/MenuButton"
+	Click "Device/Apps/Browser/SettingsRefresh"
+	Click "Device/Apps/Browser/TabsButton"
+	wait 2 second
+	repeat until ImageFound("Device/Apps/Browser/DeleteTab") is "false"
+		if ImageFound("Device/Apps/Browser/DeleteTab") then
+			Click "Device/Apps/Browser/DeleteTab"
+			wait 1 second
+		end if
+	end repeat		
+	Click "Device/Apps/Browser/BrowserIcon"
+end CloseAllBrowserTabs

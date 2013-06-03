@@ -1,0 +1,8 @@
+Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2013-05-20 16:02:49.676 -0600,"Failure",0:00:05,1,0,0,"20130520_160249.676/LogFile.txt","","SenseTalk Compiler Exception -- in mutemedia:\nWarning at line 9: Warning - Non-matching handler name: MuteDevice",0
+2013-05-20 16:04:04.001 -0600,"Failure",0:01:27,1,0,1,"20130520_160404.001/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/Apps/Music/Songs Unhighlighted""",0
+2013-05-20 16:20:39.746 -0600,"Failure",0:00:33,1,0,1,"20130520_162039.746/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/System/AppsIcon""",0
+2013-05-20 16:21:26.946 -0600,"Running",-2147483648:-2147483648:-8,0,0,0,"20130520_162126.946/LogFile.txt","","",0
+2013-05-20 16:22:08.576 -0600,"Success",0:01:04,0,0,0,"20130520_162208.576/LogFile.txt","","",1
+2013-05-20 16:25:29.434 -0600,"Success",0:02:07,0,0,0,"20130520_162529.434/LogFile.txt","","",1
+2013-05-20 16:29:32.201 -0600,"Success",0:01:59,0,0,0,"20130520_162932.201/LogFile.txt","","",1

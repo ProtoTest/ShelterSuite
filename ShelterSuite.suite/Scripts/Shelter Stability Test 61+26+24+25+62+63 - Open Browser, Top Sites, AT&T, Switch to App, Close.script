@@ -1,0 +1,100 @@
+//Motorola Shelter Stability Test 61 - Open Browser, Load Home Page
+//Motorola Shelter Stability Test 26 - Visit Top Websites
+//Motorola Shelter Stability Test 24 - Go to AT&T homepage
+//Motorola Shelter Stability Test 25 - Navigate to a link and click on the link
+//Motorola Shelter Stability Test 62 - Switch from Browser to App
+//Motorola Shelter Stability Test 63 - Close Browser
+//Tests are grouped together due to dependencies in functionality
+//Completed 5-30-2013
+
+//Setup
+run ClassNavigate.UnlockDevice
+
+//Test 61 - Open Browser, Load Home Page
+Click "Device/Apps/Browser/BrowserIcon"
+//run ClassNavigate.OpenApp(Browser) [Alternate open method]
+run ClassConfigure.SetBrowserHomepageToDefault
+run ClassConfigure.CloseAllBrowserTabs
+run ClassUtilities.ConfirmTextOnScreen("Sign in")
+Click "Device/System/MenuButton"
+Click "Device/Apps/Browser/SettingsRefresh"
+run ClassUtilities.ConfirmTextOnScreen("google.com") //google is default homepage
+
+//Test 26 - Visit Top Websites
+//As of 5-22-2013, Top 5 websites are Facebook, Google, Yahoo, YouTube, and Wikipedia
+//Facebook
+Click "Device/System/MenuButton"
+Click "Device/Apps/Browser/SettingsRefresh"
+wait 0.5 seconds
+Click (240,50)
+TypeText "facebook.com"
+Click "Device/Apps/Browser/GoButton"
+wait 5 seconds
+run ClassUtilities.ConfirmTextOnScreen("Get Facebook for Android")
+//Yahoo
+Click "Device/System/MenuButton"
+Click "Device/Apps/Browser/SettingsRefresh"
+wait 0.5 seconds
+Click (240,50)
+TypeText "yahoo.com"
+Click "Device/Apps/Browser/GoButton"
+wait 5 seconds
+run ClassUtilities.IfTextOnScreen("enable location"),("OK") //Popup may appear
+run ClassUtilities.ConfirmTextOnScreen("All Stories")
+//YouTube
+Click "Device/System/MenuButton"
+Click "Device/Apps/Browser/SettingsRefresh"
+wait 0.5 seconds
+Click (240,50)
+TypeText "youtube.com"
+Click "Device/Apps/Browser/GoButton"
+wait 5 seconds
+run ClassUtilities.ConfirmTextOnScreen("Popular on YouTube")
+//Wikipedia
+Click "Device/System/MenuButton"
+Click "Device/Apps/Browser/SettingsRefresh"
+wait 0.5 seconds
+Click (240,50)
+TypeText "wikipedia.org"
+Click "Device/Apps/Browser/GoButton"
+wait 5 seconds
+run ClassUtilities.ConfirmTextOnScreen("The Free Encyclopedia")
+
+//Test 24 - Go to AT&T homepage
+Click "Device/System/MenuButton"
+Click "Device/Apps/Browser/SettingsRefresh"
+wait 0.5 seconds
+Click (240,50)
+TypeText "att.com"
+Click "Device/Apps/Browser/GoButton"
+wait 5 seconds
+run ClassUtilities.ConfirmTextOnScreen("ABOUT AT&T")
+
+//Test 25 - Navigate to a link and click on the link
+Click (Text:"BUSINESS")
+wait 2 seconds
+Click (Text:"Privacy")
+wait 2 seconds
+run ClassUtilities.ConfirmTextOnScreen("Privacy Commitments")
+run ClassConfigure.CloseAllBrowserTabs
+
+//Test 62 - Switch from Browser to App
+Click "Device/System/HomeButton"
+run ClassNavigate.OpenTaskbar
+wait 1 second
+Click (Text:"VNC Server")
+run ClassUtilities.ConfirmTextOnScreen("Server is running")
+
+//Test 63 - Close Browser
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds
+
+
+
+
+
+
+

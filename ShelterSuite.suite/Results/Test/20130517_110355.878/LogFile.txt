@@ -1,0 +1,7 @@
+2013-05-17 11:03:55.881 -0600	START		Running Test.script
+2013-05-17 11:04:09.044 -0600	click	Device/AppsIcon	at (241, 755)	2	on_openapp	Navigate.script
+2013-05-17 11:04:10.465 -0600	click	Device/AppIcons/Search	at (415, 697)	3	on_openapp	Navigate.script
+2013-05-17 11:04:11.265 -0600	typetext		Settings	4	on_openapp	Navigate.script
+2013-05-17 11:04:18.734 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (134, 83)	5	on_openapp	Navigate.script
+2013-05-17 11:04:18.773 -0600	EndTestCase		(Duration:"22.889", Errors:"0", Exceptions:"0", StartTime:"2013-05-17 11:03:55 -0600", Successes:"1", TestCase:"Test.script", Warnings:"0")
+2013-05-17 11:04:18.870 -0600	SUCCESS		Execution Time 0:00:23 Test.script

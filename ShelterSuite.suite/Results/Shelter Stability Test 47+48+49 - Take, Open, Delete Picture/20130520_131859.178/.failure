@@ -1,0 +1,1 @@
+2013-05-20 13:18:59.178 -0600,Failure,0:00:12,1,0,0,20130520_131859.178/LogFile.txt,"","Invalid Repeat Until -- Value of REPEAT UNTIL condition must be either a boolean (true/false) or a date/time value (got 'ImageFound').",0

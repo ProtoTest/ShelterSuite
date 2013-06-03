@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<runHistory script="Shelter Stability Test 54+55+56 - Open, Play, Close Music">
+ <run>
+  <RunDate>2013-05-20 16:02:49.676 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>5.809000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130520_160249.676/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>SenseTalk Compiler Exception -- in mutemedia:
+Warning at line 9: Warning - Non-matching handler name: MuteDevice</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 16:04:04.001 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>87.327000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130520_160404.001/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "Device/Apps/Music/Songs Unhighlighted"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 16:20:39.746 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>33.768000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130520_162039.746/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "Device/System/AppsIcon"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 16:21:26.946 -0600</RunDate>
+  <Status>Running</Status>
+  <Duration>nan</Duration>
+  <Errors></Errors>
+  <Warnings></Warnings>
+  <Exceptions></Exceptions>
+  <Successes></Successes>
+  <LogFile>20130520_162126.946/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 16:22:08.576 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>64.958000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130520_162208.576/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 16:25:29.434 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>127.707000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130520_162529.434/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 16:29:32.201 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>119.491000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130520_162932.201/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

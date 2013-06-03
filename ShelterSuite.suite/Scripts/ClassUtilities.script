@@ -1,0 +1,40 @@
+// This is a collection of miscellaneous utility functions that can help extend or replace the default methods inside eggPlant.  
+
+function FastImageFound
+	//This function only tries once before it fails instead of 8 times.
+	set originalSearchCount to the imageSearchCount
+	set the imageSearchCount to 1
+	set returnValue to ImageFound(parameterList)
+	set the imageSearchCount to originalSearchCount
+	return returnValue
+end function
+
+to ConfirmTextOnScreen string
+	if not ImageFound(Text:string) then
+		logError "The expected text was not found."
+	end if
+end ConfirmTextOnScreen
+
+to ConfirmTextNotOnScreen string
+	if ImageFound(Text:string) then
+		logError "The expected text was not found."
+	end if
+end ConfirmTextNotOnScreen
+
+to ConfirmImageOnScreen image
+	if not ImageFound(image) then
+		logError "The expected image was not found."
+	end if
+end ConfirmImageOnScreen
+
+to ConfirmImageNotOnScreen image
+	if ImageFound(image) then
+		logError "The expected image was not found."
+	end if
+end ConfirmImageNotOnScreen
+
+to IfTextOnScreen string,action
+	if ImageFound(Text:string) then
+		Click(Text:action)
+	end if
+end IfTextOnScreen

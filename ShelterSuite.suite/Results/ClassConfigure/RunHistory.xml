@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<runHistory script="Configure">
+ <run>
+  <RunDate>2013-05-17 13:32:29.571 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.145000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130517_133229.571/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STUnknownMessage -- ERROR: No Such Command: 'setwifi'</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-17 13:33:01.301 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>8.640000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130517_133301.301/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-17 13:33:25.497 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>3.917000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130517_133325.497/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-17 13:34:07.196 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>29.631000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130517_133407.196/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>SRUN_BadValue -- Bad value for Object expression.  Looking for an object or script identifier, got 'SwipeLeft'.</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-17 13:35:01.754 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>45.122000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130517_133501.754/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

@@ -1,0 +1,5 @@
+2013-05-30 17:06:23.108 -0600	START		Running Shelter Stability Test 64 - Menu Navigation.script
+2013-05-30 17:06:32.843 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-05-30 17:07:01.169 -0600	Exception	Device/System/AppsIcon	No Image Found On Screen: "Device/System/AppsIcon"	2	on_openapp	ClassNavigate.script
+2013-05-30 17:07:01.242 -0600	EndTestCase		(Duration:"38.125", Errors:"1", Exceptions:"1", StartTime:"2013-05-30 17:06:23 -0600", Successes:"0", TestCase:"Shelter Stability Test 64 - Menu Navigation.script", Warnings:"0")
+2013-05-30 17:07:01.454 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "Device/System/AppsIcon"\nExecution Time 0:00:38 Shelter Stability Test 64 - Menu Navigation.script

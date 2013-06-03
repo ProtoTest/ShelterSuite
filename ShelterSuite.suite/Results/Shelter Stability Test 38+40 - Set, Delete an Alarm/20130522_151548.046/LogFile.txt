@@ -1,0 +1,24 @@
+2013-05-22 15:15:48.049 -0600	START		Running Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:15:58.656 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-05-22 15:16:00.391 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-22 15:16:02.512 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	found at (52, 346)	3	on_openapp	ClassNavigate.script
+2013-05-22 15:16:03.876 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	at (63, 350)	6	on_openapp	ClassNavigate.script
+2013-05-22 15:16:06.096 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set alarm", TextPlatform:"Generic OCR")	at (352, 491)	11	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:09.550 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"8:30 AM", TextPlatform:"Generic OCR")	found at (178, 145)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:16:10.586 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"9:00 AM", TextPlatform:"Generic OCR")	found at (178, 248)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:16:12.403 -0600	click	Device/System/HomeButton	at (120, 824)	15	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:13.400 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-22 15:16:20.247 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	found at (63, 350)	3	on_openapp	ClassNavigate.script
+2013-05-22 15:16:23.446 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	at (63, 350)	6	on_openapp	ClassNavigate.script
+2013-05-22 15:16:25.961 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set alarm", TextPlatform:"Generic OCR")	at (352, 491)	20	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:30.680 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"+", TextPlatform:"Generic OCR")	at (438, 74)	22	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:31.893 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Turn alarm on", TextPlatform:"Generic OCR")	at (130, 179)	23	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:35.149 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"DONE", TextPlatform:"Generic OCR")	at (101, 74)	24	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:36.254 -0600	imagefound	Device/Apps/Settings/CheckboxSelected	found at (47, 367)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-05-22 15:16:36.344 -0600	click		at (140, 390)	29	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:39.594 -0600	click	Device/AppIcons/TrashcanIcon	at (438, 73)	30	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:41.113 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Delete this alarm?", TextPlatform:"Generic OCR")	found at (157, 431)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:16:44.129 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"OK", TextPlatform:"Generic OCR")	at (348, 499)	32	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:45.064 -0600	click	Device/System/HomeButton	at (120, 824)	33	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 15:16:45.137 -0600	EndTestCase		(Duration:"57.082", Errors:"0", Exceptions:"0", StartTime:"2013-05-22 15:15:48 -0600", Successes:"1", TestCase:"Shelter Stability Test 38+40 - Set, Delete an Alarm.script", Warnings:"0")
+2013-05-22 15:16:45.289 -0600	SUCCESS		Execution Time 0:00:57 Shelter Stability Test 38+40 - Set, Delete an Alarm.script

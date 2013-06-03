@@ -1,0 +1,8 @@
+2013-05-20 13:37:47.002 -0600	START		Running Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script
+2013-05-20 13:37:58.055 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-05-20 13:38:01.509 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-20 13:38:33.134 -0600	imagefound		Unable to Find Image (TEXT:"(Text:"Settings")")	3	on_openapp	ClassNavigate.script
+2013-05-20 13:38:33.198 -0600	drag		at (430, 125)	2	on_swipeleft	ClassNavigate.script
+2013-05-20 13:38:34.516 -0600	drop		at (100, 125)	3	on_swipeleft	ClassNavigate.script
+2013-05-20 13:38:51.557 -0600	EndTestCase		(Duration:"64.545", Errors:"1", Exceptions:"0", StartTime:"2013-05-20 13:37:47 -0600", Successes:"0", TestCase:"Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script", Warnings:"0")
+2013-05-20 13:38:51.560 -0600	ABORTED		Execution Time 0:01:05 Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script

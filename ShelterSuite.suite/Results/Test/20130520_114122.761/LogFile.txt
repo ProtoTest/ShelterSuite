@@ -1,0 +1,6 @@
+2013-05-20 11:41:22.763 -0600	START		Running Test.script
+2013-05-20 11:41:23.287 -0600	imagefound	Device/System/LockIcon	found at (241, 630)	2	on_unlockdevice	Navigate.script
+2013-05-20 11:41:24.277 -0600	drag	Device/System/LockIcon	at (241, 630)	3	on_unlockdevice	Navigate.script
+2013-05-20 11:41:26.972 -0600	drop	Device/System/Unlockicon	at (442, 632)	4	on_unlockdevice	Navigate.script
+2013-05-20 11:41:27.048 -0600	EndTestCase		(Duration:"4.277", Errors:"0", Exceptions:"0", StartTime:"2013-05-20 11:41:22 -0600", Successes:"1", TestCase:"Test.script", Warnings:"0")
+2013-05-20 11:41:27.229 -0600	SUCCESS		Execution Time 0:00:05 Test.script

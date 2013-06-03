@@ -1,0 +1,7 @@
+2013-05-20 13:18:59.180 -0600	START		Running Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script
+2013-05-20 13:19:09.351 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-05-20 13:19:11.394 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-20 13:19:11.433 -0600	set		IMAGESEARCHCOUNT = 1	4	function_fastimagefound	ClassUtilities.script
+2013-05-20 13:19:11.435 -0600	set		IMAGESEARCHCOUNT = 7	7	function_fastimagefound	ClassUtilities.script
+2013-05-20 13:19:11.485 -0600	EndTestCase		(Duration:"12.3", Errors:"1", Exceptions:"0", StartTime:"2013-05-20 13:18:59 -0600", Successes:"0", TestCase:"Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script", Warnings:"0")
+2013-05-20 13:19:12.003 -0600	FAILURE	Screen_Error.png	Invalid Repeat Until Value of REPEAT UNTIL condition must be either a boolean (true/false) or a date/time value (got 'ImageFound').\nExecution Time 0:00:12 Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script

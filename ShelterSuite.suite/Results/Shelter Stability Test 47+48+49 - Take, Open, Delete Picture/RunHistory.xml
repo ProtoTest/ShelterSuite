@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<runHistory script="Shelter Stability Test 47+48+49 - Take, Open, Delete Picture">
+ <run>
+  <RunDate>2013-05-20 13:02:21.990 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>12.922000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130520_130221.990/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Error Running Script Command -- imagefound Error - Too Few Parameters, please use imagefound([TIME], image1[, ...])</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:10:21.159 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>13.097000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130520_131021.159/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Invalid Repeat Until -- Value of REPEAT UNTIL condition must be either a boolean (true/false) or a date/time value (got 'returnValue').</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:18:59.178 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>12.305000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130520_131859.178/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Invalid Repeat Until -- Value of REPEAT UNTIL condition must be either a boolean (true/false) or a date/time value (got 'ImageFound').</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:20:00.237 -0600</RunDate>
+  <Status>Running</Status>
+  <Duration>0.000000</Duration>
+  <Errors></Errors>
+  <Warnings></Warnings>
+  <Exceptions></Exceptions>
+  <Successes></Successes>
+  <LogFile>20130520_132000.237/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:34:07.316 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>19.487000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130520_133407.316/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:37:46.998 -0600</RunDate>
+  <Status>Running</Status>
+  <Duration>0.000000</Duration>
+  <Errors></Errors>
+  <Warnings></Warnings>
+  <Exceptions></Exceptions>
+  <Successes></Successes>
+  <LogFile>20130520_133746.998/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:39:36.053 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>7.631000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130520_133936.053/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>File Not Found -- imagefound Error - Could Not Open Image: parameterList</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:40:17.955 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>38.528000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130520_134017.955/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:46:09.955 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>18.294000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130520_134609.955/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-20 13:51:36.557 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>19.981000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130520_135136.557/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

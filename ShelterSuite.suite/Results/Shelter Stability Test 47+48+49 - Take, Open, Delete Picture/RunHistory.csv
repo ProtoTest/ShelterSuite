@@ -1,0 +1,11 @@
+Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2013-05-20 13:02:21.990 -0600,"Failure",0:00:12,1,0,1,"20130520_130221.990/LogFile.txt","","Error Running Script Command -- imagefound Error - Too Few Parameters, please use imagefound([TIME], image1[, ...])",0
+2013-05-20 13:10:21.159 -0600,"Failure",0:00:13,1,0,0,"20130520_131021.159/LogFile.txt","","Invalid Repeat Until -- Value of REPEAT UNTIL condition must be either a boolean (true/false) or a date/time value (got 'returnValue').",0
+2013-05-20 13:18:59.178 -0600,"Failure",0:00:12,1,0,0,"20130520_131859.178/LogFile.txt","","Invalid Repeat Until -- Value of REPEAT UNTIL condition must be either a boolean (true/false) or a date/time value (got 'ImageFound').",0
+2013-05-20 13:20:00.237 -0600,"Running",0:00:00,,,,"20130520_132000.237/LogFile.txt","","",
+2013-05-20 13:34:07.316 -0600,"Success",0:00:19,0,0,0,"20130520_133407.316/LogFile.txt","","",1
+2013-05-20 13:37:46.998 -0600,"Running",0:00:00,,,,"20130520_133746.998/LogFile.txt","","",
+2013-05-20 13:39:36.053 -0600,"Failure",0:00:07,1,0,1,"20130520_133936.053/LogFile.txt","","File Not Found -- imagefound Error - Could Not Open Image: parameterList",0
+2013-05-20 13:40:17.955 -0600,"Success",0:00:38,0,0,0,"20130520_134017.955/LogFile.txt","","",1
+2013-05-20 13:46:09.955 -0600,"Success",0:00:18,0,0,0,"20130520_134609.955/LogFile.txt","","",1
+2013-05-20 13:51:36.557 -0600,"Success",0:00:19,0,0,0,"20130520_135136.557/LogFile.txt","","",1

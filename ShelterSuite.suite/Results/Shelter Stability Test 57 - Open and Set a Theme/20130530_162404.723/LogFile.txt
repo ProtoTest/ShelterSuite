@@ -1,0 +1,37 @@
+2013-05-30 16:24:04.727 -0600	START		Running Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:24:06.110 -0600	imagefound	Device/System/LockIcon	found at (241, 630)	2	on_unlockdevice	ClassNavigate.script
+2013-05-30 16:24:07.462 -0600	drag	Device/System/LockIcon	at (241, 630)	3	on_unlockdevice	ClassNavigate.script
+2013-05-30 16:24:08.978 -0600	drop		at (460, 635)	5	on_unlockdevice	ClassNavigate.script
+2013-05-30 16:24:11.309 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-30 16:24:45.435 -0600	imagefound		Unable to Find Image (TEXT:"Settings")	3	on_openapp	ClassNavigate.script
+2013-05-30 16:24:45.503 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-05-30 16:24:46.698 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-05-30 16:24:49.151 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (63, 220)	5	on_openapp	ClassNavigate.script
+2013-05-30 16:24:50.692 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (63, 220)	6	on_openapp	ClassNavigate.script
+2013-05-30 16:24:54.182 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Display", TextPlatform:"Generic OCR")	found at (132, 611)	2	on_settingsoption	ClassNavigate.script
+2013-05-30 16:24:56.763 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Display", TextPlatform:"Generic OCR")	at (132, 611)	3	on_settingsoption	ClassNavigate.script
+2013-05-30 16:24:58.676 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Wallpaper", TextPlatform:"Generic OCR")	at (95, 257)	10	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:00.398 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Gallery", TextPlatform:"Generic OCR")	at (77, 160)	11	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:01.663 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Test", TextPlatform:"Generic OCR")	at (183, 582)	12	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:02.442 -0600	click		at (240, 360)	13	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:04.529 -0600	click		at (450, 75)	15	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:05.497 -0600	click	Device/System/HomeButton	at (120, 824)	16	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:07.221 -0600	imagefound	Device/Backgrounds/MotorolaSymbol	found at (74, 197)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-05-30 16:25:07.492 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-30 16:25:33.720 -0600	imagefound		Unable to Find Image (TEXT:"Settings")	3	on_openapp	ClassNavigate.script
+2013-05-30 16:25:33.785 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-05-30 16:25:34.980 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-05-30 16:25:36.960 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (63, 220)	5	on_openapp	ClassNavigate.script
+2013-05-30 16:25:38.455 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (63, 220)	6	on_openapp	ClassNavigate.script
+2013-05-30 16:25:41.683 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Display", TextPlatform:"Generic OCR")	found at (132, 611)	2	on_settingsoption	ClassNavigate.script
+2013-05-30 16:25:42.791 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Display", TextPlatform:"Generic OCR")	at (132, 611)	3	on_settingsoption	ClassNavigate.script
+2013-05-30 16:25:44.395 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Wallpaper", TextPlatform:"Generic OCR")	at (95, 257)	20	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:46.875 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Gallery", TextPlatform:"Generic OCR")	at (79, 164)	21	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:52.937 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Test", TextPlatform:"Generic OCR")	at (183, 582)	22	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:53.715 -0600	click		at (240, 540)	23	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:55.802 -0600	click		at (450, 75)	25	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:25:56.739 -0600	click	Device/System/HomeButton	at (120, 824)	26	on_shelter_stability_test_57___open_and_set_a_theme	Shelter Stability Test 57 - Open and Set a Theme.script
+2013-05-30 16:26:03.714 -0600	imagefound		Unable to Find Image Device/Backgrounds/MotorolaSymbol	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-05-30 16:26:04.869 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-05-30 16:26:09.948 -0600	EndTestCase		(Duration:"125.214", Errors:"0", Exceptions:"0", StartTime:"2013-05-30 16:24:04 -0600", Successes:"1", TestCase:"Shelter Stability Test 57 - Open and Set a Theme.script", Warnings:"0")
+2013-05-30 16:26:10.090 -0600	SUCCESS		Execution Time 0:02:05 Shelter Stability Test 57 - Open and Set a Theme.script

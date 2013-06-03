@@ -1,0 +1,6 @@
+2013-05-17 13:33:25.501 -0600	START		Running Configure.script
+2013-05-17 13:33:26.345 -0600	imagefound	Device/Apps/Settings/WiFiOn	found at (390, 194)	2	on_setwifi	Settings.script
+2013-05-17 13:33:27.288 -0600	click	Device/Apps/Settings/WiFiOn	at (390, 194)	4	on_setwifi	Settings.script
+2013-05-17 13:33:29.353 -0600	imagefound	Device/Apps/Settings/WiFiOff	found at (315, 192)	7	on_setwifi	Settings.script
+2013-05-17 13:33:29.416 -0600	EndTestCase		(Duration:"3.912", Errors:"0", Exceptions:"0", StartTime:"2013-05-17 13:33:25 -0600", Successes:"1", TestCase:"Configure.script", Warnings:"0")
+2013-05-17 13:33:29.482 -0600	SUCCESS		Execution Time 0:00:04 Configure.script

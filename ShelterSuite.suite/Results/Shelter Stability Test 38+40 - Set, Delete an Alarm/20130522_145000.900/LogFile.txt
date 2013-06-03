@@ -1,0 +1,18 @@
+2013-05-22 14:50:00.902 -0600	START		Running Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 14:50:02.870 -0600	imagefound	Device/System/LockIcon	found at (241, 630)	2	on_unlockdevice	ClassNavigate.script
+2013-05-22 14:50:03.481 -0600	drag	Device/System/LockIcon	at (241, 630)	3	on_unlockdevice	ClassNavigate.script
+2013-05-22 14:50:05.173 -0600	drop	Device/System/Unlockicon	at (442, 632)	5	on_unlockdevice	ClassNavigate.script
+2013-05-22 14:50:06.630 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-22 14:50:11.745 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	found at (63, 350)	3	on_openapp	ClassNavigate.script
+2013-05-22 14:50:15.122 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	at (63, 350)	6	on_openapp	ClassNavigate.script
+2013-05-22 14:50:19.265 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set alarm", TextPlatform:"Generic OCR")	at (352, 491)	10	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 14:50:22.164 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"8:30 AM", TextPlatform:"Generic OCR")	found at (178, 145)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 14:50:23.246 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"9:00 AM", TextPlatform:"Generic OCR")	found at (178, 248)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 14:50:24.985 -0600	click	Device/System/HomeButton	at (120, 824)	14	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 14:50:26.003 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-22 14:50:28.262 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	found at (63, 350)	3	on_openapp	ClassNavigate.script
+2013-05-22 14:50:29.571 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	at (63, 350)	6	on_openapp	ClassNavigate.script
+2013-05-22 14:50:31.191 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set alarm", TextPlatform:"Generic OCR")	at (160, 378)	18	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 14:50:54.291 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"+", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"+")"	20	on_shelter_stability_test_38_40___set__delete_an_alarm	Shelter Stability Test 38+40 - Set, Delete an Alarm.script
+2013-05-22 14:50:54.333 -0600	EndTestCase		(Duration:"53.426", Errors:"1", Exceptions:"1", StartTime:"2013-05-22 14:50:00 -0600", Successes:"0", TestCase:"Shelter Stability Test 38+40 - Set, Delete an Alarm.script", Warnings:"0")
+2013-05-22 14:50:54.879 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"+")"\nExecution Time 0:00:54 Shelter Stability Test 38+40 - Set, Delete an Alarm.script

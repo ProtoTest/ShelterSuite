@@ -1,0 +1,3 @@
+2013-05-17 10:47:21.206 -0600	START		Running Navigate.script
+2013-05-17 10:47:21.210 -0600	EndTestCase		(Duration:"0.001", Errors:"0", Exceptions:"0", StartTime:"2013-05-17 10:47:21 -0600", Successes:"1", TestCase:"Navigate.script", Warnings:"0")
+2013-05-17 10:47:21.325 -0600	SUCCESS		Execution Time 0:00:00 Navigate.script

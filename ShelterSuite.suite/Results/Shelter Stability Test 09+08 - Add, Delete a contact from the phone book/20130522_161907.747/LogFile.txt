@@ -1,0 +1,13 @@
+2013-05-22 16:19:07.750 -0600	START		Running Shelter Stability Test 09+08 - Add, Delete a contact from the phone book.script
+2013-05-22 16:19:09.285 -0600	imagefound	Device/System/LockIcon	found at (241, 630)	2	on_unlockdevice	ClassNavigate.script
+2013-05-22 16:19:10.279 -0600	drag	Device/System/LockIcon	at (241, 630)	3	on_unlockdevice	ClassNavigate.script
+2013-05-22 16:19:13.753 -0600	drop	Device/System/Unlockicon	at (442, 632)	5	on_unlockdevice	ClassNavigate.script
+2013-05-22 16:19:15.275 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-22 16:19:17.941 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	found at (60, 754)	3	on_openapp	ClassNavigate.script
+2013-05-22 16:19:19.800 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	at (64, 748)	6	on_openapp	ClassNavigate.script
+2013-05-22 16:19:23.373 -0600	click	Device/Apps/People/AddContact	at (436, 766)	11	on_shelter_stability_test_09_08___add__delete_a_contact_from_the_phone_book	Shelter Stability Test 09+08 - Add, Delete a contact from the phone book.script
+2013-05-22 16:19:41.861 -0600	imagefound		Unable to Find Image (TEXT:"Your new contact")	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 16:19:41.864 -0600	LogError		The expected text was not found.	3	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 16:19:59.364 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"OK", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"OK")"	13	on_shelter_stability_test_09_08___add__delete_a_contact_from_the_phone_book	Shelter Stability Test 09+08 - Add, Delete a contact from the phone book.script
+2013-05-22 16:19:59.400 -0600	EndTestCase		(Duration:"51.645", Errors:"2", Exceptions:"1", StartTime:"2013-05-22 16:19:07 -0600", Successes:"0", TestCase:"Shelter Stability Test 09+08 - Add, Delete a contact from the phone book.script", Warnings:"0")
+2013-05-22 16:19:59.631 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"OK")"\nExecution Time 0:00:52 Shelter Stability Test 09+08 - Add, Delete a contact from the phone book.script

@@ -1,0 +1,28 @@
+2013-05-22 15:41:14.989 -0600	START		Running Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:17.462 -0600	imagefound	Device/System/LockIcon	found at (241, 630)	2	on_unlockdevice	ClassNavigate.script
+2013-05-22 15:41:18.511 -0600	drag	Device/System/LockIcon	at (241, 630)	3	on_unlockdevice	ClassNavigate.script
+2013-05-22 15:41:22.022 -0600	drop	Device/System/Unlockicon	at (442, 632)	5	on_unlockdevice	ClassNavigate.script
+2013-05-22 15:41:23.546 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-05-22 15:41:25.269 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Calendar", TextPlatform:"Generic OCR")	found at (307, 187)	3	on_openapp	ClassNavigate.script
+2013-05-22 15:41:26.509 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Calendar", TextPlatform:"Generic OCR")	at (298, 218)	6	on_openapp	ClassNavigate.script
+2013-05-22 15:41:31.869 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"SUN", TextPlatform:"Generic OCR")	found at (52, 123)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:41:33.947 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WED", TextPlatform:"Generic OCR")	found at (241, 123)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:41:34.918 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"SAT", TextPlatform:"Generic OCR")	found at (434, 123)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:41:36.681 -0600	click	Device/System/MenuButton	at (281, 825)	14	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:38.548 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"New event", TextPlatform:"Generic OCR")	at (127, 472)	15	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:40.038 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Event Name", TextPlatform:"Generic OCR")	at (111, 251)	16	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:40.877 -0600	typetext		Test Event 1	17	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:42.347 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Location", TextPlatform:"Generic OCR")	at (88, 318)	18	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:43.119 -0600	typetext		Office	19	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:44.476 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"DONE", TextPlatform:"Generic OCR")	at (389, 74)	20	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:47.572 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Test", TextPlatform:"Generic OCR")	found at (377, 622)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:41:48.464 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Event", TextPlatform:"Generic OCR")	found at (382, 643)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:41:51.147 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Office", TextPlatform:"Generic OCR")	found at (383, 685)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:41:52.252 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Event", TextPlatform:"Generic OCR")	at (382, 643)	27	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:55.567 -0600	click	Device/AppIcons/TrashcanIcon	at (438, 75)	28	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:41:56.995 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Delete this event?", TextPlatform:"Generic OCR")	found at (167, 382)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-05-22 15:41:59.190 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"OK", TextPlatform:"Generic OCR")	at (342, 449)	30	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:42:20.382 -0600	imagefound		Unable to Find Image (TEXT:"Event")	2	on_confirmtextnotonscreen	ClassUtilities.script
+2013-05-22 15:42:20.737 -0600	click	Device/System/HomeButton	at (120, 824)	33	on_shelter_stability_test_37_39___add__delete_a_calendar_appointment	Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
+2013-05-22 15:42:20.821 -0600	EndTestCase		(Duration:"65.828", Errors:"0", Exceptions:"0", StartTime:"2013-05-22 15:41:14 -0600", Successes:"1", TestCase:"Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script", Warnings:"0")
+2013-05-22 15:42:21.035 -0600	SUCCESS		Execution Time 0:01:06 Shelter Stability Test 37+39 - Add, Delete a Calendar Appointment.script
