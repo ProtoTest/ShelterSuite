@@ -1,3 +1,0 @@
-Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
-2013-06-03 14:32:50.809 -0600,"Failure",0:00:00,1,0,0,"20130603_143250.809/LogFile.txt","","SenseTalk Compiler Exception -- in run_shelter_stability_suite:\nSyntax Error at line 1: Syntax Error - can't understand ""Test"" at or near character 22",0
-2013-06-03 14:33:09.383 -0600,"Failure",0:01:07,1,0,1,"20130603_143309.383/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/Apps/People/AddContact""",0

@@ -63,6 +63,15 @@ to SettingsOption name
 	Click (Text:name)
 end SettingsOption
 
+to GoToBrowserAddress address
+	Click "Device/System/MenuButton"
+	Click "Device/Apps/Browser/SettingsRefresh"
+	wait 0.5 seconds
+	Click (240,50)
+	TypeText (address)
+	Click "Device/Apps/Browser/GoButton"
+	wait 5 seconds
+end GoToBrowserAddress
 
 to GoHome
 	if(ImageFound("Device/System/AppsIcon")) is not "false"

@@ -1,0 +1,26 @@
+//Motorola Shelter Stability Test 30 - Download a Java application/game
+//Motorola Shelter Stability Test 33 - Open a downloaded Java Game and then close a Java Game
+//Motorola Shelter Stability Test 35 - Delete a downloaded Java Game
+//Tests are grouped together due to dependencies in functionality
+//In Progress - Shelter Device lacks default google play app
+
+//Setup
+run ClassNavigate.UnlockDevice
+
+//Test 30 - Download an application/game
+Click "Device/Apps/Browser/BrowserIcon"
+//run ClassNavigate.OpenApp(Browser) [Alternate open method]
+run ClassConfigure.SetBrowserHomepageToDefault
+run ClassNavigate.GoToBrowserAddress("play.google.com")
+run ClassUtilities.IfImageOnScreen("Device/Apps/Browser/PopupClose"),("Device/Apps/Browser/PopupClose") //Popup may appear
+Click "Device/Apps/Browser/Sites/GPlayFullSiteAppsButton"
+wait 5 seconds
+Click (165,144)
+TypeText ("Candy Crush Saga")
+Click "Device/Apps/Browser/GoButton"
+wait 3 seconds
+Click ("Device/Apps/Browser/Sites/GPlayFullSiteInstallAppButton")
+
+
+
+

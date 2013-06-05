@@ -17,7 +17,7 @@ end ConfirmTextOnScreen
 
 to ConfirmTextNotOnScreen string
 	if ImageFound(Text:string) then
-		logError "The expected text was not found."
+		logError "Element erroneously present."
 	end if
 end ConfirmTextNotOnScreen
 
@@ -29,7 +29,7 @@ end ConfirmImageOnScreen
 
 to ConfirmImageNotOnScreen image
 	if ImageFound(image) then
-		logError "The expected image was not found."
+		logError "Element erroneously present."
 	end if
 end ConfirmImageNotOnScreen
 
@@ -37,4 +37,12 @@ to IfTextOnScreen string,action
 	if ImageFound(Text:string) then
 		Click(Text:action)
 	end if
+	wait 3 seconds
 end IfTextOnScreen
+
+to IfImageOnScreen string,action
+	if ImageFound(string) then
+		Click(action)
+	end if
+	wait 3 seconds
+end IfImageOnScreen

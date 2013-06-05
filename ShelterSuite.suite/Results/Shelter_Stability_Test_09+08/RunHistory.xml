@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<runHistory script="Shelter Stability Test 09+08 - Add, Delete a contact from the phone book">
+ <run>
+  <RunDate>2013-05-22 16:19:07.747 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>51.651000</Duration>
+  <Errors>2</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130522_161907.747/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "(TEXT:"OK")"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-22 16:37:14.106 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>35.356000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130522_163714.106/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "Device/System/AppsIcon"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-05-22 16:44:36.272 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>73.425000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130522_164436.272/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "(TEXT:"Delete")"</ErrorMessage>
+ </run>
+</runHistory>

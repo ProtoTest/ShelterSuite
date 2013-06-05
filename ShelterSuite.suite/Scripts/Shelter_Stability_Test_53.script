@@ -1,0 +1,26 @@
+//Motorola Shelter Stability Test 53 - Play video streaming content using device browser and video player
+//Completed 6-04-2013
+
+//Setup
+run ClassNavigate.UnlockDevice
+
+//Test 53 - Play video streaming content using device browser
+Click "Device/Apps/Browser/BrowserIcon"
+//run ClassNavigate.OpenApp(Browser) [Alternate open method]
+run ClassConfigure.SetBrowserHomepageToDefault
+run ClassNavigate.GoToBrowserAddress("m.youtube.com/watch?v=lcJuZIUeBME")
+run ClassUtilities.ConfirmTextOnScreen("Canon in D Major")
+Click (240,250)
+wait 5 seconds
+run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Browser/Sites/YTubeBlackScreenVideo")
+//insert commands for confirm background image here
+run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Browser/Sites/YTubeFullscreenButton")
+run ClassConfigure.CloseAllBrowserTabs
+Click "Device/System/HomeButton"
+
+//Test 53 - Play video streaming content using video player
+//Awaiting feedback on whether to use youtube app to stream or video app to play file
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds

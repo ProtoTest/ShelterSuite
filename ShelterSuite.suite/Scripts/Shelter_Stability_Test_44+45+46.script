@@ -1,0 +1,12 @@
+//Motorola Shelter Stability Test 44 - Record a 30s video
+//Motorola Shelter Stability Test 45 - Play back a 30s video
+//Motorola Shelter Stability Test 46 - Delete a video
+//Tests are grouped together due to dependencies in functionality
+//In Progress - Shelter Device's Camera closes VNC connection
+
+//Setup
+run ClassNavigate.UnlockDevice
+
+//Motorola Shelter Stability Test 44 - Record a 30s video
+run ClassNavigate.UnlockDevice
+run ClassNavigate.OpenApp(Camera)
