@@ -57,6 +57,12 @@ run ClassNavigate.SwipeLeft
 end OpenApp*)
 
 to SettingsOption name
+	run ClassNavigate.SwipeDown
+	wait 1 second
+	run ClassNavigate.SwipeDown
+	wait 1 second
+	run ClassNavigate.SwipeDown
+	wait 1 second
 	repeat until ImageFound(Text:name) is "true"
 		run ClassNavigate.SwipeUp
 	end repeat

@@ -1,3 +1,5 @@
 Script,Last Status,Runs,Fails,First Run,Last Run,Avg Time(Success)
 Shelter_Stability_Test_64,Success,4,2,2013-05-30 17:01:18 -0600,2013-05-30 17:07:12 -0600,0:01:34
+Shelter_Stability_Test_67,Success,1,0,2013-06-05 15:12:29 -0600,2013-06-05 15:12:29 -0600,0:03:56
+Shelter_Stability_Test_30+33+35,Success,1,0,2013-06-05 18:00:49 -0600,2013-06-05 18:00:49 -0600,0:03:38
 Shelter_Stability_Test_57,Success,1,0,2013-05-30 16:24:04 -0600,2013-05-30 16:24:04 -0600,0:02:05

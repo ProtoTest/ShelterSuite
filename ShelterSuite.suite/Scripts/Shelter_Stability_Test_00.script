@@ -1,13 +1,14 @@
 //Global Setup required before running any Shelter Stability Tests
 
 //Manual Setup Steps:
+//In Developers Tools, select "Stay Awake" option
 //Set auto-rotate Setting to "on"
+//Within Settings -> Security, allow for Unknown sources
 //Transfer Setup folder "Test Wallpapers "into DCIM folder on device
 //Set image file "Stability Scripts Wallpaper 1" to be device background
 //Transfer audio file "Audio Sample 1" to Music folder within device
-//In Developers Tools, select "Stay Awake" option
 //Setup exchange-email account for email and calendar functionality
-
+//Download "DroidFish" App from web to downloads folder.
 //Tests are designed to run with VMLite VNC Server.  If this app is altered, update test 62.
 
 run ClassConfigure.MuteNotifications

@@ -8,6 +8,22 @@
   <LastRun>2013-05-30 17:07:12 -0600</LastRun>
   <TotalTimeOnSuccess>188.535000</TotalTimeOnSuccess>
  </script>
+ <script name="Shelter_Stability_Test_67">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2013-06-05 15:12:29 -0600</FirstRun>
+  <LastRun>2013-06-05 15:12:29 -0600</LastRun>
+  <TotalTimeOnSuccess>236.192000</TotalTimeOnSuccess>
+ </script>
+ <script name="Shelter_Stability_Test_30+33+35">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2013-06-05 18:00:49 -0600</FirstRun>
+  <LastRun>2013-06-05 18:00:49 -0600</LastRun>
+  <TotalTimeOnSuccess>218.131000</TotalTimeOnSuccess>
+ </script>
  <script name="Shelter_Stability_Test_57">
   <LastStatus>Success</LastStatus>
   <NumberOfRuns>1</NumberOfRuns>
