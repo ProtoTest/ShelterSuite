@@ -2,7 +2,7 @@
 //Completed 5-30-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ReadyState
 
 //Test 57 -  Open and Set a Theme
 run ClassNavigate.OpenApp(Settings)
@@ -27,5 +27,6 @@ Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Backgrounds/MotorolaSymbol")
 
 //Teardown
+Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 5 seconds

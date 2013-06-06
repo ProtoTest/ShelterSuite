@@ -8,7 +8,7 @@
 //Completed 5-30-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ReadyState
 
 //Test 61 - Open Browser, Load Home Page
 Click "Device/Apps/Browser/BrowserIcon"

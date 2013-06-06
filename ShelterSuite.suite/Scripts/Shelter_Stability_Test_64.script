@@ -2,7 +2,7 @@
 //Completed 5-30-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ReadyState
 
 //Test 64 - Menu Navigation
 run ClassNavigate.OpenApp(Settings)
@@ -22,6 +22,7 @@ Click (Text:"kernel")
 run ClassUtilities.ConfirmTextOnScreen("Notices")
 Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmTextNotOnScreen("Open source licenses")
+Click "Device/System/HomeButton"
 
 //Teardown
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")

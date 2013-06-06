@@ -4,7 +4,7 @@
 //Completed 5-22-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ResetState
 
 //Test 37 - Add an appointment in the Calendar
 run ClassNavigate.OpenApp(Calendar)

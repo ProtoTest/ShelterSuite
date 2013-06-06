@@ -5,7 +5,7 @@
 //Completed 5-20-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ReadyState
 run ClassConfigure.MuteMedia
 
 //Test 54 - Open Music Player

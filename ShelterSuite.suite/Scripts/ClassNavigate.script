@@ -10,6 +10,16 @@ to UnlockDevice
 	end if
 end UnlockDevice
 
+to ResetState
+	run ClassNavigate.UnlockDevice
+	Click "Device/System/HomeButton"
+	wait 1 second
+	Click "Device/System/HomeButton"
+	wait 1 second
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+	wait 1 second
+end ResetState
+
 to OpenTaskBar
 	Drag (240,25)
 	Drop (240,424)

@@ -11,4 +11,5 @@
 //Download "DroidFish" App from web to downloads folder.
 //Tests are designed to run with VMLite VNC Server.  If this app is altered, update test 62.
 
+run ClassNavigate.ResetState
 run ClassConfigure.MuteNotifications

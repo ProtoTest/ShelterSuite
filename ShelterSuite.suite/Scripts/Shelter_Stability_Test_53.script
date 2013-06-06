@@ -1,8 +1,9 @@
 //Motorola Shelter Stability Test 53 - Play video streaming content using device browser and video player
+//Motorola clarified that test should utilize youtube.com in browser for video streaming.  Video player unnecessary.
 //Completed 6-04-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ResetState
 
 //Test 53 - Play video streaming content using device browser
 Click "Device/Apps/Browser/BrowserIcon"
@@ -18,9 +19,7 @@ run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Browser/Sites/YTubeFulls
 run ClassConfigure.CloseAllBrowserTabs
 Click "Device/System/HomeButton"
 
-//Test 53 - Play video streaming content using video player
-//Awaiting feedback on whether to use youtube app to stream or video app to play file
-
 //Teardown
+Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 5 seconds

@@ -5,7 +5,7 @@
 //Completed 5-23-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ResetState
 
 //Test 50 - Record an Audio Message
 run ClassNavigate.OpenApp(Recorder)

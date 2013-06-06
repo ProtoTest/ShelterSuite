@@ -5,7 +5,7 @@
 //Completed 6-05-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ResetState
 
 //Test 30 - Installing an App
 run ClassNavigate.OpenApp(Downloads)
@@ -50,8 +50,8 @@ run ClassUtilities.ConfirmTextNotOnScreen("DroidFish")
 Click "Device/System/HomeButton"
 run ClassNavigate.OpenApp(Downloads)
 run ClassUtilities.ConfirmTextOnScreen("DroidFish")
+Click "Device/System/HomeButton"
 
 //Teardown
-Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 5 seconds

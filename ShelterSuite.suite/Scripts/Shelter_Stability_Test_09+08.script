@@ -1,10 +1,10 @@
 //Motorola Shelter Stability Test 09 - Add a contact to the phone book
-//Motorola Shelter Stability Test 08 - Delete an appointment in the Calendar
+//Motorola Shelter Stability Test 08 - Delete a contact from the phone book
 //Tests are grouped together due to dependencies in functionality
 //Completed 5-22-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ResetState
 
 //Test 09 - Add a contact to the phone book
 run ClassNavigate.OpenApp(People)
@@ -21,15 +21,15 @@ run ClassUtilities.ConfirmTextOnScreen("Pat Riley")
 Click (Text:"Pat Riley")
 run ClassUtilities.ConfirmTextOnScreen("Pat Riley")
 
-//Test 08 - Delete an appointment in the Calendar
+//Test 08 - Delete a contact from the phone book
 Click (Text:"Pat Riley")
 Click "Device/System/MenuButton"
 Click (Text:"Delete")
 run ClassUtilities.ConfirmTextOnScreen("This contact will be deleted")
 Click (Text:"OK")
 run ClassUtilities.ConfirmTextNotOnScreen("Pat Riley")
+Click "Device/System/HomeButton"
 
 //Teardown
-Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 5 seconds

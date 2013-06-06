@@ -9,3 +9,8 @@ run ClassNavigate.UnlockDevice
 //Test 65 - Turn the WiFi radio off and on
 run ClassNavigate.OpenTaskbar
 Click (Text:"USB connected")
+
+//Teardown
+Click "Device/System/HomeButton"
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds
