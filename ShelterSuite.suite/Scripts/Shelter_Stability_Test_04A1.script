@@ -1,0 +1,22 @@
+//Motorola Shelter Stability Test 04 - Shelter Device A - Make a 2G voice call from the call history list
+//Subroutine 1 - Set mobile networks to 2G, dial Shelter Device B
+//Completed 6-07-2013
+
+//Setup
+run ClassNavigate.ResetState
+
+//Test 01A - Make a 2G voice call from the call history list
+//Subroutine 1 - Set mobile networks to 2G, dial Shelter Device B
+run ClassNavigate.OpenApp(Settings)
+run ClassNavigate.SettingsOption(More)
+Click (Text:"Mobile networks")
+Click (Text:"Use only 2G")
+run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Settings/CheckboxSelected",   SearchRectangle:((25,500),(450,650)))
+Click "Device/System/HomeButton"
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 3 seconds
+Click "Device/AppIcons/TelephoneApp"
+Click "Device/Apps/Telephone/HistoryIcon"
+Click (Text:"ShelterB")
+Click (Text:"Call")
+run ClassUtilities.ConfirmTextOnScreen("Dialing")

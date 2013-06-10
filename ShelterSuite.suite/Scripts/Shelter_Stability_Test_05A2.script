@@ -1,0 +1,12 @@
+//Motorola Shelter Stability Test 05 - Shelter Device A - Make a 3G voice call from the call history list
+//Subroutine 2 - Teardown
+//Completed 6-10-2013
+
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds

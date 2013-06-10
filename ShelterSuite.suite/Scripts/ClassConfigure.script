@@ -5,7 +5,7 @@ to SetWifi value
 	run ClassSettings.SetWifi value
 end SetWifi
 
-to MuteMedia value
+to MuteMedia
 	run ClassNavigate.OpenApp(Settings)
 	Click (Text:"Sound")
 	Click (Text:"Volumes")
@@ -17,7 +17,7 @@ to MuteMedia value
 	Click "Device/System/HomeButton"
 end MuteMedia
 
-to UnMuteMedia value
+to UnMuteMedia
 	run ClassNavigate.OpenApp(Settings)
 	Click (Text:"Sound")
 	Click (Text:"Volumes")
@@ -29,7 +29,7 @@ to UnMuteMedia value
 	Click "Device/System/HomeButton"
 end UnMuteMedia
 
-to MuteNotifications value
+to MuteNotifications
 	run ClassNavigate.OpenApp(Settings)
 	Click (Text:"Sound")
 	Click (Text:"Volumes")
@@ -41,7 +41,7 @@ to MuteNotifications value
 	Click "Device/System/HomeButton"
 end MuteNotifications
 
-to UnMuteNotifications value
+to UnMuteNotifications
 	run ClassNavigate.OpenApp(Settings)
 	Click (Text:"Sound")
 	Click (Text:"Volumes")

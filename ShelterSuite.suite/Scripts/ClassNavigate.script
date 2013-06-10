@@ -95,5 +95,12 @@ to GoHome
 	end if
 end GoHome
 
-to GoBack
-end GoBack
+to AnswerCall
+	if(ImageFound("Device/Apps/Telephone/IncomingCall"))
+		Drag "Device/Apps/Telephone/IncomingCall"
+		wait 1 second
+		Drop (460,635)
+		//Drop "Device/System/Unlockicon" [mechanism unstable]
+		wait 1 second
+	end if
+end AnswerCall

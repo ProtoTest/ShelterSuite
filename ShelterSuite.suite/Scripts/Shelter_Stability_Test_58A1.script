@@ -1,0 +1,25 @@
+//Motorola Shelter Stability Test 58 - Shelter Device A - Make a phone call
+//Subroutine 1 - Dial Shelter Device B
+//Completed 6-10-2013
+
+//Setup
+run ClassNavigate.ResetState
+
+//Test 58A - Make a phone call
+//Subroutine 1 - Dial Shelter Device B
+Click "Device/AppIcons/TelephoneApp"
+Click "Device/Apps/Telephone/PhoneIcon"
+Click "Device/Apps/Telephone/PhoneDial7"
+Click "Device/Apps/Telephone/PhoneDial2"
+Click "Device/Apps/Telephone/PhoneDial0"
+Click "Device/Apps/Telephone/PhoneDial3"
+Click "Device/Apps/Telephone/PhoneDial6"
+Click "Device/Apps/Telephone/PhoneDial0"
+Click "Device/Apps/Telephone/PhoneDial7"
+Click "Device/Apps/Telephone/PhoneDial2"
+Click "Device/Apps/Telephone/PhoneDial1"
+Click "Device/Apps/Telephone/PhoneDial4"
+run ClassUtilities.ConfirmTextInArea("(720) 360-7214"),("10,110"),("450,250")
+Click "Device/Apps/Telephone/StartCall"
+run ClassUtilities.ConfirmTextOnScreen("Dialing")
+run ClassUtilities.ConfirmTextOnScreen("ShelterB")

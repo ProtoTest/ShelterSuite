@@ -1,0 +1,12 @@
+//Motorola Shelter Stability Test 01 - Shelter Device A - Make a phone call
+//Subroutine 2 - Teardown
+//Completed 6-10-2013
+
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds

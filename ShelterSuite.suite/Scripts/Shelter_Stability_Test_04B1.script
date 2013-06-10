@@ -1,0 +1,21 @@
+//Motorola Shelter Stability Test 04 - Shelter Device B - Make a 2G voice call from the call history list
+//Subroutine 1 - Receive Incoming Call from Shelter Device A
+//Tests are grouped together due to dependencies in functionality
+//Completed 6-10-2013
+
+run ClassUtilities.ConfirmTextOnScreen("INCOMING CALL")
+run ClassUtilities.ConfirmTextOnScreen("SHELTERA")
+run ClassUtilities.ConfirmTextOnScreen("MOBILE")
+run ClassNavigate.AnswerCall
+run ClassUtilities.ConfirmTextOnScreen("SHELTERA")
+run ClassUtilities.ConfirmTextOnScreen("MOBILE")
+Click "Device/Apps/Telephone/EndCall"
+run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Telephone/EndCall")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds

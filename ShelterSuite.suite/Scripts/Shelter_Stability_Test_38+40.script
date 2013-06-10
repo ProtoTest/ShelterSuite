@@ -19,7 +19,7 @@ run ClassNavigate.OpenApp(Clock)
 wait 1 second
 Click (Text:"Set alarm")
 wait 1 second
-Click (Text:"+")
+Click "Device/Apps/Clock/AddAlarm"
 Click (Text:"Turn alarm on")
 Click (Text:"DONE")
 wait 1 second

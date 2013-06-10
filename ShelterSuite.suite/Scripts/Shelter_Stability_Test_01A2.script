@@ -1,0 +1,18 @@
+//Motorola Shelter Stability Test 01 - Shelter Device A - Make a 2G voice call from the phone book
+//Subroutine 2 - Set mobile networks to default
+//Completed 6-07-2013
+
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
+Click "Device/System/HomeButton"
+run ClassNavigate.OpenApp(Settings)
+run ClassNavigate.SettingsOption(More)
+Click (Text:"Mobile networks")
+Click (Text:"Use only 2G")
+run ClassUtilities.ConfirmImageNotOnScreen(ImageName:"Device/Apps/Settings/CheckboxSelected",   SearchRectangle:((25,500),(450,650)))
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds

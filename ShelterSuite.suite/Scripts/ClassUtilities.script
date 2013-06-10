@@ -15,11 +15,23 @@ to ConfirmTextOnScreen string
 	end if
 end ConfirmTextOnScreen
 
+to ConfirmTextInArea string,topcorner,botcorner
+	if not ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner))) then
+		logError "The expected text was not found."
+	end if
+end ConfirmTextInArea
+
 to ConfirmTextNotOnScreen string
 	if ImageFound(Text:string) then
 		logError "Element erroneously present."
 	end if
 end ConfirmTextNotOnScreen
+
+to ConfirmTextNotInArea string,topcorner,botcorner
+	if ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner))) then
+		logError "Element erroneously present."
+	end if
+end ConfirmTextNotInArea
 
 to ConfirmImageOnScreen image
 	if not ImageFound(image) then

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<runHistory script="Shelter Stability Test 38+40 - Set, Delete an Alarm">
+<runHistory script="Shelter_Stability_Test_38+40">
  <run>
   <RunDate>2013-05-22 13:50:14.689 -0600</RunDate>
   <Status>Failure</Status>
@@ -15,7 +15,7 @@
  <run>
   <RunDate>2013-05-22 14:01:44.112 -0600</RunDate>
   <Status>Running</Status>
-  <Duration>nan</Duration>
+  <Duration>0.000000</Duration>
   <Errors></Errors>
   <Warnings></Warnings>
   <Exceptions></Exceptions>
@@ -27,7 +27,7 @@
  <run>
   <RunDate>2013-05-22 14:06:54.525 -0600</RunDate>
   <Status>Running</Status>
-  <Duration>nan</Duration>
+  <Duration>0.000000</Duration>
   <Errors></Errors>
   <Warnings></Warnings>
   <Exceptions></Exceptions>
@@ -142,6 +142,18 @@ Syntax Error at line 11: Syntax Error - can't understand "1" at or near characte
   <Exceptions>0</Exceptions>
   <Successes>1</Successes>
   <LogFile>20130522_151548.046/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-06 21:12:42.414 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>95.051000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130606_211242.414/LogFile.txt</LogFile>
   <ReturnValue></ReturnValue>
   <ErrorMessage></ErrorMessage>
  </run>

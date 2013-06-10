@@ -1,0 +1,14 @@
+//Motorola Shelter Stability Test 05 - Shelter Device A - Make a 3G voice call from the call history list
+//Subroutine 1 - Dial Shelter Device B the call history list
+//Completed 6-10-2013
+
+//Setup
+run ClassNavigate.ResetState
+
+//Test 02A - Make a 3G voice call from the call history list
+//Subroutine 1 - Dial Shelter Device B from the call history list
+Click "Device/AppIcons/TelephoneApp"
+Click "Device/Apps/Telephone/HistoryIcon"
+Click (Text:"ShelterB")
+Click (Text:"Call")
+run ClassUtilities.ConfirmTextOnScreen("Dialing")
