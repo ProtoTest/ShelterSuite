@@ -1,3 +1,0 @@
-2013-05-20 13:18:07.919 -0600	START		Running ClassUtilities.script
-2013-05-20 13:18:08.013 -0600	EndTestCase		(Duration:"0.086", Errors:"0", Exceptions:"0", StartTime:"2013-05-20 13:18:07 -0600", Successes:"1", TestCase:"ClassUtilities.script", Warnings:"0")
-2013-05-20 13:18:08.187 -0600	SUCCESS		Execution Time 0:00:01 ClassUtilities.script

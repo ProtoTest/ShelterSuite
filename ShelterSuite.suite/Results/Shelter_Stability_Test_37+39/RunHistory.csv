@@ -1,4 +1,0 @@
-Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
-2013-05-22 13:44:41.828 -0600,"Success",0:01:09,0,0,0,"20130522_134441.828/LogFile.txt","","",1
-2013-05-22 15:18:12.281 -0600,"Failure",0:00:46,1,0,1,"20130522_151812.281/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""DONE"")""",0
-2013-05-22 15:41:14.987 -0600,"Success",0:01:05,0,0,0,"20130522_154114.987/LogFile.txt","","",1

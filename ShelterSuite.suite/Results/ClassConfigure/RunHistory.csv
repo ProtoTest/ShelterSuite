@@ -1,6 +1,0 @@
-Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
-2013-05-17 13:32:29.571 -0600,"Failure",0:00:00,1,0,0,"20130517_133229.571/LogFile.txt","","STUnknownMessage -- ERROR: No Such Command: 'setwifi'",0
-2013-05-17 13:33:01.301 -0600,"Success",0:00:08,0,0,0,"20130517_133301.301/LogFile.txt","","",1
-2013-05-17 13:33:25.497 -0600,"Success",0:00:03,0,0,0,"20130517_133325.497/LogFile.txt","","",1
-2013-05-17 13:34:07.196 -0600,"Failure",0:00:29,1,0,0,"20130517_133407.196/LogFile.txt","","SRUN_BadValue -- Bad value for Object expression.  Looking for an object or script identifier, got 'SwipeLeft'.",0
-2013-05-17 13:35:01.754 -0600,"Success",0:00:45,0,0,0,"20130517_133501.754/LogFile.txt","","",1

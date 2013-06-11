@@ -1,3 +1,0 @@
-2013-05-17 11:21:22.274 -0600	START		Running Test.script
-2013-05-17 11:23:01.994 -0600	EndTestCase		(Duration:"99.717", Errors:"1", Exceptions:"0", StartTime:"2013-05-17 11:21:22 -0600", Successes:"0", TestCase:"Test.script", Warnings:"0")
-2013-05-17 11:23:01.995 -0600	ABORTED		Execution Time 0:01:39 Test.script

@@ -1,7 +1,7 @@
 //Generic device-level navigation methods
 
 to UnlockDevice
-	if(ImageFound("Device/System/LockIcon"))
+	if(ImageFound("Device/System/LockIcon")) is not "false"
 		Drag "Device/System/LockIcon"
 		wait 1 second
 		Drop (460,635)
@@ -52,19 +52,11 @@ end SwipeDown
 
 to OpenApp name
 	Click "Device/System/AppsIcon"
-	repeat until ImageFound(Text:name) is "true"
+	repeat until (ImageFound(3,Text:name)) is "true" //"3" within ImageFound sets total wait time to 3 secs
 		run ClassNavigate.SwipeLeft
 	end repeat
 	Click (Text:name)
 end OpenApp
-
-(*to OpenApp name
-	Click "Device/System/AppsIcon"
-	repeat until (ClassUtilities.FastImageFound(Text:name)) is "true"
-run ClassNavigate.SwipeLeft
-	end repeat
-	Click (Text:name)
-end OpenApp*)
 
 to SettingsOption name
 	run ClassNavigate.SwipeDown
@@ -73,7 +65,7 @@ to SettingsOption name
 	wait 1 second
 	run ClassNavigate.SwipeDown
 	wait 1 second
-	repeat until ImageFound(Text:name) is "true"
+	repeat until ImageFound(3,Text:name) is "true"
 		run ClassNavigate.SwipeUp
 	end repeat
 	Click (Text:name)

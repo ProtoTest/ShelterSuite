@@ -1,5 +1,0 @@
-Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
-2013-05-30 17:01:18.159 -0600,"Success",0:01:43,0,0,0,"20130530_170118.159/LogFile.txt","","",1
-2013-05-30 17:05:32.895 -0600,"Failure",0:00:15,1,0,1,"20130530_170532.895/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/System/AppsIcon""",0
-2013-05-30 17:06:23.105 -0600,"Failure",0:00:38,1,0,1,"20130530_170623.105/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/System/AppsIcon""",0
-2013-05-30 17:07:12.873 -0600,"Success",0:01:25,0,0,0,"20130530_170712.873/LogFile.txt","","",1

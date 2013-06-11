@@ -1,4 +1,0 @@
-2013-05-17 11:28:02.401 -0600	START		Running Test.script
-2013-05-17 11:28:06.097 -0600	drag	Device/Unlockicon	at (241, 639)	2	on_unlockdevice	Navigate.script
-2013-05-17 11:30:48.069 -0600	EndTestCase		(Duration:"165.664", Errors:"1", Exceptions:"0", StartTime:"2013-05-17 11:28:02 -0600", Successes:"0", TestCase:"Test.script", Warnings:"0")
-2013-05-17 11:30:48.070 -0600	ABORTED		Execution Time 0:02:46 Test.script

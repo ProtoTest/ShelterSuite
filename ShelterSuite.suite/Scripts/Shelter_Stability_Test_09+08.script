@@ -8,6 +8,7 @@ run ClassNavigate.ResetState
 
 //Test 09 - Add a contact to the phone book
 run ClassNavigate.OpenApp(People)
+Click "Device/Apps/People/Contacts"
 Click "Device/Apps/People/AddContact"
 run ClassUtilities.IfTextOnScreen("Your new contact"),("OK") //Popup may appear
 Click (Text:"First name")

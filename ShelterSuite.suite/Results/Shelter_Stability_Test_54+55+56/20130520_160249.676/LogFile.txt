@@ -1,6 +1,0 @@
-2013-05-20 16:02:49.682 -0600	START		Running Shelter Stability Test 54+55+56 - Open, Play, Close Music.script
-2013-05-20 16:02:51.329 -0600	imagefound	Device/System/LockIcon	found at (241, 630)	2	on_unlockdevice	ClassNavigate.script
-2013-05-20 16:02:52.866 -0600	drag	Device/System/LockIcon	at (241, 630)	3	on_unlockdevice	ClassNavigate.script
-2013-05-20 16:02:55.436 -0600	drop	Device/System/Unlockicon	at (442, 632)	4	on_unlockdevice	ClassNavigate.script
-2013-05-20 16:02:55.488 -0600	EndTestCase		(Duration:"5.798", Errors:"1", Exceptions:"0", StartTime:"2013-05-20 16:02:49 -0600", Successes:"0", TestCase:"Shelter Stability Test 54+55+56 - Open, Play, Close Music.script", Warnings:"0")
-2013-05-20 16:02:56.471 -0600	FAILURE	Screen_Error.png	SenseTalk Compiler Exception in mutemedia:\nWarning at line 9: Warning - Non-matching handler name: MuteDevice\nExecution Time 0:00:06 Shelter Stability Test 54+55+56 - Open, Play, Close Music.script

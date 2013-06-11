@@ -1,5 +1,0 @@
-2013-05-17 10:51:08.037 -0600	START		Running Test.script
-2013-05-17 10:51:08.808 -0600	drag	Device/Unlockicon	at (241, 630)	1	on_test	Test.script
-2013-05-17 10:51:11.766 -0600	drop	Device/LockIcon	at (443, 630)	2	on_test	Test.script
-2013-05-17 10:51:11.833 -0600	EndTestCase		(Duration:"3.794", Errors:"0", Exceptions:"0", StartTime:"2013-05-17 10:51:08 -0600", Successes:"1", TestCase:"Test.script", Warnings:"0")
-2013-05-17 10:51:11.983 -0600	SUCCESS		Execution Time 0:00:03 Test.script

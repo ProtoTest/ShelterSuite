@@ -1,6 +1,0 @@
-2013-05-22 14:01:44.114 -0600	START		Running Shelter Stability Test 38+40 - Set, Delete an Alarm.script
-2013-05-22 14:01:44.842 -0600	imagefound	Device/System/LockIcon	found at (241, 630)	2	on_unlockdevice	ClassNavigate.script
-2013-05-22 14:01:46.950 -0600	drag	Device/System/LockIcon	at (241, 630)	3	on_unlockdevice	ClassNavigate.script
-2013-05-22 14:01:48.333 -0600	drop	Device/System/Unlockicon	at (442, 632)	4	on_unlockdevice	ClassNavigate.script
-2013-05-22 14:01:53.225 -0600	EndTestCase		(Duration:"9.107", Errors:"1", Exceptions:"0", StartTime:"2013-05-22 14:01:44 -0600", Successes:"0", TestCase:"Shelter Stability Test 38+40 - Set, Delete an Alarm.script", Warnings:"0")
-2013-05-22 14:01:53.228 -0600	ABORTED		Execution Time 0:00:09 Shelter Stability Test 38+40 - Set, Delete an Alarm.script

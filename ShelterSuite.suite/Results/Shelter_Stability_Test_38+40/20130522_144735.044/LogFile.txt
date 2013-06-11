@@ -1,3 +1,0 @@
-2013-05-22 14:47:35.046 -0600	START		Running Shelter Stability Test 38+40 - Set, Delete an Alarm.script
-2013-05-22 14:47:35.052 -0600	EndTestCase		(Duration:"0.001", Errors:"1", Exceptions:"0", StartTime:"2013-05-22 14:47:35 -0600", Successes:"0", TestCase:"Shelter Stability Test 38+40 - Set, Delete an Alarm.script", Warnings:"0")
-2013-05-22 14:47:35.601 -0600	FAILURE	Screen_Error.png	SenseTalk Compiler Exception in shelter_stability_test_38_40___set__delete_an_alarm:\nSyntax Error at line 11: Syntax Error - can't understand "1" at or near character 346\nExecution Time 0:00:00 Shelter Stability Test 38+40 - Set, Delete an Alarm.script

@@ -1,4 +1,25 @@
 Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
-2013-05-22 16:19:07.747 -0600,"Failure",0:00:51,2,0,1,"20130522_161907.747/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""OK"")""",0
-2013-05-22 16:37:14.106 -0600,"Failure",0:00:35,1,0,1,"20130522_163714.106/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/System/AppsIcon""",0
-2013-05-22 16:44:36.272 -0600,"Failure",0:01:13,1,0,1,"20130522_164436.272/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""Delete"")""",0
+2013-06-11 10:34:26.666 -0600,"Success",0:01:45,0,0,0,"20130611_103426.666/LogFile.txt","","",1
+2013-06-11 10:40:43.610 -0600,"Failure",0:00:00,1,0,1,"20130611_104043.610/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:40:44.667 -0600,"Failure",0:00:00,1,0,1,"20130611_104044.667/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:40:45.810 -0600,"Failure",0:00:00,1,0,1,"20130611_104045.810/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:40:46.919 -0600,"Failure",0:00:00,1,0,1,"20130611_104046.919/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:40:48.027 -0600,"Failure",0:00:00,1,0,1,"20130611_104048.027/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:40:49.110 -0600,"Failure",0:00:00,1,0,1,"20130611_104049.110/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:40:50.186 -0600,"Failure",0:00:00,1,0,1,"20130611_104050.186/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:40:51.308 -0600,"Failure",0:00:00,1,0,1,"20130611_104051.308/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:40:52.446 -0600,"Failure",0:00:00,1,0,1,"20130611_104052.446/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:40:53.551 -0600,"Failure",0:00:00,1,0,1,"20130611_104053.551/LogFile.txt","","No Remote Connection -- imagefound Error - Remote Connection Unavailable",0
+2013-06-11 10:42:03.065 -0600,"Failure",0:00:28,1,0,1,"20130611_104203.065/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/Apps/People/AddContact""",0
+2013-06-11 10:42:33.034 -0600,"Failure",0:00:24,1,0,1,"20130611_104233.034/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/Apps/People/AddContact""",0
+2013-06-11 10:42:58.086 -0600,"Failure",0:00:23,1,0,1,"20130611_104258.086/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/Apps/People/AddContact""",0
+2013-06-11 10:44:01.321 -0600,"Success",0:01:29,0,0,0,"20130611_104401.321/LogFile.txt","","",1
+2013-06-11 10:45:31.839 -0600,"Success",0:01:31,0,0,0,"20130611_104531.839/LogFile.txt","","",1
+2013-06-11 10:47:04.460 -0600,"Success",0:01:26,0,0,0,"20130611_104704.460/LogFile.txt","","",1
+2013-06-11 10:48:32.068 -0600,"Success",0:01:28,0,0,0,"20130611_104832.068/LogFile.txt","","",1
+2013-06-11 10:50:01.725 -0600,"Success",0:01:30,0,0,0,"20130611_105001.725/LogFile.txt","","",1
+2013-06-11 10:51:33.373 -0600,"Success",0:01:27,0,0,0,"20130611_105133.373/LogFile.txt","","",1
+2013-06-11 10:53:01.988 -0600,"Success",0:01:24,0,0,0,"20130611_105301.988/LogFile.txt","","",1
+2013-06-11 10:54:27.586 -0600,"Success",0:01:22,0,0,0,"20130611_105427.586/LogFile.txt","","",1
+2013-06-11 10:55:51.181 -0600,"Success",0:01:34,0,0,0,"20130611_105551.181/LogFile.txt","","",1
+2013-06-11 10:57:26.321 -0600,"Success",0:01:26,0,0,0,"20130611_105726.321/LogFile.txt","","",1

@@ -1,9 +1,0 @@
-2013-05-20 13:39:36.057 -0600	START		Running Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script
-2013-05-20 13:39:36.498 -0600	imagefound	Device/System/LockIcon	found at (241, 630)	2	on_unlockdevice	ClassNavigate.script
-2013-05-20 13:39:38.680 -0600	drag	Device/System/LockIcon	at (241, 630)	3	on_unlockdevice	ClassNavigate.script
-2013-05-20 13:39:40.046 -0600	drop	Device/System/Unlockicon	at (442, 632)	4	on_unlockdevice	ClassNavigate.script
-2013-05-20 13:39:43.570 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
-2013-05-20 13:39:43.621 -0600	set		IMAGESEARCHCOUNT = 1	4	function_fastimagefound	ClassUtilities.script
-2013-05-20 13:39:43.625 -0600	Exception	parameterList	Could Not Open Image: parameterList	5	function_fastimagefound	ClassUtilities.script
-2013-05-20 13:39:43.686 -0600	EndTestCase		(Duration:"7.622", Errors:"1", Exceptions:"1", StartTime:"2013-05-20 13:39:36 -0600", Successes:"0", TestCase:"Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script", Warnings:"0")
-2013-05-20 13:39:44.672 -0600	FAILURE	Screen_Error.png	File Not Found imagefound Error - Could Not Open Image: parameterList\nExecution Time 0:00:07 Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script

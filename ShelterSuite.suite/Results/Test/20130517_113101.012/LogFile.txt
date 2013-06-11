@@ -1,9 +1,0 @@
-2013-05-17 11:31:01.014 -0600	START		Running Test.script
-2013-05-17 11:31:02.448 -0600	click	Device/AppsIcon	at (241, 755)	2	on_openapp	Navigate.script
-2013-05-17 11:31:32.141 -0600	imagefound		Unable to Find Image (TEXT:"Settings")	3	on_openapp	Navigate.script
-2013-05-17 11:31:32.411 -0600	drag	Device/AppIcons/RightNothing	at (428, 123)	4	on_openapp	Navigate.script
-2013-05-17 11:31:35.119 -0600	drop	Device/AppIcons/LeftNothing	at (80, 127)	5	on_openapp	Navigate.script
-2013-05-17 11:31:36.399 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (63, 220)	6	on_openapp	Navigate.script
-2013-05-17 11:31:37.219 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (63, 220)	7	on_openapp	Navigate.script
-2013-05-17 11:31:37.281 -0600	EndTestCase		(Duration:"36.265", Errors:"0", Exceptions:"0", StartTime:"2013-05-17 11:31:01 -0600", Successes:"1", TestCase:"Test.script", Warnings:"0")
-2013-05-17 11:31:37.368 -0600	SUCCESS		Execution Time 0:00:36 Test.script

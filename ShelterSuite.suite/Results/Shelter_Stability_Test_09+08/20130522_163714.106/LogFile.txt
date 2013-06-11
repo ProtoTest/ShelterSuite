@@ -1,7 +1,0 @@
-2013-05-22 16:37:14.108 -0600	START		Running Shelter Stability Test 09+08 - Add, Delete a contact from the phone book.script
-2013-05-22 16:37:16.052 -0600	imagefound	Device/System/LockIcon	found at (241, 630)	2	on_unlockdevice	ClassNavigate.script
-2013-05-22 16:37:16.952 -0600	drag	Device/System/LockIcon	at (241, 630)	3	on_unlockdevice	ClassNavigate.script
-2013-05-22 16:37:20.512 -0600	drop	Device/System/Unlockicon	at (442, 632)	5	on_unlockdevice	ClassNavigate.script
-2013-05-22 16:37:49.411 -0600	Exception	Device/System/AppsIcon	No Image Found On Screen: "Device/System/AppsIcon"	2	on_openapp	ClassNavigate.script
-2013-05-22 16:37:49.464 -0600	EndTestCase		(Duration:"35.351", Errors:"1", Exceptions:"1", StartTime:"2013-05-22 16:37:14 -0600", Successes:"0", TestCase:"Shelter Stability Test 09+08 - Add, Delete a contact from the phone book.script", Warnings:"0")
-2013-05-22 16:37:49.739 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "Device/System/AppsIcon"\nExecution Time 0:00:35 Shelter Stability Test 09+08 - Add, Delete a contact from the phone book.script

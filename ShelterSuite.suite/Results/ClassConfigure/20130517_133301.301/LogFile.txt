@@ -1,6 +1,0 @@
-2013-05-17 13:33:01.304 -0600	START		Running Configure.script
-2013-05-17 13:33:08.146 -0600	imagefound		Unable to Find Image Device/Apps/Settings/WiFiOn	2	on_setwifi	Settings.script
-2013-05-17 13:33:08.958 -0600	imagefound	Device/Apps/Settings/WiFiOff	found at (315, 192)	7	on_setwifi	Settings.script
-2013-05-17 13:33:09.903 -0600	click	Device/Apps/Settings/WiFiOff	at (315, 192)	9	on_setwifi	Settings.script
-2013-05-17 13:33:09.943 -0600	EndTestCase		(Duration:"8.636", Errors:"0", Exceptions:"0", StartTime:"2013-05-17 13:33:01 -0600", Successes:"1", TestCase:"Configure.script", Warnings:"0")
-2013-05-17 13:33:10.032 -0600	SUCCESS		Execution Time 0:00:08 Configure.script

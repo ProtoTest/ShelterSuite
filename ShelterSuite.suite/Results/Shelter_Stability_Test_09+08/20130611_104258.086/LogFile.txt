@@ -1,0 +1,11 @@
+2013-06-11 10:42:58.112 -0600	START		Running Shelter_Stability_Test_09+08.script
+2013-06-11 10:43:04.896 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-11 10:43:05.711 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-11 10:43:06.983 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-11 10:43:08.179 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-11 10:43:10.020 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-11 10:43:12.891 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	found at (64, 748)	3	on_openapp	ClassNavigate.script
+2013-06-11 10:43:15.092 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	at (64, 748)	6	on_openapp	ClassNavigate.script
+2013-06-11 10:43:21.782 -0600	Exception	Device/Apps/People/AddContact	No Image Found On Screen: "Device/Apps/People/AddContact"	11	on_shelter_stability_test_09_08	Shelter_Stability_Test_09+08.script
+2013-06-11 10:43:21.799 -0600	EndTestCase		(Duration:"23.68", Errors:"1", Exceptions:"1", StartTime:"2013-06-11 10:42:58 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_09+08.script", Warnings:"0")
+2013-06-11 10:43:21.942 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "Device/Apps/People/AddContact"\nExecution Time 0:00:23 Shelter_Stability_Test_09+08.script

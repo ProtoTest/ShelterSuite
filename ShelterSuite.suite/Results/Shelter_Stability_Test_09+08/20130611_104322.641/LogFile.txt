@@ -1,0 +1,8 @@
+2013-06-11 10:43:22.649 -0600	START		Running Shelter_Stability_Test_09+08.script
+2013-06-11 10:43:29.758 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-11 10:43:30.612 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-11 10:43:31.834 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-11 10:43:32.966 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-11 10:43:34.709 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-11 10:43:37.736 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	found at (64, 748)	3	on_openapp	ClassNavigate.script
+2013-06-11 10:43:39.906 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	at (64, 748)	6	on_openapp	ClassNavigate.script

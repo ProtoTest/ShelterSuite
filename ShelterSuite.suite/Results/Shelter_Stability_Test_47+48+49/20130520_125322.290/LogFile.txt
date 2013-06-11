@@ -1,4 +1,0 @@
-2013-05-20 12:53:22.294 -0600	START		Running Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script
-2013-05-20 12:53:32.129 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
-2013-05-20 12:55:47.961 -0600	EndTestCase		(Duration:"145.661", Errors:"1", Exceptions:"0", StartTime:"2013-05-20 12:53:22 -0600", Successes:"0", TestCase:"Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script", Warnings:"0")
-2013-05-20 12:55:47.963 -0600	ABORTED		Execution Time 0:02:25 Shelter Stability Test 47+48+49 - Take, Open, Delete Picture.script

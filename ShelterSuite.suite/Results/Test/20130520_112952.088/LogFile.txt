@@ -1,3 +1,0 @@
-2013-05-20 11:29:52.090 -0600	START		Running Test.script
-2013-05-20 11:29:52.303 -0600	EndTestCase		(Duration:"0.206", Errors:"1", Exceptions:"0", StartTime:"2013-05-20 11:29:52 -0600", Successes:"0", TestCase:"Test.script", Warnings:"0")
-2013-05-20 11:29:52.585 -0600	FAILURE	Screen_Error.png	STUnknownMessage ERROR: No Such Function: 'foundimage'\nExecution Time 0:00:00 Test.script
