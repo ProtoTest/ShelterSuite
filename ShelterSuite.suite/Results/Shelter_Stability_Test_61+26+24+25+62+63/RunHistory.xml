@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<runHistory script="Shelter_Stability_Test_61+26+24+25+62+63">
+ <run>
+  <RunDate>2013-06-11 15:44:49.112 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.132000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130611_154449.112/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STUnknownMessage -- ERROR: No Such Command: 'readystate'</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-11 15:44:59.187 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>87.369000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130611_154459.187/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "Device/Apps/Browser/SettingsRefresh"</ErrorMessage>
+ </run>
+</runHistory>

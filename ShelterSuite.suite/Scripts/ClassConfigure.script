@@ -7,11 +7,11 @@ end SetWifi
 
 to MuteMedia
 	run ClassNavigate.OpenApp(Settings)
-	Click (Text:"Sound")
+	run ClassNavigate.SettingsOption(Sound)
 	Click (Text:"Volumes")
 	wait 1 second
 	Drag (420,300)
-	Drop (125,300)
+	Drop (135,300)
 	Click (Text:"OK")
 	wait 1 second
 	Click "Device/System/HomeButton"
@@ -22,8 +22,8 @@ to UnMuteMedia
 	Click (Text:"Sound")
 	Click (Text:"Volumes")
 	wait 1 second
-	Drag (125,300)
-	Drop (420,300)
+	Drag (140,300)
+	Drop (430,300)
 	Click (Text:"OK")
 	wait 1 second
 	Click "Device/System/HomeButton"

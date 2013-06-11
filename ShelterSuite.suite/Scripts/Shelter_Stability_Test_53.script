@@ -6,20 +6,25 @@
 run ClassNavigate.ResetState
 
 //Test 53 - Play video streaming content using device browser
+run ClassConfigure.MuteMedia
 Click "Device/Apps/Browser/BrowserIcon"
-//run ClassNavigate.OpenApp(Browser) [Alternate open method]
 run ClassConfigure.SetBrowserHomepageToDefault
 run ClassNavigate.GoToBrowserAddress("m.youtube.com/watch?v=lcJuZIUeBME")
 run ClassUtilities.ConfirmTextOnScreen("Canon in D Major")
 Click (240,250)
 wait 5 seconds
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Browser/Sites/YTubeEmblem")
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Browser/Sites/YTubeBlackScreenVideo")
-//insert commands for confirm background image here
-run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Browser/Sites/YTubeFullscreenButton")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Browser/Sites/YTubeVideoCanonD")
+wait 60 seconds
+Click (240,250)
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Browser/Sites/YTubeProgressBar")
+run ClassNavigate.GoToBrowserAddress("google.com")
 run ClassConfigure.CloseAllBrowserTabs
 Click "Device/System/HomeButton"
 
 //Teardown
+run ClassConfigure.UnMuteMedia
 Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 5 seconds

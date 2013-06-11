@@ -1,0 +1,3 @@
+Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2013-06-11 15:44:49.112 -0600,"Failure",0:00:00,1,0,0,"20130611_154449.112/LogFile.txt","","STUnknownMessage -- ERROR: No Such Command: 'readystate'",0
+2013-06-11 15:44:59.187 -0600,"Failure",0:01:27,1,0,1,"20130611_154459.187/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/Apps/Browser/SettingsRefresh""",0

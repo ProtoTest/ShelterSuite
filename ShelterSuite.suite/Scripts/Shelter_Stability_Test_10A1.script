@@ -1,0 +1,42 @@
+//Motorola Shelter Stability Test 10 - Shelter Device A -  Send an SMS maximum number of characters with out requiring the message to be segmented
+//Subroutine 1 - Send SMS to Shelter Device B
+//Completed 6-11-2013
+
+//Setup
+run ClassNavigate.ResetState
+
+//Subroutine 1 - Send SMS to Shelter Device B
+Click "Device/AppIcons/MessagingApp"
+run ClassUtilities.ConfirmTextOnScreen("Messaging")
+Click "Device/Apps/Messaging/NewMessageIcon"
+wait 1 second
+Click (Text:"To")
+TypeText "S"
+wait 1 second
+Click (Text:"ShelterB")
+run ClassUtilities.ConfirmTextInArea("ShelterB DeviceB"),("10,100"),("450,200")
+Click (Text:"Type message")
+wait 1 second
+TypeText "The quick brown fox jumped over the lazy dog. "
+TypeText "The quick brown fox jumped over the lazy dog. "
+TypeText "The quick brown fox jumped over the lazy dog. "
+TypeText "The quick brown fox ju"
+wait 3 seconds
+run ClassUtilities.ConfirmTextInArea("quick brown fox"),("10,315"),("470,425")
+run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,315"),("470,425")
+run ClassUtilities.ConfirmTextInArea("0"),("390,315"),("470,365")
+run ClassUtilities.ConfirmTextNotInArea("/ 2"),("390,315"),("470,365")
+Click "Device/Apps/Messaging/SendMessage"
+wait 1 second
+run ClassUtilities.ConfirmTextInArea("quick brown fox"),("10,100"),("470,325")
+run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,100"),("470,325")
+run ClassUtilities.ConfirmTextOnScreen("Type message")
+Click "Device/System/BackIcon"
+Click "Device/System/BackIcon"
+wait 1 second
+run ClassUtilities.ConfirmTextOnScreen("Messaging")
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds

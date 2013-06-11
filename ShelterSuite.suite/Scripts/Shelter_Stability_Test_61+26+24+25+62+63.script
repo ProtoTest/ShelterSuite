@@ -8,7 +8,7 @@
 //Completed 5-30-2013
 
 //Setup
-run ClassNavigate.ReadyState
+run ClassNavigate.ResetState
 
 //Test 61 - Open Browser, Load Home Page
 Click "Device/Apps/Browser/BrowserIcon"
@@ -16,9 +16,11 @@ Click "Device/Apps/Browser/BrowserIcon"
 run ClassConfigure.SetBrowserHomepageToDefault
 run ClassConfigure.CloseAllBrowserTabs
 run ClassUtilities.ConfirmTextOnScreen("Sign in")
+wait 3 seconds
 Click "Device/System/MenuButton"
 Click "Device/Apps/Browser/SettingsRefresh"
 run ClassUtilities.ConfirmTextOnScreen("google.com") //google is default homepage
+wait 3 seconds
 
 //Test 26 - Visit Top Websites
 //As of 5-22-2013, Top 5 websites are Facebook, Google, Yahoo, YouTube, and Wikipedia
@@ -61,10 +63,3 @@ Click "Device/System/HomeButton"
 //Teardown
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 5 seconds
-
-
-
-
-
-
-

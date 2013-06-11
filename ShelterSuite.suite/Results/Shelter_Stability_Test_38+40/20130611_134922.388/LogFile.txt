@@ -1,0 +1,29 @@
+2013-06-11 13:49:22.391 -0600	START		Running Shelter_Stability_Test_38+40.script
+2013-06-11 13:49:31.010 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-11 13:49:32.237 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-11 13:49:33.471 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-11 13:49:34.790 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-11 13:49:36.980 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-11 13:49:39.627 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	found at (63, 350)	3	on_openapp	ClassNavigate.script
+2013-06-11 13:49:41.777 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	at (63, 350)	6	on_openapp	ClassNavigate.script
+2013-06-11 13:49:44.270 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set alarm", TextPlatform:"Generic OCR")	at (352, 491)	11	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:49:45.910 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"8:30 AM", TextPlatform:"Generic OCR")	found at (177, 144)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-11 13:49:47.297 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"9:00 AM", TextPlatform:"Generic OCR")	found at (177, 247)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-11 13:49:48.474 -0600	click	Device/System/HomeButton	at (120, 824)	15	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:49:49.960 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-11 13:49:54.416 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	found at (63, 350)	3	on_openapp	ClassNavigate.script
+2013-06-11 13:49:56.745 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Clock", TextPlatform:"Generic OCR")	at (63, 350)	6	on_openapp	ClassNavigate.script
+2013-06-11 13:49:59.183 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set alarm", TextPlatform:"Generic OCR")	at (352, 491)	20	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:50:00.828 -0600	click	Device/Apps/Clock/AddAlarm	at (437, 74)	22	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:50:03.358 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Turn alarm on", TextPlatform:"Generic OCR")	at (119, 157)	23	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:50:05.767 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"DONE", TextPlatform:"Generic OCR")	at (101, 74)	24	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:50:07.507 -0600	imagefound	Device/Apps/Settings/CheckboxSelected	found at (47, 367)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-11 13:50:07.609 -0600	click		at (140, 390)	29	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:50:11.942 -0600	click	Device/AppIcons/TrashcanIcon	at (438, 73)	30	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:50:15.078 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Delete this alarm?", TextPlatform:"Generic OCR")	found at (157, 431)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-11 13:50:17.099 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"OK", TextPlatform:"Generic OCR")	at (348, 499)	32	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:50:17.991 -0600	click	Device/System/HomeButton	at (120, 824)	33	on_shelter_stability_test_38_40	Shelter_Stability_Test_38+40.script
+2013-06-11 13:50:27.356 -0600	imagefound		Unable to Find Image Device/System/AppsIcon	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-11 13:50:27.359 -0600	LogError		The expected image was not found.	3	on_confirmimageonscreen	ClassUtilities.script
+2013-06-11 13:50:32.433 -0600	EndTestCase		(Duration:"70.034", Errors:"1", Exceptions:"0", StartTime:"2013-06-11 13:49:22 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_38+40.script", Warnings:"0")
+2013-06-11 13:50:32.629 -0600	FAILURE	Screen_Error.png	Script Error Number of Errors logged: 1\nExecution Time 0:01:10 Shelter_Stability_Test_38+40.script

@@ -1,0 +1,8 @@
+Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2013-06-11 13:15:18.815 -0600,"Failure",0:01:10,1,0,1,"20130611_131518.815/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/AppIcons/TrashcanIcon""",0
+2013-06-11 13:18:38.402 -0600,"Failure",0:00:56,1,0,1,"20130611_131838.402/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/AppIcons/TrashcanIcon""",0
+2013-06-11 13:21:13.881 -0600,"Failure",0:00:52,1,0,1,"20130611_132113.881/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/AppIcons/TrashcanIcon""",0
+2013-06-11 13:33:06.343 -0600,"Success",0:01:17,0,0,0,"20130611_133306.343/LogFile.txt","","",1
+2013-06-11 13:34:28.392 -0600,"Success",0:01:14,0,0,0,"20130611_133428.392/LogFile.txt","","",1
+2013-06-11 13:36:40.040 -0600,"Success",0:01:15,0,0,0,"20130611_133640.040/LogFile.txt","","",1
+2013-06-11 13:38:14.074 -0600,"Success",0:01:11,0,0,0,"20130611_133814.074/LogFile.txt","","",1

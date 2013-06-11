@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<runHistory script="Shelter_Stability_Test_50+51+52">
+ <run>
+  <RunDate>2013-06-11 14:01:35.963 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>54.651000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130611_140135.963/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-11 14:03:11.290 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>46.370000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130611_140311.290/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-11 14:04:37.629 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>47.810000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130611_140437.629/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

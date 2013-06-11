@@ -2,11 +2,11 @@
 //Completed 6-05-2013
 
 //Setup
-run ClassNavigate.UnlockDevice
+run ClassNavigate.ResetState
 
 //Test 67 - Turn NFC Off and On
 run ClassNavigate.OpenApp(Settings)
-Click (Text:"More")
+run ClassNavigate.SettingsOption(More)
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Settings/CheckboxSelected")
 run ClassUtilities.ConfirmTextOnScreen("NFC is turned off")
 Click (Text:"NFC")

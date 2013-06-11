@@ -2,7 +2,7 @@
 //Completed 5-30-2013
 
 //Setup
-run ClassNavigate.ReadyState
+run ClassNavigate.ResetState
 
 //Test 57 -  Open and Set a Theme
 run ClassNavigate.OpenApp(Settings)

@@ -42,11 +42,11 @@ end SwipeRight
 
 to SwipeUp
 	Drag (465,500)
-	Drop (465,325)
+	Drop (465,340)
 end SwipeUp
 
 to SwipeDown
-	Drag (465,325)
+	Drag (465,340)
 	Drop (465,500)
 end SwipeDown
 
@@ -59,12 +59,9 @@ to OpenApp name
 end OpenApp
 
 to SettingsOption name
-	run ClassNavigate.SwipeDown
-	wait 1 second
-	run ClassNavigate.SwipeDown
-	wait 1 second
-	run ClassNavigate.SwipeDown
-	wait 1 second
+	repeat until ImageFound(3,Text:WIRELESS) is "true"
+		run ClassNavigate.SwipeDown
+	end repeat
 	repeat until ImageFound(3,Text:name) is "true"
 		run ClassNavigate.SwipeUp
 	end repeat

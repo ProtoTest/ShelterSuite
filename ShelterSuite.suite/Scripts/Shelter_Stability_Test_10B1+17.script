@@ -1,0 +1,20 @@
+//Motorola Shelter Stability Test 10 - Shelter Device A -  Send an SMS maximum number of characters with out requiring the message to be segmented
+//Motorola Shelter Stability Test 17 - Open a SMS
+//Completed 6-11-2013
+
+//Subroutine B1 - Receive Incoming SMS from Shelter Device A and Open Message
+run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MessageReceived")
+Click "Device/AppIcons/MessagingApp"
+run ClassUtilities.ConfirmTextOnScreen("Messaging")
+Click (Text:"ShelterA")
+run ClassUtilities.ConfirmTextInArea("The quick brown fox jumped"),("10,490"),("470,730")
+run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,490"),("470,730")
+Click "Device/System/BackIcon"
+wait 1 second
+run ClassUtilities.ConfirmTextOnScreen("Messaging")
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/MessageReceived")
+wait 5 seconds

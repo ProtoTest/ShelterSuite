@@ -2,7 +2,7 @@
 //Completed 5-30-2013
 
 //Setup
-run ClassNavigate.ReadyState
+run ClassNavigate.ResetState
 
 //Test 64 - Menu Navigation
 run ClassNavigate.OpenApp(Settings)

@@ -11,14 +11,19 @@ run ClassNavigate.OpenApp(Calendar)
 run ClassUtilities.ConfirmTextOnScreen("SUN")
 run ClassUtilities.ConfirmTextOnScreen("WED")
 run ClassUtilities.ConfirmTextOnScreen("SAT")
-Click "Device/System/MenuButton"
-Click (Text:"New event")
-Click (Text:"Event Name")
-TypeText "Test Event 1"
-Click (Text:"Location")
-TypeText "Office"
-Click (Text:"DONE")
+Click (200,500)
+Click (200,500)
 wait 1 second
+Click (Text:"Event Name")
+wait 1 second
+TypeText "Test Event 1"
+wait 1 second
+Click (Text:"Location")
+wait 1 second
+TypeText "Office"
+wait 2 second
+Click "Device/Apps/Calendar/DoneCheckmark"
+wait 2 second
 run ClassUtilities.ConfirmTextOnScreen("Test")
 run ClassUtilities.ConfirmTextOnScreen("Event")
 run ClassUtilities.ConfirmTextOnScreen("Office")

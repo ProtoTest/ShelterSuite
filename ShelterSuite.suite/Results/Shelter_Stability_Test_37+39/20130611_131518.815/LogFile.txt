@@ -1,0 +1,25 @@
+2013-06-11 13:15:18.819 -0600	START		Running Shelter_Stability_Test_37+39.script
+2013-06-11 13:15:25.826 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-11 13:15:26.794 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-11 13:15:28.030 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-11 13:15:29.135 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-11 13:15:31.268 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-11 13:15:34.446 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Calendar", TextPlatform:"Generic OCR")	found at (298, 218)	3	on_openapp	ClassNavigate.script
+2013-06-11 13:15:37.019 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Calendar", TextPlatform:"Generic OCR")	at (298, 218)	6	on_openapp	ClassNavigate.script
+2013-06-11 13:15:39.166 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"SUN", TextPlatform:"Generic OCR")	found at (62, 123)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-11 13:15:40.613 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WED", TextPlatform:"Generic OCR")	found at (241, 123)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-11 13:15:42.575 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"SAT", TextPlatform:"Generic OCR")	found at (434, 123)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-11 13:15:43.729 -0600	click	Device/System/MenuButton	at (281, 825)	14	on_shelter_stability_test_37_39	Shelter_Stability_Test_37+39.script
+2013-06-11 13:15:45.446 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"New event", TextPlatform:"Generic OCR")	at (127, 471)	15	on_shelter_stability_test_37_39	Shelter_Stability_Test_37+39.script
+2013-06-11 13:15:50.293 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Event Name", TextPlatform:"Generic OCR")	at (107, 247)	16	on_shelter_stability_test_37_39	Shelter_Stability_Test_37+39.script
+2013-06-11 13:15:51.136 -0600	typetext		Test Event 1	17	on_shelter_stability_test_37_39	Shelter_Stability_Test_37+39.script
+2013-06-11 13:15:53.150 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Location", TextPlatform:"Generic OCR")	at (88, 318)	18	on_shelter_stability_test_37_39	Shelter_Stability_Test_37+39.script
+2013-06-11 13:15:53.921 -0600	typetext		Office	19	on_shelter_stability_test_37_39	Shelter_Stability_Test_37+39.script
+2013-06-11 13:15:56.291 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"DONE", TextPlatform:"Generic OCR")	at (444, 755)	20	on_shelter_stability_test_37_39	Shelter_Stability_Test_37+39.script
+2013-06-11 13:15:58.281 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Test", TextPlatform:"Generic OCR")	found at (152, 145)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-11 13:15:59.183 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Event", TextPlatform:"Generic OCR")	found at (129, 246)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-11 13:16:00.180 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Office", TextPlatform:"Generic OCR")	found at (69, 318)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-11 13:16:01.202 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Event", TextPlatform:"Generic OCR")	at (129, 246)	27	on_shelter_stability_test_37_39	Shelter_Stability_Test_37+39.script
+2013-06-11 13:16:29.214 -0600	Exception	Device/AppIcons/TrashcanIcon	No Image Found On Screen: "Device/AppIcons/TrashcanIcon"	28	on_shelter_stability_test_37_39	Shelter_Stability_Test_37+39.script
+2013-06-11 13:16:29.448 -0600	EndTestCase		(Duration:"70.563", Errors:"1", Exceptions:"1", StartTime:"2013-06-11 13:15:18 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_37+39.script", Warnings:"0")
+2013-06-11 13:16:29.820 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "Device/AppIcons/TrashcanIcon"\nExecution Time 0:01:11 Shelter_Stability_Test_37+39.script

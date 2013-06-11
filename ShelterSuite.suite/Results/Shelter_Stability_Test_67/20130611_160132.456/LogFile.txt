@@ -1,0 +1,14 @@
+2013-06-11 16:01:32.461 -0600	START		Running Shelter_Stability_Test_67.script
+2013-06-11 16:01:42.991 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-11 16:01:44.435 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-11 16:01:53.461 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-11 16:01:53.528 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-11 16:01:54.724 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-11 16:02:01.199 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	5	on_openapp	ClassNavigate.script
+2013-06-11 16:02:01.264 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-11 16:02:02.467 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-11 16:02:03.479 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (85, 249)	5	on_openapp	ClassNavigate.script
+2013-06-11 16:02:04.225 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (63, 220)	6	on_openapp	ClassNavigate.script
+2013-06-11 16:02:19.321 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"More")"	9	on_shelter_stability_test_67	Shelter_Stability_Test_67.script
+2013-06-11 16:02:19.373 -0600	EndTestCase		(Duration:"46.906", Errors:"1", Exceptions:"1", StartTime:"2013-06-11 16:01:32 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_67.script", Warnings:"0")
+2013-06-11 16:02:19.574 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"More")"\nExecution Time 0:00:47 Shelter_Stability_Test_67.script

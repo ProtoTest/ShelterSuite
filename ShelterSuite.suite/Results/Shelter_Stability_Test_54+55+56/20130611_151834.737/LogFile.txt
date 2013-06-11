@@ -1,0 +1,41 @@
+2013-06-11 15:18:34.741 -0600	START		Running Shelter_Stability_Test_54+55+56.script
+2013-06-11 15:18:45.403 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-11 15:18:46.794 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-11 15:18:48.205 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-11 15:18:49.418 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-11 15:18:51.695 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-11 15:18:58.525 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-11 15:18:58.592 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-11 15:18:59.788 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-11 15:19:03.791 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (63, 220)	5	on_openapp	ClassNavigate.script
+2013-06-11 15:19:05.128 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (63, 220)	6	on_openapp	ClassNavigate.script
+2013-06-11 15:19:07.125 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (85, 134)	2	on_settingsoption	ClassNavigate.script
+2013-06-11 15:19:08.875 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sound", TextPlatform:"Generic OCR")	found at (125, 535)	5	on_settingsoption	ClassNavigate.script
+2013-06-11 15:19:10.933 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sound", TextPlatform:"Generic OCR")	at (125, 535)	8	on_settingsoption	ClassNavigate.script
+2013-06-11 15:19:12.576 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Volumes", TextPlatform:"Generic OCR")	at (88, 157)	4	on_mutemedia	ClassConfigure.script
+2013-06-11 15:19:13.641 -0600	drag		at (420, 300)	6	on_mutemedia	ClassConfigure.script
+2013-06-11 15:19:14.926 -0600	drop		at (135, 300)	7	on_mutemedia	ClassConfigure.script
+2013-06-11 15:19:17.657 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"OK", TextPlatform:"Generic OCR")	at (240, 698)	8	on_mutemedia	ClassConfigure.script
+2013-06-11 15:19:20.076 -0600	click	Device/System/HomeButton	at (120, 824)	10	on_mutemedia	ClassConfigure.script
+2013-06-11 15:19:21.063 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-11 15:19:23.731 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Music", TextPlatform:"Generic OCR")	found at (415, 614)	3	on_openapp	ClassNavigate.script
+2013-06-11 15:19:26.029 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Music", TextPlatform:"Generic OCR")	at (415, 614)	6	on_openapp	ClassNavigate.script
+2013-06-11 15:19:27.438 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Songs", TextPlatform:"Generic OCR")	at (299, 116)	15	on_shelter_stability_test_54_55_56	Shelter_Stability_Test_54+55+56.script
+2013-06-11 15:19:30.002 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Audio Sample 1", TextPlatform:"Generic OCR")	at (106, 169)	16	on_shelter_stability_test_54_55_56	Shelter_Stability_Test_54+55+56.script
+2013-06-11 15:19:45.291 -0600	click	Device/System/HomeButton	at (120, 824)	21	on_shelter_stability_test_54_55_56	Shelter_Stability_Test_54+55+56.script
+2013-06-11 15:19:46.388 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-11 15:19:53.858 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-11 15:19:53.924 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-11 15:19:55.121 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-11 15:19:58.915 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (63, 220)	5	on_openapp	ClassNavigate.script
+2013-06-11 15:20:00.613 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (63, 220)	6	on_openapp	ClassNavigate.script
+2013-06-11 15:20:02.849 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sound", TextPlatform:"Generic OCR")	at (125, 535)	3	on_unmutemedia	ClassConfigure.script
+2013-06-11 15:20:04.597 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Volumes", TextPlatform:"Generic OCR")	at (88, 157)	4	on_unmutemedia	ClassConfigure.script
+2013-06-11 15:20:05.661 -0600	drag		at (140, 300)	6	on_unmutemedia	ClassConfigure.script
+2013-06-11 15:20:06.942 -0600	drop		at (430, 300)	7	on_unmutemedia	ClassConfigure.script
+2013-06-11 15:20:09.592 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"OK", TextPlatform:"Generic OCR")	at (240, 698)	8	on_unmutemedia	ClassConfigure.script
+2013-06-11 15:20:12.085 -0600	click	Device/System/HomeButton	at (120, 824)	10	on_unmutemedia	ClassConfigure.script
+2013-06-11 15:20:13.139 -0600	click	Device/System/HomeButton	at (120, 824)	25	on_shelter_stability_test_54_55_56	Shelter_Stability_Test_54+55+56.script
+2013-06-11 15:20:14.221 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-11 15:20:19.296 -0600	EndTestCase		(Duration:"104.551", Errors:"0", Exceptions:"0", StartTime:"2013-06-11 15:18:34 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_54+55+56.script", Warnings:"0")
+2013-06-11 15:20:19.438 -0600	SUCCESS		Execution Time 0:01:45 Shelter_Stability_Test_54+55+56.script

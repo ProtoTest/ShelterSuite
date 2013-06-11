@@ -24,12 +24,15 @@ Click (Text:"Turn alarm on")
 Click (Text:"DONE")
 wait 1 second
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/CheckboxSelected")
+run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/AlarmActive")
 
 //Test 40 - Delete an alarm
 Click(140,390)
 Click "Device/AppIcons/TrashcanIcon"
 run ClassUtilities.ConfirmTextOnScreen("Delete this alarm?")
 Click(Text:"OK")
+wait 1 second
+run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/AlarmActive")
 Click "Device/System/HomeButton"
 
 //Teardown

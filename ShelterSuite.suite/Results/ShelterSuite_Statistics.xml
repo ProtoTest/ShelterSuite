@@ -10,42 +10,82 @@
  </script>
  <script name="Shelter_Stability_Test_38+40">
   <LastStatus>Success</LastStatus>
-  <NumberOfRuns>1</NumberOfRuns>
-  <NumberOfFails>0</NumberOfFails>
+  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
   <FirstRun>2013-06-06 21:12:42 -0600</FirstRun>
-  <LastRun>2013-06-06 21:12:42 -0600</LastRun>
-  <TotalTimeOnSuccess>95.051000</TotalTimeOnSuccess>
+  <LastRun>2013-06-11 13:55:06 -0600</LastRun>
+  <TotalTimeOnSuccess>396.224000</TotalTimeOnSuccess>
  </script>
  <script name="Shelter_Stability_Test_64">
   <LastStatus>Success</LastStatus>
-  <NumberOfRuns>4</NumberOfRuns>
+  <NumberOfRuns>6</NumberOfRuns>
   <NumberOfFails>2</NumberOfFails>
   <FirstRun>2013-05-30 17:01:18 -0600</FirstRun>
-  <LastRun>2013-05-30 17:07:12 -0600</LastRun>
-  <TotalTimeOnSuccess>188.535000</TotalTimeOnSuccess>
+  <LastRun>2013-06-11 15:55:18 -0600</LastRun>
+  <TotalTimeOnSuccess>418.027000</TotalTimeOnSuccess>
+ </script>
+ <script name="Shelter_Stability_Test_53">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2013-06-11 14:40:09 -0600</FirstRun>
+  <LastRun>2013-06-11 14:40:09 -0600</LastRun>
+  <TotalTimeOnSuccess>225.066000</TotalTimeOnSuccess>
  </script>
  <script name="Shelter_Stability_Test_67">
   <LastStatus>Success</LastStatus>
-  <NumberOfRuns>1</NumberOfRuns>
-  <NumberOfFails>0</NumberOfFails>
+  <NumberOfRuns>5</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
   <FirstRun>2013-06-05 15:12:29 -0600</FirstRun>
-  <LastRun>2013-06-05 15:12:29 -0600</LastRun>
-  <TotalTimeOnSuccess>236.192000</TotalTimeOnSuccess>
+  <LastRun>2013-06-11 16:14:42 -0600</LastRun>
+  <TotalTimeOnSuccess>508.793000</TotalTimeOnSuccess>
+ </script>
+ <script name="Shelter_Stability_Test_61+26+24+25+62+63">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2013-06-11 15:44:49 -0600</FirstRun>
+  <LastRun>2013-06-11 15:44:59 -0600</LastRun>
+  <TotalTimeOnSuccess>nan</TotalTimeOnSuccess>
+ </script>
+ <script name="Shelter_Stability_Test_54+55+56">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>4</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2013-06-11 15:11:40 -0600</FirstRun>
+  <LastRun>2013-06-11 15:18:34 -0600</LastRun>
+  <TotalTimeOnSuccess>317.364000</TotalTimeOnSuccess>
  </script>
  <script name="Shelter_Stability_Test_57">
   <LastStatus>Success</LastStatus>
-  <NumberOfRuns>1</NumberOfRuns>
-  <NumberOfFails>0</NumberOfFails>
+  <NumberOfRuns>4</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
   <FirstRun>2013-05-30 16:24:04 -0600</FirstRun>
-  <LastRun>2013-05-30 16:24:04 -0600</LastRun>
-  <TotalTimeOnSuccess>125.222000</TotalTimeOnSuccess>
+  <LastRun>2013-06-11 15:23:49 -0600</LastRun>
+  <TotalTimeOnSuccess>310.311000</TotalTimeOnSuccess>
+ </script>
+ <script name="Shelter_Stability_Test_37+39">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfFails>3</NumberOfFails>
+  <FirstRun>2013-06-11 13:15:18 -0600</FirstRun>
+  <LastRun>2013-06-11 13:38:14 -0600</LastRun>
+  <TotalTimeOnSuccess>298.714000</TotalTimeOnSuccess>
+ </script>
+ <script name="Shelter_Stability_Test_50+51+52">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2013-06-11 14:01:35 -0600</FirstRun>
+  <LastRun>2013-06-11 14:04:37 -0600</LastRun>
+  <TotalTimeOnSuccess>148.831000</TotalTimeOnSuccess>
  </script>
  <script name="Shelter_Stability_Test_30+33+35">
   <LastStatus>Success</LastStatus>
-  <NumberOfRuns>2</NumberOfRuns>
-  <NumberOfFails>0</NumberOfFails>
+  <NumberOfRuns>4</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
   <FirstRun>2013-06-05 18:00:49 -0600</FirstRun>
-  <LastRun>2013-06-06 21:24:29 -0600</LastRun>
-  <TotalTimeOnSuccess>450.878000</TotalTimeOnSuccess>
+  <LastRun>2013-06-11 13:11:38 -0600</LastRun>
+  <TotalTimeOnSuccess>604.788000</TotalTimeOnSuccess>
  </script>
 </statistics>
