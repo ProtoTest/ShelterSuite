@@ -1,0 +1,31 @@
+//Motorola Shelter Stability Test 19 - Send an email with an attachment
+//Component of Script Series 19
+//Completed 6-13-2013
+
+//Setup
+run ClassNavigate.ResetState
+
+//Subroutine B1 - Shelter Device B - Receive Incoming email with an attachment from Shelter Device A and Open Message
+run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/EmailReceived")
+run ClassNavigate.OpenApp(Email)
+run ClassUtilities.ConfirmTextOnScreen("Inbox")
+run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Email/FirstEmailUnread",   SearchRectangle:((0,110),(50,150)))
+run ClassUtilities.ConfirmTextInArea("ShelterA DeviceA"),("5,100"),("470,225")
+Click (Text:"Test email with attachment", SearchRectangle:((5,100),(470,225)))
+run ClassUtilities.ConfirmTextInArea("Test email with attachment"),("5,25"),("470,125")
+run ClassUtilities.ConfirmTextInArea("ShelterA"),("10,150"),("470,250")
+run ClassUtilities.ConfirmTextInArea("Sent from Shelter"),("10,275"),("470,500")
+Click (Text:"Attachment", SearchRectangle:((5,300),(470,375)))
+Click (Text:"LOAD")
+wait 20 seconds
+run ClassUtilities.ConfirmTextInArea("SAVE"),("5,400"),("470,500")
+run ClassUtilities.ConfirmTextInArea("VIEW"),("5,400"),("470,500")
+Click "Device/System/BackIcon"
+wait 1 second
+run ClassUtilities.ConfirmTextOnScreen("Inbox")
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/EmailReceived")
+wait 5 seconds

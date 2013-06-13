@@ -9,7 +9,7 @@ run ClassNavigate.ResetState
 
 //Motorola Shelter Stability Test 47 - Take a Picture
 run ClassNavigate.UnlockDevice
-run ClassNavigate.OpenApp(Camera)
+//run ClassNavigate.OpenApp(Camera)
 
 //Teardown
 Click "Device/System/HomeButton"

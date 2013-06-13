@@ -1,7 +1,8 @@
 //Motorola Shelter Stability Test 02 - Shelter Device A - Make a 3G voice call from the phone book
-//Subroutine 2 - Teardown
+//Component of Script Series 02
 //Completed 6-10-2013
 
+//Subroutine A2 - Shelter Device A - Teardown
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")

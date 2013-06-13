@@ -1,8 +1,8 @@
 //Motorola Shelter Stability Test 02 - Shelter Device B - Make a 3G voice call from the phone book
-//Subroutine 1 - Receive Incoming Call from Shelter Device A
-//Tests are grouped together due to dependencies in functionality
+//Component of Script Series 02
 //Completed 6-10-2013
 
+//Subroutine B1 - Shelter Device B - Receive Incoming Call from Shelter Device A
 run ClassUtilities.ConfirmTextOnScreen("INCOMING CALL")
 run ClassUtilities.ConfirmTextOnScreen("SHELTERA")
 run ClassUtilities.ConfirmTextOnScreen("MOBILE")

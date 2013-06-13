@@ -1,0 +1,31 @@
+//Motorola Shelter Stability Test 12 - Send a MMS with a 1MB video attachment or largest size supported by the device
+//Motorola Shelter Stability Test 15 - Open a MMS with 1MB video or largest size supported by the device
+//Component of Script Series 12
+//Completed 6-12-2013
+
+//Setup
+run ClassNavigate.ResetState
+
+//Subroutine B1 - Shelter Device B - Receive Incoming SMS from Shelter Device A and Open Message
+//Motorola Shelter Stability Test 15 - Open a MMS with 1MB video or largest size supported by the device
+run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MessageReceived")
+Click "Device/AppIcons/MessagingApp"
+run ClassUtilities.ConfirmTextOnScreen("Messaging")
+Click (Text:"ShelterA")
+wait 1 second
+ScrollWheelDown 5
+wait 1 second
+run ClassUtilities.ConfirmTextInArea("Portez ce vieux whisky"),("10,490"),("470,730")
+run ClassUtilities.ConfirmTextInArea("blond qui fume"),("10,490"),("470,730")
+run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Messaging/VideoAttachmentIcon",   SearchRectangle:((5,400),(470,700)))
+run ClassUtilities.ConfirmTextInArea("Video Attachment"),("10,490"),("470,730")
+run ClassUtilities.ConfirmTextInArea("mp4"),("10,490"),("470,730")
+Click "Device/System/BackIcon"
+wait 1 second
+run ClassUtilities.ConfirmTextOnScreen("Messaging")
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/MessageReceived")
+wait 5 seconds

@@ -1,7 +1,8 @@
-//Motorola Shelter Stability Test 01 - Shelter Device A - Make a 2G voice call from the phone book
-//Subroutine 2 - Set mobile networks to default
+//Motorola Shelter Stability Test 01 - Make a 2G voice call from the phone book
+//Component of Script Series 01
 //Completed 6-07-2013
 
+//Subroutine A2 - Shelter Device A - Set mobile networks to default
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")

@@ -11,5 +11,10 @@
 //Download "DroidFish" App from web to downloads folder.
 //Tests are designed to run with VMLite VNC Server.  If this app is altered, update test 62.
 
+//Shelter Device Max File Sizes for MMS:
+//Video: 600 kb
+//Audio: 600 kb
+//Image: Unknown (1000 kb used for sample)
+
 run ClassNavigate.ResetState
 run ClassConfigure.MuteNotifications

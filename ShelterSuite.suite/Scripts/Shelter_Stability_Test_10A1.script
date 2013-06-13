@@ -1,21 +1,21 @@
-//Motorola Shelter Stability Test 10 - Shelter Device A -  Send an SMS maximum number of characters with out requiring the message to be segmented
-//Subroutine 1 - Send SMS to Shelter Device B
+//Motorola Shelter Stability Test 10 - Send an SMS maximum number of characters with out requiring the message to be segmented
+//Component of Script Series 10
 //Completed 6-11-2013
 
 //Setup
 run ClassNavigate.ResetState
 
-//Subroutine 1 - Send SMS to Shelter Device B
+//Subroutine A1 - Shelter Device A - Send max characters SMS to Shelter Device B
 Click "Device/AppIcons/MessagingApp"
 run ClassUtilities.ConfirmTextOnScreen("Messaging")
 Click "Device/Apps/Messaging/NewMessageIcon"
 wait 1 second
+run ClassUtilities.ConfirmTextOnScreen("New Message")
 Click (Text:"To")
 TypeText "S"
 wait 1 second
 Click (Text:"ShelterB")
 run ClassUtilities.ConfirmTextInArea("ShelterB DeviceB"),("10,100"),("450,200")
-Click (Text:"Type message")
 wait 1 second
 TypeText "The quick brown fox jumped over the lazy dog. "
 TypeText "The quick brown fox jumped over the lazy dog. "

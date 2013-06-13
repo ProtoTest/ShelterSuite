@@ -1,0 +1,13 @@
+2013-06-13 15:02:14.068 -0600	START		Running Shelter_Stability_Test_18A1.script
+2013-06-13 15:02:24.551 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-13 15:02:25.741 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-13 15:02:26.972 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-13 15:02:28.152 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-13 15:02:30.308 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-13 15:02:33.226 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Email", TextPlatform:"Generic OCR")	found at (63, 482)	3	on_openapp	ClassNavigate.script
+2013-06-13 15:02:35.343 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Email", TextPlatform:"Generic OCR")	at (63, 482)	6	on_openapp	ClassNavigate.script
+2013-06-13 15:02:36.640 -0600	click	Device/Apps/Email/ComposeEmail	at (49, 767)	10	on_shelter_stability_test_18a1	Shelter_Stability_Test_18A1.script
+2013-06-13 15:02:37.939 -0600	typetext		shelter-test2@outlook.com	12	on_shelter_stability_test_18a1	Shelter_Stability_Test_18A1.script
+2013-06-13 15:02:39.130 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,175,450,275), Text:"shelter-test2@outlook.com", TextPlatform:"Generic OCR")	found at (242, 229)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 15:02:55.066 -0600	EndTestCase		(Duration:"40.989", Errors:"1", Exceptions:"0", StartTime:"2013-06-13 15:02:14 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_18A1.script", Warnings:"0")
+2013-06-13 15:02:55.069 -0600	ABORTED		Execution Time 0:00:41 Shelter_Stability_Test_18A1.script

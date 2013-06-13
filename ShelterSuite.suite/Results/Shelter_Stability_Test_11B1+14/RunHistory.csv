@@ -1,0 +1,2 @@
+Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2013-06-13 11:40:03.662 -0600,"Failure",0:00:13,1,0,0,"20130613_114003.662/LogFile.txt","","Script Error -- Number of Errors logged: 1",0

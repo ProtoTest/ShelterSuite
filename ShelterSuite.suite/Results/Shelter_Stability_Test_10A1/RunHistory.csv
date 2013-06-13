@@ -1,0 +1,3 @@
+Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2013-06-13 10:56:08.590 -0600,"Failure",0:00:57,1,0,1,"20130613_105608.590/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""Type message"")""",0
+2013-06-13 11:16:09.725 -0600,"Success",0:00:56,0,0,0,"20130613_111609.725/LogFile.txt","","",1

@@ -1,0 +1,12 @@
+2013-06-13 11:40:03.665 -0600	START		Running Shelter_Stability_Test_11B1+14.script
+2013-06-13 11:40:04.569 -0600	imagefound	Device/System/Taskbar/MessageReceived	found at (27, 20)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-13 11:40:04.843 -0600	click	Device/AppIcons/MessagingApp	at (336, 753)	9	on_shelter_stability_test_11b1_14	Shelter_Stability_Test_11B1+14.script
+2013-06-13 11:40:06.272 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Messaging", TextPlatform:"Generic OCR")	found at (166, 176)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-13 11:40:07.910 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"ShelterA", TextPlatform:"Generic OCR")	at (162, 137)	11	on_shelter_stability_test_11b1_14	Shelter_Stability_Test_11B1+14.script
+2013-06-13 11:40:08.972 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,490,470,730), Text:"The quick brown fox jumped", TextPlatform:"Generic OCR")	found at (265, 542)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:40:09.313 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,490,470,730), Text:"over the lazy dog", TextPlatform:"Generic OCR")	found at (206, 575)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:40:09.406 -0600	click		at (460, 700)	14	on_shelter_stability_test_11b1_14	Shelter_Stability_Test_11B1+14.script
+2013-06-13 11:40:17.312 -0600	imagefound		Unable to Find Image Device/Apps/Messaging/AudioAttachmentIcon	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-13 11:40:17.318 -0600	LogError		The expected image was not found.	3	on_confirmimageonscreen	ClassUtilities.script
+2013-06-13 11:40:17.381 -0600	EndTestCase		(Duration:"13.708", Errors:"1", Exceptions:"0", StartTime:"2013-06-13 11:40:03 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_11B1+14.script", Warnings:"0")
+2013-06-13 11:40:17.625 -0600	FAILURE	Screen_Error.png	Script Error Number of Errors logged: 1\nExecution Time 0:00:14 Shelter_Stability_Test_11B1+14.script

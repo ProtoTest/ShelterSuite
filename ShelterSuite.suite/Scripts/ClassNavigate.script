@@ -60,10 +60,10 @@ end OpenApp
 
 to SettingsOption name
 	repeat until ImageFound(3,Text:WIRELESS) is "true"
-		run ClassNavigate.SwipeDown
+		ScrollWheelUp 10
 	end repeat
 	repeat until ImageFound(3,Text:name) is "true"
-		run ClassNavigate.SwipeUp
+		ScrollWheelDown 1
 	end repeat
 	Click (Text:name)
 end SettingsOption

@@ -1,9 +1,10 @@
-//Motorola Shelter Stability Test 58 - Shelter Device B - Make a phone call
-//Subroutine B1 - Receive Incoming Call from Shelter Device A
+//Motorola Shelter Stability Test 58 - Make a phone call
 //Motorola Shelter Stability Test 59 - Switch from the telephony app to another app
-//Tests are grouped together due to dependencies in functionality
+//Motorola Shelter Stability Test 60 - End the phone call
+//Component of Script Series 58
 //Completed 6-10-2013
 
+//Subroutine B1 - Shelter Device B - Receive Incoming Call from Shelter Device A
 run ClassUtilities.ConfirmTextOnScreen("INCOMING CALL")
 run ClassUtilities.ConfirmTextOnScreen("SHELTERA")
 run ClassUtilities.ConfirmTextOnScreen("MOBILE")

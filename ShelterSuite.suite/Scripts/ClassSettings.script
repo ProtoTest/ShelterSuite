@@ -13,9 +13,9 @@ to SetWifi value
 	end if
 end SetWifi
 
-to OpenMenu name
+(*to OpenMenu name
 	repeat until ImageFound(Text:name) is "true"
 		run ClassNavigate.SwipeDown
 	end repeat
 	Click (Text:name)
-end OpenMenu
+end OpenMenu*)

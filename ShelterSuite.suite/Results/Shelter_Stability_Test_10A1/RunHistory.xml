@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<runHistory script="Shelter_Stability_Test_10A1">
+ <run>
+  <RunDate>2013-06-13 10:56:08.590 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>57.599000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130613_105608.590/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "(TEXT:"Type message")"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-13 11:16:09.725 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>56.428000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130613_111609.725/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

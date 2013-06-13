@@ -1,0 +1,28 @@
+//Motorola Shelter Stability Test 18 - Send an email with no attachment
+//Motorola Shelter Stability Test 20 - Open an email
+//Component of Script Series 18
+//Completed 6-12-2013
+
+//Setup
+run ClassNavigate.ResetState
+
+//Subroutine B1 - Shelter Device B - Receive Incoming email with no attachment from Shelter Device A and Open Message
+//Motorola Shelter Stability Test 20 -  Open an email
+run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/EmailReceived")
+run ClassNavigate.OpenApp(Email)
+run ClassUtilities.ConfirmTextOnScreen("Inbox")
+run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Email/FirstEmailUnread",   SearchRectangle:((0,110),(50,150)))
+run ClassUtilities.ConfirmTextInArea("ShelterA DeviceA"),("5,100"),("470,225")
+Click (Text:"Test email no attachment", SearchRectangle:((5,100),(470,225)))
+run ClassUtilities.ConfirmTextInArea("Test email no attachment"),("5,25"),("470,125")
+run ClassUtilities.ConfirmTextInArea("ShelterA"),("10,150"),("470,250")
+run ClassUtilities.ConfirmTextInArea("Sent from Shelter"),("10,275"),("470,500")
+Click "Device/System/BackIcon"
+wait 1 second
+run ClassUtilities.ConfirmTextOnScreen("Inbox")
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/EmailReceived")
+wait 5 seconds

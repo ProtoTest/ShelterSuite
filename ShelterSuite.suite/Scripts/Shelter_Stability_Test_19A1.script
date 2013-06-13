@@ -1,0 +1,34 @@
+//Motorola Shelter Stability Test 19 - Send an email with an attachment
+//Component of Script Series 19
+//Completed 6-13-2013
+
+//Setup
+run ClassNavigate.ResetState
+
+//Subroutine A1 - Shelter Device A -  Send an email with an attachment to Shelter Device B
+run ClassNavigate.OpenApp(Email)
+run ClassUtilities.ConfirmTextOnScreen("Inbox")
+Click "Device/Apps/Email/ComposeEmail"
+wait 1 second
+TypeText "sh"
+wait 1 second
+Click (Text:"ShelterB")
+run ClassUtilities.ConfirmTextInArea("ShelterB DeviceB"),("10,175"),("450,275")
+Click (Text:"Subject")
+TypeText "Test email with attachment"
+run ClassUtilities.ConfirmTextInArea("Test email with attachment"),("10,250"),("450,350")
+run ClassUtilities.ConfirmTextInArea("Sent from Shelter"),("10,350"),("450,450")
+Click "Device/System/MenuButton"
+Click (Text:"Attach file")
+Click (Text:"Pictures")
+Click "Device/Apps/Messaging/ImageAttachmentSample1a"
+run ClassUtilities.ConfirmTextInArea("Image Attachment"),("5,325"),("470,400")
+run ClassUtilities.ConfirmTextInArea("jpg"),("5,325"),("470,400")
+Click "Device/Apps/Email/SendEmail"
+wait 1 second
+run ClassUtilities.ConfirmTextOnScreen("Inbox")
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds

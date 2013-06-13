@@ -1,12 +1,11 @@
-//Motorola Shelter Stability Test 01 - Shelter Device A - Make a 2G voice call from the phone book
-//Subroutine 1 - Set mobile networks to 2G, dial Shelter Device B
+//Motorola Shelter Stability Test 01 - Make a 2G voice call from the phone book
+//Component of Script Series 01
 //Completed 6-07-2013
 
 //Setup
 run ClassNavigate.ResetState
 
-//Test 01A - Make a 2G voice call from the phone book
-//Subroutine 1 - Set mobile networks to 2G, dial Shelter Device B
+//Subroutine A1 - Shelter Device A - Set mobile networks to 2G, dial Shelter Device B
 run ClassNavigate.OpenApp(Settings)
 run ClassNavigate.SettingsOption(More)
 Click (Text:"Mobile networks")

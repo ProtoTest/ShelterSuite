@@ -1,0 +1,38 @@
+2013-06-13 11:19:33.936 -0600	START		Running Shelter_Stability_Test_11A1.script
+2013-06-13 11:19:43.543 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-13 11:19:44.758 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-13 11:19:46.132 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-13 11:19:47.289 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-13 11:19:49.426 -0600	click	Device/AppIcons/MessagingApp	at (336, 753)	9	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:19:50.886 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Messaging", TextPlatform:"Generic OCR")	found at (139, 76)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-13 11:19:52.037 -0600	click	Device/Apps/Messaging/NewMessageIcon	at (50, 767)	11	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:19:55.042 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"To", TextPlatform:"Generic OCR")	at (41, 146)	13	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:19:55.755 -0600	typetext		S	14	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:19:58.038 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"ShelterB", TextPlatform:"Generic OCR")	at (82, 203)	16	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:19:58.884 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,450,200), Text:"ShelterB DeviceB", TextPlatform:"Generic OCR")	found at (118, 155)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:00.081 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Type message", TextPlatform:"Generic OCR")	at (108, 397)	18	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:01.646 -0600	typetext		The quick brown fox jumped over the lazy dog. 	20	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:05.295 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,315,470,425), Text:"quick brown fox jumped", TextPlatform:"Generic OCR")	found at (206, 378)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:05.709 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,315,470,425), Text:"over the lazy dog", TextPlatform:"Generic OCR")	found at (122, 406)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:06.202 -0600	click	Device/Apps/Messaging/AttachmentIcon	at (438, 73)	24	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:08.005 -0600	click	Device/Apps/Messaging/AudioAttachment	at (62, 585)	25	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:09.575 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"music track", TextPlatform:"Generic OCR")	at (143, 516)	26	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:13.065 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Audio Attachment", TextPlatform:"Generic OCR")	at (177, 97)	27	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:14.910 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,700,200,800), Text:"OK", TextPlatform:"Generic OCR")	at (89, 749)	28	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:16.127 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(25,550,325,650), Text:"Audio Attachment", TextPlatform:"Generic OCR")	found at (121, 589)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:16.618 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(25,550,325,650), Text:"Music", TextPlatform:"Generic OCR")	found at (166, 618)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:16.884 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(375,700,470,765), Text:"MMS", TextPlatform:"Generic OCR")	found at (431, 739)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:17.205 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,700,470,800), Text:"quick brown fox jumped", TextPlatform:"Generic OCR")	found at (206, 746)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:17.754 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,700,470,800), Text:"over the lazy dog", TextPlatform:"Generic OCR")	found at (122, 774)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:18.203 -0600	click	Device/Apps/Messaging/SendMessage	at (432, 775)	34	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:28.291 -0600	click		at (460, 700)	36	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:29.587 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(1,500,470,750), Text:"Audio Attachment", TextPlatform:"Generic OCR")	found at (84, 617)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:34.062 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(1,500,470,750), Text:"quick brown fox jumped", TextPlatform:"Generic OCR")	found at (195, 664)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:34.408 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(1,500,470,750), Text:"over the lazy dog", TextPlatform:"Generic OCR")	found at (102, 696)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-13 11:20:35.972 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Type message", TextPlatform:"Generic OCR")	found at (108, 765)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-13 11:20:36.325 -0600	click	Device/System/BackIcon	at (40, 826)	42	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:38.905 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Messaging", TextPlatform:"Generic OCR")	found at (139, 76)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-13 11:20:40.028 -0600	click	Device/System/HomeButton	at (120, 824)	45	on_shelter_stability_test_11a1	Shelter_Stability_Test_11A1.script
+2013-06-13 11:20:41.078 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-13 11:20:46.175 -0600	EndTestCase		(Duration:"72.232", Errors:"0", Exceptions:"0", StartTime:"2013-06-13 11:19:33 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_11A1.script", Warnings:"0")
+2013-06-13 11:20:46.406 -0600	SUCCESS		Execution Time 0:01:13 Shelter_Stability_Test_11A1.script
