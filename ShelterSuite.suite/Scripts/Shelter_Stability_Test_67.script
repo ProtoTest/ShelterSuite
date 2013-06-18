@@ -1,5 +1,6 @@
 //Motorola Shelter Stability Test 67 - Turn NFC Off and On
 //Completed 6-05-2013
+//Current for build 1.25
 
 //Setup
 run ClassNavigate.ResetState

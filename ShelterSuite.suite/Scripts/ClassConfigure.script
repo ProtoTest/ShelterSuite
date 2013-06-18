@@ -78,3 +78,17 @@ to CloseAllBrowserTabs
 	end repeat		
 	Click "Device/Apps/Browser/BrowserIcon"
 end CloseAllBrowserTabs
+
+to DeleteContact name
+	repeat until ImageFound(Text:name) is "false"
+		if ImageFound(Text:name) then
+			Click (Text:name)
+			Click "Device/System/MenuButton"
+			Click (Text:"Delete")
+			run ClassUtilities.ConfirmTextOnScreen("contact will")
+			run ClassUtilities.ConfirmTextOnScreen("be deleted")
+			Click (Text:"OK")
+		end if
+	end repeat
+	wait 3 seconds
+end DeleteContact
