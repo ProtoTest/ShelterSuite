@@ -2,6 +2,7 @@
 //Motorola Shelter Stability Test 40 - Delete an alarm
 //Tests are grouped together due to dependencies in functionality
 //Completed 5-22-2013
+//Current for build 1.25
 
 //Setup
 //Confirms 2 default off alarms are present

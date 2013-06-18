@@ -1,5 +1,6 @@
 //Motorola Shelter Stability Test 57 -  Open and Set a Theme
 //Completed 5-30-2013
+//Current for build 1.25
 
 //Setup
 run ClassNavigate.ResetState

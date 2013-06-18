@@ -23,3 +23,7 @@ Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return V
 2013-06-11 10:54:27.586 -0600,"Success",0:01:22,0,0,0,"20130611_105427.586/LogFile.txt","","",1
 2013-06-11 10:55:51.181 -0600,"Success",0:01:34,0,0,0,"20130611_105551.181/LogFile.txt","","",1
 2013-06-11 10:57:26.321 -0600,"Success",0:01:26,0,0,0,"20130611_105726.321/LogFile.txt","","",1
+2013-06-17 12:55:38.141 -0600,"Failure",0:01:01,1,0,1,"20130617_125538.141/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/Apps/People/AddContact""",0
+2013-06-18 12:20:20.473 -0600,"Failure",0:01:08,1,0,1,"20130618_122020.473/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""First name"")""",0
+2013-06-18 12:24:36.768 -0600,"Failure",0:01:15,1,0,0,"20130618_122436.768/LogFile.txt","","Script Error -- Number of Errors logged: 1",0
+2013-06-18 12:27:32.821 -0600,"Success",0:01:22,0,0,0,"20130618_122732.821/LogFile.txt","","",1

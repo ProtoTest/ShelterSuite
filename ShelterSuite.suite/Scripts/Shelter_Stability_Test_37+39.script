@@ -1,7 +1,8 @@
 //Motorola Shelter Stability Test 37 - Add an appointment in the Calendar
-//Motorola Shelter Stability Test 40 - Delete an appointment in the Calendar
+//Motorola Shelter Stability Test 39 - Delete an appointment in the Calendar
 //Tests are grouped together due to dependencies in functionality
 //Completed 5-22-2013
+//Current for build 1.25
 
 //Setup
 run ClassNavigate.ResetState
@@ -28,7 +29,7 @@ run ClassUtilities.ConfirmTextOnScreen("Test")
 run ClassUtilities.ConfirmTextOnScreen("Event")
 run ClassUtilities.ConfirmTextOnScreen("Office")
 
-//Test 38 - Delete an appointment in the Calendar
+//Test 39 - Delete an appointment in the Calendar
 Click (Text:"Event")
 Click "Device/AppIcons/TrashcanIcon"
 run ClassUtilities.ConfirmTextOnScreen("Delete this event?")

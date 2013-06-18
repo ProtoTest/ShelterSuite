@@ -1,0 +1,14 @@
+2013-06-18 12:20:20.478 -0600	START		Running Shelter_Stability_Test_09+08.script
+2013-06-18 12:20:29.319 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-18 12:20:30.701 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-18 12:20:31.964 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-18 12:20:33.192 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-18 12:20:35.373 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-18 12:20:46.770 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	found at (181, 748)	3	on_openapp	ClassNavigate.script
+2013-06-18 12:20:49.187 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	at (181, 748)	6	on_openapp	ClassNavigate.script
+2013-06-18 12:20:50.169 -0600	click	Device/Apps/People/Contacts	at (239, 73)	11	on_shelter_stability_test_09_08	Shelter_Stability_Test_09+08.script
+2013-06-18 12:20:51.955 -0600	click	Device/Apps/People/AddContact	at (436, 766)	12	on_shelter_stability_test_09_08	Shelter_Stability_Test_09+08.script
+2013-06-18 12:21:08.283 -0600	imagefound		Unable to Find Image (TEXT:"Your new contact")	2	on_iftextonscreen	ClassUtilities.script
+2013-06-18 12:21:28.600 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"First name", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"First name")"	14	on_shelter_stability_test_09_08	Shelter_Stability_Test_09+08.script
+2013-06-18 12:21:28.645 -0600	EndTestCase		(Duration:"68.16", Errors:"1", Exceptions:"1", StartTime:"2013-06-18 12:20:20 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_09+08.script", Warnings:"0")
+2013-06-18 12:21:28.908 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"First name")"\nExecution Time 0:01:08 Shelter_Stability_Test_09+08.script

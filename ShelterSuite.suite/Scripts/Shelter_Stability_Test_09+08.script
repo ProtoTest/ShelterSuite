@@ -2,6 +2,7 @@
 //Motorola Shelter Stability Test 08 - Delete a contact from the phone book
 //Tests are grouped together due to dependencies in functionality
 //Completed 5-22-2013
+//Current for build 1.25
 
 //Setup
 run ClassNavigate.ResetState
@@ -11,13 +12,12 @@ run ClassNavigate.OpenApp(People)
 Click "Device/Apps/People/Contacts"
 Click "Device/Apps/People/AddContact"
 run ClassUtilities.IfTextOnScreen("Your new contact"),("OK") //Popup may appear
-Click (Text:"First name")
-TypeText "Pat"
-Click (Text:"Last name")
-TypeText "Riley"
-Click (Text:"Organization")
+Click (Text:"Name")
+TypeText "Pat Riley"
+wait 1 second
+Click (Text:"organization")
 TypeText "Motorola"
-Click (Text:"DONE")
+Click (Text:"DONE", SearchRectangle:((5,50),(470,150)))
 run ClassUtilities.ConfirmTextOnScreen("Pat Riley")
 Click (Text:"Pat Riley")
 run ClassUtilities.ConfirmTextOnScreen("Pat Riley")
@@ -26,7 +26,8 @@ run ClassUtilities.ConfirmTextOnScreen("Pat Riley")
 Click (Text:"Pat Riley")
 Click "Device/System/MenuButton"
 Click (Text:"Delete")
-run ClassUtilities.ConfirmTextOnScreen("This contact will be deleted")
+run ClassUtilities.ConfirmTextOnScreen("contact will")
+run ClassUtilities.ConfirmTextOnScreen("be deleted")
 Click (Text:"OK")
 run ClassUtilities.ConfirmTextNotOnScreen("Pat Riley")
 Click "Device/System/HomeButton"

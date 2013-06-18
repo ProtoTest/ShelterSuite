@@ -1,0 +1,61 @@
+2013-06-18 13:40:38.901 -0600	START		Running Shelter_Stability_Test_61+26+24+25+62+63.script
+2013-06-18 13:40:46.771 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-18 13:40:47.753 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-18 13:40:48.976 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-18 13:40:50.144 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-18 13:40:52.107 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	15	on_shelter_stability_test_61_26_24_25_62_63	Shelter_Stability_Test_61+26+24+25+62+63.script
+2013-06-18 13:40:53.113 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:40:54.784 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (114, 767)	3	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:40:56.730 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"General", TextPlatform:"Generic OCR")	at (97, 157)	4	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:41:00.996 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set homepage", TextPlatform:"Generic OCR")	at (123, 146)	5	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:41:02.404 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Default", TextPlatform:"Generic OCR")	at (91, 431)	6	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:41:04.270 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"google.com", TextPlatform:"Generic OCR")	found at (216, 178)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:41:05.309 -0600	click	Device/System/HomeButton	at (120, 824)	8	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:41:06.464 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	9	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:41:08.714 -0600	click	Device/System/MenuButton	at (281, 825)	3	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-18 13:41:09.712 -0600	click	Device/Apps/Browser/SettingsRefresh	at (109, 180)	4	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-18 13:41:10.650 -0600	click	Device/Apps/Browser/TabsButton	at (444, 77)	5	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-18 13:41:13.541 -0600	imagefound	Device/Apps/Browser/DeleteTab	found at (373, 299)	7	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-18 13:41:14.475 -0600	imagefound	Device/Apps/Browser/DeleteTab	found at (373, 299)	8	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-18 13:41:15.488 -0600	click	Device/Apps/Browser/DeleteTab	at (373, 299)	9	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-18 13:41:22.933 -0600	imagefound		Unable to Find Image Device/Apps/Browser/DeleteTab	12	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-18 13:41:23.890 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	13	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-18 13:41:28.218 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sign in", TextPlatform:"Generic OCR")	found at (410, 72)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:41:32.107 -0600	click	Device/System/MenuButton	at (281, 825)	21	on_shelter_stability_test_61_26_24_25_62_63	Shelter_Stability_Test_61+26+24+25+62+63.script
+2013-06-18 13:41:34.064 -0600	click	Device/Apps/Browser/SettingsRefresh	at (109, 180)	22	on_shelter_stability_test_61_26_24_25_62_63	Shelter_Stability_Test_61+26+24+25+62+63.script
+2013-06-18 13:41:35.118 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"google.com", TextPlatform:"Generic OCR")	found at (305, 79)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:41:39.179 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:41:41.696 -0600	click	Device/Apps/Browser/SettingsRefresh	at (109, 180)	3	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:41:42.475 -0600	click		at (240, 50)	5	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:41:43.315 -0600	typetext		facebook.com	6	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:41:44.225 -0600	click	Device/Apps/Browser/GoButton	at (444, 757)	7	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:41:50.594 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Get Facebook for Android", TextPlatform:"Generic OCR")	found at (214, 153)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:41:51.557 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:41:52.568 -0600	click	Device/Apps/Browser/SettingsRefresh	at (109, 180)	3	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:41:53.348 -0600	click		at (240, 50)	5	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:41:54.153 -0600	typetext		yahoo.com	6	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:41:55.630 -0600	click	Device/Apps/Browser/GoButton	at (444, 757)	7	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:24.533 -0600	imagefound		Unable to Find Image (TEXT:"enable location")	2	on_iftextonscreen	ClassUtilities.script
+2013-06-18 13:42:29.244 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"All Stories", TextPlatform:"Generic OCR")	found at (90, 626)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:42:30.209 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:31.162 -0600	click	Device/Apps/Browser/SettingsRefresh	at (109, 180)	3	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:31.943 -0600	click		at (240, 50)	5	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:32.769 -0600	typetext		youtube.com	6	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:33.933 -0600	click	Device/Apps/Browser/GoButton	at (444, 757)	7	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:40.494 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Popular on YouTube", TextPlatform:"Generic OCR")	found at (127, 150)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:42:41.520 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:42.537 -0600	click	Device/Apps/Browser/SettingsRefresh	at (109, 180)	3	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:43.317 -0600	click		at (240, 50)	5	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:44.168 -0600	typetext		wikipedia.org	6	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:45.040 -0600	click	Device/Apps/Browser/GoButton	at (444, 757)	7	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:52.512 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"The Free Encyclopedia", TextPlatform:"Generic OCR")	found at (90, 274)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:42:52.822 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:55.068 -0600	click	Device/Apps/Browser/SettingsRefresh	at (109, 180)	3	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:55.848 -0600	click		at (240, 50)	5	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:56.653 -0600	typetext		m.att.com	6	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:42:57.581 -0600	click	Device/Apps/Browser/GoButton	at (444, 757)	7	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:43:03.888 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"ABOUT AT&T", TextPlatform:"Generic OCR")	found at (397, 132)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:43:05.373 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"BUSINESS", TextPlatform:"Generic OCR")	at (238, 132)	47	on_shelter_stability_test_61_26_24_25_62_63	Shelter_Stability_Test_61+26+24+25+62+63.script
+2013-06-18 13:43:11.113 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Privacy", TextPlatform:"Generic OCR")	at (150, 620)	49	on_shelter_stability_test_61_26_24_25_62_63	Shelter_Stability_Test_61+26+24+25+62+63.script
+2013-06-18 13:43:42.474 -0600	EndTestCase		(Duration:"183.567", Errors:"1", Exceptions:"0", StartTime:"2013-06-18 13:40:38 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_61+26+24+25+62+63.script", Warnings:"0")
+2013-06-18 13:43:42.478 -0600	ABORTED		Execution Time 0:03:04 Shelter_Stability_Test_61+26+24+25+62+63.script

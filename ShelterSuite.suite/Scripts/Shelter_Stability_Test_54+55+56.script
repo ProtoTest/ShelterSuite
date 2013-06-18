@@ -3,6 +3,7 @@
 //Motorola Shelter Stability Test 54 - Close Music Player
 //Tests are grouped together due to dependencies in functionality
 //Completed 5-20-2013
+//Current for build 1.25
 
 //Setup
 run ClassNavigate.ResetState

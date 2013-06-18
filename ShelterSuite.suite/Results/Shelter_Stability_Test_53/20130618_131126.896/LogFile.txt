@@ -1,0 +1,42 @@
+2013-06-18 13:11:26.900 -0600	START		Running Shelter_Stability_Test_53.script
+2013-06-18 13:11:35.552 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-18 13:11:36.664 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-18 13:11:37.919 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-18 13:11:39.125 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-18 13:11:41.301 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-18 13:11:43.210 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (180, 220)	3	on_openapp	ClassNavigate.script
+2013-06-18 13:11:44.574 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (180, 220)	6	on_openapp	ClassNavigate.script
+2013-06-18 13:11:49.075 -0600	imagefound		Unable to Find Image (TEXT:"WIRELESS") within 3.00 seconds	2	on_settingsoption	ClassNavigate.script
+2013-06-18 13:11:49.079 -0600	scrollwheelup		moved 10	3	on_settingsoption	ClassNavigate.script
+2013-06-18 13:11:51.076 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (85, 134)	4	on_settingsoption	ClassNavigate.script
+2013-06-18 13:11:51.857 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sound", TextPlatform:"Generic OCR")	found at (125, 535)	5	on_settingsoption	ClassNavigate.script
+2013-06-18 13:11:52.693 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sound", TextPlatform:"Generic OCR")	at (125, 535)	8	on_settingsoption	ClassNavigate.script
+2013-06-18 13:11:54.117 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Volumes", TextPlatform:"Generic OCR")	at (88, 157)	4	on_mutemedia	ClassConfigure.script
+2013-06-18 13:11:55.187 -0600	drag		at (420, 300)	6	on_mutemedia	ClassConfigure.script
+2013-06-18 13:11:56.475 -0600	drop		at (135, 300)	7	on_mutemedia	ClassConfigure.script
+2013-06-18 13:11:58.930 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"OK", TextPlatform:"Generic OCR")	at (240, 698)	8	on_mutemedia	ClassConfigure.script
+2013-06-18 13:12:01.091 -0600	click	Device/System/HomeButton	at (120, 824)	10	on_mutemedia	ClassConfigure.script
+2013-06-18 13:12:01.964 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	10	on_shelter_stability_test_53	Shelter_Stability_Test_53.script
+2013-06-18 13:12:02.948 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:12:05.233 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (113, 766)	3	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:12:06.899 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"General", TextPlatform:"Generic OCR")	at (96, 155)	4	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:12:11.587 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set homepage", TextPlatform:"Generic OCR")	at (123, 146)	5	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:12:13.202 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Default", TextPlatform:"Generic OCR")	at (91, 431)	6	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:12:15.192 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"google.com", TextPlatform:"Generic OCR")	found at (216, 178)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:12:16.305 -0600	click	Device/System/HomeButton	at (120, 824)	8	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:12:17.215 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	9	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-18 13:12:18.096 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:12:20.192 -0600	click	Device/Apps/Browser/SettingsRefresh	at (109, 180)	3	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:12:20.973 -0600	click		at (240, 50)	5	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:12:22.081 -0600	typetext		m.youtube.com/watch?v=lcJuZIUeBME	6	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:12:23.045 -0600	click	Device/Apps/Browser/GoButton	at (444, 757)	7	on_gotobrowseraddress	ClassNavigate.script
+2013-06-18 13:12:29.630 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Canon in D Major", TextPlatform:"Generic OCR")	found at (203, 456)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-18 13:12:29.722 -0600	click		at (240, 250)	14	on_shelter_stability_test_53	Shelter_Stability_Test_53.script
+2013-06-18 13:12:34.966 -0600	imagefound	Device/Apps/Browser/Sites/YTubeEmblem	found at (240, 71)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-18 13:12:37.900 -0600	imagefound		Unable to Find Image Device/Apps/Browser/Sites/YTubeBlackScreenVideo	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-18 13:12:38.129 -0600	imagefound	Device/Apps/Browser/Sites/YTubeVideoCanonD	found at (277, 257)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-18 13:13:38.222 -0600	click		at (240, 250)	20	on_shelter_stability_test_53	Shelter_Stability_Test_53.script
+2013-06-18 13:13:45.480 -0600	imagefound		Unable to Find Image Device/Apps/Browser/Sites/YTubeProgressBar	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-18 13:13:45.488 -0600	LogError		The expected image was not found.	3	on_confirmimageonscreen	ClassUtilities.script
+2013-06-18 13:13:45.545 -0600	EndTestCase		(Duration:"138.638", Errors:"1", Exceptions:"0", StartTime:"2013-06-18 13:11:26 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_53.script", Warnings:"0")
+2013-06-18 13:13:45.798 -0600	FAILURE	Screen_Error.png	Script Error Number of Errors logged: 1\nExecution Time 0:02:19 Shelter_Stability_Test_53.script

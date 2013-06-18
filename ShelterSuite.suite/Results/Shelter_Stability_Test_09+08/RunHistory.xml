@@ -288,4 +288,52 @@
   <ReturnValue></ReturnValue>
   <ErrorMessage></ErrorMessage>
  </run>
+ <run>
+  <RunDate>2013-06-17 12:55:38.141 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>61.937000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130617_125538.141/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "Device/Apps/People/AddContact"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-18 12:20:20.473 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>68.170000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130618_122020.473/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "(TEXT:"First name")"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-18 12:24:36.768 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>75.331000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130618_122436.768/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Script Error -- Number of Errors logged: 1</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-18 12:27:32.821 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>82.716000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130618_122732.821/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
 </runHistory>

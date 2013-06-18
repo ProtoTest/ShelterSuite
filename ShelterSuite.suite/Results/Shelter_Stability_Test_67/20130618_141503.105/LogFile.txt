@@ -1,0 +1,20 @@
+2013-06-18 14:15:03.109 -0600	START		Running Shelter_Stability_Test_67.script
+2013-06-18 14:15:10.716 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-18 14:15:11.713 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-18 14:15:12.949 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-18 14:15:14.188 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-18 14:15:16.108 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-18 14:15:23.929 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-18 14:15:23.996 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-18 14:15:25.185 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-18 14:15:28.377 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (180, 220)	5	on_openapp	ClassNavigate.script
+2013-06-18 14:15:29.772 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (180, 220)	6	on_openapp	ClassNavigate.script
+2013-06-18 14:15:35.205 -0600	imagefound		Unable to Find Image (TEXT:"WIRELESS") within 3.00 seconds	2	on_settingsoption	ClassNavigate.script
+2013-06-18 14:15:35.207 -0600	scrollwheelup		moved 10	3	on_settingsoption	ClassNavigate.script
+2013-06-18 14:15:37.323 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (85, 133)	4	on_settingsoption	ClassNavigate.script
+2013-06-18 14:15:37.923 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	found at (118, 413)	5	on_settingsoption	ClassNavigate.script
+2013-06-18 14:15:38.610 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	at (118, 413)	8	on_settingsoption	ClassNavigate.script
+2013-06-18 14:15:40.359 -0600	imagefound	Device/Apps/Settings/CheckboxSelected	found at (401, 455)	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-18 14:15:40.362 -0600	LogError		Element erroneously present.	3	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-18 14:15:40.403 -0600	EndTestCase		(Duration:"37.226", Errors:"1", Exceptions:"0", StartTime:"2013-06-18 14:15:03 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_67.script", Warnings:"0")
+2013-06-18 14:15:41.491 -0600	FAILURE	Screen_Error.png	Script Error Number of Errors logged: 1\nExecution Time 0:00:37 Shelter_Stability_Test_67.script

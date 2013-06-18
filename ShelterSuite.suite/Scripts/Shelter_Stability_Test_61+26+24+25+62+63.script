@@ -6,6 +6,7 @@
 //Motorola Shelter Stability Test 63 - Close Browser
 //Tests are grouped together due to dependencies in functionality
 //Completed 5-30-2013
+//Current for build 1.25
 
 //Setup
 run ClassNavigate.ResetState
@@ -26,24 +27,29 @@ wait 3 seconds
 //As of 5-22-2013, Top 5 websites are Facebook, Google, Yahoo, YouTube, and Wikipedia
 //Facebook
 run ClassNavigate.GoToBrowserAddress("facebook.com")
+wait 2 seconds
 run ClassUtilities.ConfirmTextOnScreen("Get Facebook for Android")
 //Yahoo
 run ClassNavigate.GoToBrowserAddress("yahoo.com")
+wait 2 seconds
 run ClassUtilities.IfTextOnScreen("enable location"),("OK") //Popup may appear
 run ClassUtilities.ConfirmTextOnScreen("All Stories")
 //YouTube
 run ClassNavigate.GoToBrowserAddress("youtube.com")
+wait 2 seconds
 run ClassUtilities.ConfirmTextOnScreen("Popular on YouTube")
 //Wikipedia
 run ClassNavigate.GoToBrowserAddress("wikipedia.org")
+wait 2 seconds
 run ClassUtilities.ConfirmTextOnScreen("The Free Encyclopedia")
 
 //Test 24 - Go to AT&T homepage
-run ClassNavigate.GoToBrowserAddress("att.com")
+run ClassNavigate.GoToBrowserAddress("m.att.com")
+wait 2 seconds
 run ClassUtilities.ConfirmTextOnScreen("ABOUT AT&T")
 
 //Test 25 - Navigate to a link and click on the link
-Click (Text:"BUSINESS")
+ScrollWheelDown 10
 wait 2 seconds
 Click (Text:"Privacy")
 wait 2 seconds
