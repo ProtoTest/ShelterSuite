@@ -1,7 +1,7 @@
 //These handlers will set the system into one state or another.  They should always start from the unlocked home screen.
 
 to SetWifi value
-	run ClassNavigate.OpenApp "Settings"
+	run ClassNavigate.OpenApp(Settings)
 	run ClassSettings.SetWifi value
 end SetWifi
 
@@ -19,7 +19,7 @@ end MuteMedia
 
 to UnMuteMedia
 	run ClassNavigate.OpenApp(Settings)
-	Click (Text:"Sound")
+	run ClassNavigate.SettingsOption(Sound)
 	Click (Text:"Volumes")
 	wait 1 second
 	Drag (140,300)
@@ -31,7 +31,7 @@ end UnMuteMedia
 
 to MuteNotifications
 	run ClassNavigate.OpenApp(Settings)
-	Click (Text:"Sound")
+	run ClassNavigate.SettingsOption(Sound)
 	Click (Text:"Volumes")
 	wait 1 second
 	Drag (420,450)
@@ -43,7 +43,7 @@ end MuteNotifications
 
 to UnMuteNotifications
 	run ClassNavigate.OpenApp(Settings)
-	Click (Text:"Sound")
+	run ClassNavigate.SettingsOption(Sound)
 	Click (Text:"Volumes")
 	wait 1 second
 	Drag (125,450)
@@ -67,7 +67,9 @@ end SetBrowserHomepageToDefault
 to CloseAllBrowserTabs
 	wait 2 seconds
 	Click "Device/System/MenuButton"
-	Click "Device/Apps/Browser/SettingsRefresh"
+	Click (Text:"Find on page")
+	Click "Device/System/BackIcon"
+	Click "Device/System/BackIcon"
 	Click "Device/Apps/Browser/TabsButton"
 	wait 2 second
 	repeat until ImageFound("Device/Apps/Browser/DeleteTab") is "false"
@@ -85,10 +87,23 @@ to DeleteContact name
 			Click (Text:name)
 			Click "Device/System/MenuButton"
 			Click (Text:"Delete")
-			run ClassUtilities.ConfirmTextOnScreen("contact will")
-			run ClassUtilities.ConfirmTextOnScreen("be deleted")
+			run ClassUtilities.ConfirmTextInArea("contact will"),("10,325"),("450,425")
+			run ClassUtilities.ConfirmTextInArea("be deleted"),("10,325"),("450,425")
 			Click (Text:"OK")
 		end if
 	end repeat
 	wait 3 seconds
 end DeleteContact
+
+to UninstallApp name
+	run ClassNavigate.OpenApp(Settings)
+	run ClassNavigate.SettingsOption(Apps)
+	if ImageFound(Text:name) then
+		Click (Text:name)
+		Click (Text:"Uninstall")
+		Click (Text:"OK")
+		Click (Text:"OK")
+	end if
+	Click "Device/System/HomeButton"
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+end UninstallApp

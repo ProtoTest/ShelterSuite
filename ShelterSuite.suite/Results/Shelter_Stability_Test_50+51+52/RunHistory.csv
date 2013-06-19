@@ -1,7 +1,0 @@
-Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
-2013-06-11 14:01:35.963 -0600,"Success",0:00:54,0,0,0,"20130611_140135.963/LogFile.txt","","",1
-2013-06-11 14:03:11.290 -0600,"Success",0:00:46,0,0,0,"20130611_140311.290/LogFile.txt","","",1
-2013-06-11 14:04:37.629 -0600,"Success",0:00:47,0,0,0,"20130611_140437.629/LogFile.txt","","",1
-2013-06-18 12:54:11.696 -0600,"Failure",0:00:41,1,0,0,"20130618_125411.696/LogFile.txt","","Script Error -- Number of Errors logged: 1",0
-2013-06-18 13:05:17.992 -0600,"Failure",0:00:37,1,0,0,"20130618_130517.992/LogFile.txt","","Script Error -- Number of Errors logged: 1",0
-2013-06-18 13:09:11.001 -0600,"Success",0:00:45,0,0,0,"20130618_130911.001/LogFile.txt","","",1

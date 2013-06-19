@@ -1,9 +1,0 @@
-Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
-2013-06-11 15:44:49.112 -0600,"Failure",0:00:00,1,0,0,"20130611_154449.112/LogFile.txt","","STUnknownMessage -- ERROR: No Such Command: 'readystate'",0
-2013-06-11 15:44:59.187 -0600,"Failure",0:01:27,1,0,1,"20130611_154459.187/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/Apps/Browser/SettingsRefresh""",0
-2013-06-18 13:32:18.097 -0600,"Failure",0:04:12,1,0,0,"20130618_133218.097/LogFile.txt","","Script Error -- Number of Errors logged: 1",0
-2013-06-18 13:40:38.898 -0600,"Running",-2147483648:-2147483648:-8,0,0,0,"20130618_134038.898/LogFile.txt","","",0
-2013-06-18 13:46:15.072 -0600,"Failure",0:01:07,1,0,0,"20130618_134615.072/LogFile.txt","","Script Error -- Number of Errors logged: 1",0
-2013-06-18 13:49:04.129 -0600,"Running",-2147483648:-2147483648:-8,0,0,0,"20130618_134904.129/LogFile.txt","","",0
-2013-06-18 13:58:05.727 -0600,"Running",-2147483648:-2147483648:-8,0,0,0,"20130618_135805.727/LogFile.txt","","",0
-2013-06-18 14:05:50.661 -0600,"Success",0:03:15,0,0,0,"20130618_140550.661/LogFile.txt","","",1

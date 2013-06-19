@@ -1,3 +1,0 @@
-2013-06-11 15:11:40.899 -0600	START		Running Shelter_Stability_Test_54+55+56.script
-2013-06-11 15:11:41.017 -0600	EndTestCase		(Duration:"0.113", Errors:"1", Exceptions:"0", StartTime:"2013-06-11 15:11:40 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_54+55+56.script", Warnings:"0")
-2013-06-11 15:11:42.593 -0600	FAILURE	Screen_Error.png	STUnknownMessage ERROR: No Such Command: 'readystate'\nExecution Time 0:00:01 Shelter_Stability_Test_54+55+56.script

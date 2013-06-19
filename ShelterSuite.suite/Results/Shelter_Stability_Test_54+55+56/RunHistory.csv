@@ -1,6 +1,0 @@
-Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
-2013-06-11 15:11:40.896 -0600,"Failure",0:00:00,1,0,0,"20130611_151140.896/LogFile.txt","","STUnknownMessage -- ERROR: No Such Command: 'readystate'",0
-2013-06-11 15:12:33.958 -0600,"Success",0:01:56,0,0,0,"20130611_151233.958/LogFile.txt","","",1
-2013-06-11 15:14:57.049 -0600,"Success",0:01:35,0,0,0,"20130611_151457.049/LogFile.txt","","",1
-2013-06-11 15:18:34.737 -0600,"Success",0:01:44,0,0,0,"20130611_151834.737/LogFile.txt","","",1
-2013-06-18 13:23:59.294 -0600,"Success",0:01:34,0,0,0,"20130618_132359.294/LogFile.txt","","",1

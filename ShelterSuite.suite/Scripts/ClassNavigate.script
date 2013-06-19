@@ -70,8 +70,10 @@ end SettingsOption
 
 to GoToBrowserAddress address
 	Click "Device/System/MenuButton"
-	Click "Device/Apps/Browser/SettingsRefresh"
-	wait 0.5 seconds
+	Click (Text:"Find on page")
+	Click "Device/System/BackIcon"
+	Click "Device/System/BackIcon"
+	wait 2 second
 	Click (240,50)
 	TypeText (address)
 	Click "Device/Apps/Browser/GoButton"

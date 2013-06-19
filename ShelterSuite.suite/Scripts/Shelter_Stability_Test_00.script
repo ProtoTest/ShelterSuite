@@ -16,5 +16,5 @@
 //Audio: 600 kb
 //Image: Unknown (1000 kb used for sample)
 
-run ClassNavigate.ResetState
-run ClassConfigure.MuteNotifications
+//run ClassNavigate.ResetState
+//run ClassConfigure.MuteNotifications
