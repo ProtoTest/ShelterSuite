@@ -1,8 +1,8 @@
-//Motorola Shelter Stability Test 58 - Make a phone call
+//Motorola Shelter Stability Test 58 -- Make a phone call
 //Component of Script Series 58
 //Completed 6-10-2013
 
-//Subroutine A2 - Shelter Device A - Teardown
+//Subroutine A2 -- Shelter Device A - Teardown
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")

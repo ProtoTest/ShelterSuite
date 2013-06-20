@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<runHistory script="Shelter_Stability_Test_53">
+ <run>
+  <RunDate>2013-06-19 16:44:40.049 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>199.459000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130619_164440.049/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 17:17:09.366 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>207.769000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130619_171709.366/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 17:39:08.553 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>203.233000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130619_173908.553/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 17:58:52.156 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>199.551000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130619_175852.156/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 18:20:52.228 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>199.049000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130619_182052.228/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 18:42:57.135 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>198.823000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130619_184257.135/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 19:04:45.309 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>52903.464000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130619_190445.309/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Script Error -- Number of Errors logged: 1</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-20 12:36:06.668 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>78.470000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130620_123606.668/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "(TEXT:"Find on page")"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-20 13:33:48.030 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>206.682000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130620_133348.030/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

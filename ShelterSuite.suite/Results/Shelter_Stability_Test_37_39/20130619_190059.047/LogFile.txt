@@ -1,0 +1,12 @@
+2013-06-19 19:00:59.049 -0600	START		Running Shelter_Stability_Test_37_39.script
+2013-06-19 19:01:05.723 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-19 19:01:06.626 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-19 19:01:07.943 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-19 19:01:09.217 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 19:01:11.203 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-19 19:01:13.297 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Calendar", TextPlatform:"Generic OCR")	found at (298, 218)	3	on_openapp	ClassNavigate.script
+2013-06-19 19:01:14.554 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Calendar", TextPlatform:"Generic OCR")	at (298, 218)	6	on_openapp	ClassNavigate.script
+2013-06-19 19:01:28.880 -0600	imagefound		Unable to Find Image (TEXT:"SUN")	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 19:01:28.882 -0600	LogError		The expected text was not found.	3	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 19:01:28.911 -0600	EndTestCase		(Duration:"29.859", Errors:"1", Exceptions:"0", StartTime:"2013-06-19 19:00:59 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_37_39.script", Warnings:"0")
+2013-06-19 19:01:29.128 -0600	FAILURE	Screen_Error.png	Script Error Number of Errors logged: 1\nExecution Time 0:00:29 Shelter_Stability_Test_37_39.script

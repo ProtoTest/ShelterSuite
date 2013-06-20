@@ -1,0 +1,16 @@
+2013-06-19 18:16:53.316 -0600	START		Running Shelter_Stability_Test_37_39.script
+2013-06-19 18:17:01.864 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-19 18:17:02.997 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-19 18:17:04.205 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-19 18:17:05.632 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 18:17:07.664 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-19 18:17:09.656 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Calendar", TextPlatform:"Generic OCR")	found at (298, 218)	3	on_openapp	ClassNavigate.script
+2013-06-19 18:17:10.877 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Calendar", TextPlatform:"Generic OCR")	at (298, 218)	6	on_openapp	ClassNavigate.script
+2013-06-19 18:17:16.611 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"SUN", TextPlatform:"Generic OCR")	found at (52, 123)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:17:18.046 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WED", TextPlatform:"Generic OCR")	found at (241, 123)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:17:19.528 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"SAT", TextPlatform:"Generic OCR")	found at (434, 123)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:17:19.620 -0600	click		at (200, 500)	15	on_shelter_stability_test_37_39	Shelter_Stability_Test_37_39.script
+2013-06-19 18:17:20.400 -0600	click		at (200, 500)	16	on_shelter_stability_test_37_39	Shelter_Stability_Test_37_39.script
+2013-06-19 18:17:35.481 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Event Name", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"Event Name")"	18	on_shelter_stability_test_37_39	Shelter_Stability_Test_37_39.script
+2013-06-19 18:17:35.512 -0600	EndTestCase		(Duration:"42.192", Errors:"1", Exceptions:"1", StartTime:"2013-06-19 18:16:53 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_37_39.script", Warnings:"0")
+2013-06-19 18:17:35.715 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"Event Name")"\nExecution Time 0:00:42 Shelter_Stability_Test_37_39.script

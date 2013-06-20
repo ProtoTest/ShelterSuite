@@ -1,0 +1,54 @@
+2013-06-20 12:27:57.692 -0600	START		Running Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:28:04.907 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-20 12:28:05.993 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-20 12:28:07.195 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-20 12:28:08.422 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:28:10.519 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 12:28:17.822 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-20 12:28:17.887 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-20 12:28:19.083 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-20 12:28:22.276 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (180, 220)	5	on_openapp	ClassNavigate.script
+2013-06-20 12:28:23.633 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (180, 220)	6	on_openapp	ClassNavigate.script
+2013-06-20 12:28:25.851 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Apps", TextPlatform:"Generic OCR")	found at (116, 397)	2	on_settingsoption	ClassNavigate.script
+2013-06-20 12:28:38.749 -0600	imagefound		Unable to Find Image (TEXT:"DroidFish")	4	on_uninstallapp	ClassConfigure.script
+2013-06-20 12:28:39.784 -0600	click	Device/System/HomeButton	at (120, 824)	10	on_uninstallapp	ClassConfigure.script
+2013-06-20 12:28:40.651 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:28:41.088 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 12:28:43.508 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Downloads", TextPlatform:"Generic OCR")	found at (298, 350)	3	on_openapp	ClassNavigate.script
+2013-06-20 12:28:44.895 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Downloads", TextPlatform:"Generic OCR")	at (298, 350)	6	on_openapp	ClassNavigate.script
+2013-06-20 12:28:46.393 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"DroidFish", TextPlatform:"Generic OCR")	at (234, 240)	14	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:28:49.183 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"DroidFish", TextPlatform:"Generic OCR")	found at (178, 98)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-20 12:28:50.758 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Do you want to install", TextPlatform:"Generic OCR")	found at (166, 192)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-20 12:28:51.865 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,700,470,800), Text:"Install", TextPlatform:"Generic OCR")	at (353, 763)	17	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:28:55.436 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"App installed", TextPlatform:"Generic OCR")	found at (161, 198)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-20 12:28:56.574 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,700,470,800), Text:"Open", TextPlatform:"Generic OCR")	at (359, 766)	21	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:29:00.476 -0600	imagefound	Device/Apps/Droidfish/ChessBoard	found at (239, 318)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:29:00.571 -0600	click		at (260, 450)	24	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:29:01.352 -0600	click		at (260, 350)	25	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:29:02.731 -0600	imagefound	Device/Apps/Droidfish/e4	found at (44, 622)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:29:02.935 -0600	imagefound	Device/Apps/Droidfish/WhitePawnLight	found at (270, 350)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:29:03.902 -0600	click	Device/System/HomeButton	at (120, 824)	28	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:29:10.133 -0600	imagefound		Unable to Find Image Device/Apps/Droidfish/e4	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-20 12:29:17.568 -0600	imagefound		Unable to Find Image Device/Apps/Droidfish/WhitePawnLight	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-20 12:29:18.558 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 12:29:20.541 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"DroidFish", TextPlatform:"Generic OCR")	found at (415, 350)	3	on_openapp	ClassNavigate.script
+2013-06-20 12:29:21.606 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"DroidFish", TextPlatform:"Generic OCR")	at (415, 350)	6	on_openapp	ClassNavigate.script
+2013-06-20 12:29:25.473 -0600	imagefound	Device/Apps/Droidfish/e4	found at (44, 622)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:29:25.626 -0600	imagefound	Device/Apps/Droidfish/WhitePawnLight	found at (270, 350)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:29:26.345 -0600	click	Device/System/MenuButton	at (281, 825)	35	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:29:29.162 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"New Game", TextPlatform:"Generic OCR")	at (81, 686)	36	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:29:31.349 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Yes", TextPlatform:"Generic OCR")	at (98, 493)	37	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:29:39.838 -0600	imagefound		Unable to Find Image Device/Apps/Droidfish/e4	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-20 12:29:47.259 -0600	imagefound		Unable to Find Image Device/Apps/Droidfish/WhitePawnLight	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-20 12:29:48.274 -0600	click	Device/System/HomeButton	at (120, 824)	40	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:29:49.235 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:29:49.761 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 12:29:57.146 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-20 12:29:57.213 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-20 12:29:58.409 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-20 12:30:01.051 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (297, 220)	5	on_openapp	ClassNavigate.script
+2013-06-20 12:30:02.386 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (297, 220)	6	on_openapp	ClassNavigate.script
+2013-06-20 12:30:03.933 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Apps", TextPlatform:"Generic OCR")	found at (116, 397)	2	on_settingsoption	ClassNavigate.script
+2013-06-20 12:30:16.628 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"DroidFish", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"DroidFish")"	46	on_shelter_stability_test_30_33_35	Shelter_Stability_Test_30_33_35.script
+2013-06-20 12:30:16.675 -0600	EndTestCase		(Duration:"138.979", Errors:"1", Exceptions:"1", StartTime:"2013-06-20 12:27:57 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_30_33_35.script", Warnings:"0")
+2013-06-20 12:30:17.011 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"DroidFish")"\nExecution Time 0:02:19 Shelter_Stability_Test_30_33_35.script

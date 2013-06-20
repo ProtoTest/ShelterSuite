@@ -1,0 +1,403 @@
+2013-06-20 12:44:49.059 -0600	START		Running Shelter_Stability_Test_67.script
+2013-06-20 12:44:57.237 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-20 12:44:58.247 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-20 12:44:59.497 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-20 12:45:00.672 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:45:02.348 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 12:45:08.100 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-20 12:45:08.166 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-20 12:45:09.363 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-20 12:45:12.548 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (297, 220)	5	on_openapp	ClassNavigate.script
+2013-06-20 12:45:14.518 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (297, 220)	6	on_openapp	ClassNavigate.script
+2013-06-20 12:45:28.215 -0600	imagefound		Unable to Find Image (TEXT:"More")	2	on_settingsoption	ClassNavigate.script
+2013-06-20 12:45:33.190 -0600	imagefound		Unable to Find Image (TEXT:"WIRELESS") within 3.00 seconds	3	on_settingsoption	ClassNavigate.script
+2013-06-20 12:45:33.193 -0600	scrollwheelup		moved 10	4	on_settingsoption	ClassNavigate.script
+2013-06-20 12:45:35.597 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (85, 134)	5	on_settingsoption	ClassNavigate.script
+2013-06-20 12:45:36.345 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	found at (118, 413)	6	on_settingsoption	ClassNavigate.script
+2013-06-20 12:45:37.228 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	at (118, 413)	9	on_settingsoption	ClassNavigate.script
+2013-06-20 12:45:54.655 -0600	imagefound		Unable to Find Image (TEXT:"More")	10	on_settingsoption	ClassNavigate.script
+2013-06-20 12:45:55.931 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (123, 73)	3	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:02.472 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	6	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:02.475 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:08.577 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:08.579 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:14.014 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:14.016 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:19.593 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:19.595 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:25.563 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:25.566 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:30.859 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:30.862 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:36.656 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:36.658 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:42.164 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:42.167 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:47.911 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:47.913 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:53.520 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:53.523 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:58.877 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:46:58.880 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:04.526 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:04.529 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:09.861 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:09.864 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:15.509 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:15.511 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:21.059 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:21.061 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:26.499 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:26.502 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:31.963 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:31.965 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:37.624 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:37.626 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:42.994 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:42.997 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:48.674 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:48.677 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:54.180 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:54.183 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:59.662 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:47:59.665 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:05.103 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:05.106 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:10.522 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:10.524 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:15.961 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:15.963 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:21.439 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:21.442 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:27.463 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:27.465 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:33.090 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:33.093 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:38.697 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:38.699 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:44.102 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:44.105 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:49.148 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:49.151 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:54.505 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:48:54.508 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:00.655 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:00.658 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:06.160 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:06.163 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:11.657 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:11.660 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:17.079 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:17.081 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:22.644 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:22.647 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:28.033 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:28.036 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:33.480 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:33.483 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:38.727 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:38.730 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:44.153 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:44.157 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:49.796 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:49.799 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:55.566 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:49:55.570 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:01.060 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:01.062 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:06.747 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:06.750 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:12.427 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:12.429 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:18.127 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:18.129 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:24.019 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:24.022 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:29.550 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:29.553 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:35.205 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:35.208 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:40.974 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:40.977 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:46.608 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:46.611 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:52.149 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:52.152 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:57.593 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:50:57.596 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:03.122 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:03.125 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:08.626 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:08.629 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:14.304 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:14.306 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:19.707 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:19.710 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:25.395 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:25.398 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:30.629 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:30.631 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:36.402 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:36.405 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:41.961 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:41.963 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:47.417 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:47.420 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:52.846 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:52.849 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:57.474 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:51:57.477 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:02.909 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:02.912 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:08.642 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:08.645 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:13.958 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:13.961 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:19.658 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:19.661 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:24.998 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:25.001 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:30.644 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:30.647 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:36.159 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:36.162 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:41.961 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:41.964 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:47.607 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:47.610 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:53.252 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:53.255 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:58.951 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:52:58.954 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:04.752 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:04.755 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:10.132 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:10.135 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:15.748 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:15.751 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:21.277 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:21.279 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:27.016 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:27.019 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:32.447 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:32.450 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:38.146 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:38.149 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:43.854 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:43.858 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:49.318 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:49.321 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:55.155 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:53:55.158 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:00.975 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:00.977 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:06.274 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:06.277 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:11.605 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:11.607 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:17.126 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:17.129 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:22.954 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:22.956 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:28.499 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:28.502 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:33.848 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:33.851 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:39.016 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:39.018 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:44.420 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:44.423 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:49.918 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:49.921 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:55.458 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:54:55.461 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:01.091 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:01.098 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:06.258 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:06.260 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:11.449 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:11.453 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:16.974 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:16.977 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:22.462 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:22.464 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:27.867 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:27.869 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:33.121 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:33.123 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:38.306 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:38.309 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:43.858 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:43.860 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:49.395 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:49.397 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:54.923 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:55:54.925 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:00.262 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:00.264 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:05.540 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:05.542 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:10.975 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:10.977 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:16.717 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:16.721 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:23.181 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:23.184 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:28.907 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:28.909 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:36.445 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:36.447 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:44.219 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:44.222 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:50.784 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:56:50.786 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:00.061 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:00.063 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:06.624 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:06.627 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:13.826 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:13.829 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:19.808 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:19.810 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:25.330 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:25.333 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:30.645 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:30.648 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:36.294 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:36.296 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:41.753 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:41.755 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:46.970 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:46.973 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:52.352 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:52.355 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:57.878 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:57:57.880 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:03.204 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:03.206 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:08.682 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:08.685 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:13.869 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:13.871 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:19.218 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:19.220 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:24.648 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:24.651 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:29.731 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:29.734 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:35.307 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:35.309 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:40.649 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:40.651 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:45.929 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:45.931 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:51.279 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:51.282 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:56.698 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:58:56.700 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:02.110 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:02.113 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:07.619 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:07.621 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:13.006 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:13.008 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:18.545 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:18.548 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:24.059 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:24.061 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:29.479 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:29.482 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:34.773 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:34.775 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:40.445 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:40.448 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:45.966 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:45.969 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:51.208 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:51.210 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:56.664 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 12:59:56.668 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:02.031 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:02.034 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:06.930 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:06.932 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:11.268 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:11.271 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:16.301 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:16.304 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:21.612 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:21.614 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:25.925 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:25.928 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:31.028 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:31.031 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:36.487 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:36.490 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:41.839 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:41.841 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:47.003 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:47.006 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:52.538 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:52.541 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:59.476 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:00:59.478 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:05.904 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:05.907 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:12.137 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:12.139 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:17.878 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:17.880 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:23.604 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:23.606 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:29.104 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:29.107 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:34.692 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:34.694 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:39.344 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:39.347 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:44.764 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:44.766 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:49.272 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:49.274 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:54.691 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:01:54.694 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:00.080 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:00.082 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:05.139 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:05.142 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:11.514 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:11.516 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:17.231 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:17.234 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:22.361 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:22.363 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:27.662 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:27.664 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:33.083 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:33.085 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:38.352 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:38.356 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:43.602 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:43.604 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:49.119 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:49.122 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:54.476 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:54.478 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:59.784 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:02:59.787 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:04.795 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:04.798 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:10.040 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:10.043 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:15.570 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:15.573 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:20.852 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:20.854 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:26.309 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:26.312 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:31.885 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:31.888 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:37.244 -0600	imagefound		Unable to Find Image (TEXT:"More") within 3.00 seconds	8	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:37.247 -0600	scrollwheeldown		moved 1	7	on_settingsoption	ClassNavigate.script
+2013-06-20 13:03:41.166 -0600	EndTestCase		(Duration:"1132.101", Errors:"1", Exceptions:"0", StartTime:"2013-06-20 12:44:49 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_67.script", Warnings:"0")
+2013-06-20 13:03:41.169 -0600	ABORTED		Execution Time 0:18:52 Shelter_Stability_Test_67.script

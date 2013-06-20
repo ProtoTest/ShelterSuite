@@ -1,6 +1,6 @@
-//Motorola Shelter Stability Test 30 - Installing an App (Previously: Download a Java application/game)
-//Motorola Shelter Stability Test 33 - Running an App (Previously: Open a downloaded Java Game and then close a Java Game)
-//Motorola Shelter Stability Test 35 - Deleting an App (Previously: Delete a downloaded Java Game)
+//Motorola Shelter Stability Test 30 -- Installing an App (Previously: Download a Java application/game)
+//Motorola Shelter Stability Test 33 -- Running an App (Previously: Open a downloaded Java Game and then close a Java Game)
+//Motorola Shelter Stability Test 35 -- Deleting an App (Previously: Delete a downloaded Java Game)
 //Tests are grouped together due to dependencies in functionality
 //Completed 6-05-2013
 //Current for build 1.25

@@ -1,0 +1,35 @@
+2013-06-19 17:29:48.968 -0600	START		Running Shelter_Stability_Test_09_08.script
+2013-06-19 17:29:56.438 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-19 17:29:57.421 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-19 17:29:58.628 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-19 17:29:59.855 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 17:30:01.137 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-19 17:30:04.551 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	found at (298, 748)	3	on_openapp	ClassNavigate.script
+2013-06-19 17:30:06.491 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"People", TextPlatform:"Generic OCR")	at (298, 748)	6	on_openapp	ClassNavigate.script
+2013-06-19 17:30:08.626 -0600	click	Device/Apps/People/Contacts	at (239, 73)	12	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:10.261 -0600	click	Device/Apps/People/AddContact	at (436, 766)	13	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:28.597 -0600	imagefound		Unable to Find Image (TEXT:"Your new contact")	2	on_iftextonscreen	ClassUtilities.script
+2013-06-19 17:30:32.698 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"First Name", TextPlatform:"Generic OCR")	at (88, 238)	15	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:33.747 -0600	typetext		Pat	17	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:35.479 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Last Name", TextPlatform:"Generic OCR")	at (88, 310)	18	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:36.548 -0600	typetext		Riley	20	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:39.106 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"organization", TextPlatform:"Generic OCR")	at (153, 392)	21	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:39.899 -0600	typetext		Motorola	22	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:40.967 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(5,50,470,150), Text:"DONE", TextPlatform:"Generic OCR")	at (101, 74)	23	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:44.036 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Pat Riley", TextPlatform:"Generic OCR")	found at (77, 60)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 17:30:44.890 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Pat Riley", TextPlatform:"Generic OCR")	at (77, 60)	25	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:30:46.946 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Pat Riley", TextPlatform:"Generic OCR")	found at (89, 354)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 17:30:48.408 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Pat Riley", TextPlatform:"Generic OCR")	found at (89, 354)	2	on_deletecontact	ClassConfigure.script
+2013-06-19 17:30:49.915 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Pat Riley", TextPlatform:"Generic OCR")	found at (89, 354)	3	on_deletecontact	ClassConfigure.script
+2013-06-19 17:30:51.560 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Pat Riley", TextPlatform:"Generic OCR")	at (89, 354)	4	on_deletecontact	ClassConfigure.script
+2013-06-19 17:30:52.452 -0600	click	Device/System/MenuButton	at (281, 825)	5	on_deletecontact	ClassConfigure.script
+2013-06-19 17:30:54.454 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Delete", TextPlatform:"Generic OCR")	at (102, 544)	6	on_deletecontact	ClassConfigure.script
+2013-06-19 17:30:55.332 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,325,450,425), Text:"contact will", TextPlatform:"Generic OCR")	found at (187, 382)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-19 17:30:56.212 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,325,450,425), Text:"be deleted", TextPlatform:"Generic OCR")	found at (326, 382)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-19 17:30:57.454 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"OK", TextPlatform:"Generic OCR")	at (342, 450)	9	on_deletecontact	ClassConfigure.script
+2013-06-19 17:31:13.392 -0600	imagefound		Unable to Find Image (TEXT:"Pat Riley")	11	on_deletecontact	ClassConfigure.script
+2013-06-19 17:31:31.594 -0600	imagefound		Unable to Find Image (TEXT:"Pat Riley")	2	on_confirmtextnotonscreen	ClassUtilities.script
+2013-06-19 17:31:31.900 -0600	click	Device/System/HomeButton	at (120, 824)	31	on_shelter_stability_test_09_08	Shelter_Stability_Test_09_08.script
+2013-06-19 17:31:32.831 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 17:31:37.895 -0600	EndTestCase		(Duration:"108.923", Errors:"0", Exceptions:"0", StartTime:"2013-06-19 17:29:48 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_09_08.script", Warnings:"0")
+2013-06-19 17:31:38.080 -0600	SUCCESS		Execution Time 0:01:49 Shelter_Stability_Test_09_08.script

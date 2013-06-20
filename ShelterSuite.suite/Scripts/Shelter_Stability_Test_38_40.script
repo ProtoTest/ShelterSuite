@@ -1,5 +1,5 @@
-//Motorola Shelter Stability Test 38 - Set an alarm
-//Motorola Shelter Stability Test 40 - Delete an alarm
+//Motorola Shelter Stability Test 38 -- Set an alarm
+//Motorola Shelter Stability Test 40 -- Delete an alarm
 //Tests are grouped together due to dependencies in functionality
 //Completed 5-22-2013
 //Current for build 1.25
@@ -11,8 +11,8 @@ run ClassNavigate.OpenApp(Clock)
 wait 1 second
 Click (Text:"Set alarm")
 wait 1 second
-run ClassUtilities.ConfirmTextOnScreen("8:30 AM")
-run ClassUtilities.ConfirmTextOnScreen("9:00 AM")
+run ClassUtilities.ConfirmTextInArea("8:30 AM"),("10,110"),("450,210")
+run ClassUtilities.ConfirmTextInArea("9:00 AM"),("10,210"),("450,310")
 Click "Device/System/HomeButton"
 
 //Test 38 - Set an alarm

@@ -1,4 +1,4 @@
-//Motorola Shelter Stability Test 64 - Menu Navigation
+//Motorola Shelter Stability Test 64 -- Menu Navigation
 //Completed 5-30-2013
 //Current for build 1.25
 
@@ -22,6 +22,7 @@ run ClassUtilities.ConfirmTextOnScreen("apk")
 Click (Text:"kernel")
 run ClassUtilities.ConfirmTextOnScreen("Notices")
 Click "Device/System/HomeButton"
+wait 1 second
 run ClassUtilities.ConfirmTextNotOnScreen("Open source licenses")
 Click "Device/System/HomeButton"
 

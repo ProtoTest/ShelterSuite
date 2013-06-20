@@ -1,0 +1,36 @@
+2013-06-19 18:30:47.336 -0600	START		Running Shelter_Stability_Test_64.script
+2013-06-19 18:30:55.024 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-19 18:30:56.108 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-19 18:30:57.364 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-19 18:30:58.470 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 18:31:00.504 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-19 18:31:08.803 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-19 18:31:08.868 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-19 18:31:10.056 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-19 18:31:13.383 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (180, 220)	5	on_openapp	ClassNavigate.script
+2013-06-19 18:31:14.745 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (180, 220)	6	on_openapp	ClassNavigate.script
+2013-06-19 18:31:16.675 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (85, 134)	2	on_settingsoption	ClassNavigate.script
+2013-06-19 18:31:21.566 -0600	imagefound		Unable to Find Image (TEXT:"About Phone") within 3.00 seconds	5	on_settingsoption	ClassNavigate.script
+2013-06-19 18:31:21.569 -0600	scrollwheeldown		moved 1	6	on_settingsoption	ClassNavigate.script
+2013-06-19 18:31:25.804 -0600	imagefound		Unable to Find Image (TEXT:"About Phone") within 3.00 seconds	7	on_settingsoption	ClassNavigate.script
+2013-06-19 18:31:25.806 -0600	scrollwheeldown		moved 1	6	on_settingsoption	ClassNavigate.script
+2013-06-19 18:31:29.197 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"About Phone", TextPlatform:"Generic OCR")	found at (162, 773)	7	on_settingsoption	ClassNavigate.script
+2013-06-19 18:31:30.543 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"About Phone", TextPlatform:"Generic OCR")	at (162, 773)	8	on_settingsoption	ClassNavigate.script
+2013-06-19 18:31:32.154 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Status", TextPlatform:"Generic OCR")	at (80, 152)	11	on_shelter_stability_test_64	Shelter_Stability_Test_64.script
+2013-06-19 18:31:33.637 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Battery status", TextPlatform:"Generic OCR")	found at (121, 146)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:31:34.575 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Battery level", TextPlatform:"Generic OCR")	found at (110, 243)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:31:35.058 -0600	click	Device/System/BackIcon	at (40, 826)	14	on_shelter_stability_test_64	Shelter_Stability_Test_64.script
+2013-06-19 18:31:36.432 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Legal information", TextPlatform:"Generic OCR")	at (142, 451)	15	on_shelter_stability_test_64	Shelter_Stability_Test_64.script
+2013-06-19 18:31:38.285 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Open source licenses", TextPlatform:"Generic OCR")	at (163, 160)	16	on_shelter_stability_test_64	Shelter_Stability_Test_64.script
+2013-06-19 18:31:44.618 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Open source licenses", TextPlatform:"Generic OCR")	found at (205, 101)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:31:46.711 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"kernel", TextPlatform:"Generic OCR")	found at (126, 162)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:31:48.678 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"root", TextPlatform:"Generic OCR")	found at (115, 191)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:31:50.682 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"apk", TextPlatform:"Generic OCR")	found at (333, 277)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:31:52.805 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"kernel", TextPlatform:"Generic OCR")	at (126, 162)	22	on_shelter_stability_test_64	Shelter_Stability_Test_64.script
+2013-06-19 18:31:57.528 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Notices", TextPlatform:"Generic OCR")	found at (79, 206)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 18:31:58.546 -0600	click	Device/System/HomeButton	at (120, 824)	24	on_shelter_stability_test_64	Shelter_Stability_Test_64.script
+2013-06-19 18:32:11.976 -0600	imagefound		Unable to Find Image (TEXT:"Open source licenses")	2	on_confirmtextnotonscreen	ClassUtilities.script
+2013-06-19 18:32:12.900 -0600	click	Device/System/HomeButton	at (120, 824)	26	on_shelter_stability_test_64	Shelter_Stability_Test_64.script
+2013-06-19 18:32:13.826 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 18:32:18.897 -0600	EndTestCase		(Duration:"91.556", Errors:"0", Exceptions:"0", StartTime:"2013-06-19 18:30:47 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_64.script", Warnings:"0")
+2013-06-19 18:32:19.066 -0600	SUCCESS		Execution Time 0:01:31 Shelter_Stability_Test_64.script

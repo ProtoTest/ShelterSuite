@@ -1,0 +1,15 @@
+2013-06-20 12:37:25.656 -0600	START		Running Shelter_Stability_Test_54_55_56.script
+2013-06-20 12:37:33.031 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-20 12:37:34.115 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-20 12:37:37.156 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-20 12:37:40.104 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:37:45.598 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 12:37:58.399 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-20 12:37:59.245 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-20 12:38:00.449 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-20 12:38:06.143 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (297, 220)	5	on_openapp	ClassNavigate.script
+2013-06-20 12:38:10.951 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (297, 220)	6	on_openapp	ClassNavigate.script
+2013-06-20 12:38:15.716 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sound", TextPlatform:"Generic OCR")	found at (125, 535)	2	on_settingsoption	ClassNavigate.script
+2013-06-20 12:38:50.550 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Volumes", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"Volumes")"	4	on_mutemedia	ClassConfigure.script
+2013-06-20 12:38:52.101 -0600	EndTestCase		(Duration:"86.439", Errors:"1", Exceptions:"1", StartTime:"2013-06-20 12:37:25 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_54_55_56.script", Warnings:"0")
+2013-06-20 12:39:00.822 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"Volumes")"\nExecution Time 0:01:27 Shelter_Stability_Test_54_55_56.script

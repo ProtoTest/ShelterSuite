@@ -1,11 +1,11 @@
-//Motorola Shelter Stability Test 57 -  Open and Set a Theme
+//Motorola Shelter Stability Test 57 -- Open and Set a Theme
 //Completed 5-30-2013
 //Current for build 1.25
 
 //Setup
 run ClassNavigate.ResetState
 
-//Test 57 -  Open and Set a Theme
+//Test 57 - Open and Set a Theme
 run ClassNavigate.OpenApp(Settings)
 run ClassNavigate.SettingsOption(Display)
 Click (Text:"Wallpaper")

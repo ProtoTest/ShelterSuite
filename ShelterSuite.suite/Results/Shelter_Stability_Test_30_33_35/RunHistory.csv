@@ -1,0 +1,10 @@
+Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2013-06-19 16:52:26.184 -0600,"Success",0:03:10,0,0,0,"20130619_165226.184/LogFile.txt","","",1
+2013-06-19 17:06:50.567 -0600,"Failure",0:05:10,1,0,1,"20130619_170650.567/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""Apps"")""",0
+2013-06-19 17:31:38.236 -0600,"Success",0:03:07,0,0,0,"20130619_173138.236/LogFile.txt","","",1
+2013-06-19 17:51:36.332 -0600,"Success",0:03:08,0,0,0,"20130619_175136.332/LogFile.txt","","",1
+2013-06-19 18:13:35.037 -0600,"Success",0:03:17,0,0,0,"20130619_181335.037/LogFile.txt","","",1
+2013-06-19 18:35:52.779 -0600,"Success",0:03:15,0,0,0,"20130619_183552.779/LogFile.txt","","",1
+2013-06-19 18:57:42.787 -0600,"Success",0:03:16,0,0,0,"20130619_185742.787/LogFile.txt","","",1
+2013-06-20 12:27:57.690 -0600,"Failure",0:02:18,1,0,1,"20130620_122757.690/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""DroidFish"")""",0
+2013-06-20 13:25:38.290 -0600,"Success",0:03:01,0,0,0,"20130620_132538.290/LogFile.txt","","",1

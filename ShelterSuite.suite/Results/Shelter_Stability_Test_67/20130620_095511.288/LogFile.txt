@@ -1,0 +1,39 @@
+2013-06-20 09:55:11.289 -0600	START		Running Shelter_Stability_Test_67.script
+2013-06-20 09:55:18.388 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-20 09:55:19.373 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-20 09:55:20.585 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-20 09:55:21.754 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 09:55:23.852 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 09:55:31.757 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-20 09:55:31.824 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-20 09:55:33.016 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-20 09:55:36.572 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (180, 220)	5	on_openapp	ClassNavigate.script
+2013-06-20 09:55:37.985 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (180, 220)	6	on_openapp	ClassNavigate.script
+2013-06-20 09:55:43.444 -0600	imagefound		Unable to Find Image (TEXT:"WIRELESS") within 3.00 seconds	2	on_settingsoption	ClassNavigate.script
+2013-06-20 09:55:43.446 -0600	scrollwheelup		moved 10	3	on_settingsoption	ClassNavigate.script
+2013-06-20 09:55:45.824 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (85, 133)	4	on_settingsoption	ClassNavigate.script
+2013-06-20 09:55:46.722 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	found at (118, 413)	5	on_settingsoption	ClassNavigate.script
+2013-06-20 09:55:47.472 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	at (118, 413)	8	on_settingsoption	ClassNavigate.script
+2013-06-20 09:55:54.692 -0600	imagefound		Unable to Find Image Device/Apps/Settings/CheckboxSelected	2	on_ifimageonscreen	ClassUtilities.script
+2013-06-20 09:55:59.234 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"NFC is turned off", TextPlatform:"Generic OCR")	found at (315, 576)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-20 09:56:00.838 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"NFC", TextPlatform:"Generic OCR")	at (61, 429)	13	on_shelter_stability_test_67	Shelter_Stability_Test_67.script
+2013-06-20 09:56:02.430 -0600	imagefound	Device/Apps/Settings/CheckboxSelected	found at (401, 455)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 09:56:03.883 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Ready to transmit app content via NFC", TextPlatform:"Generic OCR")	found at (217, 578)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-20 09:56:04.959 -0600	click	Device/System/HomeButton	at (120, 824)	16	on_shelter_stability_test_67	Shelter_Stability_Test_67.script
+2013-06-20 09:56:05.787 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 09:56:06.427 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 09:56:13.120 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-20 09:56:13.185 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-20 09:56:14.381 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-20 09:56:15.854 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (180, 220)	5	on_openapp	ClassNavigate.script
+2013-06-20 09:56:16.502 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (180, 220)	6	on_openapp	ClassNavigate.script
+2013-06-20 09:56:17.936 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	at (118, 413)	19	on_shelter_stability_test_67	Shelter_Stability_Test_67.script
+2013-06-20 09:56:18.982 -0600	imagefound	Device/Apps/Settings/CheckboxSelected	found at (401, 455)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 09:56:20.313 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Ready to transmit app content via NFC", TextPlatform:"Generic OCR")	found at (217, 578)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-20 09:56:21.972 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"NFC", TextPlatform:"Generic OCR")	at (61, 429)	22	on_shelter_stability_test_67	Shelter_Stability_Test_67.script
+2013-06-20 09:56:30.156 -0600	imagefound		Unable to Find Image Device/Apps/Settings/CheckboxSelected	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-20 09:56:31.667 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"NFC is turned off", TextPlatform:"Generic OCR")	found at (315, 576)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-20 09:56:32.796 -0600	click	Device/System/HomeButton	at (120, 824)	25	on_shelter_stability_test_67	Shelter_Stability_Test_67.script
+2013-06-20 09:56:34.296 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 09:56:39.338 -0600	EndTestCase		(Duration:"88.043", Errors:"0", Exceptions:"0", StartTime:"2013-06-20 09:55:11 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_67.script", Warnings:"0")
+2013-06-20 09:56:39.527 -0600	SUCCESS		Execution Time 0:01:28 Shelter_Stability_Test_67.script

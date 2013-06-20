@@ -1,0 +1,30 @@
+2013-06-20 12:36:06.671 -0600	START		Running Shelter_Stability_Test_53.script
+2013-06-20 12:36:14.708 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-20 12:36:15.732 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-20 12:36:16.933 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-20 12:36:18.158 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:36:20.821 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 12:36:22.760 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (297, 220)	3	on_openapp	ClassNavigate.script
+2013-06-20 12:36:23.756 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (297, 220)	6	on_openapp	ClassNavigate.script
+2013-06-20 12:36:38.495 -0600	imagefound		Unable to Find Image (TEXT:"Sound")	2	on_settingsoption	ClassNavigate.script
+2013-06-20 12:36:44.111 -0600	imagefound		Unable to Find Image (TEXT:"WIRELESS") within 3.00 seconds	3	on_settingsoption	ClassNavigate.script
+2013-06-20 12:36:44.114 -0600	scrollwheelup		moved 10	4	on_settingsoption	ClassNavigate.script
+2013-06-20 12:36:47.036 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (85, 134)	5	on_settingsoption	ClassNavigate.script
+2013-06-20 12:36:47.745 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sound", TextPlatform:"Generic OCR")	found at (125, 535)	6	on_settingsoption	ClassNavigate.script
+2013-06-20 12:36:48.588 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sound", TextPlatform:"Generic OCR")	at (125, 535)	9	on_settingsoption	ClassNavigate.script
+2013-06-20 12:36:49.985 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sound", TextPlatform:"Generic OCR")	found at (113, 80)	10	on_settingsoption	ClassNavigate.script
+2013-06-20 12:36:50.840 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Volumes", TextPlatform:"Generic OCR")	at (88, 157)	4	on_mutemedia	ClassConfigure.script
+2013-06-20 12:36:51.908 -0600	drag		at (420, 300)	6	on_mutemedia	ClassConfigure.script
+2013-06-20 12:36:53.221 -0600	drop		at (135, 300)	7	on_mutemedia	ClassConfigure.script
+2013-06-20 12:36:55.603 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"OK", TextPlatform:"Generic OCR")	at (240, 698)	8	on_mutemedia	ClassConfigure.script
+2013-06-20 12:36:57.564 -0600	click	Device/System/HomeButton	at (120, 824)	10	on_mutemedia	ClassConfigure.script
+2013-06-20 12:36:58.499 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	11	on_shelter_stability_test_53	Shelter_Stability_Test_53.script
+2013-06-20 12:36:59.484 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:37:00.872 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (113, 766)	3	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:37:02.238 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"General", TextPlatform:"Generic OCR")	at (90, 145)	4	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:37:03.622 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set homepage", TextPlatform:"Generic OCR")	at (124, 151)	5	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:37:05.241 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Default", TextPlatform:"Generic OCR")	at (91, 431)	6	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:37:08.422 -0600	click	Device/System/MenuButton	at (281, 825)	8	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:37:25.080 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Find on page", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"Find on page")"	9	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:37:25.140 -0600	EndTestCase		(Duration:"78.465", Errors:"1", Exceptions:"1", StartTime:"2013-06-20 12:36:06 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_53.script", Warnings:"0")
+2013-06-20 12:37:25.547 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"Find on page")"\nExecution Time 0:01:19 Shelter_Stability_Test_53.script

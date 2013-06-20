@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<runHistory script="Shelter_Stability_Test_37_39">
+ <run>
+  <RunDate>2013-06-19 16:55:36.921 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>66.787000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130619_165536.921/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 17:12:01.466 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>108.354000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130619_171201.466/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 17:34:45.717 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>64.787000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130619_173445.717/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 17:54:45.508 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>51.256000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130619_175445.508/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Script Error -- Number of Errors logged: 1</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 18:16:53.314 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>42.196000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130619_181653.314/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "(TEXT:"Event Name")"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 18:39:08.231 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>30.797000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130619_183908.231/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Script Error -- Number of Errors logged: 1</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-19 19:00:59.047 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>29.863000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130619_190059.047/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Script Error -- Number of Errors logged: 1</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-20 11:19:10.649 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>62.866000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>1</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130620_111910.649/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Image Not Found -- click Error - No Image Found On Screen: "Device/System/AppsIcon"</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-20 11:21:02.828 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>91.080000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130620_112102.828/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-20 12:30:17.184 -0600</RunDate>
+  <Status>Failure</Status>
+  <Duration>96.270000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20130620_123017.184/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Script Error -- Number of Errors logged: 1</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2013-06-20 13:28:40.219 -0600</RunDate>
+  <Status>Success</Status>
+  <Duration>100.162000</Duration>
+  <Errors>0</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>1</Successes>
+  <LogFile>20130620_132840.219/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

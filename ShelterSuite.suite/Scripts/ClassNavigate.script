@@ -59,13 +59,18 @@ to OpenApp name
 end OpenApp
 
 to SettingsOption name
-	repeat until ImageFound(3,Text:WIRELESS) is "true"
-		ScrollWheelUp 10
-	end repeat
-	repeat until ImageFound(3,Text:name) is "true"
-		ScrollWheelDown 1
+	repeat until ImageFound(Text:name) is "true"
+		repeat until ImageFound(3,Text:WIRELESS) is "true"
+			ScrollWheelUp 10
+		end repeat
+		wait 1 second
+		repeat until ImageFound(3,Text:name) is "true"
+			ScrollWheelDown 1
+		end repeat
+		wait 1 second
 	end repeat
 	Click (Text:name)
+	wait 1 second
 end SettingsOption
 
 to GoToBrowserAddress address

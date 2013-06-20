@@ -1,0 +1,3 @@
+2013-06-19 18:11:43.622 -0600	START		Running Shelter_Stability_Test_00.script
+2013-06-19 18:11:43.707 -0600	EndTestCase		(Duration:"0.082", Errors:"0", Exceptions:"0", StartTime:"2013-06-19 18:11:43 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_00.script", Warnings:"0")
+2013-06-19 18:11:43.802 -0600	SUCCESS		Execution Time 0:00:00 Shelter_Stability_Test_00.script

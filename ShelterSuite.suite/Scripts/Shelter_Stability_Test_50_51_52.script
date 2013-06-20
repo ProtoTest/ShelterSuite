@@ -1,6 +1,6 @@
-//Motorola Shelter Stability Test 50 - Record an Audio Message
-//Motorola Shelter Stability Test 51 - Listen to an Audio Message
-//Motorola Shelter Stability Test 52 - Delete an Audio Message
+//Motorola Shelter Stability Test 50 -- Record an Audio Message
+//Motorola Shelter Stability Test 51 -- Listen to an Audio Message
+//Motorola Shelter Stability Test 52 -- Delete an Audio Message
 //Tests are grouped together due to dependencies in functionality
 //Completed 5-23-2013
 //Current for build 1.25
@@ -11,6 +11,9 @@ run ClassNavigate.ResetState
 //Test 50 - Record an Audio Message
 run ClassNavigate.OpenApp(Recorder)
 wait 5 seconds
+run ClassUtilities.IfTextOnScreen("Discard"),("Discard")
+run ClassUtilities.IfTextOnScreen("Recorder"),("Recorder")
+wait 1 seconds
 run ClassUtilities.ConfirmTextInArea("Record your message"),("50,30"),("450,100")
 Click (135,750)
 run ClassUtilities.ConfirmTextOnScreen("Recording")

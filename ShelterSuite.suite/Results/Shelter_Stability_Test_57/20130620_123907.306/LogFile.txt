@@ -1,0 +1,15 @@
+2013-06-20 12:39:07.310 -0600	START		Running Shelter_Stability_Test_57.script
+2013-06-20 12:39:15.693 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-20 12:39:16.717 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-20 12:39:18.058 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-20 12:39:19.191 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:39:21.175 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-20 12:39:28.118 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-20 12:39:28.184 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-20 12:39:29.391 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-20 12:39:31.455 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (287, 262)	5	on_openapp	ClassNavigate.script
+2013-06-20 12:39:33.200 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (297, 220)	6	on_openapp	ClassNavigate.script
+2013-06-20 12:39:34.664 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Display", TextPlatform:"Generic OCR")	found at (132, 611)	2	on_settingsoption	ClassNavigate.script
+2013-06-20 12:39:52.569 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Wallpaper", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"Wallpaper")"	11	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-20 12:39:53.137 -0600	EndTestCase		(Duration:"45.822", Errors:"1", Exceptions:"1", StartTime:"2013-06-20 12:39:07 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_57.script", Warnings:"0")
+2013-06-20 12:40:00.914 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"Wallpaper")"\nExecution Time 0:00:46 Shelter_Stability_Test_57.script

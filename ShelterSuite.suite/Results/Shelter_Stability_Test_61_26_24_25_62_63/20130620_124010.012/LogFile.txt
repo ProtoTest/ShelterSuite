@@ -1,0 +1,15 @@
+2013-06-20 12:40:10.502 -0600	START		Running Shelter_Stability_Test_61_26_24_25_62_63.script
+2013-06-20 12:40:34.061 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-20 12:40:36.245 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-20 12:40:39.016 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-20 12:40:42.026 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-20 12:40:44.572 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	15	on_shelter_stability_test_61_26_24_25_62_63	Shelter_Stability_Test_61_26_24_25_62_63.script
+2013-06-20 12:40:47.924 -0600	click	Device/System/MenuButton	at (281, 825)	2	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:40:53.741 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (113, 766)	3	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:40:56.428 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"General", TextPlatform:"Generic OCR")	at (94, 151)	4	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:41:01.945 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set homepage", TextPlatform:"Generic OCR")	at (123, 146)	5	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:41:07.827 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Default", TextPlatform:"Generic OCR")	at (91, 431)	6	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:41:10.874 -0600	click	Device/System/MenuButton	at (281, 825)	8	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:41:50.823 -0600	Exception	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Find on page", TextPlatform:"Generic OCR")	No Image Found On Screen: "(TEXT:"Find on page")"	9	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-20 12:41:52.546 -0600	EndTestCase		(Duration:"101.755", Errors:"1", Exceptions:"1", StartTime:"2013-06-20 12:40:10 -0600", Successes:"0", TestCase:"Shelter_Stability_Test_61_26_24_25_62_63.script", Warnings:"0")
+2013-06-20 12:41:59.514 -0600	FAILURE	Screen_Error.png	Image Not Found click Error - No Image Found On Screen: "(TEXT:"Find on page")"\nExecution Time 0:01:42 Shelter_Stability_Test_61_26_24_25_62_63.script

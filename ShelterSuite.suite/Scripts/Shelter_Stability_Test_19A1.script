@@ -1,11 +1,11 @@
-//Motorola Shelter Stability Test 19 - Send an email with an attachment
+//Motorola Shelter Stability Test 19 -- Send an email with an attachment
 //Component of Script Series 19
 //Completed 6-13-2013
 
 //Setup
 run ClassNavigate.ResetState
 
-//Subroutine A1 - Shelter Device A -  Send an email with an attachment to Shelter Device B
+//Subroutine A1 -- Shelter Device A - Send an email with an attachment to Shelter Device B
 run ClassNavigate.OpenApp(Email)
 run ClassUtilities.ConfirmTextOnScreen("Inbox")
 Click "Device/Apps/Email/ComposeEmail"

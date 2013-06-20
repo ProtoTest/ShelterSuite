@@ -1,9 +1,9 @@
-//Motorola Shelter Stability Test 61 - Open Browser, Load Home Page
-//Motorola Shelter Stability Test 26 - Visit Top Websites
-//Motorola Shelter Stability Test 24 - Go to AT&T homepage
-//Motorola Shelter Stability Test 25 - Navigate to a link and click on the link
-//Motorola Shelter Stability Test 62 - Switch from Browser to App
-//Motorola Shelter Stability Test 63 - Close Browser
+//Motorola Shelter Stability Test 61 -- Open Browser, Load Home Page
+//Motorola Shelter Stability Test 26 -- Visit Top Websites
+//Motorola Shelter Stability Test 24 -- Go to AT&T homepage
+//Motorola Shelter Stability Test 25 -- Navigate to a link and click on the link
+//Motorola Shelter Stability Test 62 -- Switch from Browser to App
+//Motorola Shelter Stability Test 63 -- Close Browser
 //Tests are grouped together due to dependencies in functionality
 //Completed 5-30-2013
 //Current for build 1.25

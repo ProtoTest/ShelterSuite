@@ -1,0 +1,26 @@
+2013-06-19 17:15:45.823 -0600	START		Running Shelter_Stability_Test_50_51_52.script
+2013-06-19 17:15:53.967 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-19 17:15:55.032 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-19 17:15:56.275 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-19 17:15:57.387 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 17:15:59.372 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-19 17:16:05.422 -0600	imagefound		Unable to Find Image (TEXT:"Recorder") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-19 17:16:05.489 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-19 17:16:06.687 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-19 17:16:10.317 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Recorder", TextPlatform:"Generic OCR")	found at (415, 238)	5	on_openapp	ClassNavigate.script
+2013-06-19 17:16:11.970 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Recorder", TextPlatform:"Generic OCR")	at (415, 238)	6	on_openapp	ClassNavigate.script
+2013-06-19 17:16:29.623 -0600	imagefound		Unable to Find Image (TEXT:"Discard")	2	on_iftextonscreen	ClassUtilities.script
+2013-06-19 17:16:45.534 -0600	imagefound		Unable to Find Image (TEXT:"Recorder")	2	on_iftextonscreen	ClassUtilities.script
+2013-06-19 17:16:50.529 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(50,30,450,100), Text:"Record your message", TextPlatform:"Generic OCR")	found at (203, 76)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-19 17:16:50.633 -0600	click		at (135, 750)	18	on_shelter_stability_test_50_51_52	Shelter_Stability_Test_50_51_52.script
+2013-06-19 17:16:52.132 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Recording", TextPlatform:"Generic OCR")	found at (251, 164)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 17:16:56.226 -0600	click		at (345, 750)	21	on_shelter_stability_test_50_51_52	Shelter_Stability_Test_50_51_52.script
+2013-06-19 17:16:57.060 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(50,30,450,100), Text:"Message Recorded", TextPlatform:"Generic OCR")	found at (183, 76)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-19 17:16:57.154 -0600	click		at (240, 750)	25	on_shelter_stability_test_50_51_52	Shelter_Stability_Test_50_51_52.script
+2013-06-19 17:16:58.612 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(50,30,450,100), Text:"Review message", TextPlatform:"Generic OCR")	found at (174, 76)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-19 17:17:00.202 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Discard", TextPlatform:"Generic OCR")	at (110, 591)	29	on_shelter_stability_test_50_51_52	Shelter_Stability_Test_50_51_52.script
+2013-06-19 17:17:02.658 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Recorder", TextPlatform:"Generic OCR")	found at (415, 239)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-19 17:17:02.931 -0600	click	Device/System/HomeButton	at (120, 824)	33	on_shelter_stability_test_50_51_52	Shelter_Stability_Test_50_51_52.script
+2013-06-19 17:17:03.904 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 17:17:08.962 -0600	EndTestCase		(Duration:"83.133", Errors:"0", Exceptions:"0", StartTime:"2013-06-19 17:15:45 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_50_51_52.script", Warnings:"0")
+2013-06-19 17:17:09.170 -0600	SUCCESS		Execution Time 0:01:23 Shelter_Stability_Test_50_51_52.script

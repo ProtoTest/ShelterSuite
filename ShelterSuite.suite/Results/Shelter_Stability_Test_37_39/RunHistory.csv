@@ -1,0 +1,12 @@
+Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2013-06-19 16:55:36.921 -0600,"Success",0:01:06,0,0,0,"20130619_165536.921/LogFile.txt","","",1
+2013-06-19 17:12:01.466 -0600,"Success",0:01:48,0,0,0,"20130619_171201.466/LogFile.txt","","",1
+2013-06-19 17:34:45.717 -0600,"Success",0:01:04,0,0,0,"20130619_173445.717/LogFile.txt","","",1
+2013-06-19 17:54:45.508 -0600,"Failure",0:00:51,1,0,0,"20130619_175445.508/LogFile.txt","","Script Error -- Number of Errors logged: 1",0
+2013-06-19 18:16:53.314 -0600,"Failure",0:00:42,1,0,1,"20130619_181653.314/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""Event Name"")""",0
+2013-06-19 18:39:08.231 -0600,"Failure",0:00:30,1,0,0,"20130619_183908.231/LogFile.txt","","Script Error -- Number of Errors logged: 1",0
+2013-06-19 19:00:59.047 -0600,"Failure",0:00:29,1,0,0,"20130619_190059.047/LogFile.txt","","Script Error -- Number of Errors logged: 1",0
+2013-06-20 11:19:10.649 -0600,"Failure",0:01:02,1,0,1,"20130620_111910.649/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/System/AppsIcon""",0
+2013-06-20 11:21:02.828 -0600,"Success",0:01:31,0,0,0,"20130620_112102.828/LogFile.txt","","",1
+2013-06-20 12:30:17.184 -0600,"Failure",0:01:36,1,0,0,"20130620_123017.184/LogFile.txt","","Script Error -- Number of Errors logged: 1",0
+2013-06-20 13:28:40.219 -0600,"Success",0:01:40,0,0,0,"20130620_132840.219/LogFile.txt","","",1

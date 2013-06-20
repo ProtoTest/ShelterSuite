@@ -8,6 +8,7 @@ end SetWifi
 to MuteMedia
 	run ClassNavigate.OpenApp(Settings)
 	run ClassNavigate.SettingsOption(Sound)
+	wait 1 second
 	Click (Text:"Volumes")
 	wait 1 second
 	Drag (420,300)
@@ -59,6 +60,14 @@ to SetBrowserHomepageToDefault
 	Click (Text:"General")
 	Click (Text:"Set homepage")
 	Click (Text:"Default")
+	Click "Device/System/BackIcon"
+	Click "Device/System/BackIcon"
+	wait 2 seconds
+	Click "Device/System/MenuButton"
+	Click (Text:"Find on page")
+	Click "Device/System/BackIcon"
+	Click "Device/System/BackIcon"
+	wait 2 second
 	run ClassUtilities.ConfirmTextOnScreen("google.com") //google is default
 	Click "Device/System/HomeButton"
 	Click "Device/Apps/Browser/BrowserIcon"
@@ -107,3 +116,24 @@ to UninstallApp name
 	Click "Device/System/HomeButton"
 	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 end UninstallApp
+
+to ResetCalendar
+	run ClassNavigate.OpenApp(Calendar)
+	if ImageFound(3, "Device/Apps/Calendar/ReturnToCalendar") then
+		Click "Device/Apps/Calendar/ReturnToCalendar"
+	end if
+	if ImageFound(3, "Device/Apps/Calendar/CancelX") then
+		Click "Device/Apps/Calendar/CancelX"
+	end if
+	run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Calendar/ViewOptions")
+	if ImageFound(3, "Device/Apps/Calendar/ViewOptions") then
+		Click "Device/Apps/Calendar/ViewOptions"
+		Click (Text:"Week")
+	end if
+	run ClassUtilities.ConfirmTextOnScreen("SUN")
+	run ClassUtilities.ConfirmTextOnScreen("WED")
+	run ClassUtilities.ConfirmTextOnScreen("SAT")
+	Click "Device/System/HomeButton"
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+	wait 3 seconds
+end ResetCalendar

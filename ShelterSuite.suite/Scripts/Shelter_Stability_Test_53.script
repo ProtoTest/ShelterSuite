@@ -1,4 +1,4 @@
-//Motorola Shelter Stability Test 53 - Play video streaming content using device browser and video player
+//Motorola Shelter Stability Test 53 -- Play video streaming content using device browser and video player
 //Motorola clarified that test should utilize youtube.com in browser for video streaming.  Video player unnecessary.
 //Completed 6-04-2013
 //Current for build 1.25

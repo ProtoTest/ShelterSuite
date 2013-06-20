@@ -1,0 +1,41 @@
+2013-06-19 18:25:51.384 -0600	START		Running Shelter_Stability_Test_57.script
+2013-06-19 18:25:59.165 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-19 18:26:00.142 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
+2013-06-19 18:26:01.395 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
+2013-06-19 18:26:02.526 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 18:26:04.560 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-19 18:26:11.636 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-19 18:26:11.701 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-19 18:26:12.889 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-19 18:26:16.105 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (180, 220)	5	on_openapp	ClassNavigate.script
+2013-06-19 18:26:17.460 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (180, 220)	6	on_openapp	ClassNavigate.script
+2013-06-19 18:26:19.429 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (85, 134)	2	on_settingsoption	ClassNavigate.script
+2013-06-19 18:26:20.790 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Display", TextPlatform:"Generic OCR")	found at (132, 611)	5	on_settingsoption	ClassNavigate.script
+2013-06-19 18:26:22.171 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Display", TextPlatform:"Generic OCR")	at (132, 611)	8	on_settingsoption	ClassNavigate.script
+2013-06-19 18:26:23.538 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Wallpaper", TextPlatform:"Generic OCR")	at (99, 261)	11	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:24.709 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Gallery", TextPlatform:"Generic OCR")	at (81, 165)	12	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:28.094 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Test", TextPlatform:"Generic OCR")	at (183, 496)	13	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:28.872 -0600	click		at (240, 360)	14	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:30.958 -0600	click		at (450, 75)	16	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:31.917 -0600	click	Device/System/HomeButton	at (120, 824)	17	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:32.974 -0600	imagefound	Device/Backgrounds/MotorolaSymbol	found at (74, 197)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 18:26:33.235 -0600	click	Device/System/AppsIcon	at (240, 755)	2	on_openapp	ClassNavigate.script
+2013-06-19 18:26:40.718 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	3	on_openapp	ClassNavigate.script
+2013-06-19 18:26:40.783 -0600	drag		at (460, 125)	2	on_swipeleft	ClassNavigate.script
+2013-06-19 18:26:41.973 -0600	drop		at (260, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-19 18:26:45.373 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (180, 220)	5	on_openapp	ClassNavigate.script
+2013-06-19 18:26:46.719 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (180, 220)	6	on_openapp	ClassNavigate.script
+2013-06-19 18:26:48.791 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"WIRELESS", TextPlatform:"Generic OCR")	found at (85, 134)	2	on_settingsoption	ClassNavigate.script
+2013-06-19 18:26:50.098 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Display", TextPlatform:"Generic OCR")	found at (132, 611)	5	on_settingsoption	ClassNavigate.script
+2013-06-19 18:26:51.544 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Display", TextPlatform:"Generic OCR")	at (132, 611)	8	on_settingsoption	ClassNavigate.script
+2013-06-19 18:26:53.431 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Wallpaper", TextPlatform:"Generic OCR")	at (102, 264)	21	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:54.696 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Gallery", TextPlatform:"Generic OCR")	at (82, 167)	22	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:56.260 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Test", TextPlatform:"Generic OCR")	at (183, 496)	23	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:57.040 -0600	click		at (240, 540)	24	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:26:59.126 -0600	click		at (450, 75)	26	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:27:00.196 -0600	click	Device/System/HomeButton	at (120, 824)	27	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:27:06.105 -0600	imagefound		Unable to Find Image Device/Backgrounds/MotorolaSymbol	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-19 18:27:07.086 -0600	click	Device/System/HomeButton	at (120, 824)	31	on_shelter_stability_test_57	Shelter_Stability_Test_57.script
+2013-06-19 18:27:08.057 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-19 18:27:13.121 -0600	EndTestCase		(Duration:"81.732", Errors:"0", Exceptions:"0", StartTime:"2013-06-19 18:25:51 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_57.script", Warnings:"0")
+2013-06-19 18:27:13.295 -0600	SUCCESS		Execution Time 0:01:22 Shelter_Stability_Test_57.script

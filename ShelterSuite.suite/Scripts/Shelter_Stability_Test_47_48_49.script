@@ -1,6 +1,6 @@
-//Motorola Shelter Stability Test 47 - Take a Picture
-//Motorola Shelter Stability Test 48 - Open a Picture
-//Motorola Shelter Stability Test 49 - Delete a Picture
+//Motorola Shelter Stability Test 47 -- Take a Picture
+//Motorola Shelter Stability Test 48 -- Open a Picture
+//Motorola Shelter Stability Test 49 -- Delete a Picture
 //Tests are grouped together due to dependencies in functionality
 //In Progress - Shelter Device's Camera closes VNC connection
 

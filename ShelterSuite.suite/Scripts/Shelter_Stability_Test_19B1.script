@@ -1,11 +1,11 @@
-//Motorola Shelter Stability Test 19 - Send an email with an attachment
+//Motorola Shelter Stability Test 19 -- Send an email with an attachment
 //Component of Script Series 19
 //Completed 6-13-2013
 
 //Setup
 run ClassNavigate.ResetState
 
-//Subroutine B1 - Shelter Device B - Receive Incoming email with an attachment from Shelter Device A and Open Message
+//Subroutine B1 -- Shelter Device B - Receive Incoming email with an attachment from Shelter Device A and Open Message
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/EmailReceived")
 run ClassNavigate.OpenApp(Email)
 run ClassUtilities.ConfirmTextOnScreen("Inbox")
