@@ -8,8 +8,8 @@
 run ClassNavigate.ResetState
 
 //Motorola Shelter Stability Test 47 - Take a Picture
-run ClassNavigate.UnlockDevice
 //run ClassNavigate.OpenApp(Camera)
+//LogError "Test will intentionally fail until device error is resolved."
 
 //Teardown
 Click "Device/System/HomeButton"

@@ -18,37 +18,39 @@ run ClassConfigure.SetBrowserHomepageToDefault
 run ClassConfigure.CloseAllBrowserTabs
 run ClassUtilities.ConfirmTextOnScreen("Sign in")
 wait 3 seconds
-Click "Device/System/MenuButton"
-Click "Device/Apps/Browser/SettingsRefresh"
-run ClassUtilities.ConfirmTextOnScreen("google.com") //google is default homepage
-wait 3 seconds
 
 //Test 26 - Visit Top Websites
 //As of 5-22-2013, Top 5 websites are Facebook, Google, Yahoo, YouTube, and Wikipedia
 //Facebook
+Log "Accessing Facebook."
 run ClassNavigate.GoToBrowserAddress("facebook.com")
 wait 2 seconds
 run ClassUtilities.ConfirmTextOnScreen("Get Facebook for Android")
 //Yahoo
+Log "Accessing Yahoo."
 run ClassNavigate.GoToBrowserAddress("yahoo.com")
 wait 2 seconds
 run ClassUtilities.IfTextOnScreen("enable location"),("OK") //Popup may appear
 run ClassUtilities.ConfirmTextOnScreen("All Stories")
 //YouTube
+Log "Accessing YouTube."
 run ClassNavigate.GoToBrowserAddress("youtube.com")
 wait 2 seconds
 run ClassUtilities.ConfirmTextOnScreen("Popular on YouTube")
 //Wikipedia
+Log "Accessing Wikipedia."
 run ClassNavigate.GoToBrowserAddress("wikipedia.org")
 wait 2 seconds
 run ClassUtilities.ConfirmTextOnScreen("The Free Encyclopedia")
 
 //Test 24 - Go to AT&T homepage
+Log "Accessing AT&T."
 run ClassNavigate.GoToBrowserAddress("m.att.com")
 wait 2 seconds
 run ClassUtilities.ConfirmTextOnScreen("ABOUT AT&T")
 
 //Test 25 - Navigate to a link and click on the link
+Log "Testing link functionality."
 ScrollWheelDown 10
 wait 2 seconds
 Click (Text:"Privacy")
@@ -57,6 +59,7 @@ run ClassUtilities.ConfirmTextOnScreen("Privacy Commitments")
 run ClassConfigure.CloseAllBrowserTabs
 
 //Test 62 - Switch from Browser to App
+Log "Switching to app."
 Click "Device/System/HomeButton"
 run ClassNavigate.OpenTaskbar
 wait 1 second

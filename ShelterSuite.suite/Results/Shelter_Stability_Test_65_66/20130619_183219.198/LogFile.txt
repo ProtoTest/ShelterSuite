@@ -1,9 +1,0 @@
-2013-06-19 18:32:19.200 -0600	START		Running Shelter_Stability_Test_65_66.script
-2013-06-19 18:32:27.273 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
-2013-06-19 18:32:28.397 -0600	click	Device/System/HomeButton	at (120, 824)	3	on_resetstate	ClassNavigate.script
-2013-06-19 18:32:29.708 -0600	click	Device/System/HomeButton	at (120, 824)	5	on_resetstate	ClassNavigate.script
-2013-06-19 18:32:30.892 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
-2013-06-19 18:32:32.984 -0600	click	Device/System/HomeButton	at (120, 824)	14	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
-2013-06-19 18:32:33.898 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
-2013-06-19 18:32:38.957 -0600	EndTestCase		(Duration:"19.752", Errors:"0", Exceptions:"0", StartTime:"2013-06-19 18:32:19 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_65_66.script", Warnings:"0")
-2013-06-19 18:32:39.185 -0600	SUCCESS		Execution Time 0:00:19 Shelter_Stability_Test_65_66.script

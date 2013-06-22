@@ -7,25 +7,33 @@
 
 //Setup
 run ClassNavigate.ResetState
-
-//Test 50 - Record an Audio Message
 run ClassNavigate.OpenApp(Recorder)
-wait 5 seconds
+wait 3 seconds
+Log "Resetting to default state."
+run ClassUtilities.IfImageOnScreen,"Device/Apps/SoundRecorder/RecIcon","Device/Apps/SoundRecorder/StopButton"
 run ClassUtilities.IfTextOnScreen("Discard"),("Discard")
 run ClassUtilities.IfTextOnScreen("Recorder"),("Recorder")
+run ClassUtilities.ConfirmTextOnScreen("0:0")
+
+//Test 50 - Record an Audio Message
+Log "Recording audio."
 wait 1 seconds
 run ClassUtilities.ConfirmTextInArea("Record your message"),("50,30"),("450,100")
-Click (135,750)
+Click "Device/Apps/SoundRecorder/RecordButton"
 run ClassUtilities.ConfirmTextOnScreen("Recording")
-wait 4 seconds
-Click (345, 750)
+wait 15 seconds
+Click "Device/Apps/SoundRecorder/StopButton"
 run ClassUtilities.ConfirmTextInArea("Message Recorded"),("50,30"),("450,100")
+run ClassUtilities.ConfirmTextOnScreen("0:1")
+Log "Audio recorded."
 
 //Test 51 - Listen to an Audio Message
-Click (240, 750)
+Log "Playing recording back."
+Click "Device/Apps/SoundRecorder/PlayButton"
 run ClassUtilities.ConfirmTextInArea("Review message"),("50,30"),("450,100")
 
 //Test 52 - Delete an Audio Message
+Log "Discarding recording."
 Click (Text:"Discard")
 run ClassUtilities.ConfirmTextOnScreen("Recorder")
 

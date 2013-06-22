@@ -6,13 +6,14 @@
 
 //Setup
 run ClassNavigate.ResetState
-run ClassConfigure.ResetCalendar
+run ClassConfigure.ResetCalendar(test)
 
 //Test 37 - Add an appointment in the Calendar
 run ClassNavigate.OpenApp(Calendar)
 run ClassUtilities.ConfirmTextOnScreen("SUN")
 run ClassUtilities.ConfirmTextOnScreen("WED")
 run ClassUtilities.ConfirmTextOnScreen("SAT")
+Log "Calendar open.  Adding test event..."
 Click (200,500)
 Click (200,500)
 wait 1 second
@@ -29,14 +30,17 @@ wait 2 second
 run ClassUtilities.ConfirmTextOnScreen("Test")
 run ClassUtilities.ConfirmTextOnScreen("Event")
 run ClassUtilities.ConfirmTextOnScreen("Office")
+Log "Test event added."
 
 //Test 39 - Delete an appointment in the Calendar
+Log "Deleting test event."
 Click (Text:"Event")
 Click "Device/AppIcons/TrashcanIcon"
 run ClassUtilities.ConfirmTextOnScreen("Delete this event?")
 Click (Text:"OK")
 wait 2 seconds
 run ClassUtilities.ConfirmTextNotOnScreen("Event")
+Log "Test event deleted."
 
 //Teardown
 Click "Device/System/HomeButton"

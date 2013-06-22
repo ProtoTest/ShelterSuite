@@ -13,6 +13,7 @@ run ClassConfigure.MuteMedia
 run ClassNavigate.OpenApp(Music)
 
 //Test 55 - Play Music File
+Log "Playing test audio file."
 Click (Text:"Songs")
 Click (Text:"Audio Sample 1")
 wait 15 seconds

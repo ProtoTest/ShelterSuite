@@ -7,15 +7,10 @@
 //Setup
 //Confirms 2 default off alarms are present
 run ClassNavigate.ResetState
-run ClassNavigate.OpenApp(Clock)
-wait 1 second
-Click (Text:"Set alarm")
-wait 1 second
-run ClassUtilities.ConfirmTextInArea("8:30 AM"),("10,110"),("450,210")
-run ClassUtilities.ConfirmTextInArea("9:00 AM"),("10,210"),("450,310")
-Click "Device/System/HomeButton"
+run ClassConfigure.ResetAlarms
 
 //Test 38 - Set an alarm
+Log "Creating new alarm."
 run ClassNavigate.OpenApp(Clock)
 wait 1 second
 Click (Text:"Set alarm")
@@ -24,16 +19,23 @@ Click "Device/Apps/Clock/AddAlarm"
 Click (Text:"Turn alarm on")
 Click (Text:"DONE")
 wait 1 second
-run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/CheckboxSelected")
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/AlarmActive")
+run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Settings/CheckboxSelected",   SearchRectangle:((5,100),(475,210)))
+run ClassUtilities.ConfirmImageNotOnScreen(ImageName:"Device/Apps/Settings/CheckboxSelected",   SearchRectangle:((5,210),(475,320)))
+run ClassUtilities.ConfirmImageNotOnScreen(ImageName:"Device/Apps/Settings/CheckboxUnselected",   SearchRectangle:((5,210),(475,320)))
+wait 1 second
+Log "Alarm created."
 
 //Test 40 - Delete an alarm
-Click(140,390)
+Log "Deleting alarm."
+Click "Device/Apps/Settings/CheckboxSelectedClickRight"
 Click "Device/AppIcons/TrashcanIcon"
 run ClassUtilities.ConfirmTextOnScreen("Delete this alarm?")
 Click(Text:"OK")
 wait 1 second
 run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/AlarmActive")
+run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Settings/CheckboxSelected")
+run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Settings/CheckboxUnselected")
 Click "Device/System/HomeButton"
 
 //Teardown

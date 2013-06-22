@@ -6,6 +6,7 @@
 run ClassNavigate.ResetState
 
 //Test 64 - Menu Navigation
+Log "Beginning menu navigation."
 run ClassNavigate.OpenApp(Settings)
 run ClassNavigate.SettingsOption("About Phone")
 Click (Text:"Status")
@@ -15,6 +16,7 @@ Click "Device/System/BackIcon"
 Click (Text:"Legal information")
 Click (Text:"Open source licenses")
 wait 5 seconds
+Log "Confirming menu link navigation."
 run ClassUtilities.ConfirmTextOnScreen("Open source licenses")
 run ClassUtilities.ConfirmTextOnScreen("kernel")
 run ClassUtilities.ConfirmTextOnScreen("root")
@@ -22,7 +24,8 @@ run ClassUtilities.ConfirmTextOnScreen("apk")
 Click (Text:"kernel")
 run ClassUtilities.ConfirmTextOnScreen("Notices")
 Click "Device/System/HomeButton"
-wait 1 second
+Click "Device/System/HomeButton"
+wait 2 seconds
 run ClassUtilities.ConfirmTextNotOnScreen("Open source licenses")
 Click "Device/System/HomeButton"
 

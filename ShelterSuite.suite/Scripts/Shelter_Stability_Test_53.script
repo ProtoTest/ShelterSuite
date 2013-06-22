@@ -10,16 +10,20 @@ run ClassNavigate.ResetState
 run ClassConfigure.MuteMedia
 Click "Device/Apps/Browser/BrowserIcon"
 run ClassConfigure.SetBrowserHomepageToDefault
+run ClassConfigure.CloseAllBrowserTabs
+Log "Loading youtube video streaming."
 run ClassNavigate.GoToBrowserAddress("m.youtube.com/watch?v=lcJuZIUeBME")
 run ClassUtilities.ConfirmTextOnScreen("Canon in D Major")
 Click (240,250)
 wait 5 seconds
+Log "Confirming Youtube video loaded."
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Browser/Sites/YTubeEmblem")
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Browser/Sites/YTubeBlackScreenVideo")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Browser/Sites/YTubeVideoCanonD")
 wait 60 seconds
 Click (240,250)
 wait 1 second
+Log "Confirming video streaming."
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Browser/Sites/YTubeProgressBar")
 run ClassNavigate.GoToBrowserAddress("google.com")
 run ClassConfigure.CloseAllBrowserTabs

@@ -6,6 +6,7 @@
 run ClassNavigate.ResetState
 
 //Test 57 - Open and Set a Theme
+Log "Changing device background to test image."
 run ClassNavigate.OpenApp(Settings)
 run ClassNavigate.SettingsOption(Display)
 Click (Text:"Wallpaper")
@@ -16,6 +17,7 @@ wait 2 seconds
 Click (450,75)
 Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/Backgrounds/MotorolaSymbol")
+Log "Changing device background to default image."
 run ClassNavigate.OpenApp(Settings)
 run ClassNavigate.SettingsOption(Display)
 Click (Text:"Wallpaper")

@@ -2,6 +2,7 @@
 
 to UnlockDevice
 	if(ImageFound("Device/System/LockIcon")) is not "false"
+		Log "Device is locked.  Now unlocking..."
 		Drag "Device/System/LockIcon"
 		wait 1 second
 		Drop (460,635)
@@ -11,6 +12,7 @@ to UnlockDevice
 end UnlockDevice
 
 to ResetState
+	Log "Returning to home screen."
 	run ClassNavigate.UnlockDevice
 	Click "Device/System/HomeButton"
 	wait 1 second
@@ -21,66 +23,91 @@ to ResetState
 end ResetState
 
 to OpenTaskBar
+	Log "Opening taskbar."
 	Drag (240,25)
 	Drop (240,424)
 end OpenTaskBar
 
 to CloseTaskBar
+	Log "Closing taskbar."
 	Drag (240,790)
 	Drop (240,424)
 end CloseTaskBar
 
 to SwipeLeft
+	Log "Swiping left."
 	Drag (460,125)
 	Drop (260,125)
 end SwipeLeft
 
 to SwipeRight
+	Log "Swiping right."
 	Drag (100,125)
 	Drop (300,125)
 end SwipeRight
 
 to SwipeUp
+	Log "Swiping up."
 	Drag (465,500)
 	Drop (465,340)
 end SwipeUp
 
 to SwipeDown
+	Log "Swiping down."
 	Drag (465,340)
 	Drop (465,500)
 end SwipeDown
 
 to OpenApp name
+	Log "Opening apps menu."
 	Click "Device/System/AppsIcon"
-	repeat until (ImageFound(3,Text:name)) is "true" //"3" within ImageFound sets total wait time to 3 secs
+	repeat until (ImageFound(3,Text:"Browser")) is "true" //"3" within ImageFound sets total wait time to 3 secs
+		run ClassNavigate.SwipeRight
+		wait 1 second
+	end repeat
+	wait 1 second
+	repeat until (ImageFound(3,Text:name)) is "true"
 		run ClassNavigate.SwipeLeft
 	end repeat
+	Log "Opening app."
 	Click (Text:name)
 end OpenApp
 
 to SettingsOption name
+	Log "Beginning at top of Options List."
+	ScrollWheelUp 10
+	wait 2 seconds
 	repeat until ImageFound(Text:name) is "true"
-		repeat until ImageFound(3,Text:WIRELESS) is "true"
+		repeat until ImageFound(Text:WIRELESS) is "true"
+			Log "Returning to top of Options List."
 			ScrollWheelUp 10
+			wait 2 seconds
 		end repeat
 		wait 1 second
-		repeat until ImageFound(3,Text:name) is "true"
+		repeat until ImageFound(Text:name) is "true"
+			Log "Searching for Settings Option."
 			ScrollWheelDown 1
+			wait 2 seconds
 		end repeat
 		wait 1 second
 	end repeat
+	Log "Settings Option Found."
 	Click (Text:name)
 	wait 1 second
 end SettingsOption
 
 to GoToBrowserAddress address
+	Log "Going to website."
 	Click "Device/System/MenuButton"
+	wait 1 second
 	Click (Text:"Find on page")
+	wait 1 second
 	Click "Device/System/BackIcon"
 	Click "Device/System/BackIcon"
 	wait 2 second
 	Click (240,50)
 	TypeText (address)
+	wait 1 second
 	Click "Device/Apps/Browser/GoButton"
 	wait 5 seconds
 end GoToBrowserAddress
@@ -92,6 +119,7 @@ to GoHome
 end GoHome
 
 to AnswerCall
+	Log "Answering phone call."
 	if(ImageFound("Device/Apps/Telephone/IncomingCall"))
 		Drag "Device/Apps/Telephone/IncomingCall"
 		wait 1 second

@@ -1,9 +1,0 @@
-Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
-2013-06-19 17:20:37.518 -0600,"Success",0:01:30,0,0,0,"20130619_172037.518/LogFile.txt","","",1
-2013-06-19 17:42:32.118 -0600,"Success",0:01:40,0,0,0,"20130619_174232.118/LogFile.txt","","",1
-2013-06-19 18:02:12.037 -0600,"Success",0:01:32,0,0,0,"20130619_180212.037/LogFile.txt","","",1
-2013-06-19 18:24:11.610 -0600,"Success",0:01:39,0,0,0,"20130619_182411.610/LogFile.txt","","",1
-2013-06-19 18:46:16.307 -0600,"Success",0:01:30,0,0,0,"20130619_184616.307/LogFile.txt","","",1
-2013-06-20 09:46:29.403 -0600,"Failure",0:01:28,1,0,1,"20130620_094629.403/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""Device/System/AppsIcon""",0
-2013-06-20 12:37:25.654 -0600,"Failure",0:01:26,1,0,1,"20130620_123725.654/LogFile.txt","","Image Not Found -- click Error - No Image Found On Screen: ""(TEXT:""Volumes"")""",0
-2013-06-20 13:37:14.970 -0600,"Success",0:01:40,0,0,0,"20130620_133714.970/LogFile.txt","","",1

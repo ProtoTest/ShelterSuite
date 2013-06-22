@@ -1,4 +1,25 @@
 //Example test
 
-run ClassNavigate.UnlockDevice
+Click "Device/System/HomeButton"
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 
+run ClassNavigate.OpenApp(Settings)
+run ClassNavigate.SettingsOption(Apps)
+wait 1 second
+Click "Device/System/HomeButton"
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds
+
+run ClassNavigate.OpenApp(Settings)
+run ClassNavigate.SettingsOption(About)
+wait 1 second
+Click "Device/System/HomeButton"
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds
+
+run ClassNavigate.OpenApp(Settings)
+run ClassNavigate.SettingsOption(Sound)
+wait 1 second
+Click "Device/System/HomeButton"
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds
