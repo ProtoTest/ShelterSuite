@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<testsuites>
+ <testsuite name="Shelter_Stability_Test_09_08.script" package="ShelterSuite.suite" timestamp="2013-06-25 15:08:26.549 -0600"
+ tests="1" successes="1" errors="0" time="149.807000">
+  <properties>
+   <property name="RunDate" value="2013-06-25 15:08:26.549 -0600"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="Shelter_Stability_Test_09_08.script" assertions="1" successes="1" errors="0" time="149.797">
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -9,8 +9,7 @@ run ClassNavigate.ResetState
 run ClassNavigate.OpenApp(Settings)
 run ClassNavigate.SettingsOption(More)
 Click (Text:"Mobile networks")
-Click (Text:"Use only 2G")
-run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Settings/CheckboxSelected",   SearchRectangle:((25,500),(450,650)))
+run ClassConfigure.Set2Gnetwork(On)
 Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 3 seconds

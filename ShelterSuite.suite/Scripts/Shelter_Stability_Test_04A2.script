@@ -3,15 +3,18 @@
 //Completed 6-10-2013
 
 //Subroutine A2 -- Shelter Device A - Set mobile networks to default
+Click "Device/System/Backicon"
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
+Click "Device/Apps/Telephone/HistoryIcon"
+run ClassUtilities.ConfirmTextInArea("ShelterB"),("10,100"),("450,225")
+run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Telephone/0MinsAgo",   SearchRectangle:((10,100),(450,225)))
 Click "Device/System/HomeButton"
 run ClassNavigate.OpenApp(Settings)
 run ClassNavigate.SettingsOption(More)
 Click (Text:"Mobile networks")
-Click (Text:"Use only 2G")
-run ClassUtilities.ConfirmImageNotOnScreen(ImageName:"Device/Apps/Settings/CheckboxSelected",   SearchRectangle:((25,500),(450,650)))
+run ClassConfigure.Set2Gnetwork(Off)
 Click "Device/System/HomeButton"
 
 //Teardown

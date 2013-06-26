@@ -71,6 +71,7 @@ to OpenApp name
 	end repeat
 	Log "Opening app."
 	Click (Text:name)
+	wait 1 second
 end OpenApp
 
 to SettingsOption name
@@ -100,7 +101,7 @@ to GoToBrowserAddress address
 	Log "Going to website."
 	Click "Device/System/MenuButton"
 	wait 1 second
-	Click (Text:"Find on page")
+	Click (Text:"Find on page", SearchRectangle:((40,100),(440,800)))
 	wait 1 second
 	Click "Device/System/BackIcon"
 	Click "Device/System/BackIcon"

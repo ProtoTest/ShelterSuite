@@ -16,8 +16,8 @@ Click (Text:"ShelterA")
 wait 1 second
 ScrollWheelDown 5
 wait 1 second
-run ClassUtilities.ConfirmTextInArea("The quick brown fox jumped"),("10,490"),("470,730")
-run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,490"),("470,730")
+run ClassUtilities.ConfirmTextInArea("The quick brown fox jumped"),("10,450"),("470,730")
+run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,450"),("470,730")
 Click "Device/System/BackIcon"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("Messaging")

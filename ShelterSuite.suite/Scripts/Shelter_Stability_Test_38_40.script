@@ -13,7 +13,7 @@ run ClassConfigure.ResetAlarms
 Log "Creating new alarm."
 run ClassNavigate.OpenApp(Clock)
 wait 1 second
-Click (Text:"Set alarm")
+Click (Text:"alarm")
 wait 1 second
 Click "Device/Apps/Clock/AddAlarm"
 Click (Text:"Turn alarm on")

@@ -14,8 +14,8 @@ run ClassNavigate.ResetState
 //Test 61 - Open Browser, Load Home Page
 Click "Device/Apps/Browser/BrowserIcon"
 //run ClassNavigate.OpenApp(Browser) [Alternate open method]
-run ClassConfigure.SetBrowserHomepageToDefault
 run ClassConfigure.CloseAllBrowserTabs
+run ClassConfigure.SetBrowserHomepageToDefault
 run ClassUtilities.ConfirmTextOnScreen("Sign in")
 wait 3 seconds
 
@@ -31,7 +31,7 @@ Log "Accessing Yahoo."
 run ClassNavigate.GoToBrowserAddress("yahoo.com")
 wait 2 seconds
 run ClassUtilities.IfTextOnScreen("enable location"),("OK") //Popup may appear
-run ClassUtilities.ConfirmTextOnScreen("All Stories")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Browser/Sites/YahooLogo")
 //YouTube
 Log "Accessing YouTube."
 run ClassNavigate.GoToBrowserAddress("youtube.com")

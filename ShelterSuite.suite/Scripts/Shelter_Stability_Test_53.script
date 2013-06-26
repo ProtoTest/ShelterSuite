@@ -9,8 +9,8 @@ run ClassNavigate.ResetState
 //Test 53 - Play video streaming content using device browser
 run ClassConfigure.MuteMedia
 Click "Device/Apps/Browser/BrowserIcon"
-run ClassConfigure.SetBrowserHomepageToDefault
 run ClassConfigure.CloseAllBrowserTabs
+run ClassConfigure.SetBrowserHomepageToDefault
 Log "Loading youtube video streaming."
 run ClassNavigate.GoToBrowserAddress("m.youtube.com/watch?v=lcJuZIUeBME")
 run ClassUtilities.ConfirmTextOnScreen("Canon in D Major")

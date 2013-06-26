@@ -15,6 +15,7 @@ run ClassUtilities.ConfirmTextOnScreen("WED")
 run ClassUtilities.ConfirmTextOnScreen("SAT")
 Log "Calendar open.  Adding test event..."
 Click (200,500)
+wait 1 second
 Click (200,500)
 wait 1 second
 Click (Text:"Event Name")

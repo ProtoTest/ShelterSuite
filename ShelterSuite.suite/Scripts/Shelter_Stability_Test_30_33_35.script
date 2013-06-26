@@ -36,8 +36,10 @@ wait 3 seconds
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Droidfish/e4")
 run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Droidfish/WhitePawnLight", SearchRectangle:((230,310),(310,385)))
 Click ("Device/System/MenuButton")
+wait 1 second
 Click (Text:"New Game")
-Click (Text:"Yes")
+wait 1 second
+Click (Text:"Yes", SearchRectangle:((10,450),(470,550)))
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Droidfish/e4")
 run ClassUtilities.ConfirmImageNotOnScreen(ImageName:"Device/Apps/Droidfish/WhitePawnLight",   SearchRectangle:((230,310),(310,385)))
 Click "Device/System/HomeButton"

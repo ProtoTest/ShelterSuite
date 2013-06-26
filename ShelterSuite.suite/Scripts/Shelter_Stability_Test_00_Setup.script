@@ -10,8 +10,9 @@
 //Transfer audio file "Audio Attachment 597" to Music folder within device  (597 kb filze size)
 //Transfer audio file "Image Attachment" to Music folder within device  (1000 kb filze size)
 //Transfer audio file "Video Attachment 594" to Music folder within device  (594 kb filze size)
-//Setup exchange-email account for email and calendar functionality
+//Setup exchange-email account for email and calendar functionality (name: ShelterA DeviceA, Default Account).
 //Download "DroidFish" App from web to downloads folder.
+//Download NVitemRWTool app from Motorola and configure to allow access to 2G settings.
 //Tests are designed to run with VMLite VNC Server.  If this app is altered, update test 62.
 
 //Shelter Device Max File Sizes for MMS:

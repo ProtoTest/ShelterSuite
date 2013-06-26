@@ -6,8 +6,9 @@
 run ClassNavigate.ResetState
 
 //Subroutine A1 -- Shelter Device A - Send an email with no attachment to Shelter Device B
+wait 10 seconds
 run ClassNavigate.OpenApp(Email)
-run ClassUtilities.ConfirmTextOnScreen("Inbox")
+run ClassConfigure.ResetEmail
 Click "Device/Apps/Email/ComposeEmail"
 wait 1 second
 TypeText "sh"
@@ -17,7 +18,9 @@ run ClassUtilities.ConfirmTextInArea("ShelterB DeviceB"),("10,175"),("450,275")
 Click (Text:"Subject")
 TypeText "Test email no attachment"
 run ClassUtilities.ConfirmTextInArea("Test email no attachment"),("10,250"),("450,350")
-run ClassUtilities.ConfirmTextInArea("Sent from Shelter"),("10,350"),("450,450")
+Click (Text:"Compose email")
+TypeText "Sent from ShelterA."
+run ClassUtilities.ConfirmTextInArea("Sent from ShelterA"),("10,350"),("450,450")
 Click "Device/Apps/Email/SendEmail"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("Inbox")

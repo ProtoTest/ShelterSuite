@@ -16,9 +16,16 @@ run ClassNavigate.OpenApp(Music)
 Log "Playing test audio file."
 Click (Text:"Songs")
 Click (Text:"Audio Sample 1")
-wait 15 seconds
+run ClassUtilities.ConfirmTextOnScreen("Audio Sample 1")
+Click "Device/Apps/Music/PreviousSongButton"
+wait 5 seconds
+Click "Device/Apps/Music/PauseButton"
+run ClassUtilities.ConfirmTextOnScreen("Audio Sample 1")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Music/ProgressBar25")
+Click "Device/System/Backicon"
 
 //Test 56 - Exit Music Player
+Log "Exiting music player."
 //Script returns to the home screen.  The OS will close the app on its own.  Force closing can be added.
 Click "Device/System/HomeButton"
 

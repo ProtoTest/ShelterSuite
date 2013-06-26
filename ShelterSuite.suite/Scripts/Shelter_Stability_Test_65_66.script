@@ -1,14 +1,55 @@
 //Motorola Shelter Stability Test 65 -- Turn the WiFi radio off and on
 //Motorola Shelter Stability Test 66 -- Connect/Disconnect to a WiFi network
 //Tests are grouped together due to dependencies in functionality
-//Completed 6-05-2013
+//Completed 6-25-2013
 
 //Setup
 run ClassNavigate.ResetState
 
-//Test 65 - Turn the WiFi radio off and on
-//run ClassNavigate.OpenTaskbar
-//Click (Text:"USB connected")
+//Test 65 - Turn the WiFi radio off
+//Test 66 - Disconnect from a WiFi network
+run ClassNavigate.OpenApp(Settings)
+run ClassSettings.SetNetworkData(Off)
+run ClassSettings.SetWifi(On)
+Click (Text:"Wi-Fi")
+run ClassConfigure.ResetWifiToDefault
+run ClassUtilities.ConfirmTextInArea("ProtoTest_MOBILE"),("10,100"),("470,210")
+run ClassUtilities.ConfirmTextInArea("Connected"),("10,100"),("470,210")
+Click (Text:"ProtoTest_MOBILE")
+Click (Text:"Forget")
+run ClassUtilities.ConfirmTextNotInArea("Connected"),("10,100"),("470,210")
+Click "Device/System/Backicon"
+run ClassSettings.SetWifi(Off)
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOff")
+run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/WifiConnected")
+wait 1 second
+Click "Device/System/HomeButton"
+wait 1 second
+Click "Device/Apps/Browser/BrowserIcon"
+wait 3 seconds
+run ClassNavigate.GoToBrowserAddress("google.com")
+wait 1 second
+run ClassUtilities.ConfirmTextOnScreen("Webpage not available")
+
+//Test 65 - Turn the WiFi radio on
+//Test 66 - Connect to a WiFi network
+Click "Device/System/HomeButton"
+run ClassNavigate.OpenApp(Settings)
+run ClassSettings.SetNetworkData(Off)
+run ClassSettings.SetWifi(On)
+Click (Text:"Wi-Fi")
+run ClassConfigure.ResetWifiToDefault
+run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/WifiConnected")
+Click "Device/System/HomeButton"
+wait 1 second
+Click "Device/Apps/Browser/BrowserIcon"
+run ClassConfigure.CloseAllBrowserTabs
+run ClassConfigure.SetBrowserHomepageToDefault
+run ClassUtilities.ConfirmTextOnScreen("Sign in")
+Click "Device/System/HomeButton"
+wait 1 second
+run ClassNavigate.OpenApp(Settings)
+run ClassSettings.SetNetworkData(Off)
 
 //Teardown
 Click "Device/System/HomeButton"

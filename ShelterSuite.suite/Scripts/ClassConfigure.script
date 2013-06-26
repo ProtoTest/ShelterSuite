@@ -66,6 +66,7 @@ to SetBrowserHomepageToDefault
 	Click (Text:"General")
 	wait 1 second
 	Click (Text:"Set homepage")
+	wait 1 second
 	Click (Text:"Default")
 	wait 1 second
 	Click "Device/System/BackIcon"
@@ -190,7 +191,7 @@ end ResetCalendar
 to ResetAlarms
 	Log "Resetting alarms to blank state."
 	run ClassNavigate.OpenApp(Clock)
-	Click (Text:"Alarm")
+	Click (Text:"Set alarm")
 	wait 1 second
 	Log "De-activating any active alarms."
 	repeat until ImageFound("Device/Apps/Settings/CheckboxSelected") is "false"
@@ -211,7 +212,98 @@ to ResetAlarms
 			wait 1 second
 		end if
 	end repeat
+	Log "Returning to main screen."
 	Click (Text:"Alarms")
 	run ClassUtilities.ConfirmTextOnScreen("Set alarm")
 	Click "Device/System/HomeButton"
 end ResetAlarms
+
+to Set2GNetwork value
+	if value = "On"
+		if(ImageFound(3, "Device/Apps/Settings/2GnetworksHighlighted")) = "true"
+			wait 2 seconds
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/2GnetworksHighlighted")
+			Log "2G networks only - setting is on."
+		else
+			Click (Text:"2G networks")
+			wait 1 second
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/2GnetworksHighlighted")
+			Log "2G networks only - setting is on."
+		end if
+	end if 
+	if value = "Off"
+		if(ImageFound(3, "Device/Apps/Settings/2GnetworksHighlighted")) = "true"
+			Click (Text:"2G networks")
+			wait 1 second
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Settings/2GnetworksHighlighted")
+			Log "2G networks only - setting is off."
+		else
+			wait 2 seconds
+			Log "2G networks only - setting is off."
+		end if
+	end if	
+end Set2GNetwork
+
+to SetVibrateWhenRinging value
+	if value = "On"
+		if(ImageFound(3, "Device/Apps/Settings/VibrateWhenRingingHighlighted")) = "true"
+			wait 2 seconds
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/VibrateWhenRingingHighlighted")
+			Log "Vibrate when ringing - setting is already on."
+		else
+			Click (Text:"Vibrate when")
+			wait 1 second
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/VibrateWhenRingingHighlighted")
+			Log "Vibrate when ringing - setting is now on."
+		end if
+	end if 
+	if value = "Off"
+		if(ImageFound(3, "Device/Apps/Settings/VibrateWhenRingingHighlighted")) = "true"
+			Click (Text:"Vibrate when")
+			wait 1 second
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Settings/VibrateWhenRingingHighlighted")
+			Log "Vibrate when ringing - setting is now off."
+		else
+			wait 2 seconds
+			Log "Vibrate when ringing - setting is already off."
+		end if
+	end if	
+end SetVibrateWhenRinging
+
+to ResetEmail
+	Log "Resetting email app to inbox."
+	wait 1 second
+	repeat until ImageFound("Device/Apps/Email/EmailBackButton") is "false"
+		if ImageFound("Device/Apps/Email/EmailBackButton") 
+			Click "Device/Apps/Email/EmailBackButton"
+			wait 1 second
+		end if
+	end repeat
+	run ClassUtilities.ConfirmTextOnScreen("Inbox")
+end ResetEmail
+
+to ResetWifiToDefault
+	Log "Resetting Wifi."
+	repeat until (ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "false"
+		if(ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "true"
+			wait 1 second
+			Click (Text:"Connected")
+			wait 1 second
+			Click (Text:"Forget")
+			wait 2 seconds
+		end if
+	end repeat
+	Log "Connecting to default wifi network."
+	repeat until (ImageFound("Device/Apps/Settings/WifiDefaultNetwork")) = "false"
+		Click "Device/Apps/Settings/WifiDefaultNetwork"
+	end repeat
+	run ClassUtilities.ConfirmTextOnScreen("Signal strength")
+	run ClassUtilities.ConfirmTextOnScreen("Password")
+	TypeText "prototest1999!"
+	wait 1 second
+	Click (Text:"Connect")
+	wait 5 seconds
+	run ClassUtilities.ConfirmTextInArea("ProtoTest_MOBILE"),("10,100"),("470,210")
+	run ClassUtilities.ConfirmTextInArea("Connected"),("10,100"),("470,210")
+	Log "Wifi is set to default."
+end ResetWifiToDefault

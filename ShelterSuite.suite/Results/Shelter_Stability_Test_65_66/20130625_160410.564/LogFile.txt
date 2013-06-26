@@ -1,0 +1,172 @@
+2013-06-25 16:04:10.569 -0600	START		Running Shelter_Stability_Test_65_66.script
+2013-06-25 16:04:10.791 -0600	Log		Returning to home screen.	2	on_resetstate	ClassNavigate.script
+2013-06-25 16:04:17.838 -0600	imagefound		Unable to Find Image Device/System/LockIcon	2	on_unlockdevice	ClassNavigate.script
+2013-06-25 16:04:18.302 -0600	click	Device/System/HomeButton	at (120, 824)	4	on_resetstate	ClassNavigate.script
+2013-06-25 16:04:19.518 -0600	click	Device/System/HomeButton	at (120, 824)	6	on_resetstate	ClassNavigate.script
+2013-06-25 16:04:20.765 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-25 16:04:21.806 -0600	Log		Opening apps menu.	2	on_openapp	ClassNavigate.script
+2013-06-25 16:04:22.318 -0600	click	Device/System/AppsIcon	at (240, 755)	3	on_openapp	ClassNavigate.script
+2013-06-25 16:04:25.421 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Browser", TextPlatform:"Generic OCR")	found at (64, 218)	4	on_openapp	ClassNavigate.script
+2013-06-25 16:04:38.469 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	9	on_openapp	ClassNavigate.script
+2013-06-25 16:04:38.477 -0600	Log		Swiping left.	2	on_swipeleft	ClassNavigate.script
+2013-06-25 16:04:38.542 -0600	drag		at (460, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-25 16:04:39.738 -0600	drop		at (260, 125)	4	on_swipeleft	ClassNavigate.script
+2013-06-25 16:04:41.638 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (287, 263)	11	on_openapp	ClassNavigate.script
+2013-06-25 16:04:41.647 -0600	Log		Opening app.	12	on_openapp	ClassNavigate.script
+2013-06-25 16:04:43.031 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (297, 220)	13	on_openapp	ClassNavigate.script
+2013-06-25 16:04:45.821 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	at (118, 413)	2	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:04:47.900 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Mobile networks", TextPlatform:"Generic OCR")	at (137, 646)	3	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:04:47.906 -0600	Log		Setting Network Data to desired state.	4	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:04:49.105 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"Data enabled", TextPlatform:"Generic OCR")	found at (119, 147)	5	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:04:55.894 -0600	imagefound		Unable to Find Image Device/Apps/Settings/CheckboxSelected	23	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:05:01.924 -0600	imagefound		Unable to Find Image Device/Apps/Settings/CheckboxSelected	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-25 16:05:26.539 -0600	imagefound		Unable to Find Image Device/System/Taskbar/NetworkDataConnected	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-25 16:05:26.557 -0600	Log		Network data setting is already de-activated.	27	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:05:27.631 -0600	click	Device/System/Backicon	at (40, 826)	36	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:05:29.530 -0600	click	Device/System/Backicon	at (40, 826)	38	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:05:29.565 -0600	Log		Setting Wifi to desired state.	2	on_setwifi	ClassSettings.script
+2013-06-25 16:05:30.332 -0600	imagefound	Device/Apps/Settings/WiFiOn	found at (390, 194)	4	on_setwifi	ClassSettings.script
+2013-06-25 16:05:31.144 -0600	imagefound	Device/Apps/Settings/WiFiOn	found at (390, 194)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-25 16:05:32.175 -0600	Log		Wifi setting is already active.	7	on_setwifi	ClassSettings.script
+2013-06-25 16:05:33.495 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Wi-Fi", TextPlatform:"Generic OCR")	at (117, 194)	14	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:05:33.551 -0600	Log		Resetting Wifi.	2	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:05:34.642 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"Connected", TextPlatform:"Generic OCR")	found at (93, 187)	3	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:05:35.675 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"Connected", TextPlatform:"Generic OCR")	found at (85, 176)	4	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:05:38.365 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Connected", TextPlatform:"Generic OCR")	at (86, 176)	6	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:05:42.233 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Forget", TextPlatform:"Generic OCR")	at (348, 666)	8	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:05:55.399 -0600	imagefound		Unable to Find Image (TEXT:"Connected")	11	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:05:55.405 -0600	Log		Connecting to default wifi network.	12	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:05:56.376 -0600	imagefound	Device/Apps/Settings/WifiDefaultNetwork	found at (159, 236)	13	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:05:57.472 -0600	click	Device/Apps/Settings/WifiDefaultNetwork	at (159, 236)	14	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:06:02.138 -0600	imagefound		Unable to Find Image Device/Apps/Settings/WifiDefaultNetwork	15	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:06:04.653 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Signal strength", TextPlatform:"Generic OCR")	found at (119, 177)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-25 16:06:07.053 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Password", TextPlatform:"Generic OCR")	found at (94, 331)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-25 16:06:07.239 -0600	typetext		prototest1999!	18	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:06:10.794 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Connect", TextPlatform:"Generic OCR")	at (347, 443)	20	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:06:16.462 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"ProtoTest_MOBILE", TextPlatform:"Generic OCR")	found at (148, 138)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-25 16:06:17.871 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"Connected", TextPlatform:"Generic OCR")	found at (85, 176)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-25 16:06:17.893 -0600	Log		Wifi is set to default.	24	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:06:19.258 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"ProtoTest_MOBILE", TextPlatform:"Generic OCR")	found at (148, 144)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-25 16:06:20.388 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"Connected", TextPlatform:"Generic OCR")	found at (85, 176)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-25 16:06:22.702 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"ProtoTest_MOBILE", TextPlatform:"Generic OCR")	at (148, 144)	18	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:06:24.947 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Forget", TextPlatform:"Generic OCR")	at (347, 663)	19	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:06:37.479 -0600	imagefound		Unable to Find Image (TEXT:"Connected")	2	on_confirmtextnotinarea	ClassUtilities.script
+2013-06-25 16:06:38.620 -0600	click	Device/System/Backicon	at (40, 826)	21	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:06:38.630 -0600	Log		Setting Wifi to desired state.	2	on_setwifi	ClassSettings.script
+2013-06-25 16:06:47.370 -0600	imagefound		Unable to Find Image Device/Apps/Settings/WiFiOff	16	on_setwifi	ClassSettings.script
+2013-06-25 16:06:48.413 -0600	click	Device/Apps/Settings/WiFiOn	at (390, 194)	21	on_setwifi	ClassSettings.script
+2013-06-25 16:06:51.807 -0600	imagefound	Device/Apps/Settings/WiFiOff	found at (315, 192)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-25 16:06:51.827 -0600	Log		Wifi setting is now de-activated.	24	on_setwifi	ClassSettings.script
+2013-06-25 16:06:52.825 -0600	imagefound	Device/Apps/Settings/WiFiOff	found at (315, 192)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-25 16:07:16.049 -0600	imagefound		Unable to Find Image Device/System/Taskbar/WifiConnected	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-25 16:07:18.332 -0600	click	Device/System/HomeButton	at (120, 824)	26	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:07:19.685 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	28	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:07:22.701 -0600	Log		Going to website.	2	on_gotobrowseraddress	ClassNavigate.script
+2013-06-25 16:07:23.837 -0600	click	Device/System/MenuButton	at (281, 825)	3	on_gotobrowseraddress	ClassNavigate.script
+2013-06-25 16:07:26.256 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(40,100,440,800), Text:"Find on page", TextPlatform:"Generic OCR")	at (142, 547)	5	on_gotobrowseraddress	ClassNavigate.script
+2013-06-25 16:07:27.488 -0600	click	Device/System/BackIcon	at (40, 826)	7	on_gotobrowseraddress	ClassNavigate.script
+2013-06-25 16:07:28.496 -0600	click	Device/System/BackIcon	at (40, 826)	8	on_gotobrowseraddress	ClassNavigate.script
+2013-06-25 16:07:30.582 -0600	click		at (240, 50)	10	on_gotobrowseraddress	ClassNavigate.script
+2013-06-25 16:07:31.400 -0600	typetext		google.com	11	on_gotobrowseraddress	ClassNavigate.script
+2013-06-25 16:07:33.123 -0600	click	Device/Apps/Browser/GoButton	at (444, 757)	13	on_gotobrowseraddress	ClassNavigate.script
+2013-06-25 16:07:41.410 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Webpage not available", TextPlatform:"Generic OCR")	found at (193, 184)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-25 16:07:42.733 -0600	click	Device/System/HomeButton	at (120, 824)	36	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:07:42.751 -0600	Log		Opening apps menu.	2	on_openapp	ClassNavigate.script
+2013-06-25 16:07:43.657 -0600	click	Device/System/AppsIcon	at (240, 755)	3	on_openapp	ClassNavigate.script
+2013-06-25 16:07:48.505 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Browser", TextPlatform:"Generic OCR")	found at (64, 218)	4	on_openapp	ClassNavigate.script
+2013-06-25 16:07:59.164 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	9	on_openapp	ClassNavigate.script
+2013-06-25 16:07:59.174 -0600	Log		Swiping left.	2	on_swipeleft	ClassNavigate.script
+2013-06-25 16:07:59.240 -0600	drag		at (460, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-25 16:08:00.436 -0600	drop		at (260, 125)	4	on_swipeleft	ClassNavigate.script
+2013-06-25 16:08:02.113 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (292, 244)	11	on_openapp	ClassNavigate.script
+2013-06-25 16:08:02.123 -0600	Log		Opening app.	12	on_openapp	ClassNavigate.script
+2013-06-25 16:08:03.512 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (297, 220)	13	on_openapp	ClassNavigate.script
+2013-06-25 16:08:06.341 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	at (118, 413)	2	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:08:08.324 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Mobile networks", TextPlatform:"Generic OCR")	at (137, 647)	3	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:08:08.331 -0600	Log		Setting Network Data to desired state.	4	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:08:09.457 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"Data enabled", TextPlatform:"Generic OCR")	found at (117, 143)	5	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:08:17.863 -0600	imagefound		Unable to Find Image Device/Apps/Settings/CheckboxSelected	23	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:08:26.264 -0600	imagefound		Unable to Find Image Device/Apps/Settings/CheckboxSelected	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-25 16:08:59.537 -0600	imagefound		Unable to Find Image Device/System/Taskbar/NetworkDataConnected	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-25 16:08:59.557 -0600	Log		Network data setting is already de-activated.	27	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:09:00.721 -0600	click	Device/System/Backicon	at (40, 826)	36	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:09:02.528 -0600	click	Device/System/Backicon	at (40, 826)	38	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:09:02.583 -0600	Log		Setting Wifi to desired state.	2	on_setwifi	ClassSettings.script
+2013-06-25 16:09:10.207 -0600	imagefound		Unable to Find Image Device/Apps/Settings/WiFiOn	4	on_setwifi	ClassSettings.script
+2013-06-25 16:09:11.356 -0600	click	Device/Apps/Settings/WiFiOff	at (315, 192)	9	on_setwifi	ClassSettings.script
+2013-06-25 16:09:13.152 -0600	imagefound	Device/Apps/Settings/WiFiOn	found at (390, 194)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-25 16:09:13.196 -0600	Log		Wifi setting is now active.	12	on_setwifi	ClassSettings.script
+2013-06-25 16:09:15.420 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Wi-Fi", TextPlatform:"Generic OCR")	at (117, 194)	40	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:09:15.434 -0600	Log		Resetting Wifi.	2	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:09:26.461 -0600	imagefound		Unable to Find Image (TEXT:"Connected")	3	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:09:26.467 -0600	Log		Connecting to default wifi network.	12	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:09:27.479 -0600	imagefound	Device/Apps/Settings/WifiDefaultNetwork	found at (159, 139)	13	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:09:28.677 -0600	click	Device/Apps/Settings/WifiDefaultNetwork	at (159, 139)	14	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:09:32.737 -0600	imagefound		Unable to Find Image Device/Apps/Settings/WifiDefaultNetwork	15	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:09:35.256 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Signal strength", TextPlatform:"Generic OCR")	found at (119, 177)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-25 16:09:37.319 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Password", TextPlatform:"Generic OCR")	found at (94, 331)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-25 16:09:37.511 -0600	typetext		prototest1999!	18	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:09:40.907 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Connect", TextPlatform:"Generic OCR")	at (347, 443)	20	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:09:46.357 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"ProtoTest_MOBILE", TextPlatform:"Generic OCR")	found at (148, 144)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-25 16:09:46.834 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"Connected", TextPlatform:"Generic OCR")	found at (85, 176)	2	on_confirmtextinarea	ClassUtilities.script
+2013-06-25 16:09:46.853 -0600	Log		Wifi is set to default.	24	on_resetwifitodefault	ClassConfigure.script
+2013-06-25 16:09:49.477 -0600	imagefound	Device/System/Taskbar/WifiConnected	found at (302, 19)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-25 16:09:50.617 -0600	click	Device/System/HomeButton	at (120, 824)	43	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:09:51.928 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	45	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:09:51.947 -0600	Log		Closing all browser tabs.	2	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:09:54.564 -0600	click	Device/System/MenuButton	at (281, 825)	4	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:09:57.806 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Find on page", TextPlatform:"Generic OCR")	at (141, 547)	6	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:09:59.481 -0600	click	Device/System/BackIcon	at (40, 826)	8	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:10:00.529 -0600	click	Device/System/BackIcon	at (40, 826)	9	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:10:02.302 -0600	click	Device/Apps/Browser/TabsButton	at (444, 77)	10	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:10:05.350 -0600	imagefound	Device/Apps/Browser/DeleteTab	found at (373, 299)	12	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:10:06.440 -0600	imagefound	Device/Apps/Browser/DeleteTab	found at (373, 299)	13	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:10:06.446 -0600	Log		Deleting browser tab.	14	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:10:07.595 -0600	click	Device/Apps/Browser/DeleteTab	at (373, 299)	15	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:10:16.004 -0600	imagefound		Unable to Find Image Device/Apps/Browser/DeleteTab	18	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:10:17.061 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	19	on_closeallbrowsertabs	ClassConfigure.script
+2013-06-25 16:10:19.095 -0600	Log		Setting browser homepage to default.	2	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:20.240 -0600	click	Device/System/MenuButton	at (281, 825)	3	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:22.994 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (113, 766)	5	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:24.743 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"General", TextPlatform:"Generic OCR")	at (94, 154)	6	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:26.607 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Set homepage", TextPlatform:"Generic OCR")	at (123, 146)	8	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:29.836 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Default", TextPlatform:"Generic OCR")	at (91, 431)	10	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:31.930 -0600	click	Device/System/BackIcon	at (40, 826)	12	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:33.760 -0600	click	Device/System/BackIcon	at (40, 826)	13	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:36.074 -0600	click	Device/System/MenuButton	at (281, 825)	15	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:39.581 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Find on page", TextPlatform:"Generic OCR")	at (142, 547)	17	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:41.201 -0600	click	Device/System/BackIcon	at (40, 826)	19	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:42.204 -0600	click	Device/System/BackIcon	at (40, 826)	20	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:46.140 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"google.com", TextPlatform:"Generic OCR")	found at (305, 79)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-25 16:10:47.357 -0600	click	Device/System/HomeButton	at (120, 824)	23	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:48.222 -0600	click	Device/Apps/Browser/BrowserIcon	at (432, 754)	24	on_setbrowserhomepagetodefault	ClassConfigure.script
+2013-06-25 16:10:52.126 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Sign in", TextPlatform:"Generic OCR")	found at (410, 73)	2	on_confirmtextonscreen	ClassUtilities.script
+2013-06-25 16:10:53.239 -0600	click	Device/System/HomeButton	at (120, 824)	49	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:10:54.251 -0600	Log		Opening apps menu.	2	on_openapp	ClassNavigate.script
+2013-06-25 16:10:54.505 -0600	click	Device/System/AppsIcon	at (240, 755)	3	on_openapp	ClassNavigate.script
+2013-06-25 16:10:58.657 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Browser", TextPlatform:"Generic OCR")	found at (64, 218)	4	on_openapp	ClassNavigate.script
+2013-06-25 16:11:09.784 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	9	on_openapp	ClassNavigate.script
+2013-06-25 16:11:09.793 -0600	Log		Swiping left.	2	on_swipeleft	ClassNavigate.script
+2013-06-25 16:11:09.860 -0600	drag		at (460, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-25 16:11:11.061 -0600	drop		at (260, 125)	4	on_swipeleft	ClassNavigate.script
+2013-06-25 16:11:19.475 -0600	imagefound		Unable to Find Image (TEXT:"Settings") within 3.00 seconds	11	on_openapp	ClassNavigate.script
+2013-06-25 16:11:19.484 -0600	Log		Swiping left.	2	on_swipeleft	ClassNavigate.script
+2013-06-25 16:11:19.552 -0600	drag		at (460, 125)	3	on_swipeleft	ClassNavigate.script
+2013-06-25 16:11:20.748 -0600	drop		at (260, 125)	4	on_swipeleft	ClassNavigate.script
+2013-06-25 16:11:25.681 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	found at (297, 220)	11	on_openapp	ClassNavigate.script
+2013-06-25 16:11:25.692 -0600	Log		Opening app.	12	on_openapp	ClassNavigate.script
+2013-06-25 16:11:27.938 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Settings", TextPlatform:"Generic OCR")	at (297, 220)	13	on_openapp	ClassNavigate.script
+2013-06-25 16:11:30.626 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"More", TextPlatform:"Generic OCR")	at (118, 413)	2	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:11:32.897 -0600	click	(CaseSensitive:"No", Contrast:"Off", Language:"English", Text:"Mobile networks", TextPlatform:"Generic OCR")	at (138, 645)	3	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:11:32.903 -0600	Log		Setting Network Data to desired state.	4	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:11:34.319 -0600	imagefound	(CaseSensitive:"No", Contrast:"Off", Language:"English", SearchRectangle:(10,100,470,210), Text:"Data enabled", TextPlatform:"Generic OCR")	found at (121, 151)	5	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:11:40.358 -0600	imagefound		Unable to Find Image Device/Apps/Settings/CheckboxSelected	23	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:11:47.744 -0600	imagefound		Unable to Find Image Device/Apps/Settings/CheckboxSelected	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-25 16:12:15.852 -0600	imagefound		Unable to Find Image Device/System/Taskbar/NetworkDataConnected	2	on_confirmimagenotonscreen	ClassUtilities.script
+2013-06-25 16:12:15.869 -0600	Log		Network data setting is already de-activated.	27	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:12:16.896 -0600	click	Device/System/Backicon	at (40, 826)	36	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:12:18.724 -0600	click	Device/System/Backicon	at (40, 826)	38	on_setnetworkdata	ClassSettings.script
+2013-06-25 16:12:19.906 -0600	click	Device/System/HomeButton	at (120, 824)	55	on_shelter_stability_test_65_66	Shelter_Stability_Test_65_66.script
+2013-06-25 16:12:20.806 -0600	imagefound	Device/System/AppsIcon	found at (240, 755)	2	on_confirmimageonscreen	ClassUtilities.script
+2013-06-25 16:12:25.911 -0600	EndTestCase		(Duration:"495.334", Errors:"0", Exceptions:"0", StartTime:"2013-06-25 16:04:10 -0600", Successes:"1", TestCase:"Shelter_Stability_Test_65_66.script", Warnings:"0")
+2013-06-25 16:12:26.023 -0600	SUCCESS		Execution Time 0:08:15 Shelter_Stability_Test_65_66.script
