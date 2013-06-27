@@ -11,12 +11,9 @@ run ClassNavigate.ResetState
 run ClassNavigate.OpenApp(Settings)
 run ClassSettings.SetNetworkData(Off)
 run ClassSettings.SetWifi(On)
-Click (Text:"Wi-Fi")
 run ClassConfigure.ResetWifiToDefault
-run ClassUtilities.ConfirmTextInArea("ProtoTest_MOBILE"),("10,100"),("470,210")
-run ClassUtilities.ConfirmTextInArea("Connected"),("10,100"),("470,210")
-Click (Text:"ProtoTest_MOBILE")
-Click (Text:"Forget")
+Click (Text:"Wi-Fi")
+run ClassConfigure.ForgetAllWifiConnections
 run ClassUtilities.ConfirmTextNotInArea("Connected"),("10,100"),("470,210")
 Click "Device/System/Backicon"
 run ClassSettings.SetWifi(Off)
@@ -37,7 +34,6 @@ Click "Device/System/HomeButton"
 run ClassNavigate.OpenApp(Settings)
 run ClassSettings.SetNetworkData(Off)
 run ClassSettings.SetWifi(On)
-Click (Text:"Wi-Fi")
 run ClassConfigure.ResetWifiToDefault
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/WifiConnected")
 Click "Device/System/HomeButton"
@@ -49,7 +45,7 @@ run ClassUtilities.ConfirmTextOnScreen("Sign in")
 Click "Device/System/HomeButton"
 wait 1 second
 run ClassNavigate.OpenApp(Settings)
-run ClassSettings.SetNetworkData(Off)
+run ClassSettings.SetNetworkData(On)
 
 //Teardown
 Click "Device/System/HomeButton"

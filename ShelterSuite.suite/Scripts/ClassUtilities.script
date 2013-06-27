@@ -1,49 +1,51 @@
 // This is a collection of miscellaneous utility functions that can help extend or replace the default methods inside eggPlant.  
 
 to ConfirmTextOnScreen string
-	if not ImageFound(Text:string) then
-		logError "The expected text was not found."
+	if not ImageFound(Text:string, CaseSensitive: true) then
+		LogError "Text (" &string& ") was not found."
 		exit all
 	end if
 end ConfirmTextOnScreen
 
 to ConfirmTextInArea string,topcorner,botcorner
 	if not ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner))) then
-		logError "The expected text was not found."
+		LogError "Text (" &string& ") was not found."
 		exit all
 	end if
 end ConfirmTextInArea
 
 to ConfirmTextNotOnScreen string
 	if ImageFound(Text:string) then
-		logError "Element erroneously present."
+		LogError "Text (" &string& ") erroneously present."
 		exit all
 	end if
 end ConfirmTextNotOnScreen
 
 to ConfirmTextNotInArea string,topcorner,botcorner
 	if ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner))) then
-		logError "Element erroneously present."
+		LogError "Text (" &string& ") erroneously present."
 		exit all
 	end if
 end ConfirmTextNotInArea
 
 to ConfirmImageOnScreen image
 	if not ImageFound(image) then
-		logError "The expected image was not found."
+		LogError "Image (" &image& ") was not found."
 		exit all
 	end if
 end ConfirmImageOnScreen
 
 to ConfirmImageNotOnScreen image
 	if ImageFound(image) then
-		logError "Element erroneously present."
+		LogError "Image (" &image& ") erroneously present."
 		exit all
 	end if
 end ConfirmImageNotOnScreen
 
 to IfTextOnScreen string,action
 	if ImageFound(Text:string) then
+		Log "Text (" &string& ") detected."
+		Log "Clicking on (" &action& ") element."
 		Click(Text:action)
 	end if
 	wait 3 seconds
@@ -51,7 +53,46 @@ end IfTextOnScreen
 
 to IfImageOnScreen string,action
 	if ImageFound(string) then
+		Log "Image (" &string& ") detected."
+		Log "Clicking on (" &action& ") element."
 		Click(action)
 	end if
 	wait 3 seconds
 end IfImageOnScreen
+
+to ScanBluetoothPasskey1
+	Log "Scanning for Bluetooth Passkey1."
+	universal passkey1
+	set passkey1 to ReadText("Device/Apps/Settings/Bluetooth/PasskeyLocation")
+	put passkey1 into passkey1
+	Log "Passkey " &passkey1& " detected."
+end ScanBluetoothPasskey1
+
+to ScanBluetoothPasskey2
+	Log "Scanning for Bluetooth Passkey2."
+	universal passkey2
+	set passkey2 to ReadText("Device/Apps/Settings/Bluetooth/PasskeyLocation")
+	put passkey2 into passkey2
+	Log "Passkey " &passkey2& " detected."
+end ScanBluetoothPasskey2
+
+to AuthenticateBluetoothPasskeys
+	if universal passkey1 = universal passkey2
+		wait 1 second
+		Log "Bluetooth Passkey1 = " &universal passkey1& "."
+		Log "Bluetooth Passkey2 = " &universal passkey2& "."
+		Log "Bluetooth Passkeys confirmed."
+	else
+		wait 1 second
+		LogError "Bluetooth Passkey1 = " &universal passkey1& "."
+		LogError "Bluetooth Passkey2 = " &universal passkey2& "."
+		LogError "Bluetooth Passkeys are not identical."
+	end if
+end AuthenticateBluetoothPasskeys
+
+to OutputLogSaveLocation
+	set savelocation1 to ReadText("Device/Apps/MLog/AndroidSaveLocation1")
+	set savelocation2 to ReadText("Device/Apps/MLog/AndroidSaveLocation2")
+	set savelocationfull to savelocation1&savelocation2
+	Log "Log save location determined:" &savelocationfull& "."
+end OutputLogSaveLocation

@@ -1,0 +1,2 @@
+Comprehensive Instructions for the Installation of eggPlant are available at:
+http://docs.testplant.com/?q=content/creating-eggplant-environment-0

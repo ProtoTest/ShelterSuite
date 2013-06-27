@@ -1,9 +1,4 @@
-//These handlers will set the system into one state or another.  They should always start from the unlocked home screen.
-
-to SetWifi value
-	run ClassNavigate.OpenApp(Settings)
-	run ClassSettings.SetWifi value
-end SetWifi
+//These handlers will set the system into a given state.
 
 to MuteMedia
 	Log "Muting Media."
@@ -89,7 +84,7 @@ to CloseAllBrowserTabs
 	Log "Closing all browser tabs."
 	wait 2 seconds
 	Click "Device/System/MenuButton"
-	wait 1 second
+	wait 2 seconds
 	Click (Text:"Find on page")
 	wait 1 second
 	Click "Device/System/BackIcon"
@@ -123,7 +118,7 @@ to DeleteContact name
 end DeleteContact
 
 to UninstallApp name
-	Log "Uninstalling app, if present."
+	Log "Uninstalling " &name& " app, if present."
 	run ClassNavigate.OpenApp(Settings)
 	run ClassNavigate.SettingsOption(Apps)
 	if ImageFound(Text:name) then
@@ -283,6 +278,7 @@ to ResetEmail
 end ResetEmail
 
 to ResetWifiToDefault
+	Click (Text:"Wi-Fi")
 	Log "Resetting Wifi."
 	repeat until (ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "false"
 		if(ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "true"
@@ -296,14 +292,43 @@ to ResetWifiToDefault
 	Log "Connecting to default wifi network."
 	repeat until (ImageFound("Device/Apps/Settings/WifiDefaultNetwork")) = "false"
 		Click "Device/Apps/Settings/WifiDefaultNetwork"
+		wait 2 seconds
 	end repeat
 	run ClassUtilities.ConfirmTextOnScreen("Signal strength")
 	run ClassUtilities.ConfirmTextOnScreen("Password")
-	TypeText "prototest1999!"
+	run ClassScriptConfig.AccessDefaultWifiSettings
+	TypeText universal defaultwifipassword //default password is stored in ClassScriptConfig script
 	wait 1 second
 	Click (Text:"Connect")
 	wait 5 seconds
 	run ClassUtilities.ConfirmTextInArea("ProtoTest_MOBILE"),("10,100"),("470,210")
 	run ClassUtilities.ConfirmTextInArea("Connected"),("10,100"),("470,210")
 	Log "Wifi is set to default."
+	wait 1 second
+	Click "Device/System/Backicon"
 end ResetWifiToDefault
+
+to ForgetAllWifiConnections
+	Log "Forgetting all Wifi connections."
+	repeat until (ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "false"
+		if(ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "true"
+			wait 1 second
+			Click (Text:"Connected")
+			wait 1 second
+			Click (Text:"Forget")
+			wait 2 seconds
+		end if
+	end repeat
+	Log "All Wifi connections cleared."
+end ForgetAllWifiConnections
+
+to DeleteBluetoothPairs
+	Log "Deleting Bluetooth pairs."
+	repeat until ImageFound("Device/Apps/Settings/MoreSettingsIcon") = "false"
+		Click "Device/Apps/Settings/MoreSettingsIcon"
+		wait 1 second
+		Click (Text:"Unpair")
+		WaitFor 60, Text:"SEARCH FOR DEVICES"
+	end repeat
+	Log "Bluetooth pairs cleared."
+end DeleteBluetoothPairs

@@ -1,0 +1,10 @@
+//Master Config Settings for all Shelter Tests
+
+//Default Wifi Settings
+//Default Wifi Name - Change following eggPlant image to default wifi name (Text is not used due to unreliability of OCR to distinguish between similar wifi networks)
+//"Device/Apps/Settings/WifiDefaultNetwork"
+to AccessDefaultWifiSettings
+	universal defaultwifipassword
+	set defaultwifipassword to "prototest1999!"
+	put defaultwifipassword into defaultwifipassword
+end AccessDefaultWifiSettings

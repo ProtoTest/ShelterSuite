@@ -1,0 +1,64 @@
+//List of reusable objects - do not run
+
+Click (260,450)
+Click (Text:"USB connected")
+Click (Text:"Install", SearchRectangle:((10,700),(470,800)))
+Click "Device/System/HomeButton"
+TypeText "Motorola"
+wait 1 second
+ScrollWheelUp 5
+ScrollWheelDown 5
+WaitFor 15, Text:"AndroidAP", CaseSensitive: true
+Log "Activating."
+LogError "Activating."
+
+run ClassConfigure.MuteMedia
+run ClassConfigure.UnMuteMedia
+run ClassConfigure.MuteNotifications
+run ClassConfigure.UnMuteNotifications
+run ClassConfigure.SetBrowserHomepageToDefault
+run ClassConfigure.CloseAllBrowserTabs
+run ClassConfigure.DeleteContact("Pat Riley")
+run ClassConfigure.UninstallApp(Droidfish)
+run ClassConfigure.ResetCalendar
+run ClassConfigure.ResetAlarms
+run ClassConfigure.Set2GNetwork(On)
+run ClassConfigure.SetVibrateWhenRinging(On)
+run ClassConfigure.ResetEmail
+run ClassConfigure.ResetWifiToDefault
+run ClassConfigure.ForgetAllWifiConnections
+run ClassConfigure.DeleteBluetoothPairs
+
+run ClassNavigate.UnlockDevice
+run ClassNavigate.ResetState
+run ClassNavigate.OpenTaskBar
+run ClassNavigate.CloseTaskBar
+run ClassNavigate.SwipeLeft
+run ClassNavigate.SwipeRight
+run ClassNavigate.SwipeUp
+run ClassNavigate.SwipeDown
+run ClassNavigate.OpenApp(Settings)
+run ClassNavigate.SettingsOption(More)
+run ClassNavigate.GoToBrowserAddress("facebook.com")
+run ClassNavigate.GoHome
+run ClassNavigate.AnswerCall
+
+run ClassSettings.SetWifi(On)
+run ClassSettings.SetNetworkData(On)
+run ClassSettings.SetBluetooth(On)
+run ClassSettings.SetMobileHotspot(On)
+
+run ClassUtilities.ConfirmTextOnScreen("TEXT")
+run ClassUtilities.ConfirmTextInArea("TEXT"),("10,150"),("450,350")
+run ClassUtilities.ConfirmTextNotOnScreen("TEXT")
+run ClassUtilities.ConfirmTextNotInArea("TEXT"),("10,150"),("450,350")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/EndCall")
+run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Droidfish/WhitePawnLight",   SearchRectangle:((230,310),(310,385)))
+run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Telephone/EndCall")
+run ClassUtilities.ConfirmImageNotOnScreen(ImageName:"Device/Apps/Settings/CheckboxSelected",   SearchRectangle:((25,500),(450,650)))
+run ClassUtilities.IfTextOnScreen("Your new contact"),("OK")
+run ClassUtilities.IfImageOnScreen("Device/Apps/Telephone/PhoneDial4"),("Device/Apps/Telephone/PhoneDial4")
+run ClassUtilities.ScanBluetoothPasskey1
+run ClassUtilities.ScanBluetoothPasskey2
+run ClassUtilities.AuthenticateBluetoothPasskeys
+run ClassUtilities.OutputLogSaveLocation

@@ -12,26 +12,38 @@ to UnlockDevice
 end UnlockDevice
 
 to ResetState
-	Log "Returning to home screen."
-	run ClassNavigate.UnlockDevice
-	Click "Device/System/HomeButton"
-	wait 1 second
-	Click "Device/System/HomeButton"
-	wait 1 second
-	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
-	wait 1 second
+	if ImageFound(3, "Device/System/AppsIcon") = "true"
+		wait 1 second
+		Log "Device is on home screen."
+	else
+		if ImageFound(3, Text:"OK", CaseSensitive: true) = "true"
+			Click (Text:"OK")
+			Log "Android warning popup detected.  OK selected."
+		end if
+		Log "Returning to home screen."
+		run ClassNavigate.UnlockDevice
+		Click "Device/System/HomeButton"
+		wait 1 second
+		Click "Device/System/HomeButton"
+		wait 1 second
+		run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+		wait 1 second
+	end if
 end ResetState
 
 to OpenTaskBar
 	Log "Opening taskbar."
 	Drag (240,25)
 	Drop (240,424)
+	wait 1 second
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/TaskbarDropdownBar")
 end OpenTaskBar
 
 to CloseTaskBar
 	Log "Closing taskbar."
 	Drag (240,790)
 	Drop (240,424)
+	run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/TaskbarDropdownBar")
 end CloseTaskBar
 
 to SwipeLeft
@@ -66,10 +78,11 @@ to OpenApp name
 		wait 1 second
 	end repeat
 	wait 1 second
+	Log "Locating " &name& " app."
 	repeat until (ImageFound(3,Text:name)) is "true"
 		run ClassNavigate.SwipeLeft
 	end repeat
-	Log "Opening app."
+	Log "Opening" &name& "app."
 	Click (Text:name)
 	wait 1 second
 end OpenApp
@@ -86,19 +99,19 @@ to SettingsOption name
 		end repeat
 		wait 1 second
 		repeat until ImageFound(Text:name) is "true"
-			Log "Searching for Settings Option."
+			Log "Searching for " &name& " Settings Option."
 			ScrollWheelDown 1
 			wait 2 seconds
 		end repeat
 		wait 1 second
 	end repeat
-	Log "Settings Option Found."
+	Log "Settings Option " &value& " Found."
 	Click (Text:name)
 	wait 1 second
 end SettingsOption
 
 to GoToBrowserAddress address
-	Log "Going to website."
+	Log "Going to website " &address& "."
 	Click "Device/System/MenuButton"
 	wait 1 second
 	Click (Text:"Find on page", SearchRectangle:((40,100),(440,800)))

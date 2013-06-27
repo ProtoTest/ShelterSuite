@@ -1,0 +1,48 @@
+//Motorola Shelter Stability Test 70 -- Data Stability Uplink - Mobile Hotspot
+//Motorola Shelter Stability Test 73 -- Data Stability Downlink - Mobile Hotspot
+//Component of Script Series 70
+//Completed 6-26-2013
+
+//Setup
+run ClassNavigate.ResetState
+
+//Subroutine B1 -- Shelter Device B - Turn off internet connections and connect to Shelter Device A Mobile Hotspot
+run ClassNavigate.OpenApp(Settings)
+run ClassSettings.SetNetworkData(Off)
+run ClassSettings.SetWifi(On)
+Click (Text:"Wi-Fi")
+run ClassConfigure.ForgetAllWifiConnections
+Click "Device/System/Backicon"
+wait 1 second
+Click (Text:"Wi-Fi")
+WaitFor 15, Text:"AndroidAP", CaseSensitive: true
+Click (Text:"AndroidAP", CaseSensitive: true)
+wait 1 second
+TypeText "2855dd796207"
+Click (Text:"Connect")
+WaitFor 60, Text:"Connected", SearchRectangle:((10,100),(470,200))
+Click "Device/System/Backicon"
+wait 1 second
+Click "Device/System/HomeButton"
+wait 1 second
+Click "Device/Apps/Browser/BrowserIcon"
+run ClassConfigure.CloseAllBrowserTabs
+run ClassConfigure.SetBrowserHomepageToDefault
+run ClassUtilities.ConfirmTextOnScreen("Sign in")
+wait 3 seconds
+Log "Accessing Wikipedia."
+run ClassNavigate.GoToBrowserAddress("wikipedia.org")
+wait 2 seconds
+run ClassUtilities.ConfirmTextOnScreen("The Free Encyclopedia")
+wait 3 seconds
+run ClassConfigure.CloseAllBrowserTabs
+Click "Device/System/HomeButton"
+wait 1 second
+run ClassNavigate.OpenApp(Settings)
+run ClassSettings.SetNetworkData(On)
+run ClassConfigure.ResetWifiToDefault
+Click "Device/System/HomeButton"
+
+//Teardown
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds
