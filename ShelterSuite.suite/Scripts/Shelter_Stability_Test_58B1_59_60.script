@@ -6,10 +6,11 @@
 
 //Subroutine B1 -- Shelter Device B - Receive Incoming Call from Shelter Device A
 run ClassUtilities.ConfirmTextOnScreen("INCOMING CALL")
-run ClassUtilities.ConfirmTextOnScreen("SHELTERA")
+run ClassUtilities.ConfirmTextOnScreen(universal firstnamedevicea)
 run ClassUtilities.ConfirmTextOnScreen("MOBILE")
 run ClassNavigate.AnswerCall
-run ClassUtilities.ConfirmTextOnScreen("SHELTERA")
+run ClassUtilities.ConfirmTextOnScreen(universal firstnamedevicea)
+run ClassUtilities.ConfirmTextOnScreen(universal lastnamedevicea)
 run ClassUtilities.ConfirmTextOnScreen("MOBILE")
 
 //Motorola Shelter Stability Test 59 - Switch from the telephony app to another app
@@ -31,6 +32,9 @@ run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Telephone/EndCall")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
+Click "Device/Apps/Telephone/HistoryIcon"
+run ClassUtilities.ConfirmTextInArea(universal firstnamedevicea),("10,100"),("450,225")
+run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Telephone/0MinsAgo",   SearchRectangle:((10,100),(450,225)))
 run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/PhoneAppInBackground")
 Click "Device/System/HomeButton"
 

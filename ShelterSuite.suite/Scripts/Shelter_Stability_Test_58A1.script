@@ -6,19 +6,10 @@
 run ClassNavigate.ResetState
 
 //Subroutine A1 -- Shelter Device A - Dial Shelter Device B
+run ClassScriptConfig.SetContactDataforDeviceA
+run ClassScriptConfig.SetContactDataforDeviceB
 Click "Device/AppIcons/TelephoneApp"
-Click "Device/Apps/Telephone/PhoneIcon"
-Click "Device/Apps/Telephone/PhoneDial7"
-Click "Device/Apps/Telephone/PhoneDial2"
-Click "Device/Apps/Telephone/PhoneDial0"
-Click "Device/Apps/Telephone/PhoneDial3"
-Click "Device/Apps/Telephone/PhoneDial6"
-Click "Device/Apps/Telephone/PhoneDial0"
-Click "Device/Apps/Telephone/PhoneDial7"
-Click "Device/Apps/Telephone/PhoneDial2"
-Click "Device/Apps/Telephone/PhoneDial1"
-Click "Device/Apps/Telephone/PhoneDial4"
-run ClassUtilities.ConfirmTextInArea("(720) 360-7214"),("10,110"),("450,250")
+run ClassNavigate.DialPhoneNumber(universal phonenumberdeviceb)
 Click "Device/Apps/Telephone/StartCall"
 run ClassUtilities.ConfirmTextOnScreen("Dialing")
-run ClassUtilities.ConfirmTextOnScreen("ShelterB")
+run ClassUtilities.ConfirmTextOnScreen(universal firstnamedeviceb)

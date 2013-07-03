@@ -113,7 +113,8 @@ to SetBluetooth value
 	end if
 end SetBluetooth
 
-to SetMobileHotspot value
+to SetUpMobileHotspot
+	run ClassScriptConfig.SetMobileHotspotData
 	ScrollWheelUp 5
 	Click (Text:"More")
 	run ClassUtilities.ConfirmTextOnScreen("Wireless")
@@ -121,10 +122,47 @@ to SetMobileHotspot value
 	wait 1 second
 	Click (Text:"portable hotspot")
 	wait 1 second
-	if (ImageFound(Text:"Androidap wpa2 psk")) is "true"
-		Log "Hotspot has been previously set up."
-	else
-		LogError "Hotspot has not been previously set up."
+	run ClassUtilities.ConfirmTextOnScreen("Set up Wi-Fi hotspot")
+	Click "Device/Apps/Settings/MobileHotspot/SSIDLocation"
+	wait 1 second
+	repeat 25 times
+		TypeText backspace
+	end repeat
+	wait 1 second
+	TypeText universal defaulthotspotssid
+	wait 1 second
+	Click "Device/System/Backicon"
+	run ClassUtilities.ConfirmTextOnScreen(universal defaulthotspotssid)
+	Click "Device/Apps/Settings/MobileHotspot/PasswordLocation"
+	wait 1 second
+	repeat 25 times
+		TypeText backspace
+	end repeat
+	TypeText universal defaulthotspotpass
+	wait 1 second
+	Click "Device/System/Backicon"
+	Click (Text:"Show password")
+	run ClassUtilities.ConfirmTextOnScreen(universal defaulthotspotpass)
+	Click (Text:"Save")
+	wait 1 second
+	run ClassUtilities.ConfirmTextOnScreen(universal defaulthotspotssid)
+	Click "Device/System/Backicon"
+	wait 1 second
+	Click "Device/System/Backicon"
+end SetUpMobileHotspot
+
+to SetMobileHotspot value
+	run ClassScriptConfig.SetMobileHotspotData
+	ScrollWheelUp 5
+	Click (Text:"More")
+	run ClassUtilities.ConfirmTextOnScreen("Wireless")
+	run ClassUtilities.ConfirmTextOnScreen("networks")
+	wait 1 second
+	Click (Text:"portable hotspot")
+	wait 1 second
+	run ClassUtilities.ConfirmTextOnScreen("Set up Wi-Fi hotspot")
+	if (ImageFound(Text:universal defaulthotspotssid)) is "true"
+		Log "Hotspot has been previously set up.  SSID: (" &defaulthotspotssid& ")."
 	end if
 	Log "Setting Mobile Hotspot to desired state."
 	if value = "On"

@@ -55,7 +55,7 @@ ScrollWheelDown 10
 wait 2 seconds
 Click (Text:"Privacy")
 wait 2 seconds
-run ClassUtilities.ConfirmTextOnScreen("Privacy Commitments")
+run ClassUtilities.ConfirmTextOnScreen("AT&T Privacy Policy")
 run ClassConfigure.CloseAllBrowserTabs
 
 //Test 62 - Switch from Browser to App

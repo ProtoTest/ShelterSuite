@@ -14,7 +14,7 @@ run ClassSettings.SetWifi(On)
 run ClassConfigure.ResetWifiToDefault
 Click (Text:"Wi-Fi")
 run ClassConfigure.ForgetAllWifiConnections
-run ClassUtilities.ConfirmTextNotInArea("Connected"),("10,100"),("470,210")
+run ClassUtilities.ConfirmTextNotOnScreen("Connected")
 Click "Device/System/Backicon"
 run ClassSettings.SetWifi(Off)
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOff")

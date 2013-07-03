@@ -109,8 +109,8 @@ to DeleteContact name
 			Click (Text:name)
 			Click "Device/System/MenuButton"
 			Click (Text:"Delete")
-			run ClassUtilities.ConfirmTextInArea("contact will"),("10,325"),("450,425")
-			run ClassUtilities.ConfirmTextInArea("be deleted"),("10,325"),("450,425")
+			run ClassUtilities.ConfirmTextOnScreen("contact will")
+			run ClassUtilities.ConfirmTextOnScreen("be deleted")
 			Click (Text:"OK")
 		end if
 	end repeat
@@ -134,6 +134,119 @@ to UninstallApp name
 	Click "Device/System/HomeButton"
 	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 end UninstallApp
+
+to ResetContacts
+	Log "Resetting test contacts to defaults."
+	run ClassNavigate.OpenApp(People)
+	Click "Device/Apps/People/Contacts"
+	ScrollWheelUp 5
+	run ClassScriptConfig.SetTestContactData
+	Log "Default test contact name is set to: " &universal fulltestname& "."
+	repeat until ImageFound(Text:universal fulltestname) = "false"
+		if ImageFound(Text:universal fulltestname) = "true"
+			Click(Text:universal fulltestname)
+		end if
+		wait 1 second
+		run ClassUtilities.ConfirmTextOnScreen(universal fulltestname)
+		Click "Device/System/MenuButton"
+		Click (Text:"Delete")
+		run ClassUtilities.ConfirmTextOnScreen("contact will")
+		run ClassUtilities.ConfirmTextOnScreen("be deleted")
+		Click (Text:"OK")
+		wait 1 second
+	end repeat
+	Log "Test contacts have been reset."
+	Click "Device/System/HomeButton"
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+end ResetContacts
+
+to ClearContacts
+	Log "Clearing entire contacts list."
+	run ClassNavigate.OpenApp(People)
+	Click "Device/Apps/People/Contacts"
+	ScrollWheelUp 10
+	repeat until ImageFound(3, "Device/Apps/People/ContactPicture") is "false"
+		wait 1 second
+		Click "Device/Apps/People/ContactPicture"
+		wait 1 second
+		Click "Device/System/MenuButton"
+		Click (Text:"Delete")
+		run ClassUtilities.ConfirmTextOnScreen("contact will")
+		run ClassUtilities.ConfirmTextOnScreen("be deleted")
+		Click (Text:"OK")
+		Log "Contact deleted."
+		wait 1 second
+	end repeat
+	Log "Entire contacts list cleared."
+end ClearContacts
+
+to AddContactDeviceA
+	run ClassScriptConfig.SetContactDataforDeviceB
+	wait 1 second
+	run ClassNavigate.ResetState
+	run ClassNavigate.OpenApp(People)
+	Click "Device/Apps/People/Contacts"
+	Log "Adding contact."
+	Click "Device/Apps/People/AddContact"
+	run ClassUtilities.IfTextOnScreen("Your new contact"),("OK") //Popup may appear
+	Click (Text:"First name")
+	wait 1 second
+	TypeText universal firstnamedevicea
+	Click (Text:"Last name")
+	wait 1 second
+	TypeText universal lastnamedevicea
+	wait 1 second
+	Click "Device/System/Backicon"
+	Click (Text:"Phone", CaseSensitive: true)
+	wait 1 second
+	TypeText universal phonenumberdevicea
+	wait 1 second
+	Click "Device/System/Backicon"
+	Click (Text:"Email", CaseSensitive: true)
+	wait 1 second
+	TypeText universal emaildevicea
+	wait 1 second
+	Click "Device/Apps/People/DoneCheckmark"
+	Click "Device/System/Backicon"
+	run ClassUtilities.ConfirmTextOnScreen(universal fullnamedevicea)
+	Click "Device/System/HomeButton"
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+	wait 5 seconds
+end AddContactDeviceA
+
+to AddContactDeviceB
+	run ClassScriptConfig.SetContactDataforDeviceA
+	wait 1 second
+	run ClassNavigate.ResetState
+	run ClassNavigate.OpenApp(People)
+	Click "Device/Apps/People/Contacts"
+	Log "Adding contact."
+	Click "Device/Apps/People/AddContact"
+	run ClassUtilities.IfTextOnScreen("Your new contact"),("OK") //Popup may appear
+	Click (Text:"First name")
+	wait 1 second
+	TypeText universal firstnamedeviceb
+	Click (Text:"Last name")
+	wait 1 second
+	TypeText universal lastnamedeviceb
+	wait 1 second
+	Click "Device/System/Backicon"
+	Click (Text:"Phone", CaseSensitive: true)
+	wait 1 second
+	TypeText universal phonenumberdeviceb
+	wait 1 second
+	Click "Device/System/Backicon"
+	Click (Text:"Email", CaseSensitive: true)
+	wait 1 second
+	TypeText universal emaildeviceb
+	wait 1 second
+	Click "Device/Apps/People/DoneCheckmark"
+	Click "Device/System/Backicon"
+	run ClassUtilities.ConfirmTextOnScreen(universal fullnamedeviceb)
+	Click "Device/System/HomeButton"
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+	wait 5 seconds
+end AddContactDeviceB
 
 to ResetCalendar event
 	Log "Resetting calendar to default page."

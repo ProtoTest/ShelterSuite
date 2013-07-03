@@ -1,0 +1,7 @@
+//Motorola Shelter Device A Setup Scripts -- preparation before executing Shelter Stability Tests
+//Execute after manual device setp as detailed in "Shelter_Document_Instructions"
+
+//When on Device A, clears contacts list and adds Synch Shelter Device B
+run ClassNavigate.ResetState
+run ClassConfigure.ClearContacts
+run ClassConfigure.AddContactDeviceB

@@ -15,10 +15,10 @@ run ClassConfigure.ForgetAllWifiConnections
 Click "Device/System/Backicon"
 wait 1 second
 Click (Text:"Wi-Fi")
-WaitFor 15, Text:"AndroidAP", CaseSensitive: true
-Click (Text:"AndroidAP", CaseSensitive: true)
+WaitFor 15, Text:universal defaulthotspotssid, CaseSensitive: true
+Click (Text:universal defaulthotspotssid, CaseSensitive: true)
 wait 1 second
-TypeText "2855dd796207"
+TypeText universal defaulthotspotpass
 Click (Text:"Connect")
 WaitFor 60, Text:"Connected", SearchRectangle:((10,100),(470,200))
 Click "Device/System/Backicon"

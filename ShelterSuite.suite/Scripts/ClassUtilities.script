@@ -46,7 +46,7 @@ to IfTextOnScreen string,action
 	if ImageFound(Text:string) then
 		Log "Text (" &string& ") detected."
 		Log "Clicking on (" &action& ") element."
-		Click(Text:action)
+		Click(Text:action, CaseSensitive: true)
 	end if
 	wait 3 seconds
 end IfTextOnScreen

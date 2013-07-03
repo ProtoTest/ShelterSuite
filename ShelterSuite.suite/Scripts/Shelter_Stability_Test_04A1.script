@@ -1,4 +1,5 @@
 //Motorola Shelter Stability Test 04 -- Make a 2G voice call from the call history list
+//Requires running of Script Series 01 or 02 first to put a call in the history list
 //Component of Script Series 04
 //Completed 6-07-2013
 

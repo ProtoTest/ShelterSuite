@@ -9,6 +9,7 @@ run ClassNavigate.ResetState
 run ClassNavigate.OpenApp(Settings)
 run ClassSettings.SetNetworkData(On)
 run ClassSettings.SetWifi(On)
+run ClassSettings.SetUpMobileHotspot
 run ClassSettings.SetMobileHotspot(On)
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MobileHotspotActive")
 Click "Device/System/HomeButton"

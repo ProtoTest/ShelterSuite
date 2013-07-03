@@ -82,7 +82,7 @@ to OpenApp name
 	repeat until (ImageFound(3,Text:name)) is "true"
 		run ClassNavigate.SwipeLeft
 	end repeat
-	Log "Opening" &name& "app."
+	Log "Opening " &name& " app."
 	Click (Text:name)
 	wait 1 second
 end OpenApp
@@ -91,22 +91,72 @@ to SettingsOption name
 	Log "Beginning at top of Options List."
 	ScrollWheelUp 10
 	wait 2 seconds
-	repeat until ImageFound(Text:name) is "true"
-		repeat until ImageFound(Text:WIRELESS) is "true"
+	universal x
+	set x = 0
+	universal y
+	set y = 0
+	universal z
+	set z = 0
+	//Main loop that will return to the top of the settings menu and begin scanning for requested settings option
+	//Change below X value to set number of iterations before loop logs failure
+	repeat while x < 5
+		put x
+		add 1 to x
+		set y = 0
+		set z = 0
+		//Sub-loop 1 - Scans for the word "WIRELESS" as a reference point, which is present at the top of the settings menu
+		//Change below Y value to set number of iterations before loop logs failure
+		repeat while y < 5
+			put y
+			add 1 to y
+			if ImageFound(Text:WIRELESS) is "true"
+				exit repeat
+			end if
 			Log "Returning to top of Options List."
 			ScrollWheelUp 10
-			wait 2 seconds
+			wait 1 second
+			if y = 5
+				LogError "Cound not find WIRELESS text reference point after " &y& " attempts."
+				exit all
+			end if
 		end repeat
 		wait 1 second
-		repeat until ImageFound(Text:name) is "true"
-			Log "Searching for " &name& " Settings Option."
+		//Sub-loop 2 - Scans for the requested settings option
+		//Change below Z value to set number of iterations before loop logs failure
+		repeat while z < 10
+			put z
+			add 1 to z
+			Log "Searching for (" &name& ") Settings Option."
 			ScrollWheelDown 1
-			wait 2 seconds
+			wait 1 second
+			if ImageFound(3, Text:name) is "true"
+				exit repeat
+			end if
+			wait 1 second
+			//End of settings menu value
+			if ImageFound(3, Text:"About phone") is "true"
+				Log "Settings option (" &name& ") not found."
+				exit repeat
+			end if
 		end repeat
 		wait 1 second
+		//Main loop - Settings option found path
+		if ImageFound(3, Text:name) is "true"
+			exit repeat
+		end if
+		wait 1 second
+		//Main loop - Settings option not found path
+		if x = 5
+			LogError "Could not find Settings option (" &name& ") after " &x& " attempts."
+			exit all
+		end if
 	end repeat
-	Log "Settings Option " &value& " Found."
+	//End of main loop - enters requested settings option
 	Click (Text:name)
+	Log "Settings Option (" &name& ") found after " &x& " attempts."
+	set x = 0
+	set y = 0
+	set z = 0
 	wait 1 second
 end SettingsOption
 
@@ -136,9 +186,85 @@ to AnswerCall
 	Log "Answering phone call."
 	if(ImageFound("Device/Apps/Telephone/IncomingCall"))
 		Drag "Device/Apps/Telephone/IncomingCall"
-		wait 1 second
+		//wait 1 second
 		Drop (460,635)
 		//Drop "Device/System/Unlockicon" [mechanism unstable]
 		wait 1 second
 	end if
 end AnswerCall
+
+to DialPhoneNumber phonenumber
+	set string to phonenumber
+	repeat with each character number of string
+		if number = 0
+			Click "Device/Apps/Telephone/PhoneDial0"
+		end if
+		if number = 1
+			Click "Device/Apps/Telephone/PhoneDial1"
+		end if
+		if number = 2
+			Click "Device/Apps/Telephone/PhoneDial2"
+		end if
+		if number = 3
+			Click "Device/Apps/Telephone/PhoneDial3"
+		end if
+		if number = 4
+			Click "Device/Apps/Telephone/PhoneDial4"
+		end if
+		if number = 5
+			Click "Device/Apps/Telephone/PhoneDial5"
+		end if
+		if number = 6
+			Click "Device/Apps/Telephone/PhoneDial6"
+		end if
+		if number = 7
+			Click "Device/Apps/Telephone/PhoneDial7"
+		end if
+		if number = 8
+			Click "Device/Apps/Telephone/PhoneDial8"
+		end if
+		if number = 9
+			Click "Device/Apps/Telephone/PhoneDial9"
+		end if
+	end repeat
+	Log "Phone number entered."
+end DialPhoneNumber
+
+to DialDefaultPhoneNumber
+	run ClassScriptConfig.SetDefaultPhoneNumber
+	set string to universal defaultphonenumber
+	repeat with each character number of string
+		if number = 0
+			Click "Device/Apps/Telephone/PhoneDial0"
+		end if
+		if number = 1
+			Click "Device/Apps/Telephone/PhoneDial1"
+		end if
+		if number = 2
+			Click "Device/Apps/Telephone/PhoneDial2"
+		end if
+		if number = 3
+			Click "Device/Apps/Telephone/PhoneDial3"
+		end if
+		if number = 4
+			Click "Device/Apps/Telephone/PhoneDial4"
+		end if
+		if number = 5
+			Click "Device/Apps/Telephone/PhoneDial5"
+		end if
+		if number = 6
+			Click "Device/Apps/Telephone/PhoneDial6"
+		end if
+		if number = 7
+			Click "Device/Apps/Telephone/PhoneDial7"
+		end if
+		if number = 8
+			Click "Device/Apps/Telephone/PhoneDial8"
+		end if
+		if number = 9
+			Click "Device/Apps/Telephone/PhoneDial9"
+		end if
+	end repeat
+	run ClassScriptConfig.ConfirmDefaultPhoneNumber
+	Log "Default phone number entered."
+end DialDefaultPhoneNumber
