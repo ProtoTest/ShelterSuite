@@ -8,21 +8,21 @@ to ConfirmTextOnScreen string
 end ConfirmTextOnScreen
 
 to ConfirmTextInArea string,topcorner,botcorner
-	if not ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner))) then
+	if not ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner)), CaseSensitive: true) then
 		LogError "Text (" &string& ") was not found."
 		exit all
 	end if
 end ConfirmTextInArea
 
 to ConfirmTextNotOnScreen string
-	if ImageFound(Text:string) then
+	if ImageFound(Text:string, CaseSensitive: true) then
 		LogError "Text (" &string& ") erroneously present."
 		exit all
 	end if
 end ConfirmTextNotOnScreen
 
 to ConfirmTextNotInArea string,topcorner,botcorner
-	if ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner))) then
+	if ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner)), CaseSensitive: true) then
 		LogError "Text (" &string& ") erroneously present."
 		exit all
 	end if
@@ -43,7 +43,7 @@ to ConfirmImageNotOnScreen image
 end ConfirmImageNotOnScreen
 
 to IfTextOnScreen string,action
-	if ImageFound(Text:string) then
+	if ImageFound(Text:string, CaseSensitive: true) then
 		Log "Text (" &string& ") detected."
 		Log "Clicking on (" &action& ") element."
 		Click(Text:action, CaseSensitive: true)

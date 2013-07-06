@@ -4,42 +4,53 @@
 //Set DeviceA Synch Contact data
 to SetContactDataforDeviceA
 	universal firstnamedeviceb
-	set firstnamedeviceb to "ShelterB"
+	set firstnamedeviceb to "ShelterB"  //Configure
+	Log "Device B contact first name set to: " &firstnamedeviceb& "."
 	universal lastnamedeviceb
-	set lastnamedeviceb to "DeviceB"
+	set lastnamedeviceb to "DeviceB"  //Configure
+	Log "Device B contact last name set to: " &lastnamedeviceb& "."
 	universal fullnamedeviceb
 	set fullnamedeviceb to firstnamedeviceb&&lastnamedeviceb
 	universal phonenumberdeviceb
-	set phonenumberdeviceb to "7203607214"
+	set phonenumberdeviceb to "7203607214"  //Configure
+	Log "Device B contact phone number set to: " &phonenumberdeviceb& "."
 	universal emaildeviceb
-	set emaildeviceb to "shelter-test2@outlook.com"
+	set emaildeviceb to "shelter-test2@outlook.com"  //Configure
+	Log "Device B contact email set to: " &emaildeviceb& "."
 end SetContactDataforDeviceA
 
 //Set DeviceB Synch Contact data
 to SetContactDataforDeviceB
 	universal firstnamedevicea
-	set firstnamedeviceb to "ShelterA"
+	set firstnamedevicea to "ShelterA"  //Configure
+	Log "Device A contact first name set to: " &firstnamedevicea& "."
 	universal lastnamedevicea
-	set lastnamedevicea to "DeviceA"
+	set lastnamedevicea to "DeviceA"  //Configure
+	Log "Device A contact last name set to: " &lastnamedevicea& "."
 	universal fullnamedevicea
 	set fullnamedevicea to firstnamedevicea&&lastnamedevicea
 	universal phonenumberdevicea
-	set phonenumberdevicea to "7203607233"
-	universal emaildeviceb
-	set emaildeviceb to "shelter-test2@outlook.com"
+	set phonenumberdevicea to "7203607233"  //Configure
+	Log "Device A contact phone number set to: " &phonenumberdevicea& "."
+	universal emaildevicea
+	set emaildevicea to "shelter-test1@outlook.com"  //Configure
+	Log "Device A contact email set to: " &emaildevicea& "."
 end SetContactDataforDeviceB
 
 //Set Test Contact data
 //Used in script 09
 to SetTestContactData
 	universal firsttestname
-	set firsttestname to "Pat"
+	set firsttestname to "Pat"  //Configure
+	Log "Test contact first name set to: " &firsttestname& "."
 	universal lasttestname
-	set lasttestname to "Riley"
+	set lasttestname to "Riley"  //Configure
+	Log "Test contact last name set to: " &lasttestname& "."
 	universal fulltestname
 	set fulltestname to firsttestname&&lasttestname
 	universal testorganization
-	set testorganization to "Motorola"
+	set testorganization to "Motorola"  //Configure
+	Log "Test contact organization set to: " &testorganization& "."
 end SetTestContactData
 
 //Set Default Wifi Settings
@@ -47,28 +58,33 @@ end SetTestContactData
 //"Device/Apps/Settings/WifiDefaultNetwork"
 to AccessDefaultWifiSettings
 	universal defaultwifipassword
-	set defaultwifipassword to "prototest1999!"
+	set defaultwifipassword to "prototest1999!"  //Configure
 	put defaultwifipassword into defaultwifipassword
+	Log "Default wifi password set to: " &defaultwifipassword& "."
 end AccessDefaultWifiSettings
 
 //Set Default Phone Number
 //Used in Script Series 58
 to SetDefaultPhoneNumber
 	universal defaultphonenumber
-	set defaultphonenumber to "7203607214"
+	set defaultphonenumber to "7203607214"  //Configure
 	put defaultphonenumber into defaultphonenumber
+	Log "Default phone number set to: " &defaultphonenumber& "."
 end SetDefaultPhoneNumber
 
 to ConfirmDefaultPhoneNumber
-	run ClassUtilities.ConfirmTextOnScreen("(720) 360-7214")
+	run ClassUtilities.ConfirmTextOnScreen("(720) 360-7214")  //Configure
 	//run ClassUtilities.ConfirmTextInArea("(720) 360-7214"),("10,110"),("450,250")
+	Log "Default phone number confirmed."
 end ConfirmDefaultPhoneNumber
 
 //Set Default Mobile Hotspot SSID and Password
 //Used in Script Series 70
 to SetMobileHotspotData
 	universal defaulthotspotssid
-	set defaulthotspotssid to "ShelterHotspot"
+	set defaulthotspotssid to "ShelterHotspot"  //Configure
+	Log "Default Hotspot SSID set to: " &defaulthotspotssid& "."
 	universal defaulthotspotpass
-	set defaulthotspotpass to "test1234" //Must be at least 8 characters
+	set defaulthotspotpass to "test1234"  //Configure, must be at least 8 characters
+	Log "Default Hotspot password set to: " &defaulthotspotpass& "."
 end SetMobileHotspotData

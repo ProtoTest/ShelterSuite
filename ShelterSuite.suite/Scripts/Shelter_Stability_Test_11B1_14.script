@@ -12,10 +12,11 @@ run ClassNavigate.ResetState
 wait 10 seconds
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MessageReceived")
 Click "Device/AppIcons/MessagingApp"
+run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")
 run ClassUtilities.ConfirmTextOnScreen("Messaging")
-Click (Text:"ShelterA")
+Click (Text:universal firstnamedevicea)
 wait 1 second
-ScrollWheelDown 5
+ScrollWheelDown 10
 wait 1 second
 run ClassUtilities.ConfirmTextInArea("Victor jagt zwolf Boxkampfer"),("10,450"),("470,730")
 run ClassUtilities.ConfirmTextInArea("quer uber den grossen"),("10,450"),("470,730")

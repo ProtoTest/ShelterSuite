@@ -73,17 +73,79 @@ end SwipeDown
 to OpenApp name
 	Log "Opening apps menu."
 	Click "Device/System/AppsIcon"
-	repeat until (ImageFound(3,Text:"Browser")) is "true" //"3" within ImageFound sets total wait time to 3 secs
-		run ClassNavigate.SwipeRight
+	universal a
+	set a = 0
+	universal b
+	set b = 0
+	universal c
+	set c = 0
+	//Main loop that will return to the far left of the apps menu and begin scanning for requested app
+	//Change below A value to set number of iterations before loop logs failure
+	repeat while  a < 3
+		put a
+		add 1 to a
+		set b = 0
+		set c = 0
+		//Sub-loop 1 - Scans for the word "Browser" as a reference point, which is present at the far left of the apps menu
+		//Change below B value to set number of iterations before loop logs failure
+		repeat while b < 10
+			put b
+			add 1 to b
+			if ImageFound(3, Text:"Browser") is "true"
+				exit repeat
+			end if
+			Log "Returning to far left of apps menu."
+			run ClassNavigate.SwipeRight
+			wait 1 second
+			if b = 10
+				LogError "Cound not find 'Browser' text reference point after " &b& " attempts."
+				exit all
+			end if
+		end repeat
 		wait 1 second
+		//Sub-loop 2 - Scans for the requested app
+		//Change below C value to set number of iterations before loop logs failure
+		repeat while c < 10
+			put c
+			add 1 to c
+			Log "Searching for (" &name& ") app."
+			if ImageFound(3, Text:name) is "true"
+				exit repeat
+			end if
+			run ClassNavigate.SwipeLeft
+			wait 1 second
+			if ImageFound(3, Text:name) is "true"
+				exit repeat
+			end if
+			wait 1 second
+			//End of apps menu value
+			if ImageFound(3, Text:"Music playlist") is "true"
+				Log "Settings option (" &name& ") not found."
+				exit repeat
+			end if
+			if c = 10
+				Log "End of apps menu value (Music playlist) not found."
+				exit repeat
+			end if
+		end repeat
+		wait 1 second
+		//Main loop - App found path
+		if ImageFound(3, Text:name) is "true"
+			exit repeat
+		end if
+		wait 1 second
+		//Main loop - App not found path
+		Log "Locating " &name& " app."
+		if a = 3
+			LogError "Could not find app (" &name& ") after " &a& " attempts."
+			exit all
+		end if
 	end repeat
-	wait 1 second
-	Log "Locating " &name& " app."
-	repeat until (ImageFound(3,Text:name)) is "true"
-		run ClassNavigate.SwipeLeft
-	end repeat
-	Log "Opening " &name& " app."
 	Click (Text:name)
+	Log "Found (" &name& ") app after " &a& " attempts."
+	set a = 0
+	set b = 0
+	set c = 0
 	wait 1 second
 end OpenApp
 
@@ -99,7 +161,7 @@ to SettingsOption name
 	set z = 0
 	//Main loop that will return to the top of the settings menu and begin scanning for requested settings option
 	//Change below X value to set number of iterations before loop logs failure
-	repeat while x < 5
+	repeat while x < 3
 		put x
 		add 1 to x
 		set y = 0
@@ -109,7 +171,7 @@ to SettingsOption name
 		repeat while y < 5
 			put y
 			add 1 to y
-			if ImageFound(Text:WIRELESS) is "true"
+			if ImageFound(Text:"WIRELESS") is "true"
 				exit repeat
 			end if
 			Log "Returning to top of Options List."
@@ -127,6 +189,9 @@ to SettingsOption name
 			put z
 			add 1 to z
 			Log "Searching for (" &name& ") Settings Option."
+			if ImageFound(3, Text:name) is "true"
+				exit repeat
+			end if
 			ScrollWheelDown 1
 			wait 1 second
 			if ImageFound(3, Text:name) is "true"
@@ -146,14 +211,14 @@ to SettingsOption name
 		end if
 		wait 1 second
 		//Main loop - Settings option not found path
-		if x = 5
-			LogError "Could not find Settings option (" &name& ") after " &x& " attempts."
+		if x = 3
+			LogError "Could not find settings option (" &name& ") after " &x& " attempts."
 			exit all
 		end if
 	end repeat
 	//End of main loop - enters requested settings option
 	Click (Text:name)
-	Log "Settings Option (" &name& ") found after " &x& " attempts."
+	Log "Settings option (" &name& ") found after " &x& " attempts."
 	set x = 0
 	set y = 0
 	set z = 0

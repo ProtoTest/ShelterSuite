@@ -4,6 +4,8 @@
 
 //Setup
 run ClassNavigate.ResetState
+run ClassScriptConfig.SetMobileHotspotData
+run ClassScriptConfig.AccessDefaultWifiSettings
 
 //Subroutine A1 -- Shelter Device A - Turn on Mobile Hotspot connection
 run ClassNavigate.OpenApp(Settings)

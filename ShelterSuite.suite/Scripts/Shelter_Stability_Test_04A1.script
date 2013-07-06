@@ -5,6 +5,8 @@
 
 //Setup
 run ClassNavigate.ResetState
+run ClassScriptConfig.SetContactDataforDeviceA
+run ClassScriptConfig.SetContactDataforDeviceB
 
 //Subroutine A1 -- Shelter Device A - Set mobile networks to 2G, dial Shelter Device B
 run ClassNavigate.OpenApp(Settings)
@@ -16,6 +18,6 @@ run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 3 seconds
 Click "Device/AppIcons/TelephoneApp"
 Click "Device/Apps/Telephone/HistoryIcon"
-Click (Text:"ShelterB")
+Click (Text:universal firstnamedeviceb)
 Click (Text:"Call")
-run ClassUtilities.ConfirmTextOnScreen("Dialing")
+run ClassUtilities.ConfirmTextOnScreen("DIALING")

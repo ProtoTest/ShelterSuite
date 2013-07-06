@@ -18,7 +18,7 @@ Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/PhoneAppInBackground")
 run ClassNavigate.OpenTaskbar
 wait 1 second
-Click (Text:"VNC Server")
+Click (Text:"VNC Server",  SearchRectangle:((50,50),(475,800)))
 run ClassUtilities.ConfirmTextOnScreen("Server is running")
 Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/PhoneAppInBackground")
@@ -29,6 +29,8 @@ Click (Text:"Return to call")
 //Motorola Shelter Stability Test 60 - End the phone call
 Click "Device/Apps/Telephone/EndCall"
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Telephone/EndCall")
+wait 3 seconds
+Click "Device/AppIcons/TelephoneApp"
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")

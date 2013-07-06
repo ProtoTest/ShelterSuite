@@ -264,24 +264,15 @@ to ResetCalendar event
 		Click "Device/Apps/Calendar/ViewOptions"
 		Click (Text:"Week")
 	end if
-	run ClassUtilities.ConfirmTextOnScreen("SUN")
-	run ClassUtilities.ConfirmTextOnScreen("WED")
-	run ClassUtilities.ConfirmTextOnScreen("SAT")
+	run ClassUtilities.ConfirmTextInArea("SUN"),("5,110"),("475,140")
+	run ClassUtilities.ConfirmTextInArea("WED"),("5,110"),("475,140")
+	run ClassUtilities.ConfirmTextInArea("SAT"),("5,110"),("475,140")
 	Log "Scanning for rogue events."
 	ScrollWheelUp 5
 	wait 1 second
-	if ImageFound(3, Text:event) then
-		Click (Text:event)
-		wait 1 second
-		Click "Device/AppIcons/TrashcanIcon"
-		wait 1 second
-		Click (Text:"OK")
-		wait 1 second
-	end if
-	repeat 3 times
-		ScrollWheelDown 1
-		wait 1 second
+	repeat until ImageFound(3, Text:event, SearchRectangle:((35,140),(475,800))) is "false"
 		if ImageFound(3, Text:event) then
+			Log "Deleting rogue event."
 			Click (Text:event)
 			wait 1 second
 			Click "Device/AppIcons/TrashcanIcon"
@@ -289,6 +280,22 @@ to ResetCalendar event
 			Click (Text:"OK")
 			wait 1 second
 		end if
+	end repeat
+	wait 1 second
+	repeat 6 times
+		ScrollWheelDown 0.5
+		wait 1 second
+		repeat until ImageFound(3, Text:event, SearchRectangle:((35,140),(475,800))) is "false"
+			if ImageFound(3, Text:event) then
+				Log "Deleting rogue event."
+				Click (Text:event)
+				wait 1 second
+				Click "Device/AppIcons/TrashcanIcon"
+				wait 1 second
+				Click (Text:"OK")
+				wait 1 second
+			end if
+		end repeat
 	end repeat
 	Click "Device/System/HomeButton"
 	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")

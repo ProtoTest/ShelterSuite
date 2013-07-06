@@ -4,18 +4,22 @@
 
 //Setup
 run ClassNavigate.ResetState
+run ClassScriptConfig.SetContactDataforDeviceA
+run ClassScriptConfig.SetContactDataforDeviceB
 
 //Subroutine A1 -- Shelter Device A - Send 1MB Audio MMS to Shelter Device B
 //German language is used to identify this tested functionality
 Click "Device/AppIcons/MessagingApp"
+run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")
 run ClassUtilities.ConfirmTextOnScreen("Messaging")
 Click "Device/Apps/Messaging/NewMessageIcon"
 wait 1 second
 Click (Text:"To")
-TypeText "S"
 wait 1 second
-Click (Text:"ShelterB")
-run ClassUtilities.ConfirmTextInArea("ShelterB DeviceB"),("10,100"),("450,200")
+TypeText universal firstnamedeviceb
+wait 1 second
+Click (Text:universal fullnamedeviceb)
+run ClassUtilities.ConfirmTextInArea(universal fullnamedeviceb),("10,100"),("450,200")
 Click (Text:"Type message")
 wait 1 second
 TypeText "Victor jagt zwolf Boxkampfer quer uber den grossen Sylter Deich. "
@@ -34,8 +38,7 @@ run ClassUtilities.ConfirmTextInArea("Victor"),("10,700"),("470,800")
 run ClassUtilities.ConfirmTextInArea("uber den"),("10,700"),("470,800")
 Click "Device/Apps/Messaging/SendMessage"
 wait 20 seconds
-Click (460,700)
-wait 1 second
+ScrollWheelDown 10
 run ClassUtilities.ConfirmTextInArea("Audio Attachment"),("1,500"),("470,750")
 run ClassUtilities.ConfirmTextInArea("Victor jagt zwolf Boxkampfer"),("1,500"),("470,750")
 run ClassUtilities.ConfirmTextInArea("quer uber den grossen"),("1,500"),("470,750")

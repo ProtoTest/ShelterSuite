@@ -40,7 +40,11 @@ end SetWifi
 
 to SetNetworkData value
 	ScrollWheelUp 5
+	wait 1 second
+	Log "Entering setting menu option (More...)"
 	Click (Text:"More")
+	wait 1 second
+	Log "Entering (Mobile networks)"
 	Click (Text:"Mobile networks")
 	Log "Setting Network Data to desired state."
 	if (ImageFound(Text:"Data enabled", SearchRectangle:((10,100),(470,210)))) is "false"
@@ -122,7 +126,8 @@ to SetUpMobileHotspot
 	wait 1 second
 	Click (Text:"portable hotspot")
 	wait 1 second
-	run ClassUtilities.ConfirmTextOnScreen("Set up Wi-Fi hotspot")
+	Click (Text:"Set up Wi-Fi hotspot")
+	wait 1 second
 	Click "Device/Apps/Settings/MobileHotspot/SSIDLocation"
 	wait 1 second
 	repeat 25 times

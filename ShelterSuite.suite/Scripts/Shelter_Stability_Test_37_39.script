@@ -11,9 +11,9 @@ run ClassConfigure.ResetCalendar(Test)
 
 //Test 37 - Add an appointment in the Calendar
 run ClassNavigate.OpenApp(Calendar)
-run ClassUtilities.ConfirmTextOnScreen("SUN")
-run ClassUtilities.ConfirmTextOnScreen("WED")
-run ClassUtilities.ConfirmTextOnScreen("SAT")
+run ClassUtilities.ConfirmTextInArea("SUN"),("5,110"),("475,140")
+run ClassUtilities.ConfirmTextInArea("WED"),("5,110"),("475,140")
+run ClassUtilities.ConfirmTextInArea("SAT"),("5,110"),("475,140")
 Log "Calendar open.  Adding test event..."
 Click "Device/Apps/Calendar/EmptyCalendarSlot"
 Click "Device/Apps/Calendar/EventSelected"
@@ -27,19 +27,19 @@ TypeText "Office"
 wait 2 second
 Click "Device/Apps/Calendar/DoneCheckmark"
 wait 2 second
-run ClassUtilities.ConfirmTextOnScreen("Test")
-run ClassUtilities.ConfirmTextOnScreen("Event")
-run ClassUtilities.ConfirmTextOnScreen("Office")
+run ClassUtilities.ConfirmTextInArea("Test"),("35,140"),("475,800")
+run ClassUtilities.ConfirmTextInArea("Event"),("35,140"),("475,800")
+run ClassUtilities.ConfirmTextInArea("Office"),("35,140"),("475,800")
 Log "Test event added."
 
 //Test 39 - Delete an appointment in the Calendar
 Log "Deleting test event."
-Click (Text:"Event")
+Click (Text:"Event", SearchRectangle:((35,140),(475,800)))
 Click "Device/AppIcons/TrashcanIcon"
 run ClassUtilities.ConfirmTextOnScreen("Delete this event?")
 Click (Text:"OK")
 wait 2 seconds
-run ClassUtilities.ConfirmTextNotOnScreen("Event")
+run ClassUtilities.ConfirmTextNotOnScreen("Test")
 Log "Test event deleted."
 Click "Device/System/HomeButton"
 

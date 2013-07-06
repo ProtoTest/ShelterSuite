@@ -10,16 +10,17 @@ run ClassNavigate.OpenApp(Email)
 run ClassConfigure.ResetEmail
 Click "Device/Apps/Email/ComposeEmail"
 wait 1 second
-TypeText "sh"
+TypeText universal firstnamedeviceb
 wait 1 second
-Click (Text:"ShelterB")
-run ClassUtilities.ConfirmTextInArea("ShelterB DeviceB"),("10,175"),("450,275")
+Click (Text:universal fullnamedeviceb)
+wait 1 second
+run ClassUtilities.ConfirmTextInArea(universal fullnamedeviceb),("10,175"),("450,275")
 Click (Text:"Subject")
 TypeText "Test email with attachment"
 run ClassUtilities.ConfirmTextInArea("Test email with attachment"),("10,250"),("450,350")
 Click (Text:"Compose email")
-TypeText "Sent from ShelterA."
-run ClassUtilities.ConfirmTextInArea("Sent from ShelterA"),("10,350"),("450,450")
+TypeText "Sent from " &universal firstnamedeviceb& "."
+run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,350"),("450,450")
 Click "Device/Apps/Email/AttachmentButton"
 Click (Text:"Pictures")
 Click "Device/Apps/Messaging/ImageAttachmentSample1a"

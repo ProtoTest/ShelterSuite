@@ -4,19 +4,23 @@
 
 //Setup
 run ClassNavigate.ResetState
+run ClassScriptConfig.SetContactDataforDeviceA
+run ClassScriptConfig.SetContactDataforDeviceB
 
 //Subroutine A1 -- Shelter Device A - Send max characters SMS to Shelter Device B
 //English language is used to identify this tested functionality
 Click "Device/AppIcons/MessagingApp"
+run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")
 run ClassUtilities.ConfirmTextOnScreen("Messaging")
 Click "Device/Apps/Messaging/NewMessageIcon"
 wait 1 second
-run ClassUtilities.ConfirmTextOnScreen("New Message")
+run ClassUtilities.ConfirmTextOnScreen("New message")
 Click (Text:"To")
-TypeText "S"
 wait 1 second
-Click (Text:"ShelterB")
-run ClassUtilities.ConfirmTextInArea("ShelterB DeviceB"),("10,100"),("450,200")
+TypeText universal firstnamedeviceb
+wait 1 second
+Click (Text:universal fullnamedeviceb)
+run ClassUtilities.ConfirmTextInArea(universal fullnamedeviceb),("10,100"),("450,200")
 wait 1 second
 TypeText "The quick brown fox jumped over the lazy dog. "
 TypeText "The quick brown fox jumped over the lazy dog. "
@@ -28,7 +32,8 @@ run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,315"),("47
 run ClassUtilities.ConfirmTextInArea("0"),("390,315"),("470,365")
 run ClassUtilities.ConfirmTextNotInArea("/ 2"),("390,315"),("470,365")
 Click "Device/Apps/Messaging/SendMessage"
-wait 1 second
+wait 3 seconds
+ScrollWheelDown 10
 run ClassUtilities.ConfirmTextInArea("quick brown fox"),("10,100"),("470,325")
 run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,100"),("470,325")
 run ClassUtilities.ConfirmTextOnScreen("Type message")

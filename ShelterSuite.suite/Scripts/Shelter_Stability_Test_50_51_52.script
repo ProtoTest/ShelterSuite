@@ -23,7 +23,7 @@ Click "Device/Apps/SoundRecorder/RecordButton"
 run ClassUtilities.ConfirmTextOnScreen("Recording")
 wait 15 seconds
 Click "Device/Apps/SoundRecorder/StopButton"
-run ClassUtilities.ConfirmTextInArea("Message Recorded"),("50,30"),("450,100")
+run ClassUtilities.ConfirmTextInArea("Message recorded"),("50,30"),("450,100")
 run ClassUtilities.ConfirmTextOnScreen("0:1")
 Log "Audio recorded."
 

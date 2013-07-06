@@ -4,10 +4,10 @@
 
 //Subroutine B1 -- Shelter Device B - Receive Incoming Call from Shelter Device A
 run ClassUtilities.ConfirmTextOnScreen("INCOMING CALL")
-run ClassUtilities.ConfirmTextOnScreen("SHELTERA")
+run ClassUtilities.ConfirmTextOnScreen(universal firstnamedevicea)
 run ClassUtilities.ConfirmTextOnScreen("MOBILE")
 run ClassNavigate.AnswerCall
-run ClassUtilities.ConfirmTextOnScreen("SHELTERA")
+run ClassUtilities.ConfirmTextOnScreen(universal firstnamedevicea)
 run ClassUtilities.ConfirmTextOnScreen("MOBILE")
 Click "Device/Apps/Telephone/EndCall"
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Telephone/EndCall")
@@ -16,7 +16,7 @@ run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
 Click "Device/Apps/Telephone/HistoryIcon"
-run ClassUtilities.ConfirmTextInArea("ShelterA"),("10,100"),("450,225")
+run ClassUtilities.ConfirmTextInArea(universal firstnamedevicea),("10,100"),("450,225")
 run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Telephone/0MinsAgo",   SearchRectangle:((10,100),(450,225)))
 Click "Device/System/HomeButton"
 
