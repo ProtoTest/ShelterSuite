@@ -9,7 +9,9 @@ run ClassNavigate.ResetState
 //Subroutine B1 -- Shelter Device B -  Receive Incoming SMS from Shelter Device A and Open Message
 //Motorola Shelter Stability Test 17 - Open a SMS
 //English language is used to identify this tested functionality
+wait 30 seconds
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MessageReceived")
+Log "Opening Messaging App."
 Click "Device/AppIcons/MessagingApp"
 run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")
 run ClassUtilities.ConfirmTextOnScreen("Messaging")
@@ -19,6 +21,7 @@ ScrollWheelDown 10
 wait 1 second
 run ClassUtilities.ConfirmTextInArea("The quick brown fox jumped"),("10,450"),("470,730")
 run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,450"),("470,730")
+Log "Text message received."
 Click "Device/System/BackIcon"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("Messaging")

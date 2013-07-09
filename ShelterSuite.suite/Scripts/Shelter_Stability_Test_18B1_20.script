@@ -8,6 +8,7 @@ run ClassNavigate.ResetState
 
 //Subroutine B1 -- Shelter Device B - Receive Incoming email with no attachment from Shelter Device A and Open Message
 //Motorola Shelter Stability Test 20 - Open an email
+wait 30 seconds
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/EmailReceived")
 run ClassNavigate.OpenApp(Email)
 run ClassConfigure.ResetEmail
@@ -17,6 +18,7 @@ Click (Text:"Test email no attachment", SearchRectangle:((5,100),(470,225)))
 run ClassUtilities.ConfirmTextInArea("Test email no attachment"),("5,25"),("470,125")
 run ClassUtilities.ConfirmTextInArea(universal firstnamedevicea),("10,150"),("470,250")
 run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,275"),("470,500")
+Log "Email received."
 Click "Device/System/BackIcon"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("Inbox")

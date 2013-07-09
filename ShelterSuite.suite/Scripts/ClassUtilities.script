@@ -1,39 +1,19 @@
 // This is a collection of miscellaneous utility functions that can help extend or replace the default methods inside eggPlant.  
+//Ordered alphabetically
 
-to ConfirmTextOnScreen string
-	if not ImageFound(Text:string, CaseSensitive: true) then
-		LogError "Text (" &string& ") was not found."
-		exit all
+to AuthenticateBluetoothPasskeys
+	if universal passkey1 = universal passkey2
+		wait 1 second
+		Log "Bluetooth Passkey1 = " &universal passkey1& "."
+		Log "Bluetooth Passkey2 = " &universal passkey2& "."
+		Log "Bluetooth Passkeys confirmed."
+	else
+		wait 1 second
+		LogError "Bluetooth Passkey1 = " &universal passkey1& "."
+		LogError "Bluetooth Passkey2 = " &universal passkey2& "."
+		LogError "Bluetooth Passkeys are not identical."
 	end if
-end ConfirmTextOnScreen
-
-to ConfirmTextInArea string,topcorner,botcorner
-	if not ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner)), CaseSensitive: true) then
-		LogError "Text (" &string& ") was not found."
-		exit all
-	end if
-end ConfirmTextInArea
-
-to ConfirmTextNotOnScreen string
-	if ImageFound(Text:string, CaseSensitive: true) then
-		LogError "Text (" &string& ") erroneously present."
-		exit all
-	end if
-end ConfirmTextNotOnScreen
-
-to ConfirmTextNotInArea string,topcorner,botcorner
-	if ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner)), CaseSensitive: true) then
-		LogError "Text (" &string& ") erroneously present."
-		exit all
-	end if
-end ConfirmTextNotInArea
-
-to ConfirmImageOnScreen image
-	if not ImageFound(image) then
-		LogError "Image (" &image& ") was not found."
-		exit all
-	end if
-end ConfirmImageOnScreen
+end AuthenticateBluetoothPasskeys
 
 to ConfirmImageNotOnScreen image
 	if ImageFound(image) then
@@ -42,14 +22,40 @@ to ConfirmImageNotOnScreen image
 	end if
 end ConfirmImageNotOnScreen
 
-to IfTextOnScreen string,action
-	if ImageFound(Text:string, CaseSensitive: true) then
-		Log "Text (" &string& ") detected."
-		Log "Clicking on (" &action& ") element."
-		Click(Text:action, CaseSensitive: true)
+to ConfirmImageOnScreen image
+	if not ImageFound(image) then
+		LogError "Image (" &image& ") was not found."
+		exit all
 	end if
-	wait 3 seconds
-end IfTextOnScreen
+end ConfirmImageOnScreen
+
+to ConfirmTextInArea string,topcorner,botcorner
+	if not ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner)), CaseSensitive: true) then
+		LogError "Text (" &string& ") was not found."
+		exit all
+	end if
+end ConfirmTextInArea
+
+to ConfirmTextNotInArea string,topcorner,botcorner
+	if ImageFound(Text:string,SearchRectangle:((topcorner),(botcorner)), CaseSensitive: true) then
+		LogError "Text (" &string& ") erroneously present."
+		exit all
+	end if
+end ConfirmTextNotInArea
+
+to ConfirmTextNotOnScreen string
+	if ImageFound(Text:string, CaseSensitive: true) then
+		LogError "Text (" &string& ") erroneously present."
+		exit all
+	end if
+end ConfirmTextNotOnScreen
+
+to ConfirmTextOnScreen string
+	if not ImageFound(Text:string, CaseSensitive: true) then
+		LogError "Text (" &string& ") was not found."
+		exit all
+	end if
+end ConfirmTextOnScreen
 
 to IfImageOnScreen string,action
 	if ImageFound(string) then
@@ -59,6 +65,15 @@ to IfImageOnScreen string,action
 	end if
 	wait 3 seconds
 end IfImageOnScreen
+
+to IfTextOnScreen string,action
+	if ImageFound(Text:string, CaseSensitive: true) then
+		Log "Text (" &string& ") detected."
+		Log "Clicking on (" &action& ") element."
+		Click(Text:action, CaseSensitive: true)
+	end if
+	wait 3 seconds
+end IfTextOnScreen
 
 to ScanBluetoothPasskey1
 	Log "Scanning for Bluetooth Passkey1."
@@ -75,20 +90,6 @@ to ScanBluetoothPasskey2
 	put passkey2 into passkey2
 	Log "Passkey " &passkey2& " detected."
 end ScanBluetoothPasskey2
-
-to AuthenticateBluetoothPasskeys
-	if universal passkey1 = universal passkey2
-		wait 1 second
-		Log "Bluetooth Passkey1 = " &universal passkey1& "."
-		Log "Bluetooth Passkey2 = " &universal passkey2& "."
-		Log "Bluetooth Passkeys confirmed."
-	else
-		wait 1 second
-		LogError "Bluetooth Passkey1 = " &universal passkey1& "."
-		LogError "Bluetooth Passkey2 = " &universal passkey2& "."
-		LogError "Bluetooth Passkeys are not identical."
-	end if
-end AuthenticateBluetoothPasskeys
 
 to OutputLogSaveLocation
 	set savelocation1 to ReadText("Device/Apps/MLog/AndroidSaveLocation1")

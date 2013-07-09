@@ -1,184 +1,5 @@
 //These handlers will set the system into a given state.
-
-to MuteMedia
-	Log "Muting Media."
-	run ClassNavigate.OpenApp(Settings)
-	run ClassNavigate.SettingsOption(Sound)
-	wait 1 second
-	Click (Text:"Volumes")
-	wait 1 second
-	Drag (420,300)
-	Drop (135,300)
-	Click (Text:"OK")
-	wait 1 second
-	Click "Device/System/HomeButton"
-end MuteMedia
-
-to UnMuteMedia
-	Log "Unmuting Media."
-	run ClassNavigate.OpenApp(Settings)
-	run ClassNavigate.SettingsOption(Sound)
-	Click (Text:"Volumes")
-	wait 1 second
-	Drag (140,300)
-	Drop (430,300)
-	Click (Text:"OK")
-	wait 1 second
-	Click "Device/System/HomeButton"
-end UnMuteMedia
-
-to MuteNotifications
-	Log "Muting notifications."
-	run ClassNavigate.OpenApp(Settings)
-	run ClassNavigate.SettingsOption(Sound)
-	Click (Text:"Volumes")
-	wait 1 second
-	Drag (420,450)
-	Drop (125,450)
-	Click (Text:"OK")
-	wait 1 second
-	Click "Device/System/HomeButton"
-end MuteNotifications
-
-to UnMuteNotifications
-	Log "Unmuting notifications."
-	run ClassNavigate.OpenApp(Settings)
-	run ClassNavigate.SettingsOption(Sound)
-	Click (Text:"Volumes")
-	wait 1 second
-	Drag (125,450)
-	Drop (420,450)
-	Click (Text:"OK")
-	wait 1 second
-	Click "Device/System/HomeButton"
-end UnMuteNotifications
-
-to SetBrowserHomepageToDefault
-	Log "Setting browser homepage to default."
-	Click "Device/System/MenuButton"
-	wait 1 second
-	Click (Text:"Settings")
-	Click (Text:"General")
-	wait 1 second
-	Click (Text:"Set homepage")
-	wait 1 second
-	Click (Text:"Default")
-	wait 1 second
-	Click "Device/System/BackIcon"
-	Click "Device/System/BackIcon"
-	wait 2 seconds
-	Click "Device/System/MenuButton"
-	wait 1 second
-	Click (Text:"Find on page")
-	wait 1 second
-	Click "Device/System/BackIcon"
-	Click "Device/System/BackIcon"
-	wait 2 second
-	run ClassUtilities.ConfirmTextOnScreen("google.com") //google is default
-	Click "Device/System/HomeButton"
-	Click "Device/Apps/Browser/BrowserIcon"
-	wait 2 seconds
-end SetBrowserHomepageToDefault
-
-to CloseAllBrowserTabs
-	Log "Closing all browser tabs."
-	wait 2 seconds
-	Click "Device/System/MenuButton"
-	wait 2 seconds
-	Click (Text:"Find on page")
-	wait 1 second
-	Click "Device/System/BackIcon"
-	Click "Device/System/BackIcon"
-	Click "Device/Apps/Browser/TabsButton"
-	wait 2 second
-	repeat until ImageFound("Device/Apps/Browser/DeleteTab") is "false"
-		if ImageFound("Device/Apps/Browser/DeleteTab") then
-			Log "Deleting browser tab."
-			Click "Device/Apps/Browser/DeleteTab"
-			wait 1 second
-		end if
-	end repeat		
-	Click "Device/Apps/Browser/BrowserIcon"
-	wait 2 seconds
-end CloseAllBrowserTabs
-
-to DeleteContact name
-	Log "Deleting contact."
-	repeat until ImageFound(Text:name) is "false"
-		if ImageFound(Text:name) then
-			Click (Text:name)
-			Click "Device/System/MenuButton"
-			Click (Text:"Delete")
-			run ClassUtilities.ConfirmTextOnScreen("contact will")
-			run ClassUtilities.ConfirmTextOnScreen("be deleted")
-			Click (Text:"OK")
-		end if
-	end repeat
-	wait 3 seconds
-end DeleteContact
-
-to UninstallApp name
-	Log "Uninstalling " &name& " app, if present."
-	run ClassNavigate.OpenApp(Settings)
-	run ClassNavigate.SettingsOption(Apps)
-	if ImageFound(Text:name) then
-		Log "App present.  Uninstalling..."
-		Click (Text:name)
-		Click (Text:"Uninstall")
-		wait 1 second
-		Click (Text:"OK")
-		run ClassUtilities.ConfirmTextOnScreen("Uninstall finished")
-		Click (Text:"OK")
-		run ClassUtilities.ConfirmTextNotOnScreen(name)
-	end if
-	Click "Device/System/HomeButton"
-	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
-end UninstallApp
-
-to ResetContacts
-	Log "Resetting test contacts to defaults."
-	run ClassNavigate.OpenApp(People)
-	Click "Device/Apps/People/Contacts"
-	ScrollWheelUp 5
-	run ClassScriptConfig.SetTestContactData
-	Log "Default test contact name is set to: " &universal fulltestname& "."
-	repeat until ImageFound(Text:universal fulltestname) = "false"
-		if ImageFound(Text:universal fulltestname) = "true"
-			Click(Text:universal fulltestname)
-		end if
-		wait 1 second
-		run ClassUtilities.ConfirmTextOnScreen(universal fulltestname)
-		Click "Device/System/MenuButton"
-		Click (Text:"Delete")
-		run ClassUtilities.ConfirmTextOnScreen("contact will")
-		run ClassUtilities.ConfirmTextOnScreen("be deleted")
-		Click (Text:"OK")
-		wait 1 second
-	end repeat
-	Log "Test contacts have been reset."
-	Click "Device/System/HomeButton"
-	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
-end ResetContacts
-
-to ClearContacts
-	Log "Clearing entire contacts list."
-	run ClassNavigate.OpenApp(People)
-	Click "Device/Apps/People/Contacts"
-	ScrollWheelUp 10
-	repeat until ImageFound(3, "Device/Apps/People/ContactPicture") is "false"
-		wait 1 second
-		Click "Device/Apps/People/ContactPicture"
-		wait 1 second
-		Click "Device/System/MenuButton"
-		Click (Text:"Delete")
-		run ClassUtilities.ConfirmTextOnScreen("contact will")
-		run ClassUtilities.ConfirmTextOnScreen("be deleted")
-		Click (Text:"OK")
-		Log "Contact deleted."
-		wait 1 second
-	end repeat
-	Log "Entire contacts list cleared."
-end ClearContacts
+//Ordered alphabetically
 
 to AddContactDeviceA
 	run ClassScriptConfig.SetContactDataforDeviceB
@@ -248,6 +69,145 @@ to AddContactDeviceB
 	wait 5 seconds
 end AddContactDeviceB
 
+to ClearContacts
+	Log "Clearing entire contacts list."
+	run ClassNavigate.OpenApp(People)
+	Click "Device/Apps/People/Contacts"
+	ScrollWheelUp 10
+	repeat until ImageFound(3, "Device/Apps/People/ContactPicture") is "false"
+		wait 1 second
+		Click "Device/Apps/People/ContactPicture"
+		wait 1 second
+		Click "Device/System/MenuButton"
+		Click (Text:"Delete")
+		run ClassUtilities.ConfirmTextOnScreen("contact will")
+		run ClassUtilities.ConfirmTextOnScreen("be deleted")
+		Click (Text:"OK")
+		Log "Contact deleted."
+		wait 1 second
+	end repeat
+	Log "Entire contacts list cleared."
+end ClearContacts
+
+to CloseAllBrowserTabs
+	Log "Closing all browser tabs."
+	wait 2 seconds
+	Click "Device/System/MenuButton"
+	wait 2 seconds
+	Click (Text:"Find on page")
+	wait 1 second
+	Click "Device/System/BackIcon"
+	Click "Device/System/BackIcon"
+	Click "Device/Apps/Browser/TabsButton"
+	wait 2 second
+	repeat until ImageFound("Device/Apps/Browser/DeleteTab") is "false"
+		if ImageFound("Device/Apps/Browser/DeleteTab") then
+			Log "Deleting browser tab."
+			Click "Device/Apps/Browser/DeleteTab"
+			wait 1 second
+		end if
+	end repeat		
+	Click "Device/Apps/Browser/BrowserIcon"
+	wait 2 seconds
+end CloseAllBrowserTabs
+
+to DeleteBluetoothPairs
+	Log "Deleting Bluetooth pairs."
+	repeat until ImageFound("Device/Apps/Settings/MoreSettingsIcon") = "false"
+		Click "Device/Apps/Settings/MoreSettingsIcon"
+		wait 1 second
+		Click (Text:"Unpair")
+		WaitFor 60, Text:"SEARCH FOR DEVICES"
+	end repeat
+	Log "Bluetooth pairs cleared."
+end DeleteBluetoothPairs
+
+to DeleteContact name
+	Log "Deleting contact."
+	repeat until ImageFound(Text:name) is "false"
+		if ImageFound(Text:name) then
+			Click (Text:name)
+			Click "Device/System/MenuButton"
+			Click (Text:"Delete")
+			run ClassUtilities.ConfirmTextOnScreen("contact will")
+			run ClassUtilities.ConfirmTextOnScreen("be deleted")
+			Click (Text:"OK")
+		end if
+	end repeat
+	wait 3 seconds
+end DeleteContact
+
+to ForgetAllWifiConnections
+	Log "Forgetting all Wifi connections."
+	repeat until (ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "false"
+		if(ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "true"
+			wait 1 second
+			Click (Text:"Connected")
+			wait 1 second
+			Click (Text:"Forget")
+			wait 2 seconds
+		end if
+	end repeat
+	Log "All Wifi connections cleared."
+end ForgetAllWifiConnections
+
+to MuteMedia
+	Log "Muting Media."
+	run ClassNavigate.OpenApp(Settings)
+	run ClassNavigate.SettingsOption(Sound)
+	wait 1 second
+	Click (Text:"Volumes")
+	wait 1 second
+	Drag (420,300)
+	Drop (135,300)
+	Click (Text:"OK")
+	wait 1 second
+	Click "Device/System/HomeButton"
+end MuteMedia
+
+to MuteNotifications
+	Log "Muting notifications."
+	run ClassNavigate.OpenApp(Settings)
+	run ClassNavigate.SettingsOption(Sound)
+	Click (Text:"Volumes")
+	wait 1 second
+	Drag (420,450)
+	Drop (125,450)
+	Click (Text:"OK")
+	wait 1 second
+	Click "Device/System/HomeButton"
+end MuteNotifications
+
+to ResetAlarms
+	Log "Resetting alarms to blank state."
+	run ClassNavigate.OpenApp(Clock)
+	Click (Text:"Set alarm")
+	wait 1 second
+	Log "De-activating any active alarms."
+	repeat until ImageFound("Device/Apps/Settings/CheckboxSelected") is "false"
+		if ImageFound("Device/Apps/Settings/CheckboxSelected") 
+			Click "Device/Apps/Settings/CheckboxSelected"
+			wait 1 second
+		end if
+	end repeat
+	wait 1 second
+	Log "Deleting any present alarms."
+	repeat until ImageFound("Device/Apps/Settings/CheckboxUnselected") is "false"
+		if ImageFound("Device/Apps/Settings/CheckboxUnselected") 
+			Click "Device/Apps/Settings/CheckboxUnselectedClickRight"
+			wait 1 second
+			Click "Device/AppIcons/TrashcanIcon"
+			wait 1 second
+			Click (Text:"OK")
+			wait 1 second
+		end if
+	end repeat
+	Log "Returning to main screen."
+	Click (Text:"Alarms")
+	run ClassUtilities.ConfirmTextOnScreen("Set alarm")
+	Click "Device/System/HomeButton"
+end ResetAlarms
+
 to ResetCalendar event
 	Log "Resetting calendar to default page."
 	run ClassNavigate.OpenApp(Calendar)
@@ -303,87 +263,30 @@ to ResetCalendar event
 	Log "Calendar has been reset."
 end ResetCalendar
 
-to ResetAlarms
-	Log "Resetting alarms to blank state."
-	run ClassNavigate.OpenApp(Clock)
-	Click (Text:"Set alarm")
-	wait 1 second
-	Log "De-activating any active alarms."
-	repeat until ImageFound("Device/Apps/Settings/CheckboxSelected") is "false"
-		if ImageFound("Device/Apps/Settings/CheckboxSelected") 
-			Click "Device/Apps/Settings/CheckboxSelected"
-			wait 1 second
+to ResetContacts
+	Log "Resetting test contacts to defaults."
+	run ClassNavigate.OpenApp(People)
+	Click "Device/Apps/People/Contacts"
+	ScrollWheelUp 5
+	run ClassScriptConfig.SetTestContactData
+	Log "Default test contact name is set to: " &universal fulltestname& "."
+	repeat until ImageFound(Text:universal fulltestname) = "false"
+		if ImageFound(Text:universal fulltestname) = "true"
+			Click(Text:universal fulltestname)
 		end if
+		wait 1 second
+		run ClassUtilities.ConfirmTextOnScreen(universal fulltestname)
+		Click "Device/System/MenuButton"
+		Click (Text:"Delete")
+		run ClassUtilities.ConfirmTextOnScreen("contact will")
+		run ClassUtilities.ConfirmTextOnScreen("be deleted")
+		Click (Text:"OK")
+		wait 1 second
 	end repeat
-	wait 1 second
-	Log "Deleting any present alarms."
-	repeat until ImageFound("Device/Apps/Settings/CheckboxUnselected") is "false"
-		if ImageFound("Device/Apps/Settings/CheckboxUnselected") 
-			Click "Device/Apps/Settings/CheckboxUnselectedClickRight"
-			wait 1 second
-			Click "Device/AppIcons/TrashcanIcon"
-			wait 1 second
-			Click (Text:"OK")
-			wait 1 second
-		end if
-	end repeat
-	Log "Returning to main screen."
-	Click (Text:"Alarms")
-	run ClassUtilities.ConfirmTextOnScreen("Set alarm")
+	Log "Test contacts have been reset."
 	Click "Device/System/HomeButton"
-end ResetAlarms
-
-to Set2GNetwork value
-	if value = "On"
-		if(ImageFound(3, "Device/Apps/Settings/2GnetworksHighlighted")) = "true"
-			wait 2 seconds
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/2GnetworksHighlighted")
-			Log "2G networks only - setting is on."
-		else
-			Click (Text:"2G networks")
-			wait 1 second
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/2GnetworksHighlighted")
-			Log "2G networks only - setting is on."
-		end if
-	end if 
-	if value = "Off"
-		if(ImageFound(3, "Device/Apps/Settings/2GnetworksHighlighted")) = "true"
-			Click (Text:"2G networks")
-			wait 1 second
-			run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Settings/2GnetworksHighlighted")
-			Log "2G networks only - setting is off."
-		else
-			wait 2 seconds
-			Log "2G networks only - setting is off."
-		end if
-	end if	
-end Set2GNetwork
-
-to SetVibrateWhenRinging value
-	if value = "On"
-		if(ImageFound(3, "Device/Apps/Settings/VibrateWhenRingingHighlighted")) = "true"
-			wait 2 seconds
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/VibrateWhenRingingHighlighted")
-			Log "Vibrate when ringing - setting is already on."
-		else
-			Click (Text:"Vibrate when")
-			wait 1 second
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/VibrateWhenRingingHighlighted")
-			Log "Vibrate when ringing - setting is now on."
-		end if
-	end if 
-	if value = "Off"
-		if(ImageFound(3, "Device/Apps/Settings/VibrateWhenRingingHighlighted")) = "true"
-			Click (Text:"Vibrate when")
-			wait 1 second
-			run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Settings/VibrateWhenRingingHighlighted")
-			Log "Vibrate when ringing - setting is now off."
-		else
-			wait 2 seconds
-			Log "Vibrate when ringing - setting is already off."
-		end if
-	end if	
-end SetVibrateWhenRinging
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+end ResetContacts
 
 to ResetEmail
 	Log "Resetting email app to inbox."
@@ -428,27 +331,125 @@ to ResetWifiToDefault
 	Click "Device/System/Backicon"
 end ResetWifiToDefault
 
-to ForgetAllWifiConnections
-	Log "Forgetting all Wifi connections."
-	repeat until (ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "false"
-		if(ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "true"
-			wait 1 second
-			Click (Text:"Connected")
-			wait 1 second
-			Click (Text:"Forget")
+to Set2GNetwork value
+	if value = "On"
+		if(ImageFound(3, "Device/Apps/Settings/2GnetworksHighlighted")) = "true"
 			wait 2 seconds
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/2GnetworksHighlighted")
+			Log "2G networks only - setting is on."
+		else
+			Click (Text:"2G networks")
+			wait 1 second
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/2GnetworksHighlighted")
+			Log "2G networks only - setting is on."
 		end if
-	end repeat
-	Log "All Wifi connections cleared."
-end ForgetAllWifiConnections
+	end if 
+	if value = "Off"
+		if(ImageFound(3, "Device/Apps/Settings/2GnetworksHighlighted")) = "true"
+			Click (Text:"2G networks")
+			wait 1 second
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Settings/2GnetworksHighlighted")
+			Log "2G networks only - setting is off."
+		else
+			wait 2 seconds
+			Log "2G networks only - setting is off."
+		end if
+	end if	
+end Set2GNetwork
 
-to DeleteBluetoothPairs
-	Log "Deleting Bluetooth pairs."
-	repeat until ImageFound("Device/Apps/Settings/MoreSettingsIcon") = "false"
-		Click "Device/Apps/Settings/MoreSettingsIcon"
+to SetBrowserHomepageToDefault
+	Log "Setting browser homepage to default."
+	Click "Device/System/MenuButton"
+	wait 1 second
+	Click (Text:"Settings")
+	Click (Text:"General")
+	wait 1 second
+	Click (Text:"Set homepage")
+	wait 1 second
+	Click (Text:"Default")
+	wait 1 second
+	Click "Device/System/BackIcon"
+	Click "Device/System/BackIcon"
+	wait 2 seconds
+	Click "Device/System/MenuButton"
+	wait 1 second
+	Click (Text:"Find on page")
+	wait 1 second
+	Click "Device/System/BackIcon"
+	Click "Device/System/BackIcon"
+	wait 2 second
+	run ClassUtilities.ConfirmTextOnScreen("google.com") //google is default
+	Click "Device/System/HomeButton"
+	Click "Device/Apps/Browser/BrowserIcon"
+	wait 2 seconds
+end SetBrowserHomepageToDefault
+
+to SetVibrateWhenRinging value
+	if value = "On"
+		if(ImageFound(3, "Device/Apps/Settings/VibrateWhenRingingHighlighted")) = "true"
+			wait 2 seconds
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/VibrateWhenRingingHighlighted")
+			Log "Vibrate when ringing - setting is already on."
+		else
+			Click (Text:"Vibrate when")
+			wait 1 second
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/VibrateWhenRingingHighlighted")
+			Log "Vibrate when ringing - setting is now on."
+		end if
+	end if 
+	if value = "Off"
+		if(ImageFound(3, "Device/Apps/Settings/VibrateWhenRingingHighlighted")) = "true"
+			Click (Text:"Vibrate when")
+			wait 1 second
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Settings/VibrateWhenRingingHighlighted")
+			Log "Vibrate when ringing - setting is now off."
+		else
+			wait 2 seconds
+			Log "Vibrate when ringing - setting is already off."
+		end if
+	end if	
+end SetVibrateWhenRinging
+
+to UninstallApp name
+	Log "Uninstalling " &name& " app, if present."
+	run ClassNavigate.OpenApp(Settings)
+	run ClassNavigate.SettingsOption(Apps)
+	if ImageFound(Text:name) then
+		Log "App present.  Uninstalling..."
+		Click (Text:name)
+		Click (Text:"Uninstall")
 		wait 1 second
-		Click (Text:"Unpair")
-		WaitFor 60, Text:"SEARCH FOR DEVICES"
-	end repeat
-	Log "Bluetooth pairs cleared."
-end DeleteBluetoothPairs
+		Click (Text:"OK")
+		run ClassUtilities.ConfirmTextOnScreen("Uninstall finished")
+		Click (Text:"OK")
+		run ClassUtilities.ConfirmTextNotOnScreen(name)
+	end if
+	Click "Device/System/HomeButton"
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+end UninstallApp
+
+to UnMuteMedia
+	Log "Unmuting Media."
+	run ClassNavigate.OpenApp(Settings)
+	run ClassNavigate.SettingsOption(Sound)
+	Click (Text:"Volumes")
+	wait 1 second
+	Drag (140,300)
+	Drop (430,300)
+	Click (Text:"OK")
+	wait 1 second
+	Click "Device/System/HomeButton"
+end UnMuteMedia
+
+to UnMuteNotifications
+	Log "Unmuting notifications."
+	run ClassNavigate.OpenApp(Settings)
+	run ClassNavigate.SettingsOption(Sound)
+	Click (Text:"Volumes")
+	wait 1 second
+	Drag (125,450)
+	Drop (420,450)
+	Click (Text:"OK")
+	wait 1 second
+	Click "Device/System/HomeButton"
+end UnMuteNotifications

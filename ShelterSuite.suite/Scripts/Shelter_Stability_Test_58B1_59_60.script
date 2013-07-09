@@ -14,6 +14,7 @@ run ClassUtilities.ConfirmTextOnScreen(universal lastnamedevicea)
 run ClassUtilities.ConfirmTextOnScreen("MOBILE")
 
 //Motorola Shelter Stability Test 59 - Switch from the telephony app to another app
+Log "Switching from Phone App to another app."
 Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/PhoneAppInBackground")
 run ClassNavigate.OpenTaskbar
@@ -27,6 +28,7 @@ run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/PhoneAppInBackgro
 Click (Text:"Return to call")
 
 //Motorola Shelter Stability Test 60 - End the phone call
+Log "Terminating phone call."
 Click "Device/Apps/Telephone/EndCall"
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Telephone/EndCall")
 wait 3 seconds
@@ -37,6 +39,7 @@ run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
 Click "Device/Apps/Telephone/HistoryIcon"
 run ClassUtilities.ConfirmTextInArea(universal firstnamedevicea),("10,100"),("450,225")
 run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Telephone/0MinsAgo",   SearchRectangle:((10,100),(450,225)))
+Log "Phone call data confirmed."
 run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/PhoneAppInBackground")
 Click "Device/System/HomeButton"
 

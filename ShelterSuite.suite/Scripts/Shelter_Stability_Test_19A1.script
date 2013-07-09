@@ -8,6 +8,7 @@ run ClassNavigate.ResetState
 //Subroutine A1 -- Shelter Device A - Send an email with an attachment to Shelter Device B
 run ClassNavigate.OpenApp(Email)
 run ClassConfigure.ResetEmail
+Log "Composing new email."
 Click "Device/Apps/Email/ComposeEmail"
 wait 1 second
 TypeText universal firstnamedeviceb
@@ -21,6 +22,7 @@ run ClassUtilities.ConfirmTextInArea("Test email with attachment"),("10,250"),("
 Click (Text:"Compose email")
 TypeText "Sent from " &universal firstnamedeviceb& "."
 run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,350"),("450,450")
+Log "Adding attachment."
 Click "Device/Apps/Email/AttachmentButton"
 Click (Text:"Pictures")
 Click "Device/Apps/Messaging/ImageAttachmentSample1a"
@@ -28,6 +30,7 @@ wait 1 second
 Click "Device/Apps/Messaging/ImageAttachmentSample1a"
 run ClassUtilities.ConfirmTextInArea("Image Attachment"),("5,325"),("470,400")
 run ClassUtilities.ConfirmTextInArea("jpg"),("5,325"),("470,400")
+Log "Sending email."
 Click "Device/Apps/Email/SendEmail"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("Inbox")

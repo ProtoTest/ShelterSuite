@@ -15,13 +15,16 @@ run ClassUtilities.ConfirmTextOnScreen("Messaging")
 Click "Device/Apps/Messaging/NewMessageIcon"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("New message")
+Log "Creating new text message."
 Click (Text:"To")
 wait 1 second
 TypeText universal firstnamedeviceb
 wait 1 second
 Click (Text:universal fullnamedeviceb)
 run ClassUtilities.ConfirmTextInArea(universal fullnamedeviceb),("10,100"),("450,200")
+Click (Text:"message")
 wait 1 second
+Log "Adding text."
 TypeText "The quick brown fox jumped over the lazy dog. "
 TypeText "The quick brown fox jumped over the lazy dog. "
 TypeText "The quick brown fox jumped over the lazy dog. "
@@ -31,13 +34,16 @@ run ClassUtilities.ConfirmTextInArea("quick brown fox"),("10,315"),("470,425")
 run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,315"),("470,425")
 run ClassUtilities.ConfirmTextInArea("0"),("390,315"),("470,365")
 run ClassUtilities.ConfirmTextNotInArea("/ 2"),("390,315"),("470,365")
+Log "Sending message."
 Click "Device/Apps/Messaging/SendMessage"
 wait 3 seconds
-ScrollWheelDown 10
+ScrollWheelDown 3
 run ClassUtilities.ConfirmTextInArea("quick brown fox"),("10,100"),("470,325")
 run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,100"),("470,325")
-run ClassUtilities.ConfirmTextOnScreen("Type message")
+run ClassUtilities.ConfirmTextOnScreen("message")
+Log "Text message sent."
 Click "Device/System/BackIcon"
+wait 1 second
 Click "Device/System/BackIcon"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("Messaging")

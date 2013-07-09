@@ -9,7 +9,9 @@ run ClassUtilities.ConfirmTextOnScreen("MOBILE")
 run ClassNavigate.AnswerCall
 run ClassUtilities.ConfirmTextOnScreen(universal firstnamedevicea)
 run ClassUtilities.ConfirmTextOnScreen("MOBILE")
+Log "Terminating phone call."
 Click "Device/Apps/Telephone/EndCall"
+wait 2 seconds
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Telephone/EndCall")
 Click "Device/AppIcons/TelephoneApp"
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
@@ -18,6 +20,7 @@ run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
 Click "Device/Apps/Telephone/HistoryIcon"
 run ClassUtilities.ConfirmTextInArea(universal firstnamedevicea),("10,100"),("450,225")
 run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Telephone/0MinsAgo",   SearchRectangle:((10,100),(450,225)))
+Log "Phone call data confirmed."
 Click "Device/System/HomeButton"
 
 //Teardown

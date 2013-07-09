@@ -9,6 +9,7 @@ run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
 Click "Device/Apps/Telephone/HistoryIcon"
 run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,100"),("450,225")
 run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Telephone/0MinsAgo",   SearchRectangle:((10,100),(450,225)))
+Log "Phone call data confirmed."
 Click "Device/System/HomeButton"
 
 //Teardown

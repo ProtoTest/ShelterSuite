@@ -6,7 +6,7 @@
 run ClassNavigate.ResetState
 
 //Subroutine B1 -- Shelter Device B - Receive Incoming email with an attachment from Shelter Device A and Open Message
-wait 10 seconds
+wait 30 seconds
 run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/EmailReceived")
 run ClassNavigate.OpenApp(Email)
 run ClassConfigure.ResetEmail
@@ -20,6 +20,7 @@ Click (Text:"Attachment", SearchRectangle:((5,300),(470,375)))
 wait 5 seconds
 run ClassUtilities.ConfirmTextInArea("SAVE"),("5,400"),("470,500")
 run ClassUtilities.ConfirmTextInArea("VIEW"),("5,400"),("470,500")
+Log "Email received."
 Click "Device/System/BackIcon"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("Inbox")

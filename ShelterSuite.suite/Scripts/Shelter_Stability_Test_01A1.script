@@ -15,7 +15,9 @@ run ClassConfigure.Set2Gnetwork(On)
 Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 3 seconds
+Log "Opening Telephone App."
 Click "Device/AppIcons/TelephoneApp"
 Click "Device/Apps/Telephone/ContactsIcon"
+Log "Calling contact."
 Click (Text:universal firstnamedeviceb)
 run ClassUtilities.ConfirmTextOnScreen("DIALING")

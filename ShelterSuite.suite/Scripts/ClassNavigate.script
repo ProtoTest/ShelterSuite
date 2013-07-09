@@ -1,43 +1,16 @@
 //Generic device-level navigation methods
+//Ordered alphabetically
 
-to UnlockDevice
-	if(ImageFound("Device/System/LockIcon")) is not "false"
-		Log "Device is locked.  Now unlocking..."
-		Drag "Device/System/LockIcon"
-		wait 1 second
+to AnswerCall
+	Log "Answering phone call."
+	if(ImageFound("Device/Apps/Telephone/IncomingCall"))
+		Drag "Device/Apps/Telephone/IncomingCall"
+		//wait 1 second
 		Drop (460,635)
 		//Drop "Device/System/Unlockicon" [mechanism unstable]
 		wait 1 second
 	end if
-end UnlockDevice
-
-to ResetState
-	if ImageFound(3, "Device/System/AppsIcon") = "true"
-		wait 1 second
-		Log "Device is on home screen."
-	else
-		if ImageFound(3, Text:"OK", CaseSensitive: true) = "true"
-			Click (Text:"OK")
-			Log "Android warning popup detected.  OK selected."
-		end if
-		Log "Returning to home screen."
-		run ClassNavigate.UnlockDevice
-		Click "Device/System/HomeButton"
-		wait 1 second
-		Click "Device/System/HomeButton"
-		wait 1 second
-		run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
-		wait 1 second
-	end if
-end ResetState
-
-to OpenTaskBar
-	Log "Opening taskbar."
-	Drag (240,25)
-	Drop (240,424)
-	wait 1 second
-	run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/TaskbarDropdownBar")
-end OpenTaskBar
+end AnswerCall
 
 to CloseTaskBar
 	Log "Closing taskbar."
@@ -46,29 +19,103 @@ to CloseTaskBar
 	run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/TaskbarDropdownBar")
 end CloseTaskBar
 
-to SwipeLeft
-	Log "Swiping left."
-	Drag (460,125)
-	Drop (260,125)
-end SwipeLeft
+to DialDefaultPhoneNumber
+	run ClassScriptConfig.SetDefaultPhoneNumber
+	set string to universal defaultphonenumber
+	repeat with each character number of string
+		if number = 0
+			Click "Device/Apps/Telephone/PhoneDial0"
+		end if
+		if number = 1
+			Click "Device/Apps/Telephone/PhoneDial1"
+		end if
+		if number = 2
+			Click "Device/Apps/Telephone/PhoneDial2"
+		end if
+		if number = 3
+			Click "Device/Apps/Telephone/PhoneDial3"
+		end if
+		if number = 4
+			Click "Device/Apps/Telephone/PhoneDial4"
+		end if
+		if number = 5
+			Click "Device/Apps/Telephone/PhoneDial5"
+		end if
+		if number = 6
+			Click "Device/Apps/Telephone/PhoneDial6"
+		end if
+		if number = 7
+			Click "Device/Apps/Telephone/PhoneDial7"
+		end if
+		if number = 8
+			Click "Device/Apps/Telephone/PhoneDial8"
+		end if
+		if number = 9
+			Click "Device/Apps/Telephone/PhoneDial9"
+		end if
+	end repeat
+	run ClassScriptConfig.ConfirmDefaultPhoneNumber
+	Log "Default phone number entered."
+end DialDefaultPhoneNumber
 
-to SwipeRight
-	Log "Swiping right."
-	Drag (100,125)
-	Drop (300,125)
-end SwipeRight
+to DialPhoneNumber phonenumber
+	set string to phonenumber
+	repeat with each character number of string
+		if number = 0
+			Click "Device/Apps/Telephone/PhoneDial0"
+		end if
+		if number = 1
+			Click "Device/Apps/Telephone/PhoneDial1"
+		end if
+		if number = 2
+			Click "Device/Apps/Telephone/PhoneDial2"
+		end if
+		if number = 3
+			Click "Device/Apps/Telephone/PhoneDial3"
+		end if
+		if number = 4
+			Click "Device/Apps/Telephone/PhoneDial4"
+		end if
+		if number = 5
+			Click "Device/Apps/Telephone/PhoneDial5"
+		end if
+		if number = 6
+			Click "Device/Apps/Telephone/PhoneDial6"
+		end if
+		if number = 7
+			Click "Device/Apps/Telephone/PhoneDial7"
+		end if
+		if number = 8
+			Click "Device/Apps/Telephone/PhoneDial8"
+		end if
+		if number = 9
+			Click "Device/Apps/Telephone/PhoneDial9"
+		end if
+	end repeat
+	Log "Phone number entered."
+end DialPhoneNumber
 
-to SwipeUp
-	Log "Swiping up."
-	Drag (465,500)
-	Drop (465,340)
-end SwipeUp
+to GoToBrowserAddress address
+	Log "Going to website " &address& "."
+	Click "Device/System/MenuButton"
+	wait 1 second
+	Click (Text:"Find on page", SearchRectangle:((40,100),(440,800)))
+	wait 1 second
+	Click "Device/System/BackIcon"
+	Click "Device/System/BackIcon"
+	wait 2 second
+	Click (240,50)
+	TypeText (address)
+	wait 1 second
+	Click "Device/Apps/Browser/GoButton"
+	wait 5 seconds
+end GoToBrowserAddress
 
-to SwipeDown
-	Log "Swiping down."
-	Drag (465,340)
-	Drop (465,500)
-end SwipeDown
+to GoHome
+	if(ImageFound("Device/System/AppsIcon")) is not "false"
+		Click "Device/System/HomeButton"
+	end if
+end GoHome
 
 to OpenApp name
 	Log "Opening apps menu."
@@ -149,6 +196,46 @@ to OpenApp name
 	wait 1 second
 end OpenApp
 
+to OpenTaskBar
+	Log "Opening taskbar."
+	Drag (240,25)
+	Drop (240,424)
+	wait 1 second
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/TaskbarDropdownBar")
+end OpenTaskBar
+
+to ResetState
+	if ImageFound(3, "Device/System/AppsIcon") = "true"
+		wait 1 second
+		Log "Device is on home screen."
+	else
+		if ImageFound(3, Text:"OK", CaseSensitive: true) = "true"
+			Click (Text:"OK")
+			Log "Android warning popup detected.  OK selected."
+		end if
+		Log "Returning to home screen."
+		run ClassNavigate.UnlockDevice
+		Click "Device/System/HomeButton"
+		wait 1 second
+		Click "Device/System/HomeButton"
+		wait 1 second
+		run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+		wait 1 second
+	end if
+end ResetState
+
+to SwipeDown
+	Log "Swiping down."
+	Drag (465,340)
+	Drop (465,500)
+end SwipeDown
+
+to SwipeLeft
+	Log "Swiping left."
+	Drag (460,125)
+	Drop (260,125)
+end SwipeLeft
+
 to SettingsOption name
 	Log "Beginning at top of Options List."
 	ScrollWheelUp 10
@@ -225,111 +312,25 @@ to SettingsOption name
 	wait 1 second
 end SettingsOption
 
-to GoToBrowserAddress address
-	Log "Going to website " &address& "."
-	Click "Device/System/MenuButton"
-	wait 1 second
-	Click (Text:"Find on page", SearchRectangle:((40,100),(440,800)))
-	wait 1 second
-	Click "Device/System/BackIcon"
-	Click "Device/System/BackIcon"
-	wait 2 second
-	Click (240,50)
-	TypeText (address)
-	wait 1 second
-	Click "Device/Apps/Browser/GoButton"
-	wait 5 seconds
-end GoToBrowserAddress
+to SwipeRight
+	Log "Swiping right."
+	Drag (100,125)
+	Drop (300,125)
+end SwipeRight
 
-to GoHome
-	if(ImageFound("Device/System/AppsIcon")) is not "false"
-		Click "Device/System/HomeButton"
-	end if
-end GoHome
+to SwipeUp
+	Log "Swiping up."
+	Drag (465,500)
+	Drop (465,340)
+end SwipeUp
 
-to AnswerCall
-	Log "Answering phone call."
-	if(ImageFound("Device/Apps/Telephone/IncomingCall"))
-		Drag "Device/Apps/Telephone/IncomingCall"
-		//wait 1 second
+to UnlockDevice
+	if(ImageFound("Device/System/LockIcon")) is not "false"
+		Log "Device is locked.  Now unlocking..."
+		Drag "Device/System/LockIcon"
+		wait 1 second
 		Drop (460,635)
 		//Drop "Device/System/Unlockicon" [mechanism unstable]
 		wait 1 second
 	end if
-end AnswerCall
-
-to DialPhoneNumber phonenumber
-	set string to phonenumber
-	repeat with each character number of string
-		if number = 0
-			Click "Device/Apps/Telephone/PhoneDial0"
-		end if
-		if number = 1
-			Click "Device/Apps/Telephone/PhoneDial1"
-		end if
-		if number = 2
-			Click "Device/Apps/Telephone/PhoneDial2"
-		end if
-		if number = 3
-			Click "Device/Apps/Telephone/PhoneDial3"
-		end if
-		if number = 4
-			Click "Device/Apps/Telephone/PhoneDial4"
-		end if
-		if number = 5
-			Click "Device/Apps/Telephone/PhoneDial5"
-		end if
-		if number = 6
-			Click "Device/Apps/Telephone/PhoneDial6"
-		end if
-		if number = 7
-			Click "Device/Apps/Telephone/PhoneDial7"
-		end if
-		if number = 8
-			Click "Device/Apps/Telephone/PhoneDial8"
-		end if
-		if number = 9
-			Click "Device/Apps/Telephone/PhoneDial9"
-		end if
-	end repeat
-	Log "Phone number entered."
-end DialPhoneNumber
-
-to DialDefaultPhoneNumber
-	run ClassScriptConfig.SetDefaultPhoneNumber
-	set string to universal defaultphonenumber
-	repeat with each character number of string
-		if number = 0
-			Click "Device/Apps/Telephone/PhoneDial0"
-		end if
-		if number = 1
-			Click "Device/Apps/Telephone/PhoneDial1"
-		end if
-		if number = 2
-			Click "Device/Apps/Telephone/PhoneDial2"
-		end if
-		if number = 3
-			Click "Device/Apps/Telephone/PhoneDial3"
-		end if
-		if number = 4
-			Click "Device/Apps/Telephone/PhoneDial4"
-		end if
-		if number = 5
-			Click "Device/Apps/Telephone/PhoneDial5"
-		end if
-		if number = 6
-			Click "Device/Apps/Telephone/PhoneDial6"
-		end if
-		if number = 7
-			Click "Device/Apps/Telephone/PhoneDial7"
-		end if
-		if number = 8
-			Click "Device/Apps/Telephone/PhoneDial8"
-		end if
-		if number = 9
-			Click "Device/Apps/Telephone/PhoneDial9"
-		end if
-	end repeat
-	run ClassScriptConfig.ConfirmDefaultPhoneNumber
-	Log "Default phone number entered."
-end DialDefaultPhoneNumber
+end UnlockDevice

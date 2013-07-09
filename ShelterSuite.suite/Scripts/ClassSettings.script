@@ -1,4 +1,5 @@
 //Handlers from the settings app
+//Ordered alphabetically
 
 (*to OpenMenu name
 	repeat until ImageFound(Text:name) is "true"
@@ -7,36 +8,83 @@
 	Click (Text:name)
 end OpenMenu*)
 
-to SetWifi value
+to SetBluetooth value
 	ScrollWheelUp 5
-	Log "Setting Wifi to desired state."
+	Log "Setting Bluetooth connection to desired state."
 	if value = "On"
-		if(ImageFound("Device/Apps/Settings/WiFiOn")) is "true"
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOn")
+		if(ImageFound("Device/Apps/Settings/BluetoothOn")) is "true"
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/BluetoothOn")
 			wait 1 second
-			Log "Wifi setting is already active."
+			run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/BluetoothActive")
+			Log "Bluetooth is already active."
 		else
-			Click("Device/Apps/Settings/WiFiOff")
-			wait 3 seconds
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOn")
-			Log "Wifi setting is now active."
+			Click("Device/Apps/Settings/BluetoothOff")
+			wait 1 second
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/BluetoothOn")
+			run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/BluetoothActive")
+			Log "Bluetooth is now active."
 		end if
 	end if
 	if value = "Off"
-		if(ImageFound("Device/Apps/Settings/WiFiOff")) is "true"
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOff")
+		if(ImageFound("Device/Apps/Settings/BluetoothOff")) is "true"
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/BluetoothOff")
 			wait 1 second
-			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/WifiConnected")
-			Log "Wifi setting is already de-activated."
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/BluetoothActive")
+			Log "Bluetooth is already de-activated."
 		else
-			Click("Device/Apps/Settings/WiFiOn")
+			Click("Device/Apps/Settings/BluetoothOn")
 			wait 1 second
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOff")
-			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/WifiConnected")			
-			Log "Wifi setting is now de-activated."
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/BluetoothOff")
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/BluetoothActive")
+			Log "Bluetooth is now de-activated."
 		end if	
 	end if
-end SetWifi
+end SetBluetooth
+
+to SetMobileHotspot value
+	run ClassScriptConfig.SetMobileHotspotData
+	ScrollWheelUp 5
+	Click (Text:"More")
+	run ClassUtilities.ConfirmTextOnScreen("Wireless")
+	run ClassUtilities.ConfirmTextOnScreen("networks")
+	wait 1 second
+	Click (Text:"portable hotspot")
+	wait 1 second
+	run ClassUtilities.ConfirmTextOnScreen("Set up Wi-Fi hotspot")
+	if (ImageFound(Text:universal defaulthotspotssid)) is "true"
+		Log "Hotspot has been previously set up.  SSID: (" &defaulthotspotssid& ")."
+	end if
+	Log "Setting Mobile Hotspot to desired state."
+	if value = "On"
+		if(ImageFound("Device/Apps/Settings/MobileHotspot/MobileHotspotOn")) is "true"
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/MobileHotspot/MobileHotspotOn")
+			wait 1 second
+			run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MobileHotspotActive")
+			Log "Mobile Hotspot is already active."
+		else
+			Click("Device/Apps/Settings/MobileHotspot/MobileHotspotOff")
+			WaitFor 15, "Device/Apps/Settings/MobileHotspot/MobileHotspotOn"
+			run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MobileHotspotActive")
+			Log "Mobile Hotspot is now active."
+		end if
+	end if
+	if value = "Off"
+		if(ImageFound("Device/Apps/Settings/MobileHotspot/MobileHotspotOff")) is "true"
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/MobileHotspot/MobileHotspotOff")
+			wait 1 second
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/MobileHotspotActive")
+			Log "Mobile Hotspot is already de-activated."
+		else
+			Click("Device/Apps/Settings/MobileHotspot/MobileHotspotOn")
+			WaitFor 15, "Device/Apps/Settings/MobileHotspot/MobileHotspotOff"
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/MobileHotspotActive")
+			Log "Mobile Hotspot is now de-activated."
+		end if	
+	end if
+	Click "Device/System/Backicon"
+	wait 1 second
+	Click "Device/System/Backicon"
+end SetMobileHotspot
 
 to SetNetworkData value
 	ScrollWheelUp 5
@@ -84,39 +132,6 @@ to SetNetworkData value
 	Click "Device/System/Backicon"
 end SetNetworkData
 
-to SetBluetooth value
-	ScrollWheelUp 5
-	Log "Setting Bluetooth connection to desired state."
-	if value = "On"
-		if(ImageFound("Device/Apps/Settings/BluetoothOn")) is "true"
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/BluetoothOn")
-			wait 1 second
-			run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/BluetoothActive")
-			Log "Bluetooth is already active."
-		else
-			Click("Device/Apps/Settings/BluetoothOff")
-			wait 1 second
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/BluetoothOn")
-			run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/BluetoothActive")
-			Log "Bluetooth is now active."
-		end if
-	end if
-	if value = "Off"
-		if(ImageFound("Device/Apps/Settings/BluetoothOff")) is "true"
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/BluetoothOff")
-			wait 1 second
-			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/BluetoothActive")
-			Log "Bluetooth is already de-activated."
-		else
-			Click("Device/Apps/Settings/BluetoothOn")
-			wait 1 second
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/BluetoothOff")
-			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/BluetoothActive")
-			Log "Bluetooth is now de-activated."
-		end if	
-	end if
-end SetBluetooth
-
 to SetUpMobileHotspot
 	run ClassScriptConfig.SetMobileHotspotData
 	ScrollWheelUp 5
@@ -156,47 +171,33 @@ to SetUpMobileHotspot
 	Click "Device/System/Backicon"
 end SetUpMobileHotspot
 
-to SetMobileHotspot value
-	run ClassScriptConfig.SetMobileHotspotData
+to SetWifi value
 	ScrollWheelUp 5
-	Click (Text:"More")
-	run ClassUtilities.ConfirmTextOnScreen("Wireless")
-	run ClassUtilities.ConfirmTextOnScreen("networks")
-	wait 1 second
-	Click (Text:"portable hotspot")
-	wait 1 second
-	run ClassUtilities.ConfirmTextOnScreen("Set up Wi-Fi hotspot")
-	if (ImageFound(Text:universal defaulthotspotssid)) is "true"
-		Log "Hotspot has been previously set up.  SSID: (" &defaulthotspotssid& ")."
-	end if
-	Log "Setting Mobile Hotspot to desired state."
+	Log "Setting Wifi to desired state."
 	if value = "On"
-		if(ImageFound("Device/Apps/Settings/MobileHotspot/MobileHotspotOn")) is "true"
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/MobileHotspot/MobileHotspotOn")
+		if(ImageFound("Device/Apps/Settings/WiFiOn")) is "true"
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOn")
 			wait 1 second
-			run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MobileHotspotActive")
-			Log "Mobile Hotspot is already active."
+			Log "Wifi setting is already active."
 		else
-			Click("Device/Apps/Settings/MobileHotspot/MobileHotspotOff")
-			WaitFor 15, "Device/Apps/Settings/MobileHotspot/MobileHotspotOn"
-			run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MobileHotspotActive")
-			Log "Mobile Hotspot is now active."
+			Click("Device/Apps/Settings/WiFiOff")
+			wait 3 seconds
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOn")
+			Log "Wifi setting is now active."
 		end if
 	end if
 	if value = "Off"
-		if(ImageFound("Device/Apps/Settings/MobileHotspot/MobileHotspotOff")) is "true"
-			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/MobileHotspot/MobileHotspotOff")
+		if(ImageFound("Device/Apps/Settings/WiFiOff")) is "true"
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOff")
 			wait 1 second
-			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/MobileHotspotActive")
-			Log "Mobile Hotspot is already de-activated."
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/WifiConnected")
+			Log "Wifi setting is already de-activated."
 		else
-			Click("Device/Apps/Settings/MobileHotspot/MobileHotspotOn")
-			WaitFor 15, "Device/Apps/Settings/MobileHotspot/MobileHotspotOff"
-			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/MobileHotspotActive")
-			Log "Mobile Hotspot is now de-activated."
+			Click("Device/Apps/Settings/WiFiOn")
+			wait 1 second
+			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/WiFiOff")
+			run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/WifiConnected")			
+			Log "Wifi setting is now de-activated."
 		end if	
 	end if
-	Click "Device/System/Backicon"
-	wait 1 second
-	Click "Device/System/Backicon"
-end SetMobileHotspot
+end SetWifi

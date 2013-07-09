@@ -9,6 +9,7 @@ run ClassNavigate.ResetState
 wait 10 seconds
 run ClassNavigate.OpenApp(Email)
 run ClassConfigure.ResetEmail
+Log "Composing new email."
 Click "Device/Apps/Email/ComposeEmail"
 wait 1 second
 TypeText universal firstnamedeviceb
@@ -22,6 +23,7 @@ run ClassUtilities.ConfirmTextInArea("Test email no attachment"),("10,250"),("45
 Click (Text:"Compose email")
 TypeText "Sent from " &universal firstnamedeviceb& "."
 run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,350"),("450,450")
+Log "Sending email."
 Click "Device/Apps/Email/SendEmail"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("Inbox")

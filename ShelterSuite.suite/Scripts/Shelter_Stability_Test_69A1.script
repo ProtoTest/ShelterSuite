@@ -15,4 +15,5 @@ run ClassConfigure.DeleteBluetoothPairs
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("Bluetooth")
 run ClassUtilities.ConfirmTextOnScreen("ON")
+Log "Searching for devices."
 WaitFor 60, Text:"SEARCH FOR DEVICES"
