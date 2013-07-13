@@ -31,6 +31,7 @@ run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Droidfish/WhitePa
 Click "Device/System/HomeButton"
 run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Droidfish/e4")
 run ClassUtilities.ConfirmImageNotOnScreen(ImageName:"Device/Apps/Droidfish/WhitePawnLight",   SearchRectangle:((230,310),(310,385)))
+Log "Exiting and re-entering app."
 run ClassNavigate.OpenApp(DroidFish)
 wait 3 seconds
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Droidfish/e4")

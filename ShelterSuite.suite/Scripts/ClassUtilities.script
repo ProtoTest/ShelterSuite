@@ -57,6 +57,14 @@ to ConfirmTextOnScreen string
 	end if
 end ConfirmTextOnScreen
 
+to GenerateRandomNumber
+	universal n
+	universal RandomNumber
+	set n to 6
+	set RandomNumber = random(10^n)
+	Log "Random number generated: " &RandomNumber& "."
+end GenerateRandomNumber
+
 to IfImageOnScreen string,action
 	if ImageFound(string) then
 		Log "Image (" &string& ") detected."

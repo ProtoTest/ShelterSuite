@@ -14,7 +14,7 @@ run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MessageReceived")
 Log "Opening Messaging App."
 Click "Device/AppIcons/MessagingApp"
 run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")
-run ClassUtilities.ConfirmTextOnScreen("Messaging")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Messaging/MessagingAppHeader")
 Click (Text:universal firstnamedevicea)
 wait 1 second
 ScrollWheelDown 10
@@ -24,7 +24,7 @@ run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,450"),("47
 Log "Text message received."
 Click "Device/System/BackIcon"
 wait 1 second
-run ClassUtilities.ConfirmTextOnScreen("Messaging")
+run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Messaging/MessagingAppHeader")
 Click "Device/System/HomeButton"
 
 //Teardown

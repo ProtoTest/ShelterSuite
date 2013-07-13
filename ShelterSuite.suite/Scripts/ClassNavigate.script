@@ -3,13 +3,16 @@
 
 to AnswerCall
 	Log "Answering phone call."
-	if(ImageFound("Device/Apps/Telephone/IncomingCall"))
+	//[mechanism unstable]
+	(*	if(ImageFound("Device/Apps/Telephone/IncomingCall"))
 		Drag "Device/Apps/Telephone/IncomingCall"
-		//wait 1 second
-		Drop (460,635)
-		//Drop "Device/System/Unlockicon" [mechanism unstable]
 		wait 1 second
-	end if
+		Drop "Device/System/Unlockicon"
+		wait 1 second
+	end if*)
+	Drag (240,635)
+	Drop (460,635)
+	wait 1 second
 end AnswerCall
 
 to CloseTaskBar

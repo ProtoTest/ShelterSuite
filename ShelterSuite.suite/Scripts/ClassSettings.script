@@ -153,16 +153,15 @@ to SetUpMobileHotspot
 	wait 1 second
 	Click "Device/System/Backicon"
 	run ClassUtilities.ConfirmTextOnScreen(universal defaulthotspotssid)
-	Click "Device/Apps/Settings/MobileHotspot/PasswordLocation"
+	DoubleClick "Device/Apps/Settings/MobileHotspot/PasswordLocation"
 	wait 1 second
-	repeat 25 times
-		TypeText backspace
-	end repeat
+	TypeText backspace
+	wait 1 second
 	TypeText universal defaulthotspotpass
 	wait 1 second
 	Click "Device/System/Backicon"
-	Click (Text:"Show password")
-	run ClassUtilities.ConfirmTextOnScreen(universal defaulthotspotpass)
+	//Click (Text:"Show password")
+	//run ClassUtilities.ConfirmTextOnScreen(universal defaulthotspotpass)
 	Click (Text:"Save")
 	wait 1 second
 	run ClassUtilities.ConfirmTextOnScreen(universal defaulthotspotssid)

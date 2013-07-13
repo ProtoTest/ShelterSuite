@@ -181,7 +181,7 @@ end MuteNotifications
 to ResetAlarms
 	Log "Resetting alarms to blank state."
 	run ClassNavigate.OpenApp(Clock)
-	Click (Text:"Set alarm")
+	Click "Device/Apps/Clock/AlarmIcon"
 	wait 1 second
 	Log "De-activating any active alarms."
 	repeat until ImageFound("Device/Apps/Settings/CheckboxSelected") is "false"
@@ -204,7 +204,7 @@ to ResetAlarms
 	end repeat
 	Log "Returning to main screen."
 	Click (Text:"Alarms")
-	run ClassUtilities.ConfirmTextOnScreen("Set alarm")
+	run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Clock/AlarmIcon")
 	Click "Device/System/HomeButton"
 end ResetAlarms
 
@@ -299,6 +299,39 @@ to ResetEmail
 	end repeat
 	run ClassUtilities.ConfirmTextOnScreen("Inbox")
 end ResetEmail
+
+to ResetMessaging
+	if(ImageFound(3, "Device/Apps/Messaging/AttachmentRemoveButton")) is "true"
+		wait 1 second
+		Click "Device/Apps/Messaging/AttachmentRemoveButton"
+		wait 1 second
+		run ClassUtilities.ConfirmImageNotOnScreen("Device/Apps/Messaging/AttachmentRemoveButton")
+		wait 2 seconds
+		Log "Script has cleared text message of an attachment."
+	end if
+	if(ImageFound("Device/Apps/Messaging/TextFieldEmpty")) is "true"
+		wait 1 second
+	else
+		Click "Device/Apps/Messaging/TextFieldEnd"
+		wait 2 seconds
+		if(ImageFound("Device/Apps/Messaging/SpellCheckDelete")) is "true"
+			Click "Device/Apps/Messaging/TextFieldEnd"
+		end if
+		wait 1 second
+		universal d
+		set d = 0
+		repeat until (ImageFound("Device/Apps/Messaging/TextFieldEmpty")) is "true"
+			add 1 to d
+			TypeText backspace
+			if d > 320
+				LogError "Could not clear text message field within " &d& " attempts."
+			end if 
+		end repeat
+		Log "Script has cleared " &d& " characters from the text message field."
+	end if
+	set d = 0
+	Log "Text message reset to default state."
+end ResetMessaging
 
 to ResetWifiToDefault
 	Click (Text:"Wi-Fi")

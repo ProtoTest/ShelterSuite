@@ -13,11 +13,14 @@ run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/EmailReceived")
 run ClassNavigate.OpenApp(Email)
 run ClassConfigure.ResetEmail
 run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Email/FirstEmailUnread",   SearchRectangle:((0,110),(50,150)))
+Log "Latest email is unread."
 run ClassUtilities.ConfirmTextInArea(universal fullnamedevicea),("5,100"),("470,225")
+Log "Latest email is from " &universal fullnamedevicea& "."
 Click (Text:"Test email no attachment", SearchRectangle:((5,100),(470,225)))
 run ClassUtilities.ConfirmTextInArea("Test email no attachment"),("5,25"),("470,125")
 run ClassUtilities.ConfirmTextInArea(universal firstnamedevicea),("10,150"),("470,250")
 run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,275"),("470,500")
+run ClassUtilities.ConfirmTextInArea(universal RandomNumber),("10,275"),("470,500")
 Log "Email received."
 Click "Device/System/BackIcon"
 wait 1 second

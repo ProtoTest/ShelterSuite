@@ -18,11 +18,13 @@ Click (Text:universal fullnamedeviceb)
 wait 1 second
 run ClassUtilities.ConfirmTextInArea(universal fullnamedeviceb),("10,175"),("450,275")
 Click (Text:"Subject")
-TypeText "Test email no attachment"
+run ClassUtilities.GenerateRandomNumber
+TypeText "Test email no attachment " &universal RandomNumber& "."
 run ClassUtilities.ConfirmTextInArea("Test email no attachment"),("10,250"),("450,350")
 Click (Text:"Compose email")
-TypeText "Sent from " &universal firstnamedeviceb& "."
-run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,350"),("450,450")
+run ClassUtilities.GenerateRandomNumber
+TypeText "Mr. " &universal firstnamedeviceb& " says: " &universal RandomNumber& "."
+run ClassUtilities.ConfirmTextInArea(universal RandomNumber),("10,350"),("450,450")
 Log "Sending email."
 Click "Device/Apps/Email/SendEmail"
 wait 1 second
@@ -32,3 +34,4 @@ Click "Device/System/HomeButton"
 //Teardown
 run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 wait 5 seconds
+

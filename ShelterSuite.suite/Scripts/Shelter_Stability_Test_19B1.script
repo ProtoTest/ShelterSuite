@@ -11,11 +11,14 @@ run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/EmailReceived")
 run ClassNavigate.OpenApp(Email)
 run ClassConfigure.ResetEmail
 run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Email/FirstEmailUnread",   SearchRectangle:((0,110),(50,150)))
+Log "Latest email is unread."
 run ClassUtilities.ConfirmTextInArea(universal fullnamedevicea),("5,100"),("470,225")
+Log "Latest email is from " &universal fullnamedevicea& "."
 Click (Text:"Test email with attachment", SearchRectangle:((5,100),(470,225)))
 run ClassUtilities.ConfirmTextInArea("Test email with attachment"),("5,25"),("470,125")
 run ClassUtilities.ConfirmTextInArea(universal firstnamedevicea),("10,150"),("470,250")
 run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,275"),("470,500")
+run ClassUtilities.ConfirmTextInArea(universal RandomNumber),("10,275"),("470,500")
 Click (Text:"Attachment", SearchRectangle:((5,300),(470,375)))
 wait 5 seconds
 run ClassUtilities.ConfirmTextInArea("SAVE"),("5,400"),("470,500")
