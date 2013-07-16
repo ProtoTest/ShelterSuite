@@ -1,0 +1,11 @@
+EggPlant Documentation Portal:
+http://docs.testplant.com/
+
+Comprehensive Instructions for the Installation of eggPlant are available at:
+http://docs.testplant.com/?q=content/creating-eggplant-environment-0
+
+Helpful EggPlant Reference Document
+http://old.testplant.com/documentation/LinuxDocumentation/Eggplant%20Reference.pdf
+
+EggPlant Commands and Functions
+http://docs.testplant.com/?q=content/eggplant-commands-and-functions

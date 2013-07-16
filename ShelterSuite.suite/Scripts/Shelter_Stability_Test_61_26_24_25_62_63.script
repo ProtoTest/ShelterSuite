@@ -16,7 +16,6 @@ Click "Device/Apps/Browser/BrowserIcon"
 //run ClassNavigate.OpenApp(Browser) [Alternate open method]
 run ClassConfigure.CloseAllBrowserTabs
 run ClassConfigure.SetBrowserHomepageToDefault
-run ClassUtilities.ConfirmTextOnScreen("Sign in")
 wait 3 seconds
 
 //Test 26 - Visit Top Websites

@@ -105,3 +105,11 @@ to OutputLogSaveLocation
 	set savelocationfull to savelocation1&savelocation2
 	Log "Log save location determined:" &savelocationfull& "."
 end OutputLogSaveLocation
+
+to WaitForImageInArea time,string,topcorner,botcorner
+	WaitFor time, (ImageName:string,SearchRectangle:((topcorner),(botcorner)))
+end WaitForImageInArea
+
+to WaitForTextInArea time,string,topcorner,botcorner
+	WaitFor time, ((Text:string,SearchRectangle:((topcorner),(botcorner))))
+end WaitForTextInArea

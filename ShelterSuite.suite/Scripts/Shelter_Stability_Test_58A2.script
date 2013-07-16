@@ -2,17 +2,14 @@
 //Component of Script Series 58
 //Completed 6-10-2013
 
-//Subroutine A2 -- Shelter Device A - Teardown
-Click "Device/AppIcons/TelephoneApp"
-run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/HistoryIcon")
-run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/PhoneIcon")
-run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Telephone/ContactsIcon")
-Click "Device/Apps/Telephone/HistoryIcon"
-run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,100"),("450,225")
-run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Telephone/0MinsAgo",   SearchRectangle:((10,100),(450,225)))
-Log "Phone call data confirmed."
-Click "Device/System/HomeButton"
+run ClassScriptConfig.SetContactDataforDeviceA
+run ClassScriptConfig.SetContactDataforDeviceB
 
-//Teardown
-run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
-wait 5 seconds
+//Subroutine A2 -- Shelter Device A - Dial Shelter Device B
+Click "Device/AppIcons/TelephoneApp"
+Click "Device/Apps/Telephone/PhoneIcon"
+Log "Manually dialing assigned phone number."
+run ClassNavigate.DialPhoneNumber(universal phonenumberdeviceb)
+Click "Device/Apps/Telephone/StartCall"
+run ClassUtilities.ConfirmTextOnScreen("DIALING")
+run ClassUtilities.ConfirmTextOnScreen(universal firstnamedeviceb)

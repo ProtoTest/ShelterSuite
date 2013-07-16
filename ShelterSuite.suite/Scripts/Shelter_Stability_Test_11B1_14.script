@@ -3,34 +3,6 @@
 //Component of Script Series 11
 //Completed 6-12-2013
 
-//Setup
+//Subroutine B1 -- Shelter Device B - Setup
 run ClassNavigate.ResetState
-
-//Subroutine B1 -- Shelter Device B - Receive Incoming SMS from Shelter Device A and Open Message
-//Motorola Shelter Stability Test 14 -  Open a MMS with a 1MB audio attachment or largest size supported by the device
-//German language is used to identify this tested functionality
-wait 30 seconds
-run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MessageReceived")
-Log "Opening Messaging App."
-Click "Device/AppIcons/MessagingApp"
-run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")
-run ClassUtilities.ConfirmTextOnScreen("Messaging")
-Click (Text:universal firstnamedevicea)
-wait 1 second
-ScrollWheelDown 10
-wait 1 second
-run ClassUtilities.ConfirmTextInArea("Victor jagt zwolf Boxkampfer"),("10,450"),("470,730")
-run ClassUtilities.ConfirmTextInArea("quer uber den grossen"),("10,450"),("470,730")
-run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Messaging/AudioAttachmentIcon",   SearchRectangle:((5,450),(470,700)))
-run ClassUtilities.ConfirmTextInArea("Audio Attachment"),("10,450"),("470,730")
-run ClassUtilities.ConfirmTextInArea("mp3"),("10,450"),("470,730")
-Log "Text message received."
-Click "Device/System/BackIcon"
-wait 1 second
-run ClassUtilities.ConfirmTextOnScreen("Messaging")
-Click "Device/System/HomeButton"
-
-//Teardown
-run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
-run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/MessageReceived")
-wait 5 seconds
+run ClassConfigure.MuteNotifications

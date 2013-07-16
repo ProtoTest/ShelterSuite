@@ -22,8 +22,6 @@
 //Download NVitemRWTool app from Motorola and configure to allow access to 2G settings
 //Tests are designed to run with VMLite VNC Server.  If this app is altered, update test 62
 //MLog Manager Settings - Turn on Persisting Mode and Exporting Logs Upon Boot
-//Clear taskbar of notifications
-//Configure master settings within ClassScriptConfig script and then execute "Shelter_Stability_Test_00_DeviceA_Setup" script
 
 //Script Design - Synch Scripts:
 //Some stability tests are so elaborate and interconnected that they require switching from Device A in a known state to Device B, then executing a script

@@ -297,7 +297,7 @@ to ResetEmail
 			wait 1 second
 		end if
 	end repeat
-	run ClassUtilities.ConfirmTextOnScreen("Inbox")
+	run ClassUtilities.ConfirmTextInArea("Inbox"),("10,25"),("470,125")
 end ResetEmail
 
 to ResetMessaging
@@ -356,9 +356,8 @@ to ResetWifiToDefault
 	TypeText universal defaultwifipassword //default password is stored in ClassScriptConfig script
 	wait 1 second
 	Click (Text:"Connect")
-	wait 5 seconds
-	run ClassUtilities.ConfirmTextInArea("ProtoTest_MOBILE"),("10,100"),("470,210")
-	run ClassUtilities.ConfirmTextInArea("Connected"),("10,100"),("470,210")
+	run ClassUtilities.WaitForImageInArea(60),("Device/Apps/Settings/WifiDefaultNetwork"),("10,100"),("470,210")
+	run ClassUtilities.WaitForTextInArea(60),("Connected"),("10,100"),("470,210")
 	Log "Wifi is set to default."
 	wait 1 second
 	Click "Device/System/Backicon"
@@ -415,6 +414,7 @@ to SetBrowserHomepageToDefault
 	Click "Device/System/HomeButton"
 	Click "Device/Apps/Browser/BrowserIcon"
 	wait 2 seconds
+	run ClassUtilities.ConfirmTextInArea("Sign in"),("10,25"),("470,200")
 end SetBrowserHomepageToDefault
 
 to SetVibrateWhenRinging value

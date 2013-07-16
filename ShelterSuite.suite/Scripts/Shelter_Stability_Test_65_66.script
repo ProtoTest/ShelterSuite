@@ -5,6 +5,7 @@
 
 //Setup
 run ClassNavigate.ResetState
+run ClassScriptConfig.AccessDefaultWifiSettings
 
 //Test 65 - Turn the WiFi radio off
 //Test 66 - Disconnect from a WiFi network
@@ -41,7 +42,7 @@ wait 1 second
 Click "Device/Apps/Browser/BrowserIcon"
 run ClassConfigure.CloseAllBrowserTabs
 run ClassConfigure.SetBrowserHomepageToDefault
-run ClassUtilities.ConfirmTextOnScreen("Sign in")
+run ClassUtilities.ConfirmTextInArea("Sign in"),("10,25"),("470,200")
 Click "Device/System/HomeButton"
 wait 1 second
 run ClassNavigate.OpenApp(Settings)

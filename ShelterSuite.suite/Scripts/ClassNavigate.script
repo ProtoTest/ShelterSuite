@@ -10,9 +10,11 @@ to AnswerCall
 		Drop "Device/System/Unlockicon"
 		wait 1 second
 	end if*)
-	Drag (240,635)
-	Drop (460,635)
-	wait 1 second
+	repeat 3 times
+		Drag (240,580)
+		Drop (460,580)
+		wait 1 second
+	end repeat
 end AnswerCall
 
 to CloseTaskBar
@@ -225,6 +227,16 @@ to ResetState
 		run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 		wait 1 second
 	end if
+	Log "Clearing Taskbar."
+	run ClassNavigate.OpenTaskBar
+	if ImageFound(3, "Device/System/Taskbar/ClearTaskbar") = "true"
+		wait 1 second
+		Click "Device/System/Taskbar/ClearTaskbar"
+		Log "Taskbar cleared."
+	end if
+	run ClassNavigate.CloseTaskBar
+	run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+	wait 1 second
 end ResetState
 
 to SwipeDown

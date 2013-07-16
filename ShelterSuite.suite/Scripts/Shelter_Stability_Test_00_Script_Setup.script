@@ -1,4 +1,8 @@
 //Motorola Shelter Stability Test 00 -- Global Setup required before running any Shelter Stability Tests
 
-//run ClassNavigate.ResetState
-//run ClassConfigure.MuteNotifications
+run ClassScriptConfig.SetContactDataforDeviceA
+run ClassScriptConfig.SetContactDataforDeviceB
+run ClassScriptConfig.SetTestContactData
+run ClassScriptConfig.AccessDefaultWifiSettings
+run ClassScriptConfig.SetDefaultPhoneNumber
+run ClassScriptConfig.SetMobileHotspotData
