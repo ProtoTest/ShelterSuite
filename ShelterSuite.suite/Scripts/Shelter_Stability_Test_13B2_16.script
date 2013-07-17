@@ -3,14 +3,12 @@
 //Component of Script Series 13
 //Completed 6-12-2013
 
-//Setup
-run ClassNavigate.ResetState
-
 //Subroutine B2 -- Shelter Device B - Receive Incoming MMS from Shelter Device A and Open Message
 //Motorola Shelter Stability Test 16 - Open a MMS with a 1MB image or largest size supported by the device
 //Spanish language is used to identify this tested functionality
-wait 30 seconds
-run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MessageReceived")
+Log "Message has 60 seconds to arrive."
+WaitFor 60, "Device/System/Taskbar/MessageReceived"
+Log "Message received."
 Log "Opening Messaging App."
 Click "Device/AppIcons/MessagingApp"
 run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Messaging/MessagingAppHeader")

@@ -6,8 +6,9 @@
 //Subroutine B2 -- Shelter Device B - Receive Incoming SMS from Shelter Device A and Open Message
 //Motorola Shelter Stability Test 14 - Open a MMS with a 1MB audio attachment or largest size supported by the device
 //German language is used to identify this tested functionality
-wait 30 seconds
-run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/MessageReceived")
+Log "Message has 60 seconds to arrive."
+WaitFor 60, "Device/System/Taskbar/MessageReceived"
+Log "Message received."
 Log "Opening Messaging App."
 Click "Device/AppIcons/MessagingApp"
 run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")

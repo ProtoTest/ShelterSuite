@@ -54,7 +54,7 @@ to SetMobileHotspot value
 	if (ImageFound(Text:universal defaulthotspotssid)) is "true"
 		Log "Hotspot has been previously set up.  SSID: (" &defaulthotspotssid& ")."
 	end if
-	Log "Setting Mobile Hotspot to desired state."
+	Log "Setting Mobile Hotspot to desired state: " &value& "."
 	if value = "On"
 		if(ImageFound("Device/Apps/Settings/MobileHotspot/MobileHotspotOn")) is "true"
 			run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Settings/MobileHotspot/MobileHotspotOn")

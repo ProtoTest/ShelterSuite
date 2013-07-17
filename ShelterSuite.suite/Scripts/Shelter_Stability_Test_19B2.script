@@ -3,8 +3,9 @@
 //Completed 6-13-2013
 
 //Subroutine B2 -- Shelter Device B - Receive Incoming email with an attachment from Shelter Device A and Open Message
-wait 30 seconds
-run ClassUtilities.ConfirmImageOnScreen("Device/System/Taskbar/EmailReceived")
+Log "Email has 60 seconds to arrive."
+WaitFor 60, "Device/System/Taskbar/EmailReceived"
+Log "Email received."
 run ClassNavigate.OpenApp(Email)
 run ClassConfigure.ResetEmail
 run ClassUtilities.ConfirmImageOnScreen(ImageName:"Device/Apps/Email/FirstEmailUnread",   SearchRectangle:((0,110),(50,150)))
@@ -14,7 +15,7 @@ Log "Latest email is from " &universal fullnamedevicea& "."
 Click (Text:"Test email with attachment", SearchRectangle:((5,100),(470,225)))
 run ClassUtilities.ConfirmTextInArea("Test email with attachment"),("5,25"),("470,125")
 run ClassUtilities.ConfirmTextInArea(universal firstnamedevicea),("10,150"),("470,250")
-run ClassUtilities.ConfirmTextInArea(universal firstnamedeviceb),("10,275"),("470,500")
+run ClassUtilities.ConfirmTextInArea(universal firstnamedevicea),("10,275"),("470,500")
 run ClassUtilities.ConfirmTextInArea(universal RandomNumber),("10,275"),("470,500")
 Click (Text:"Attachment", SearchRectangle:((5,300),(470,375)))
 wait 5 seconds

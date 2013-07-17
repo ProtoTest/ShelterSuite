@@ -158,8 +158,8 @@ to MuteMedia
 	wait 1 second
 	Click (Text:"Volumes")
 	wait 1 second
-	Drag (420,300)
-	Drop (135,300)
+	Drag (430,300)
+	Drop (140,300)
 	Click (Text:"OK")
 	wait 1 second
 	Click "Device/System/HomeButton"
@@ -171,8 +171,8 @@ to MuteNotifications
 	run ClassNavigate.SettingsOption(Sound)
 	Click (Text:"Volumes")
 	wait 1 second
-	Drag (420,450)
-	Drop (125,450)
+	Drag (430,450)
+	Drop (140,450)
 	Click (Text:"OK")
 	wait 1 second
 	Click "Device/System/HomeButton"
@@ -480,8 +480,8 @@ to UnMuteNotifications
 	run ClassNavigate.SettingsOption(Sound)
 	Click (Text:"Volumes")
 	wait 1 second
-	Drag (125,450)
-	Drop (420,450)
+	Drag (140,450)
+	Drop (430,450)
 	Click (Text:"OK")
 	wait 1 second
 	Click "Device/System/HomeButton"
