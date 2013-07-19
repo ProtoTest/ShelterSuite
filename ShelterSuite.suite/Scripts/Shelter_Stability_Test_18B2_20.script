@@ -22,7 +22,7 @@ run ClassUtilities.ConfirmTextInArea(universal RandomNumber),("10,275"),("470,50
 Log "Email received."
 Click "Device/System/BackIcon"
 wait 1 second
-run ClassUtilities.ConfirmTextOnScreen("Inbox")
+run ClassUtilities.ConfirmTextInArea("Inbox"),("10,25"),("470,125")
 Click "Device/System/HomeButton"
 
 //Teardown

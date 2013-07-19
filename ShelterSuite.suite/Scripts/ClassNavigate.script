@@ -3,18 +3,28 @@
 
 to AnswerCall
 	Log "Answering phone call."
-	//[mechanism unstable]
 	(*	if(ImageFound("Device/Apps/Telephone/IncomingCall"))
 		Drag "Device/Apps/Telephone/IncomingCall"
 		wait 1 second
-		Drop "Device/System/Unlockicon"
+		Drop "Device/Apps/Telephone/AnswerCall"
 		wait 1 second
 	end if*)
-	repeat 3 times
-		Drag (240,580)
-		Drop (460,580)
+	put 11 into universal Countdown
+	universal g
+	set g = 0
+	repeat until ImageFound("Device/Apps/Telephone/EndCall") = "true"
+		subtract 1 from universal Countdown
+		add 2 to g
+		if universal Countdown = 0
+			LogError "Unable to answer call within 10 attempts."
+			exit all
+		end if
+		Drag (240+g,580+g)
+		Drop (460+g,580+g)
+		Log "Attempted to drag from coordinates (" &240+g& "x" &580+g& ") and drop on coordinates (" &460+g& "x" &580+g& ")."
 		wait 1 second
 	end repeat
+	set g = 0
 end AnswerCall
 
 to CloseTaskBar
@@ -226,6 +236,17 @@ to ResetState
 		wait 1 second
 		run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
 		wait 1 second
+	end if
+	Log "Terminating active phone call, if present."
+	if ImageFound(3, "Device/System/Taskbar/PhoneAppInBackground") = "true"
+		run ClassNavigate.OpenTaskBar
+		wait 1 second
+		Click "Device/System/Taskbar/PhoneAppOngoingCall"
+		Click "Device/Apps/Telephone/EndCall"
+		run ClassUtilities.ConfirmImageNotOnScreen("Device/System/Taskbar/PhoneAppInBackground")
+		wait 1 second
+		Click "Device/System/HomeButton"
+		Log "Active phone call terminated."
 	end if
 	Log "Clearing Taskbar."
 	run ClassNavigate.OpenTaskBar

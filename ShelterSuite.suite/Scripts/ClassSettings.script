@@ -8,6 +8,59 @@
 	Click (Text:name)
 end OpenMenu*)
 
+to ConnectToDefaultHotspot
+	Log "Connecting to default Mobile Hotspot."
+	run ClassNavigate.SettingsOption("Wi-Fi")
+	Log "Scanning for default Mobile Hotspot."
+	universal e
+	set e = 0
+	universal f
+	set f = 0
+	//Main loop that will return to the top of the Wi-Fi connections menu and begin scanning for default Mobile Hotspot
+	//Change below E value to set number of iterations before loop logs failure
+	repeat while e < 3
+		ScrollWheelUp 3
+		wait 1 second
+		add 1 to e
+		set f = 0
+		wait 1 second
+		//Sub-loop 1 - Scans for the requested Mobile Hotspot
+		//Change below F value to set number of iterations before loop logs failure
+		repeat while f < 3
+			add 1 to f
+			Log "Searching for (" &universal defaulthotspotssid& ") Hotspot SSID."
+			if ImageFound(3, Text:universal defaulthotspotssid, CaseSensitive: true) is "true"
+				exit repeat
+			end if
+			ScrollWheelDown 1
+			wait 1 second
+			exit repeat
+		end repeat
+		wait 1 second
+		//Main loop - Mobile Hotspot found path
+		if ImageFound(3, Text:universal defaulthotspotssid, CaseSensitive: true) is "true"
+			exit repeat
+		end if
+		wait 1 second
+		//Main loop - Mobile Hotspot not found path
+		if e = 3
+			LogError "Could not find Mobile Hotspot (" &universal defaulthotspotssid& ") after " &e& " attempts."
+			exit all
+		end if
+	end repeat
+	//End of main loop - enters requested Mobile Hotspot
+	Click (Text:universal defaulthotspotssid, CaseSensitive: true)
+	Log "Mobile Hotspot (" &universal defaulthotspotssid& ") found after " &f& " attempts."
+	TypeText universal defaulthotspotpass
+	Click (Text:"Connect")
+	WaitFor 60, Text:"Connected", SearchRectangle:((10,100),(470,200))
+	Click "Device/System/Backicon"
+	Log "Connected to default Mobile Hotspot."
+	set e = 0
+	set f = 0
+	wait 1 second
+end ConnectToDefaultHotspot
+
 to SetBluetooth value
 	ScrollWheelUp 5
 	Log "Setting Bluetooth connection to desired state."

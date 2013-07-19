@@ -74,7 +74,13 @@ to ClearContacts
 	run ClassNavigate.OpenApp(People)
 	Click "Device/Apps/People/Contacts"
 	ScrollWheelUp 10
+	put 26 into universal Countdown
 	repeat until ImageFound(3, "Device/Apps/People/ContactPicture") is "false"
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Unable to clear all contacts."
+			exit all
+		end if
 		wait 1 second
 		Click "Device/Apps/People/ContactPicture"
 		wait 1 second
@@ -100,7 +106,13 @@ to CloseAllBrowserTabs
 	Click "Device/System/BackIcon"
 	Click "Device/Apps/Browser/TabsButton"
 	wait 2 second
+	put 21 into universal Countdown
 	repeat until ImageFound("Device/Apps/Browser/DeleteTab") is "false"
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Unable to close all browser tabs."
+			exit all
+		end if
 		if ImageFound("Device/Apps/Browser/DeleteTab") then
 			Log "Deleting browser tab."
 			Click "Device/Apps/Browser/DeleteTab"
@@ -113,7 +125,13 @@ end CloseAllBrowserTabs
 
 to DeleteBluetoothPairs
 	Log "Deleting Bluetooth pairs."
+	put 4 into universal Countdown
 	repeat until ImageFound("Device/Apps/Settings/MoreSettingsIcon") = "false"
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Unable to delete Bluetooth pairs."
+			exit all
+		end if	
 		Click "Device/Apps/Settings/MoreSettingsIcon"
 		wait 1 second
 		Click (Text:"Unpair")
@@ -124,7 +142,13 @@ end DeleteBluetoothPairs
 
 to DeleteContact name
 	Log "Deleting contact."
+	put 4 into universal Countdown
 	repeat until ImageFound(Text:name) is "false"
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Unable to delete contact."
+			exit all
+		end if	
 		if ImageFound(Text:name) then
 			Click (Text:name)
 			Click "Device/System/MenuButton"
@@ -139,7 +163,13 @@ end DeleteContact
 
 to ForgetAllWifiConnections
 	Log "Forgetting all Wifi connections."
+	put 11 into universal Countdown
 	repeat until (ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "false"
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Unable to clear all wifi connections."
+			exit all
+		end if
 		if(ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "true"
 			wait 1 second
 			Click (Text:"Connected")
@@ -184,7 +214,13 @@ to ResetAlarms
 	Click "Device/Apps/Clock/AlarmIcon"
 	wait 1 second
 	Log "De-activating any active alarms."
+	put 11 into universal Countdown
 	repeat until ImageFound("Device/Apps/Settings/CheckboxSelected") is "false"
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Unable to deselect all alarms."
+			exit all
+		end if
 		if ImageFound("Device/Apps/Settings/CheckboxSelected") 
 			Click "Device/Apps/Settings/CheckboxSelected"
 			wait 1 second
@@ -192,7 +228,13 @@ to ResetAlarms
 	end repeat
 	wait 1 second
 	Log "Deleting any present alarms."
+	put 11 into universal Countdown	
 	repeat until ImageFound("Device/Apps/Settings/CheckboxUnselected") is "false"
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Unable to delete all alarms."
+			exit all
+		end if
 		if ImageFound("Device/Apps/Settings/CheckboxUnselected") 
 			Click "Device/Apps/Settings/CheckboxUnselectedClickRight"
 			wait 1 second
@@ -230,7 +272,13 @@ to ResetCalendar event
 	Log "Scanning for rogue events."
 	ScrollWheelUp 5
 	wait 1 second
+	put 11 into universal Countdown
 	repeat until ImageFound(3, Text:event, SearchRectangle:((35,140),(475,800))) is "false"
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Attempted to delete event 10 times and failed."
+			exit all
+		end if
 		if ImageFound(3, Text:event) then
 			Log "Deleting rogue event."
 			Click (Text:event)
@@ -245,7 +293,13 @@ to ResetCalendar event
 	repeat 6 times
 		ScrollWheelDown 0.5
 		wait 1 second
+		put 11 into universal Countdown
 		repeat until ImageFound(3, Text:event, SearchRectangle:((35,140),(475,800))) is "false"
+			subtract 1 from universal Countdown
+			if universal Countdown = 0
+				LogError "Attempted to delete event 10 times and failed."
+				exit all
+			end if
 			if ImageFound(3, Text:event) then
 				Log "Deleting rogue event."
 				Click (Text:event)
@@ -270,7 +324,13 @@ to ResetContacts
 	ScrollWheelUp 5
 	run ClassScriptConfig.SetTestContactData
 	Log "Default test contact name is set to: " &universal fulltestname& "."
+	put 11 into universal Countdown
 	repeat until ImageFound(Text:universal fulltestname) = "false"
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Attempted to delete contact 10 times and failed."
+			exit all
+		end if
 		if ImageFound(Text:universal fulltestname) = "true"
 			Click(Text:universal fulltestname)
 		end if
@@ -291,10 +351,16 @@ end ResetContacts
 to ResetEmail
 	Log "Resetting email app to inbox."
 	wait 1 second
+	put 4 into universal Countdown
 	repeat until ImageFound("Device/Apps/Email/EmailBackButton") is "false"
+		subtract 1 from universal Countdown
 		if ImageFound("Device/Apps/Email/EmailBackButton") 
 			Click "Device/Apps/Email/EmailBackButton"
 			wait 1 second
+		end if
+		if universal Countdown = 0
+			LogError "Unable to return to Email App main."
+			exit all
 		end if
 	end repeat
 	run ClassUtilities.ConfirmTextInArea("Inbox"),("10,25"),("470,125")
@@ -336,7 +402,9 @@ end ResetMessaging
 to ResetWifiToDefault
 	Click (Text:"Wi-Fi")
 	Log "Resetting Wifi."
+	put 11 into universal Countdown
 	repeat until (ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "false"
+		subtract 1 from universal Countdown
 		if(ImageFound(Text:"Connected", SearchRectangle:((10,100),(470,210)))) = "true"
 			wait 1 second
 			Click (Text:"Connected")
@@ -344,11 +412,21 @@ to ResetWifiToDefault
 			Click (Text:"Forget")
 			wait 2 seconds
 		end if
+		if universal Countdown = 0
+			LogError "Unable to disconnect from all wifi networks."
+			exit all
+		end if
 	end repeat
 	Log "Connecting to default wifi network."
+	put 4 into universal Countdown
 	repeat until (ImageFound("Device/Apps/Settings/WifiDefaultNetwork")) = "false"
 		Click "Device/Apps/Settings/WifiDefaultNetwork"
 		wait 2 seconds
+		subtract 1 from universal Countdown
+		if universal Countdown = 0
+			LogError "Unable to access default wifi network."
+			exit all
+		end if
 	end repeat
 	run ClassUtilities.ConfirmTextOnScreen("Signal strength")
 	run ClassUtilities.ConfirmTextOnScreen("Password")

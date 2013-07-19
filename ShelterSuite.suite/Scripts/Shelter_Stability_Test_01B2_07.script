@@ -5,7 +5,7 @@
 
 //Subroutine B2 -- Shelter Device B - Receive Incoming Call from Shelter Device A
 //Motorola Shelter Stability Test 07 - Receive a voice call
-run ClassUtilities.ConfirmTextOnScreen("INCOMING CALL")
+WaitFor 30, Text:"INCOMING CALL", CaseSensitive: true
 run ClassUtilities.ConfirmTextOnScreen(universal firstnamedevicea)
 run ClassUtilities.ConfirmTextOnScreen("MOBILE")
 run ClassNavigate.AnswerCall

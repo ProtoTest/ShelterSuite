@@ -13,7 +13,7 @@ run ClassNavigate.OpenApp(Settings)
 run ClassSettings.SetNetworkData(Off)
 run ClassSettings.SetWifi(On)
 run ClassConfigure.ResetWifiToDefault
-Click (Text:"Wi-Fi")
+run ClassNavigate.SettingsOption("Wi-Fi")
 run ClassConfigure.ForgetAllWifiConnections
 run ClassUtilities.ConfirmTextNotOnScreen("Connected")
 Click "Device/System/Backicon"

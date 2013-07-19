@@ -2,7 +2,7 @@
 //Component of Script Series 69
 //Completed 6-26-2013
 
-//Subroutine B4 -- Shelter Device B - UReset to default state
+//Subroutine B4 -- Shelter Device B - Reset to default state
 run ClassNavigate.ResetState
 run ClassNavigate.OpenApp(Settings)
 run ClassSettings.SetNetworkData(On)

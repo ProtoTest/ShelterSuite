@@ -10,19 +10,11 @@ run ClassNavigate.ResetState
 run ClassNavigate.OpenApp(Settings)
 run ClassSettings.SetNetworkData(Off)
 run ClassSettings.SetWifi(On)
-Click (Text:"Wi-Fi")
+run ClassNavigate.SettingsOption("Wi-Fi")
 run ClassConfigure.ForgetAllWifiConnections
 Click "Device/System/Backicon"
 wait 1 second
-Click (Text:"Wi-Fi")
-WaitFor 15, Text:universal defaulthotspotssid, CaseSensitive: true
-Click (Text:universal defaulthotspotssid, CaseSensitive: true)
-wait 1 second
-TypeText universal defaulthotspotpass
-Click (Text:"Connect")
-WaitFor 60, Text:"Connected", SearchRectangle:((10,100),(470,200))
-Click "Device/System/Backicon"
-wait 1 second
+run ClassSettings.ConnectToDefaultHotspot
 Click "Device/System/HomeButton"
 wait 1 second
 Click "Device/Apps/Browser/BrowserIcon"
@@ -42,7 +34,3 @@ run ClassNavigate.OpenApp(Settings)
 run ClassSettings.SetNetworkData(On)
 run ClassConfigure.ResetWifiToDefault
 Click "Device/System/HomeButton"
-
-//Teardown
-run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
-wait 5 seconds

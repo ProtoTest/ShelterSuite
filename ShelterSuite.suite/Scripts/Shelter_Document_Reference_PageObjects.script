@@ -52,6 +52,7 @@ run ClassNavigate.SwipeRight
 run ClassNavigate.SwipeUp
 run ClassNavigate.UnlockDevice
 
+run ClassSettings.ConnectToDefaultHotspot
 run ClassSettings.SetBluetooth(On)
 run ClassSettings.SetMobileHotspot(On)
 run ClassSettings.SetNetworkData(On)
