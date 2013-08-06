@@ -5,3 +5,11 @@
 run ClassNavigate.ResetState
 run ClassConfigure.ClearContacts
 run ClassConfigure.AddContactDeviceA
+run ClassNavigate.OpenApp(Settings)
+run ClassSettings.SetNetworkData(On)
+run ClassSettings.SetMobileHotspot(Off)
+run ClassSettings.SetWifi(On)
+run ClassConfigure.ResetWifiToDefault
+Click "Device/System/HomeButton"
+run ClassUtilities.ConfirmImageOnScreen("Device/System/AppsIcon")
+wait 5 seconds

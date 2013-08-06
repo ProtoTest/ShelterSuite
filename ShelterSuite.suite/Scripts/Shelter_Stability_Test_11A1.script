@@ -5,3 +5,4 @@
 //Subroutine A1 -- Shelter Device A - Send 1MB Audio MMS to Shelter Device B
 run ClassNavigate.ResetState
 run ClassConfigure.MuteNotifications
+run ClassConfigure.ResetMessagingApp

@@ -248,6 +248,11 @@ to ResetState
 		Click "Device/System/HomeButton"
 		Log "Active phone call terminated."
 	end if
+	Log "Terminating active alarm, if present."
+	if ImageFound(3, "Device/System/Taskbar/AlarmActive") = "true"
+		run ClassConfigure.ResetAlarms
+		Log "Active alarm terminated."
+	end if
 	Log "Clearing Taskbar."
 	run ClassNavigate.OpenTaskBar
 	if ImageFound(3, "Device/System/Taskbar/ClearTaskbar") = "true"
@@ -268,8 +273,8 @@ end SwipeDown
 
 to SwipeLeft
 	Log "Swiping left."
-	Drag (460,125)
-	Drop (260,125)
+	Drag (360,125)
+	Drop (120,125)
 end SwipeLeft
 
 to SettingsOption name
@@ -350,8 +355,8 @@ end SettingsOption
 
 to SwipeRight
 	Log "Swiping right."
-	Drag (100,125)
-	Drop (300,125)
+	Drag (120,125)
+	Drop (360,125)
 end SwipeRight
 
 to SwipeUp

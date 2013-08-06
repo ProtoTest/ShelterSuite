@@ -6,17 +6,14 @@
 //Subroutine B1 -- Shelter Device B - Receive Incoming SMS from Shelter Device A and Open Message
 //Motorola Shelter Stability Test 17 - Open a SMS
 //English language is used to identify this tested functionality
-Log "Message has 60 seconds to arrive."
-WaitFor 60, "Device/System/Taskbar/MessageReceived"
-Log "Message received."
+run ClassScriptConfig.WaitForTextMessageToArrive
 Log "Opening Messaging App."
 Click "Device/AppIcons/MessagingApp"
-run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")
-run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Messaging/MessagingAppHeader")
 Click (Text:universal firstnamedevicea)
 wait 1 second
 ScrollWheelDown 10
 wait 1 second
+run ClassUtilities.TextMessageIncomingStatusCheck
 run ClassUtilities.ConfirmTextInArea("The quick brown fox jumped"),("10,450"),("470,730")
 run ClassUtilities.ConfirmTextInArea("jumped over the lazy dog"),("10,450"),("470,730")
 Log "Text message received."

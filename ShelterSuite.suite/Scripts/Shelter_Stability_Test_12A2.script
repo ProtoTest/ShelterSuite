@@ -8,8 +8,6 @@ run ClassScriptConfig.SetContactDataforDeviceB
 //Subroutine A2 -- Shelter Device A - Send 1MB video MMS to Shelter Device B
 //French language is used to identify this tested functionality
 Click "Device/AppIcons/MessagingApp"
-run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")
-run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Messaging/MessagingAppHeader")
 Click "Device/Apps/Messaging/NewMessageIcon"
 wait 1 second
 run ClassUtilities.ConfirmTextOnScreen("New message")
@@ -43,8 +41,10 @@ Log "Sending message."
 Click "Device/Apps/Messaging/SendMessage"
 wait 20 seconds
 Click "Device/System/BackIcon"
-Click (Text:universal fullnamedeviceb)
+wait 1 second
+Click (Text:universal fullnamedeviceb, SearchRectangle:((50,100),(430,600)))
 ScrollWheelDown 3
+run ClassUtilities.MMSOutgoingStatusCheck
 run ClassUtilities.ConfirmTextInArea("ideo Attachment"),("0,500"),("470,750")
 run ClassUtilities.ConfirmTextInArea("mp4"),("0,500"),("470,750")
 run ClassUtilities.ConfirmTextInArea("vieux whisky"),("1,500"),("470,750")

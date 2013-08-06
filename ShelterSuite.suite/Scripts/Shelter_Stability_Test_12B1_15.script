@@ -6,3 +6,4 @@
 //Subroutine B1 -- Shelter Device B - Setup
 run ClassNavigate.ResetState
 run ClassConfigure.MuteNotifications
+run ClassConfigure.ResetMessagingApp

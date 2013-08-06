@@ -204,7 +204,7 @@ to MuteNotifications
 	Drag (430,450)
 	Drop (140,450)
 	Click (Text:"OK")
-	wait 1 second
+	wait 2 seconds
 	Click "Device/System/HomeButton"
 end MuteNotifications
 
@@ -352,6 +352,14 @@ to ResetEmail
 	Log "Resetting email app to inbox."
 	wait 1 second
 	put 4 into universal Countdown
+	if ImageFound("Device/Apps/Email/CancelButton") 
+		Click "Device/Apps/Email/CancelButton"
+		wait 1 second
+	end if
+	if ImageFound("Device/Apps/Email/CancelButton") 
+		Click "Device/Apps/Email/CancelButton"
+		wait 1 second
+	end if
 	repeat until ImageFound("Device/Apps/Email/EmailBackButton") is "false"
 		subtract 1 from universal Countdown
 		if ImageFound("Device/Apps/Email/EmailBackButton") 
@@ -365,6 +373,14 @@ to ResetEmail
 	end repeat
 	run ClassUtilities.ConfirmTextInArea("Inbox"),("10,25"),("470,125")
 end ResetEmail
+
+to ResetMessagingApp
+	Log "Resetting Messaging App to main screen."
+	Click "Device/AppIcons/MessagingApp"
+	run ClassUtilities.IfImageOnScreen("Device/Apps/Messaging/BackToMessaging"),("Device/Apps/Messaging/BackToMessaging")
+	run ClassUtilities.ConfirmImageOnScreen("Device/Apps/Messaging/MessagingAppHeader")
+	Click "Device/System/HomeButton"
+end ResetMessagingApp
 
 to ResetMessaging
 	if(ImageFound(3, "Device/Apps/Messaging/AttachmentRemoveButton")) is "true"
@@ -418,6 +434,7 @@ to ResetWifiToDefault
 		end if
 	end repeat
 	Log "Connecting to default wifi network."
+	wait 10 seconds //Allows wifi list to stabilize.
 	put 4 into universal Countdown
 	repeat until (ImageFound("Device/Apps/Settings/WifiDefaultNetwork")) = "false"
 		Click "Device/Apps/Settings/WifiDefaultNetwork"

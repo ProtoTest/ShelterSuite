@@ -4,6 +4,8 @@
 
 //Setup
 run ClassNavigate.ResetState
+run ClassScriptConfig.SetContactDataforDeviceA
+run ClassScriptConfig.SetContactDataforDeviceB
 
 //Subroutine A2 -- Shelter Device A - Send an email with no attachment to Shelter Device B
 wait 10 seconds

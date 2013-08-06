@@ -25,7 +25,7 @@ run ClassUtilities.ConfirmImageNotOnScreen(ImageName:"Device/Apps/Settings/Check
 run ClassUtilities.ConfirmImageNotOnScreen(ImageName:"Device/Apps/Settings/CheckboxUnselected",   SearchRectangle:((5,210),(475,320)))
 wait 1 second
 Log "Alarm created."
-Click (Text:"Alarms")
+Click (Text:"Alarms", SearchRectangle:((10,25),(470,125)))
 run ClassUtilities.ConfirmTextInArea("Alarm set"),("10,450"),("450,550")
 Click "Device/Apps/Clock/AlarmIcon"
 

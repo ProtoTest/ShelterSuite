@@ -88,3 +88,23 @@ to SetMobileHotspotData
 	set defaulthotspotpass to "test1234"  //Configure, must be at least 8 characters
 	Log "Default Hotspot password set to: " &defaulthotspotpass& "."
 end SetMobileHotspotData
+
+//Set wait time for Text Messaging status checks (time before script failure)
+//Used in script series 10, 11, 12, 13
+to SetTextMessageIncomingLoopIterations
+	universal TextMessageIncomingLoopNum
+	set TextMessageIncomingLoopNum = 200 //Configure, units are in ~ 1.5 seconds iterations (200 ~ 300 sec)
+	Log "Incoming Text Message status check iterations set to: " &TextMessageIncomingLoopNum& "."
+end SetTextMessageIncomingLoopIterations
+
+to SetTextMessageOutgoingLoopIterations
+	universal TextMessageOutgoingLoopNum
+	set TextMessageOutgoingLoopNum = 200 //Configure, units are in ~ 1.5 seconds per iteration (200 ~ 300 sec)
+	Log "Outgoing Text Message status check iterations set to: " &TextMessageOutgoingLoopNum& "."
+end SetTextMessageOutgoingLoopIterations
+
+to WaitForTextMessageToArrive
+	Log "Message has 60 seconds to arrive."  //Configure to match below
+	WaitFor 60, "Device/System/Taskbar/MessageReceived"  //Configure, units are in seconds
+	Log "Message incoming."
+end WaitForTextMessageToArrive

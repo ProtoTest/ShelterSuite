@@ -83,6 +83,60 @@ to IfTextOnScreen string,action
 	wait 3 seconds
 end IfTextOnScreen
 
+to TextMessageIncomingStatusCheck
+	run ClassScriptConfig.SetTextMessageIncomingLoopIterations
+	repeat
+		wait 1 second
+		subtract 1 from universal TextMessageIncomingLoopNum
+		Log "Incoming Text Message status check countdown: " &universal TextMessageIncomingLoopNum& "."
+		if ImageFound(3, ImageName:"Device/Apps/Messaging/MessageStatusDownloading", SearchRectangle:((10,575),(479,800))) is "false"
+			exit repeat
+		end if
+		Log "Status (Downloading) detected."
+		if universal TextMessageIncomingLoopNum = 0
+			LogError "Incoming Text Message Status stuck on (Downloading...)."
+			exit all
+		end if
+	end repeat
+	Log "Incoming Text Message has been downloaded."
+end TextMessageIncomingStatusCheck
+
+to MMSOutgoingStatusCheck
+	run ClassScriptConfig.SetTextMessageOutgoingLoopIterations
+	repeat
+		wait 1 second
+		subtract 1 from universal TextMessageOutgoingLoopNum
+		Log "Outgoing Text Message status check countdown: " &universal TextMessageOutgoingLoopNum& "."
+		if ImageFound(3, ImageName:"Device/Apps/Messaging/MessageStatusSending", SearchRectangle:((10,400),(470,800))) is "false"
+			exit repeat
+		end if
+		Log "Status (Sending) detected."
+		if universal TextMessageOutgoingLoopNum = 0
+			LogError "Outgoing Text Message Status stuck on (Sending...)."
+			exit all
+		end if
+	end repeat
+	Log "Outgoing Text Message has been sent."
+end MMSOutgoingStatusCheck
+
+to SMSOutgoingStatusCheck
+	run ClassScriptConfig.SetTextMessageOutgoingLoopIterations
+	repeat
+		wait 1 second
+		subtract 1 from universal TextMessageOutgoingLoopNum
+		Log "Outgoing Text Message status check countdown: " &universal TextMessageOutgoingLoopNum& "."
+		if ImageFound(3, ImageName:"Device/Apps/Messaging/MessageStatusSending", SearchRectangle:((10,600),(470,800))) is "false"
+			exit repeat
+		end if
+		Log "Status (Sending) detected."
+		if universal TextMessageOutgoingLoopNum = 0
+			LogError "Outgoing Text Message Status stuck on (Sending...)."
+			exit all
+		end if
+	end repeat
+	Log "Outgoing Text Message has been sent."
+end SMSOutgoingStatusCheck
+
 to ScanBluetoothPasskey1
 	Log "Scanning for Bluetooth Passkey1."
 	universal passkey1
